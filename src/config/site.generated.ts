@@ -11,7 +11,7 @@ export const siteConfig: GameConfig = {
 	title: "Project P.I.T.T. Guide",
 	description: "Answer-first Project P.I.T.T. guides for achievements, fuses, the 200kg plate, automation, combos, and other full-release problems.",
 	tagline: "Get unstuck. Feed the Maw.",
-	siteUrl: "https://project-p-i-t-t.example",
+	siteUrl: "https://project-p-i-t-qo5f3v0u4-lynnelan3s-projects.vercel.app",
 	siteMode: "standalone",
 	hubPath: "/",
 	hubTitle: "Project P.I.T.T. Guide",

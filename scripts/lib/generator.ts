@@ -887,7 +887,7 @@ export function buildPlan(loaded: LoadedSiteSpec): GeneratorPlan {
 	// won't delete them. Key *creation* is handled by generateSite(),
 	// not buildPlan().
 	const existingKey = readIndexNowKey(rootDir);
-	if (existingKey) {
+	if (existingKey && existingKey.siteUrl === spec.site.siteUrl) {
 		expectedFiles.set(INDEXNOW_KEY_REL, {
 			content: JSON.stringify(existingKey, null, '\t') + '\n',
 			kind: 'config',
