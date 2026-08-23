@@ -6,7 +6,7 @@ site:
   id: project-p-i-t-t
   mode: standalone
   locale: en
-  siteUrl: https://project-p-i-t-qo5f3v0u4-lynnelan3s-projects.vercel.app
+  siteUrl: https://project-p-i-t-t.vercel.app
   hubPath: /
   title: Project P.I.T.T. Guide
   shortName: Project P.I.T.T.
@@ -18,8 +18,8 @@ deployment:
   orgId: "team_yAOizMTSVuT0RJATgFdAlQuG"
   projectId: prj_oIgnTKtZEaw8QmUzClRUC8QlCNBE
   projectName: project-p-i-t-t
-  productionUrl: ""
-  productionBranch: ""
+  productionUrl: https://project-p-i-t-t.vercel.app
+  productionBranch: main
 
 game:
   name: Project P.I.T.T.

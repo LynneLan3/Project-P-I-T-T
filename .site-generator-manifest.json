@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "templateVersion": "2.0.0",
   "generatorVersion": "1.0.0",
-  "specHash": "39611c5a5e1008fac7265c2f359a6e9a8a0a65d53ff207a015c69ac294da1e49",
+  "specHash": "40e44ea84d693316e731949a6a79cf6c532158b6ffd5f8dc4e9ff57afe8e06a4",
   "siteId": "project-p-i-t-t",
   "createdFromSpec": "site-spec.yaml",
   "managedFiles": [
     {
-      "path": "public/95f3f01d-3d8f-43cf-a55c-d8f192c9cd2b.txt",
-      "sha256": "3abe54f705b0c4588423d99f56f6bf8a53c00bae5c7cdb55863f7412a96a1723",
+      "path": "public/c3e9a00b-9dc0-4625-861c-5c2d0843f43b.txt",
+      "sha256": "47a89b3e90963a2d3cd796e49bd384cf1f55c186d373600cc0f9110d1a1c12c4",
       "kind": "other"
     },
     {
@@ -48,12 +48,12 @@
     },
     {
       "path": "src/config/indexnow-key.json",
-      "sha256": "33efc786f9a7a78781459d860b1392c01b094de603e60837fa6f2fc42bf621fd",
+      "sha256": "49779f5d1b8f467ded06598932d605613b40ef134ad6f3ea329528bf74ecc40c",
       "kind": "config"
     },
     {
       "path": "src/config/site.generated.ts",
-      "sha256": "ceb73021693930ed4284b34a6c9aec9b29f748b8f3cc02106a82a22223787a42",
+      "sha256": "01206f17258f36943fb5c853f2c2a39920ac737c3179b43d0f1e368462337c94",
       "kind": "config"
     },
     {
