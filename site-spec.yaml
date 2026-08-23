@@ -16,7 +16,7 @@ site:
 deployment:
   provider: vercel
   orgId: "team_yAOizMTSVuT0RJATgFdAlQuG"
-  projectId: ""
+  projectId: prj_oIgnTKtZEaw8QmUzClRUC8QlCNBE
   projectName: project-p-i-t-t
   productionUrl: ""
   productionBranch: ""
