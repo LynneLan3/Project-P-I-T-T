@@ -23,7 +23,8 @@ export const siteConfig: GameConfig = {
 	platforms: ["PC (Steam)"],
 	accentColor: "#f0b45a",
 	accentForeground: "#1a1108",
-	heroAlt: "Project P.I.T.T.",
+	heroImage: "hero/project-pitt.jpg",
+	heroAlt: "Project P.I.T.T. official key art from the Steam store",
 	heroPosition: "center",
 	disclaimer: "Unofficial fan site. This site is not affiliated with Froke or Pretty Soon.",
 	portal: {
@@ -76,6 +77,7 @@ export const siteConfig: GameConfig = {
 				title: "How to Get the UP? Achievement and Place the Fuses",
 				description: "A careful guide to the three-fuse box, the UP? achievement, and what to check when a fuse or the next gate appears stuck.",
 				href: "/up-achievement-fuses/",
+				image: "gameplay/fuses.jpg",
 				label: "Hidden progression",
 				badge: "Start here",
 			},
@@ -83,21 +85,48 @@ export const siteConfig: GameConfig = {
 				title: "Project P.I.T.T. 200kg Plate Guide",
 				description: "What the 200kg plate does, what can be used as weight, and what to check when the pipe or gate does not advance.",
 				href: "/200kg-plate/",
+				image: "gameplay/plate.jpg",
 				label: "Progression gate",
 			},
 			{
 				title: "Project P.I.T.T. Automation: Panels, Fans, and Routing",
 				description: "How to make panels, fans, magnets, pistons, and launchers behave like a reliable production lane without prescribing one best build.",
 				href: "/automation/",
+				image: "gameplay/automation.jpg",
 				label: "Factory systems",
 			},
 			{
 				title: "Project P.I.T.T. Achievements",
 				description: "All 23 Project P.I.T.T. Steam achievements, with public descriptions separated from hidden requirements.",
 				href: "/achievements/",
+				image: "gameplay/achievements.jpg",
 				label: "Completion",
 			},
 		],
+		evidence: {
+			title: "See the facility in action",
+			description: "Official Steam screenshots show the visual context behind these answer-first guides.",
+			items: [
+				{
+					image: "gameplay/fuses.jpg",
+					alt: "Project P.I.T.T. gameplay screenshot for the fuse-box route",
+					caption: "The facility context for the fuse-box route.",
+					href: "/up-achievement-fuses/",
+				},
+				{
+					image: "gameplay/plate.jpg",
+					alt: "Project P.I.T.T. gameplay screenshot for the 200kg plate guide",
+					caption: "A gameplay view for the weight-gate problem.",
+					href: "/200kg-plate/",
+				},
+				{
+					image: "gameplay/automation.jpg",
+					alt: "Project P.I.T.T. gameplay screenshot for automation and routing",
+					caption: "Factory context for panels, movers, and routing.",
+					href: "/automation/",
+				},
+			],
+		},
 		showRecentlyUpdated: true,
 		maxRecent: 3,
 	},
@@ -321,6 +350,7 @@ export const siteConfig: GameConfig = {
 			title: "Complete Hidden Progression",
 			description: "Follow the fuse box, weight gate, and achievement handoffs in the order players usually need them.",
 			href: "/routes/hidden-progression/",
+			visual: "gameplay/fuses.jpg",
 			pages: [
 				{
 					pageId: "up-achievement-fuses",
@@ -328,6 +358,7 @@ export const siteConfig: GameConfig = {
 					title: "How to Get the UP? Achievement and Place the Fuses",
 					description: "A careful guide to the three-fuse box, the UP? achievement, and what to check when a fuse or the next gate appears stuck.",
 					eyebrow: "Hidden Progression",
+					image: "gameplay/fuses.jpg",
 				},
 				{
 					pageId: "200kg-plate",
@@ -335,6 +366,7 @@ export const siteConfig: GameConfig = {
 					title: "Project P.I.T.T. 200kg Plate Guide",
 					description: "What the 200kg plate does, what can be used as weight, and what to check when the pipe or gate does not advance.",
 					eyebrow: "Progression Gate",
+					image: "gameplay/plate.jpg",
 				},
 				{
 					pageId: "achievements",
@@ -342,6 +374,7 @@ export const siteConfig: GameConfig = {
 					title: "Project P.I.T.T. Achievements",
 					description: "All 23 Project P.I.T.T. Steam achievements, with public descriptions separated from hidden requirements.",
 					eyebrow: "Completion",
+					image: "gameplay/achievements.jpg",
 				},
 			],
 			fastAnswers: [
@@ -365,6 +398,7 @@ export const siteConfig: GameConfig = {
 			title: "Build Reliable Automation",
 			description: "Start with a controllable lane, then use it to protect long combo attempts.",
 			href: "/routes/factory-optimization/",
+			visual: "gameplay/automation.jpg",
 			pages: [
 				{
 					pageId: "automation",
@@ -372,6 +406,7 @@ export const siteConfig: GameConfig = {
 					title: "Project P.I.T.T. Automation: Panels, Fans, and Routing",
 					description: "How to make panels, fans, magnets, pistons, and launchers behave like a reliable production lane without prescribing one best build.",
 					eyebrow: "Factory Systems",
+					image: "gameplay/automation.jpg",
 				},
 				{
 					pageId: "x300-combo",
@@ -379,6 +414,7 @@ export const siteConfig: GameConfig = {
 					title: "How to Reach the x300 Combo in Project P.I.T.T.",
 					description: "What MORE!, EXTRA!, and MEGA! mean, plus practical ways to keep a combo alive while automation is running.",
 					eyebrow: "Combo Milestones",
+					image: "gameplay/combo.jpg",
 				},
 			],
 			fastAnswers: [
@@ -402,6 +438,7 @@ export const siteConfig: GameConfig = {
 			title: "Work Toward 100%",
 			description: "A compact completion path through the four V1 problem pages.",
 			href: "/routes/completion/",
+			visual: "gameplay/combo.jpg",
 			pages: [
 				{
 					pageId: "achievements",
@@ -409,6 +446,7 @@ export const siteConfig: GameConfig = {
 					title: "Project P.I.T.T. Achievements",
 					description: "All 23 Project P.I.T.T. Steam achievements, with public descriptions separated from hidden requirements.",
 					eyebrow: "Completion",
+					image: "gameplay/achievements.jpg",
 				},
 				{
 					pageId: "up-achievement-fuses",
@@ -416,6 +454,7 @@ export const siteConfig: GameConfig = {
 					title: "How to Get the UP? Achievement and Place the Fuses",
 					description: "A careful guide to the three-fuse box, the UP? achievement, and what to check when a fuse or the next gate appears stuck.",
 					eyebrow: "Hidden Progression",
+					image: "gameplay/fuses.jpg",
 				},
 				{
 					pageId: "200kg-plate",
@@ -423,6 +462,7 @@ export const siteConfig: GameConfig = {
 					title: "Project P.I.T.T. 200kg Plate Guide",
 					description: "What the 200kg plate does, what can be used as weight, and what to check when the pipe or gate does not advance.",
 					eyebrow: "Progression Gate",
+					image: "gameplay/plate.jpg",
 				},
 				{
 					pageId: "x300-combo",
@@ -430,6 +470,7 @@ export const siteConfig: GameConfig = {
 					title: "How to Reach the x300 Combo in Project P.I.T.T.",
 					description: "What MORE!, EXTRA!, and MEGA! mean, plus practical ways to keep a combo alive while automation is running.",
 					eyebrow: "Combo Milestones",
+					image: "gameplay/combo.jpg",
 				},
 			],
 		},
@@ -458,6 +499,12 @@ export const siteConfig: GameConfig = {
 				title: "Privacy",
 				robots: "noindex,follow",
 			},
+		},
+	},
+	social: {
+		defaultImage: {
+			asset: "social/project-pitt.jpg",
+			alt: "Project P.I.T.T. official key art for social previews",
 		},
 	},
 };

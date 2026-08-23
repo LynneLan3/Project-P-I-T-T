@@ -3,6 +3,8 @@
 ## Live site generation (`$create-hotword-wiki`)
 
 - [ ] `npm run verify:context`
+- [ ] Official asset bootstrap dry-run contains only official / Steam / press-kit URLs
+- [ ] When official artwork exists, hero / social / route / evidence asset assignments are intentional
 - [ ] Identity mode is `remote-verified` or `content-marker-verified` (not a false remote failure in Cloud)
 - [ ] Missing `site-spec.yaml` / `site-input` reported as input Error (not identity Error)
 - [ ] `npm run site:generate -- --dry-run`
@@ -17,6 +19,7 @@
 - [ ] Locale chrome matches `site.locale`
 - [ ] Desktop Hub + one guide spot-check
 - [ ] Mobile viewport spot-check when browser tools exist
+- [ ] Home / Routes / Guide / Search / CTA / active nav use the site-spec accent variables
 - [ ] No Git pollution: `node_modules`, `dist`, `.astro`, `.env`, temp dirs
 - [ ] No secrets in the diff
 

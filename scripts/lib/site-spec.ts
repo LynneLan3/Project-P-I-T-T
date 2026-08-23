@@ -2012,7 +2012,7 @@ function assertSourcesExist(spec: SiteSpec, rootDir: string, specDir: string) {
 				`assets[id=${asset.id}].source`,
 				asset.source,
 				`assets[id=${asset.id}]`,
-				`Add the local file at ${asset.source}. The generator does not download assets.`,
+				`Add the local file at ${asset.source}, or run assets:bootstrap for an allowed official sourceUrl.`,
 			);
 		}
 		assertRegularInputFile(

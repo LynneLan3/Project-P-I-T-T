@@ -17,6 +17,7 @@
     "verify:context": "tsx ./scripts/verify-context.ts",
     "validate:site": "tsx ./scripts/validate-site.mjs",
     "site:generate": "tsx ./scripts/generate-site.ts",
+    "assets:bootstrap": "tsx ./scripts/bootstrap-assets.ts",
     "test:generator": "tsx --test tests/site-generator/generator.test.ts tests/link-graph/page-relations.test.ts tests/link-graph/routes.test.ts tests/trust/trust-pages.test.ts tests/analytics/outbound.test.ts tests/social/social-image.test.ts tests/monetization/affiliate-link.test.ts tests/monetization/ad-slot.test.ts tests/experience/routes-ui.test.ts tests/experience/guide-editorial.test.ts tests/experience/homepage.test.ts",
     "test:context": "tsx --test tests/repo-context/verify-context.test.ts",
     "test:validation": "tsx --test tests/validation/validate-modes.test.ts",

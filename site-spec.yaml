@@ -35,6 +35,8 @@ game:
 theme:
   accentColor: "#f0b45a"
   accentForeground: "#1a1108"
+  heroAssetId: pitt-hero
+  heroPosition: center
 
 categories:
   - id: achievements
@@ -82,6 +84,7 @@ pages:
         value: 9 hidden on Steam
       - label: Best starting point
         value: QWACK! then MORE!
+    coverAssetId: pitt-screenshot-achievements
     related:
       - up-achievement-fuses
       - 200kg-plate
@@ -131,6 +134,7 @@ pages:
         value: Upper catwalk fuse box
       - label: Next check
         value: 200kg plate
+    coverAssetId: pitt-screenshot-fuses
     related:
       - 200kg-plate
       - achievements
@@ -177,6 +181,7 @@ pages:
         value: Loose physics objects
       - label: Afterward
         value: Check the opened gate or pipe
+    coverAssetId: pitt-screenshot-plate
     related:
       - up-achievement-fuses
       - automation
@@ -224,6 +229,7 @@ pages:
         value: Keeps contact in place
       - label: Goal
         value: Fewer jams, easier recovery
+    coverAssetId: pitt-screenshot-automation
     related:
       - x300-combo
       - 200kg-plate
@@ -273,6 +279,7 @@ pages:
         value: x300
       - label: Best partner page
         value: Automation
+    coverAssetId: pitt-screenshot-combo
     related:
       - automation
       - achievements
@@ -299,6 +306,7 @@ routes:
     eyebrow: Progression Route
     title: Complete Hidden Progression
     description: Follow the fuse box, weight gate, and achievement handoffs in the order players usually need them.
+    visualAssetId: pitt-screenshot-fuses
     fastAnswers:
       - question: What should I do after the fuses?
         answer: Check the 200kg plate and treat the later pipe as a separate gate.
@@ -314,6 +322,7 @@ routes:
     eyebrow: Factory Route
     title: Build Reliable Automation
     description: Start with a controllable lane, then use it to protect long combo attempts.
+    visualAssetId: pitt-screenshot-automation
     fastAnswers:
       - question: How should I start automating?
         answer: Test one product through one short, visible lane before scaling it.
@@ -328,6 +337,7 @@ routes:
     eyebrow: Completion Route
     title: Work Toward 100%
     description: A compact completion path through the four V1 problem pages.
+    visualAssetId: pitt-screenshot-combo
     pages:
       - achievements
       - up-achievement-fuses
@@ -370,7 +380,75 @@ homepage:
     - pageId: achievements
       label: Completion
 
-assets: []
+  evidence:
+    title: See the facility in action
+    description: Official Steam screenshots show the visual context behind these answer-first guides.
+    items:
+      - assetId: pitt-screenshot-fuses
+        pageId: up-achievement-fuses
+        caption: The facility context for the fuse-box route.
+      - assetId: pitt-screenshot-plate
+        pageId: 200kg-plate
+        caption: A gameplay view for the weight-gate problem.
+      - assetId: pitt-screenshot-automation
+        pageId: automation
+        caption: Factory context for panels, movers, and routing.
+
+assets:
+  - id: pitt-hero
+    source: site-input/assets/project-pitt/hero.jpg
+    target: hero/project-pitt.jpg
+    alt: Project P.I.T.T. official key art from the Steam store
+    sourceUrl: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4026250/8af004afc152fceddab81b8875893ea9a7d88662/capsule_616x353.jpg?t=1787223275
+    sourceType: store
+    usageStatus: review-required
+  - id: pitt-social
+    source: site-input/assets/project-pitt/social.jpg
+    target: social/project-pitt.jpg
+    alt: Project P.I.T.T. official key art for social previews
+    sourceUrl: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4026250/8af004afc152fceddab81b8875893ea9a7d88662/capsule_616x353.jpg?t=1787223275
+    sourceType: store
+    usageStatus: review-required
+  - id: pitt-screenshot-achievements
+    source: site-input/assets/project-pitt/screenshot-achievements.jpg
+    target: gameplay/achievements.jpg
+    alt: Project P.I.T.T. gameplay screenshot for achievement context
+    sourceUrl: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4026250/2a04fccf2f4cdeb49619d46715edc7400f2581b7/ss_2a04fccf2f4cdeb49619d46715edc7400f2581b7.1920x1080.jpg?t=1787223275
+    sourceType: store
+    usageStatus: review-required
+  - id: pitt-screenshot-fuses
+    source: site-input/assets/project-pitt/screenshot-fuses.jpg
+    target: gameplay/fuses.jpg
+    alt: Project P.I.T.T. gameplay screenshot for the fuse-box route
+    sourceUrl: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4026250/14359bd9f90c9761b4a891d7529e6537d909b0fd/ss_14359bd9f90c9761b4a891d7529e6537d909b0fd.1920x1080.jpg?t=1787223275
+    sourceType: store
+    usageStatus: review-required
+  - id: pitt-screenshot-plate
+    source: site-input/assets/project-pitt/screenshot-plate.jpg
+    target: gameplay/plate.jpg
+    alt: Project P.I.T.T. gameplay screenshot for the 200kg plate guide
+    sourceUrl: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4026250/2f5cd574d139ba61f5afc2829ce299ee80c4c6ab/ss_2f5cd574d139ba61f5afc2829ce299ee80c4c6ab.1920x1080.jpg?t=1787223275
+    sourceType: store
+    usageStatus: review-required
+  - id: pitt-screenshot-automation
+    source: site-input/assets/project-pitt/screenshot-automation.jpg
+    target: gameplay/automation.jpg
+    alt: Project P.I.T.T. gameplay screenshot for automation and routing
+    sourceUrl: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4026250/3844b0cec22bfc777b386532f30e61c62d2c6327/ss_3844b0cec22bfc777b386532f30e61c62d2c6327.1920x1080.jpg?t=1787223275
+    sourceType: store
+    usageStatus: review-required
+  - id: pitt-screenshot-combo
+    source: site-input/assets/project-pitt/screenshot-combo.jpg
+    target: gameplay/combo.jpg
+    alt: Project P.I.T.T. gameplay screenshot for combo and completion context
+    sourceUrl: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4026250/462364b3a655824329290a4c1614a43ee80507c5/ss_462364b3a655824329290a4c1614a43ee80507c5.1920x1080.jpg?t=1787223275
+    sourceType: store
+    usageStatus: review-required
+
+social:
+  defaultImage:
+    asset: social/project-pitt.jpg
+    alt: Project P.I.T.T. official key art for social previews
 
 trust:
   enabled: true

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "templateVersion": "2.0.0",
   "generatorVersion": "1.0.0",
-  "specHash": "4ce95012e63aa17706161c7b1c42440dd16e287f8fb1262410c7fa0caccfd92a",
+  "specHash": "39611c5a5e1008fac7265c2f359a6e9a8a0a65d53ff207a015c69ac294da1e49",
   "siteId": "project-p-i-t-t",
   "createdFromSpec": "site-spec.yaml",
   "managedFiles": [
@@ -12,28 +12,63 @@
       "kind": "other"
     },
     {
+      "path": "src/assets/gameplay/achievements.jpg",
+      "sha256": "7b2c3e51e7faf0fdc10d800b492d58cc3ebff491716f7537d2cc211c52493a51",
+      "kind": "asset"
+    },
+    {
+      "path": "src/assets/gameplay/automation.jpg",
+      "sha256": "c8c2fedab3fe0b011195f866d2cde977382565191dadd69892eedc1b26bcff76",
+      "kind": "asset"
+    },
+    {
+      "path": "src/assets/gameplay/combo.jpg",
+      "sha256": "6a4506ffcc792e2ade06a7df652b6ef9b26190e9e2e0a8683ce8f078b67cc8b9",
+      "kind": "asset"
+    },
+    {
+      "path": "src/assets/gameplay/fuses.jpg",
+      "sha256": "3d2d551e216d67f68a7ea9f62f8f46a407c001b119faf982b972bc82c7b7ac77",
+      "kind": "asset"
+    },
+    {
+      "path": "src/assets/gameplay/plate.jpg",
+      "sha256": "d99060b155d10601d3d83d2b4b53885f4b3a7946fd062815be35ed9d979f3311",
+      "kind": "asset"
+    },
+    {
+      "path": "src/assets/hero/project-pitt.jpg",
+      "sha256": "bd3051971acf536ba76b1793df2c4baeab64662f12e0ef797ec130f57e620cbf",
+      "kind": "asset"
+    },
+    {
+      "path": "src/assets/social/project-pitt.jpg",
+      "sha256": "bd3051971acf536ba76b1793df2c4baeab64662f12e0ef797ec130f57e620cbf",
+      "kind": "asset"
+    },
+    {
       "path": "src/config/indexnow-key.json",
       "sha256": "33efc786f9a7a78781459d860b1392c01b094de603e60837fa6f2fc42bf621fd",
       "kind": "config"
     },
     {
       "path": "src/config/site.generated.ts",
-      "sha256": "ae76c85ca4f4f3c11841c30c8ba1ced6c653ef355f33d70e29e943e516ae58fe",
+      "sha256": "ceb73021693930ed4284b34a6c9aec9b29f748b8f3cc02106a82a22223787a42",
       "kind": "config"
     },
     {
       "path": "src/content/docs/achievements/achievements.md",
-      "sha256": "94aacc043465dd2f0892f1fa9d1fc98f0597230d817708d0309e19a71bb4af77",
+      "sha256": "77d27485dec0c72c59883a95460c7e10afff92ab26fea16f9cbd0529fe7a9a5a",
       "kind": "page"
     },
     {
       "path": "src/content/docs/automation/automation.md",
-      "sha256": "10d3b7cf0258b398fcb9113464c0f4eda5beca0a4434f96cf1a2b531249a22c7",
+      "sha256": "459811c3c1d18080ef20523e83c4dc924544eeab078389af96613879bb126ea2",
       "kind": "page"
     },
     {
       "path": "src/content/docs/automation/x300-combo.md",
-      "sha256": "feb1b332413b1a9f9dd84b9936b0bbdb482a59b2cbdaa7290f10acbcb28558da",
+      "sha256": "4406f80efb4b58765c21e9096480e7b2c39e3ccc946f9658e83e9e2b38525cf6",
       "kind": "page"
     },
     {
@@ -43,12 +78,12 @@
     },
     {
       "path": "src/content/docs/progression-secrets/200kg-plate.md",
-      "sha256": "c94be5931466fd0922c862d134cdca30add06b127738cbac34ced8be718f1fa4",
+      "sha256": "09016a42f04e6347a033d4bc9c8b298a5fff8b4e2d93f88d23c3e0b8a497661e",
       "kind": "page"
     },
     {
       "path": "src/content/docs/progression-secrets/up-achievement-fuses.md",
-      "sha256": "c5b415dc2b65977f7f39d1f7d9a3ebf0984c671abc09328b1ed4fc9c0809e693",
+      "sha256": "f6c3a478491f3ffe7d4a4725422c11a83f67f6f5709f6ecefe4919c836ebbdac",
       "kind": "page"
     },
     {
@@ -67,5 +102,62 @@
       "kind": "trust"
     }
   ],
-  "managedAssets": []
+  "managedAssets": [
+    {
+      "id": "pitt-hero",
+      "target": "hero/project-pitt.jpg",
+      "source": "site-input/assets/project-pitt/hero.jpg",
+      "sha256": "bd3051971acf536ba76b1793df2c4baeab64662f12e0ef797ec130f57e620cbf",
+      "usageStatus": "review-required",
+      "sourceType": "store"
+    },
+    {
+      "id": "pitt-screenshot-achievements",
+      "target": "gameplay/achievements.jpg",
+      "source": "site-input/assets/project-pitt/screenshot-achievements.jpg",
+      "sha256": "7b2c3e51e7faf0fdc10d800b492d58cc3ebff491716f7537d2cc211c52493a51",
+      "usageStatus": "review-required",
+      "sourceType": "store"
+    },
+    {
+      "id": "pitt-screenshot-automation",
+      "target": "gameplay/automation.jpg",
+      "source": "site-input/assets/project-pitt/screenshot-automation.jpg",
+      "sha256": "c8c2fedab3fe0b011195f866d2cde977382565191dadd69892eedc1b26bcff76",
+      "usageStatus": "review-required",
+      "sourceType": "store"
+    },
+    {
+      "id": "pitt-screenshot-combo",
+      "target": "gameplay/combo.jpg",
+      "source": "site-input/assets/project-pitt/screenshot-combo.jpg",
+      "sha256": "6a4506ffcc792e2ade06a7df652b6ef9b26190e9e2e0a8683ce8f078b67cc8b9",
+      "usageStatus": "review-required",
+      "sourceType": "store"
+    },
+    {
+      "id": "pitt-screenshot-fuses",
+      "target": "gameplay/fuses.jpg",
+      "source": "site-input/assets/project-pitt/screenshot-fuses.jpg",
+      "sha256": "3d2d551e216d67f68a7ea9f62f8f46a407c001b119faf982b972bc82c7b7ac77",
+      "usageStatus": "review-required",
+      "sourceType": "store"
+    },
+    {
+      "id": "pitt-screenshot-plate",
+      "target": "gameplay/plate.jpg",
+      "source": "site-input/assets/project-pitt/screenshot-plate.jpg",
+      "sha256": "d99060b155d10601d3d83d2b4b53885f4b3a7946fd062815be35ed9d979f3311",
+      "usageStatus": "review-required",
+      "sourceType": "store"
+    },
+    {
+      "id": "pitt-social",
+      "target": "social/project-pitt.jpg",
+      "source": "site-input/assets/project-pitt/social.jpg",
+      "sha256": "bd3051971acf536ba76b1793df2c4baeab64662f12e0ef797ec130f57e620cbf",
+      "usageStatus": "review-required",
+      "sourceType": "store"
+    }
+  ]
 }

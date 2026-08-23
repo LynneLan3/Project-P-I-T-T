@@ -63,6 +63,9 @@ const {
 	footerLinks = [],
 	footerText,
 } = Astro.props;
+
+const resolvedAccentColor = accentColor ?? game.accentColor;
+const resolvedAccentForeground = accentForeground ?? game.accentForeground ?? '#041012';
 ---
 
 <!doctype html>
@@ -74,7 +77,7 @@ const {
 	{description && <meta name="description" content={description} />}
 	{canonical && <link rel="canonical" href={canonical} />}
 	<slot name="head" />
-	<style is:global define:vars={{ gameAccent: accentColor ?? '#0f9b8e', gameAccentForeground: accentForeground ?? '#041012' }}>
+	<style is:global define:vars={{ gameAccent: resolvedAccentColor, gameAccentForeground: resolvedAccentForeground }}>
 		:root {
 			--game-accent: var(--gameAccent);
 			--game-accent-foreground: var(--gameAccentForeground);

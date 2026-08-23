@@ -216,12 +216,24 @@ Optional `homepage.statusItems[]` (`label` + `value`, max 4). Omit to let the Hu
 | Field | Required | Notes |
 | --- | --- | --- |
 | `id` | yes | unique kebab-case |
-| `source` | yes | existing regular local file; generator never downloads; **symlinks rejected in V1** |
+| `source` | yes | regular local file; create it manually or with the controlled official `assets:bootstrap` flow; **symlinks rejected in V1** |
 | `target` | yes | relative path under `src/assets/` only; no `..`, no absolute paths, no `src/assets/` prefix |
 | `alt` | yes | required, especially for hero |
 | `sourceUrl` | no | provenance URL |
-| `sourceType` | yes | `official` \| `store` \| `press-kit` \| `user-provided` \| `unknown` |
+| `sourceType` | yes | `official` \| `store` \| `press-kit` \| `user-provided` \| `unknown`; bootstrap accepts only the first three |
 | `usageStatus` | yes | `approved` \| `review-required` \| `unknown` |
+
+Optional bootstrap guard:
+
+```yaml
+assetBootstrap:
+  allowedHosts:
+    - publisher.example
+    - developer.example
+```
+
+`official` / `press-kit` downloads must match this host list. `store` downloads
+are limited to Steam and its official CDN hosts.
 
 ## Markdown placeholders
 

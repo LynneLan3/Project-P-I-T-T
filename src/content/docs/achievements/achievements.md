@@ -41,6 +41,7 @@ sources:
     type: other
     title: Exophase achievement index
     url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
+cover: ../../../assets/gameplay/achievements.jpg
 changeSummary: Initial V1 page from the full-release Steam achievement list.
 eyebrow: Completion
 facts:

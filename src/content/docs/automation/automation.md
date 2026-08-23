@@ -41,6 +41,7 @@ sources:
     type: official
     title: Project P.I.T.T. Steam store page
     url: https://store.steampowered.com/app/4026250/Project_PITT/
+cover: ../../../assets/gameplay/automation.jpg
 changeSummary: Initial V1 page focused on reliable principles rather than a claimed best build.
 eyebrow: Factory Systems
 facts:

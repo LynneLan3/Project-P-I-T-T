@@ -23,8 +23,8 @@
 	--xp-reading: 46rem;
 
 	/* Colors — mapped from game config / Starlight variables */
-	--xp-accent: var(--game-accent, #0f9b8e);
-	--xp-accent-fg: var(--game-accent-foreground, #041012);
+	--xp-accent: var(--game-accent);
+	--xp-accent-fg: var(--game-accent-foreground);
 	--xp-accent-text: color-mix(in srgb, var(--xp-accent) 72%, white);
 	--xp-accent-dim: color-mix(in srgb, var(--xp-accent) 25%, transparent);
 

@@ -37,6 +37,7 @@ sources:
     type: steam
     title: Steam Community automation discussion
     url: https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/
+cover: ../../../assets/gameplay/combo.jpg
 changeSummary: Initial V1 page connecting combo milestones to recoverable factory routing.
 eyebrow: Combo Milestones
 facts:

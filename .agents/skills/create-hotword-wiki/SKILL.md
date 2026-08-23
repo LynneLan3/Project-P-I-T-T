@@ -1,6 +1,6 @@
 ---
 name: create-hotword-wiki
-description: Generate or check a single-game hotword wiki inside LynneLan3/game-wiki-starter from site-spec.yaml and local site-input materials. Explicit invocation only.
+description: Generate or check a single-game hotword wiki inside LynneLan3/game-wiki-starter from research input, official assets, site-spec.yaml, and local site-input materials. Explicit invocation only.
 ---
 
 # create-hotword-wiki
@@ -40,19 +40,22 @@ Before writing `site-spec.yaml` pages, follow this order:
 
 ```text
  1. Research real player demand
- 2. Define Primary Intents
- 3. Plan Guide pages
- 4. Assign Categories
- 5. Define Player Routes
- 6. Order route.pages
- 7. Define route Fast Answers
- 8. Configure Homepage Start Here
- 9. Configure Popular Questions
-10. Add eyebrow / facts / quickAnswer
-11. Add evidence / sources
-12. Define next-step relations
-13. Assign useful visuals
-14. Generate and validate
+ 2. Define site identity (game, repo, GitHub, Vercel)
+ 3. Discover official artwork / screenshots and record provenance
+ 4. Define the theme from the site identity
+ 5. Define Primary Intents
+ 6. Plan Guide pages
+ 7. Assign Categories
+ 8. Define Player Routes
+ 9. Order route.pages
+10. Define route Fast Answers
+11. Configure Homepage Start Here
+12. Configure Popular Questions
+13. Add eyebrow / facts / quickAnswer
+14. Add evidence / sources
+15. Define next-step relations
+16. Assign useful visuals and run the official asset bootstrap
+17. Generate, visually check, and validate
 ```
 
 Intent first, route journey second, category fallback third. See `references/content-policy.md` for all rules.
@@ -70,15 +73,17 @@ Intent first, route journey second, category fallback third. See `references/con
    - Missing `site-spec.yaml` or `site-input/**` must stop generation as an **input** Error.
    - Never report missing input files as a wrong-repository identity failure.
 4. Read the reference contracts above.
-5. Run input prechecks (spec parse / source files / assets) via generator dry-run prerequisites.
-6. If any Error exists, stop before modifying files.
-7. Run `npm run site:generate -- --spec site-spec.yaml --dry-run`.
-8. Report the generation plan to the user.
-9. Run `npm run site:generate -- --spec site-spec.yaml`.
-10. Run a second `npm run site:generate -- --spec site-spec.yaml` and confirm idempotency (`written=0` / no unexpected deletes).
-11. If needed, edit only non-generated sources (`site-spec.yaml`, `site-input/**`, hand-maintained code). Never hand-edit managed outputs.
-12. Run `npm run site:generate -- --spec site-spec.yaml --check`.
-13. Run `npm run validate:generated` (manifest → generator check → generated-site validation → Astro check → Astro build).
+5. Add `assetBootstrap.allowedHosts` for publisher/developer/press-kit sources, then run `npm run assets:bootstrap -- --spec site-spec.yaml --dry-run` and review that every remote URL is official, Steam, or press-kit.
+6. Run the same command without `--dry-run` when official assets are approved for local preview; preserve `sourceUrl`, `sourceType`, `alt`, and `usageStatus`.
+7. Run input prechecks (spec parse / source files / assets) via generator dry-run prerequisites.
+8. If any Error exists, stop before modifying generated files.
+9. Run `npm run site:generate -- --spec site-spec.yaml --dry-run`.
+10. Report the generation plan to the user.
+11. Run `npm run site:generate -- --spec site-spec.yaml`.
+12. Run a second `npm run site:generate -- --spec site-spec.yaml` and confirm idempotency (`written=0` / no unexpected deletes).
+13. If needed, edit only non-generated sources (`site-spec.yaml`, `site-input/**`, hand-maintained code). Never hand-edit managed outputs.
+14. Run `npm run site:generate -- --spec site-spec.yaml --check`.
+15. Run `npm run validate:generated` (manifest → generator check → generated-site validation → Astro check → Astro build).
     - Do **not** run `npm run validate`, `validate:template`, `verify:template`, `test:context`, or `test:generator` in this flow.
 14. Run `git diff --check`.
 15. Inspect `git status` / diff for unexpected files (secrets, `dist`, `.env`, temp dirs).

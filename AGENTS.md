@@ -26,7 +26,9 @@ Rules every Codex session in this repository must follow.
 
 - Do not invent game facts, prices, release dates, reviews, mechanics, or characters.
 - Mark unconfirmed information clearly.
-- Do not auto-download assets or treat `usageStatus: unknown|review-required` as cleared rights.
+- Only use the controlled `assets:bootstrap` flow for declared official, Steam
+  store/CDN, or press-kit URLs. Never use competitor/search-result images.
+  Do not treat `usageStatus: unknown|review-required` as cleared rights.
 
 ## Git and delivery safety
 

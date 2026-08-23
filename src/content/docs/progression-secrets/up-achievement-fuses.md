@@ -37,6 +37,7 @@ sources:
     type: other
     title: "Exophase achievement index — UP?"
     url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
+cover: ../../../assets/gameplay/fuses.jpg
 changeSummary: Initial V1 page with evidence labels for community-reported recovery steps.
 eyebrow: Hidden Progression
 facts:

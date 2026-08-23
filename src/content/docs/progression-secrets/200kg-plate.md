@@ -38,6 +38,7 @@ sources:
     type: official
     title: Project P.I.T.T. Steam store page
     url: https://store.steampowered.com/app/4026250/Project_PITT/
+cover: ../../../assets/gameplay/plate.jpg
 changeSummary: Initial V1 page separating the weight requirement from later pipe progression.
 eyebrow: Progression Gate
 facts:
