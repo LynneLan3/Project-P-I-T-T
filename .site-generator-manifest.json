@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "templateVersion": "2.0.0",
+  "generatorVersion": "1.0.0",
+  "specHash": "a224511fb650cc65a911ddee7027f9dfac1c20271c9458494fc9f826ca85444f",
+  "siteId": "project-p-i-t-t",
+  "createdFromSpec": "site-spec.yaml",
+  "managedFiles": [
+    {
+      "path": "public/9bd9b4a4-d028-4ef8-b4b3-8c1aed3fc7a3.txt",
+      "sha256": "63b65f28f20ad5fed6f55200a5ab276946a21d17fb77ee54d8d2a7823f7f352b",
+      "kind": "other"
+    },
+    {
+      "path": "src/config/indexnow-key.json",
+      "sha256": "b52ea23576a0946257e98b357ca4fd5e44a4b042d1ff56f60e62f6b2b73ec40d",
+      "kind": "config"
+    },
+    {
+      "path": "src/config/site.generated.ts",
+      "sha256": "a35fb1bbb0cfab242420364663e8af0779745a9193d0097184a7a22968ee2a62",
+      "kind": "config"
+    },
+    {
+      "path": "src/content/docs/achievements/achievements.md",
+      "sha256": "94aacc043465dd2f0892f1fa9d1fc98f0597230d817708d0309e19a71bb4af77",
+      "kind": "page"
+    },
+    {
+      "path": "src/content/docs/automation/automation.md",
+      "sha256": "10d3b7cf0258b398fcb9113464c0f4eda5beca0a4434f96cf1a2b531249a22c7",
+      "kind": "page"
+    },
+    {
+      "path": "src/content/docs/automation/x300-combo.md",
+      "sha256": "feb1b332413b1a9f9dd84b9936b0bbdb482a59b2cbdaa7290f10acbcb28558da",
+      "kind": "page"
+    },
+    {
+      "path": "src/content/docs/index.mdx",
+      "sha256": "704b98007ca3515c62adcfdd8d293f8bacd5520efe077d79d54934ad9c694705",
+      "kind": "hub"
+    },
+    {
+      "path": "src/content/docs/progression-secrets/200kg-plate.md",
+      "sha256": "c94be5931466fd0922c862d134cdca30add06b127738cbac34ced8be718f1fa4",
+      "kind": "page"
+    },
+    {
+      "path": "src/content/docs/progression-secrets/up-achievement-fuses.md",
+      "sha256": "c5b415dc2b65977f7f39d1f7d9a3ebf0984c671abc09328b1ed4fc9c0809e693",
+      "kind": "page"
+    },
+    {
+      "path": "src/content/trust/about.md",
+      "sha256": "56cb3d78097ba1400db5ff01d4463e24c2970d0e27518719281a425e9ebfb4ab",
+      "kind": "trust"
+    },
+    {
+      "path": "src/content/trust/editorial-method.md",
+      "sha256": "053fb52705905d8594af4850ffc0c792e56d6e8cc007a87785d3b69c58403e6a",
+      "kind": "trust"
+    },
+    {
+      "path": "src/content/trust/privacy.md",
+      "sha256": "1fd0c6bcb696f3da3a392a2372e3a917060fd4202e9a0b6c3925f95aff821428",
+      "kind": "trust"
+    }
+  ],
+  "managedAssets": []
+}

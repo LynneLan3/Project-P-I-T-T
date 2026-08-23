@@ -1,0 +1,17 @@
+---
+title: Editorial Method
+description: "How Project P.I.T.T. guide pages are researched, reviewed, and updated on this site."
+trustType: editorialMethod
+robots: "index,follow"
+---
+<!--
+  This file is generated from site-spec.yaml.
+  Do not edit directly.
+  Run npm run site:generate instead.
+  Source: site-input/trust/editorial-method.md
+-->
+# Editorial method
+
+V1 pages start with Steam Store facts, official Steam announcements, the Steam achievement list, and developer posts. Steam Discussions and achievement indexes are used for real player questions and cross-checking, but community solutions are labeled as community-reported rather than presented as official instructions.
+
+When Steam hides an achievement description or the available evidence does not establish an exact trigger, the page says so. We do not fill gaps with guesses, a copied walkthrough, or a claimed best build. Pages are designed to answer one player problem and link to the next relevant question.

@@ -1,0 +1,22 @@
+---
+import GameShell from '../../components/experience/GameShell.astro';
+import RouteIndex from '../../components/experience/routes/RouteIndex.astro';
+import { game } from '../../config/game';
+import { ui } from '../../lib/ui';
+import { experienceNav } from '../../lib/experience-nav';
+import { expectedHubSlug } from '../../lib/paths';
+import '../../styles/routes.css';
+
+export function getStaticPaths() {
+	if (game.siteMode !== 'hub') return [];
+	return [{ params: { hub: expectedHubSlug(game.hubPath) } }];
+}
+
+const t = ui();
+const { nav, footerLinks, homeHref, guidesHref } = experienceNav();
+const routes = game.routes ?? [];
+---
+
+<GameShell title={`${t.allGuides} — ${game.title}`} description={game.description} canonical={new URL(guidesHref, game.siteUrl).href} siteTitle={game.shortName} homeHref={homeHref} nav={nav} activePath={guidesHref} footerLinks={footerLinks} footerText={game.title}>
+	<RouteIndex routes={routes} />
+</GameShell>

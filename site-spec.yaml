@@ -68,18 +68,18 @@ pages:
     sidebarOrder: 1
     role: core
     intents:
-      - project pitt achievements
-      - steam achievements
-      - 100 percent completion
+      - project-pitt-achievements
+      - steam-achievements
+      - 100-percent-completion
     quickAnswer: Project P.I.T.T. has 23 Steam achievements. Use the public descriptions as the hard evidence, and treat the nine hidden-description names as leads rather than confirmed instructions.
     eyebrow: Completion
     facts:
       - label: Total
         value: 23 Steam achievements
       - label: Public descriptions
-        value: 14
+        value: 14 listed on Steam
       - label: Hidden descriptions
-        value: 9
+        value: 9 hidden on Steam
       - label: Best starting point
         value: QWACK! then MORE!
     related:
@@ -117,9 +117,9 @@ pages:
     sidebarOrder: 1
     role: core
     intents:
-      - project pitt up achievement
-      - project pitt fuses
-      - find and place all fuses
+      - project-pitt-up-achievement
+      - project-pitt-fuses
+      - find-and-place-all-fuses
     quickAnswer: Find all three fuses, bring them to the fuse box on the upper catwalk, and place each one into an empty socket. Steam lists UP? as “Find and place all fuses”; the box and three-socket detail are supported by the developer/community Steam discussion record.
     eyebrow: Hidden Progression
     facts:
@@ -163,10 +163,10 @@ pages:
     sidebarOrder: 2
     role: core
     intents:
-      - project pitt 200kg plate
-      - project pitt heavy achievement
-      - project pitt pipe gate
-    quickAnswer: The HEAVY? checkpoint needs 200 kg on the weighing plate. Use stable heavy objects or a contained pile, then treat the newly opened pipe or gate as a separate progression step: raw ducks may not move its percentage.
+      - project-pitt-200kg-plate
+      - project-pitt-heavy-achievement
+      - project-pitt-pipe-gate
+    quickAnswer: "The HEAVY? checkpoint needs 200 kg on the weighing plate. Use stable heavy objects or a contained pile, then treat the newly opened pipe or gate as a separate progression step: raw ducks may not move its percentage."
     eyebrow: Progression Gate
     facts:
       - label: Requirement
@@ -200,7 +200,7 @@ pages:
     changeSummary: Initial V1 page separating the weight requirement from later pipe progression.
 
   - id: automation
-    title: Project P.I.T.T. Automation: Panels, Fans, and Routing
+    title: "Project P.I.T.T. Automation: Panels, Fans, and Routing"
     description: How to make panels, fans, magnets, pistons, and launchers behave like a reliable production lane without prescribing one best build.
     category: automation
     slug: automation
@@ -210,10 +210,10 @@ pages:
     sidebarOrder: 1
     role: core
     intents:
-      - project pitt automation
-      - project pitt how panels work
-      - project pitt fans magnets pistons launchers
-    quickAnswer: Build a short, visible lane first: snap panels to stable solid surfaces, use fans or other movers to point products toward one receiver, and leave room to clear jams. Reliability comes from alignment and recovery access, not from the largest possible machine pile.
+      - project-pitt-automation
+      - project-pitt-how-panels-work
+      - project-pitt-fans-magnets-pistons-launchers
+    quickAnswer: "Build a short, visible lane first: snap panels to stable solid surfaces, use fans or other movers to point products toward one receiver, and leave room to clear jams. Reliability comes from alignment and recovery access, not from the largest possible machine pile."
     eyebrow: Factory Systems
     facts:
       - label: First test
@@ -259,9 +259,9 @@ pages:
     sidebarOrder: 2
     role: core
     intents:
-      - project pitt x300 combo
-      - project pitt mega achievement
-      - project pitt combo guide
+      - project-pitt-x300-combo
+      - project-pitt-mega-achievement
+      - project-pitt-combo-guide
     quickAnswer: The combo milestones are MORE! at x100, EXTRA! at x200, and MEGA! at x300. Feed on a steady rhythm, protect the route from jams, and fix one failure point before adding more machines.
     eyebrow: Combo Milestones
     facts:
