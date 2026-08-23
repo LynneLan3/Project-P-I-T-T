@@ -1,0 +1,388 @@
+schemaVersion: 1
+templateVersion: 2.0.0
+mode: generated-site
+
+site:
+  id: project-p-i-t-t
+  mode: standalone
+  locale: en
+  siteUrl: https://project-p-i-t-t.example
+  hubPath: /
+  title: Project P.I.T.T. Guide
+  shortName: Project P.I.T.T.
+  description: Answer-first Project P.I.T.T. guides for achievements, fuses, the 200kg plate, automation, combos, and other full-release problems.
+  disclaimer: Unofficial fan site. This site is not affiliated with Froke or Pretty Soon.
+
+deployment:
+  provider: vercel
+  orgId: "team_yAOizMTSVuT0RJATgFdAlQuG"
+  projectId: ""
+  projectName: project-p-i-t-t
+  productionUrl: ""
+  productionBranch: ""
+
+game:
+  name: Project P.I.T.T.
+  hubTitle: Project P.I.T.T. Guide
+  tagline: Get unstuck. Feed the Maw.
+  releaseStatus: released
+  releaseDate: 2026-08-19
+  developer: Froke
+  publisher: Pretty Soon
+  platforms:
+    - PC (Steam)
+
+theme:
+  accentColor: "#f0b45a"
+  accentForeground: "#1a1108"
+
+categories:
+  - id: achievements
+    label: Achievements
+    description: Steam achievement requirements, public descriptions, and evidence boundaries.
+    icon: trophy
+    order: 1
+    imageAssetId: null
+  - id: progression-secrets
+    label: Progression & Secrets
+    description: The fuse, weight, gate, and other progression problems that stop a run.
+    icon: key
+    order: 2
+    imageAssetId: null
+  - id: automation
+    label: Automation
+    description: Panels, tools, routing, jams, and combo-ready factory habits.
+    icon: puzzle
+    order: 3
+    imageAssetId: null
+
+pages:
+  - id: achievements
+    title: Project P.I.T.T. Achievements
+    description: All 23 Project P.I.T.T. Steam achievements, with public descriptions separated from hidden requirements.
+    category: achievements
+    slug: achievements
+    source: site-input/pages/achievements.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 1
+    role: core
+    intents:
+      - project pitt achievements
+      - steam achievements
+      - 100 percent completion
+    quickAnswer: Project P.I.T.T. has 23 Steam achievements. Use the public descriptions as the hard evidence, and treat the nine hidden-description names as leads rather than confirmed instructions.
+    eyebrow: Completion
+    facts:
+      - label: Total
+        value: 23 Steam achievements
+      - label: Public descriptions
+        value: 14
+      - label: Hidden descriptions
+        value: 9
+      - label: Best starting point
+        value: QWACK! then MORE!
+    related:
+      - up-achievement-fuses
+      - 200kg-plate
+      - x300-combo
+    relations:
+      - pageId: up-achievement-fuses
+        type: next-step
+      - pageId: 200kg-plate
+        type: next-step
+      - pageId: x300-combo
+        type: next-step
+    assetType: checklist
+    sources:
+      - type: official
+        title: Project P.I.T.T. Steam store page
+        url: https://store.steampowered.com/app/4026250/Project_PITT/
+      - type: steam
+        title: Steam Community achievement stats
+        url: https://steamcommunity.com/stats/4026250/achievements/
+      - type: other
+        title: Exophase achievement index
+        url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
+    changeSummary: Initial V1 page from the full-release Steam achievement list.
+
+  - id: up-achievement-fuses
+    title: How to Get the UP? Achievement and Place the Fuses
+    description: A careful guide to the three-fuse box, the UP? achievement, and what to check when a fuse or the next gate appears stuck.
+    category: progression-secrets
+    slug: up-achievement-fuses
+    source: site-input/pages/up-achievement-fuses.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 1
+    role: core
+    intents:
+      - project pitt up achievement
+      - project pitt fuses
+      - find and place all fuses
+    quickAnswer: Find all three fuses, bring them to the fuse box on the upper catwalk, and place each one into an empty socket. Steam lists UP? as “Find and place all fuses”; the box and three-socket detail are supported by the developer/community Steam discussion record.
+    eyebrow: Hidden Progression
+    facts:
+      - label: Achievement
+        value: UP?
+      - label: Required pieces
+        value: 3 fuses
+      - label: Destination
+        value: Upper catwalk fuse box
+      - label: Next check
+        value: 200kg plate
+    related:
+      - 200kg-plate
+      - achievements
+    relations:
+      - pageId: 200kg-plate
+        type: next-step
+      - pageId: achievements
+        type: related
+    assetType: checklist
+    sources:
+      - type: steam
+        title: Steam Community discussion — fuse box and three sockets
+        url: https://steamcommunity.com/app/4026250/discussions/0/571541826108933756/
+      - type: steam
+        title: Steam Community developer FAQ and fixes
+        url: https://steamcommunity.com/app/4026250/
+      - type: other
+        title: Exophase achievement index — UP?
+        url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
+    changeSummary: Initial V1 page with evidence labels for community-reported recovery steps.
+
+  - id: 200kg-plate
+    title: Project P.I.T.T. 200kg Plate Guide
+    description: What the 200kg plate does, what can be used as weight, and what to check when the pipe or gate does not advance.
+    category: progression-secrets
+    slug: 200kg-plate
+    source: site-input/pages/200kg-plate.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 2
+    role: core
+    intents:
+      - project pitt 200kg plate
+      - project pitt heavy achievement
+      - project pitt pipe gate
+    quickAnswer: The HEAVY? checkpoint needs 200 kg on the weighing plate. Use stable heavy objects or a contained pile, then treat the newly opened pipe or gate as a separate progression step: raw ducks may not move its percentage.
+    eyebrow: Progression Gate
+    facts:
+      - label: Requirement
+        value: 200 kg
+      - label: Achievement
+        value: HEAVY?
+      - label: Main risk
+        value: Loose physics objects
+      - label: Afterward
+        value: Check the opened gate or pipe
+    related:
+      - up-achievement-fuses
+      - automation
+      - achievements
+    relations:
+      - pageId: automation
+        type: next-step
+      - pageId: achievements
+        type: related
+    assetType: article
+    sources:
+      - type: steam
+        title: Steam Community discussion — 200kg pad and pipe confusion
+        url: https://steamcommunity.com/app/4026250/discussions/0/562534659773264624/
+      - type: other
+        title: Exophase achievement index — HEAVY? and OPEN?
+        url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
+      - type: official
+        title: Project P.I.T.T. Steam store page
+        url: https://store.steampowered.com/app/4026250/Project_PITT/
+    changeSummary: Initial V1 page separating the weight requirement from later pipe progression.
+
+  - id: automation
+    title: Project P.I.T.T. Automation: Panels, Fans, and Routing
+    description: How to make panels, fans, magnets, pistons, and launchers behave like a reliable production lane without prescribing one best build.
+    category: automation
+    slug: automation
+    source: site-input/pages/automation.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 1
+    role: core
+    intents:
+      - project pitt automation
+      - project pitt how panels work
+      - project pitt fans magnets pistons launchers
+    quickAnswer: Build a short, visible lane first: snap panels to stable solid surfaces, use fans or other movers to point products toward one receiver, and leave room to clear jams. Reliability comes from alignment and recovery access, not from the largest possible machine pile.
+    eyebrow: Factory Systems
+    facts:
+      - label: First test
+        value: One product, one lane
+      - label: Panels
+        value: Snap to solid surfaces
+      - label: Sticky tools
+        value: Keeps contact in place
+      - label: Goal
+        value: Fewer jams, easier recovery
+    related:
+      - x300-combo
+      - 200kg-plate
+      - achievements
+    relations:
+      - pageId: x300-combo
+        type: next-step
+      - pageId: 200kg-plate
+        type: related
+      - pageId: achievements
+        type: related
+    assetType: article
+    sources:
+      - type: steam
+        title: Steam Community automation discussion
+        url: https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/
+      - type: steam
+        title: Steam Community developer FAQ
+        url: https://steamcommunity.com/app/4026250/
+      - type: official
+        title: Project P.I.T.T. Steam store page
+        url: https://store.steampowered.com/app/4026250/Project_PITT/
+    changeSummary: Initial V1 page focused on reliable principles rather than a claimed best build.
+
+  - id: x300-combo
+    title: How to Reach the x300 Combo in Project P.I.T.T.
+    description: What MORE!, EXTRA!, and MEGA! mean, plus practical ways to keep a combo alive while automation is running.
+    category: automation
+    slug: x300-combo
+    source: site-input/pages/x300-combo.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 2
+    role: core
+    intents:
+      - project pitt x300 combo
+      - project pitt mega achievement
+      - project pitt combo guide
+    quickAnswer: The combo milestones are MORE! at x100, EXTRA! at x200, and MEGA! at x300. Feed on a steady rhythm, protect the route from jams, and fix one failure point before adding more machines.
+    eyebrow: Combo Milestones
+    facts:
+      - label: MORE!
+        value: x100
+      - label: EXTRA!
+        value: x200
+      - label: MEGA!
+        value: x300
+      - label: Best partner page
+        value: Automation
+    related:
+      - automation
+      - achievements
+    relations:
+      - pageId: automation
+        type: related
+      - pageId: achievements
+        type: related
+    assetType: checklist
+    sources:
+      - type: official
+        title: Project P.I.T.T. Steam store page
+        url: https://store.steampowered.com/app/4026250/Project_PITT/
+      - type: other
+        title: Exophase achievement index — combo milestones
+        url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
+      - type: steam
+        title: Steam Community automation discussion
+        url: https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/
+    changeSummary: Initial V1 page connecting combo milestones to recoverable factory routing.
+
+routes:
+  - id: hidden-progression
+    eyebrow: Progression Route
+    title: Complete Hidden Progression
+    description: Follow the fuse box, weight gate, and achievement handoffs in the order players usually need them.
+    fastAnswers:
+      - question: What should I do after the fuses?
+        answer: Check the 200kg plate and treat the later pipe as a separate gate.
+        pageId: 200kg-plate
+      - question: Where are all the achievement requirements?
+        answer: Use the 23-achievement checklist, with hidden descriptions clearly marked.
+        pageId: achievements
+    pages:
+      - up-achievement-fuses
+      - 200kg-plate
+      - achievements
+  - id: factory-optimization
+    eyebrow: Factory Route
+    title: Build Reliable Automation
+    description: Start with a controllable lane, then use it to protect long combo attempts.
+    fastAnswers:
+      - question: How should I start automating?
+        answer: Test one product through one short, visible lane before scaling it.
+        pageId: automation
+      - question: Why does my combo keep breaking?
+        answer: Find the first jam or missed receiver, then simplify the lane before adding throughput.
+        pageId: x300-combo
+    pages:
+      - automation
+      - x300-combo
+  - id: completion
+    eyebrow: Completion Route
+    title: Work Toward 100%
+    description: A compact completion path through the four V1 problem pages.
+    pages:
+      - achievements
+      - up-achievement-fuses
+      - 200kg-plate
+      - x300-combo
+
+homepage:
+  primaryCta:
+    label: Start with Hidden Progression
+    pageId: up-achievement-fuses
+  secondaryCta:
+    label: Browse all guides
+    anchor: browse-guides
+  statusItems:
+    - label: Released
+      value: August 19, 2026
+    - label: Platform
+      value: PC (Steam)
+    - label: Focus
+      value: Answer-first guides
+  popularQuestions:
+    - label: How do I complete the UP? achievement?
+      pageId: up-achievement-fuses
+    - label: How do I get 200 kg onto the plate?
+      pageId: 200kg-plate
+    - label: How do panels work in Project P.I.T.T.?
+      pageId: automation
+    - label: How do I automate production?
+      pageId: automation
+    - label: How do I reach a x300 combo?
+      pageId: x300-combo
+  startHere:
+    - pageId: up-achievement-fuses
+      label: Hidden progression
+      badge: Start here
+    - pageId: 200kg-plate
+      label: Progression gate
+    - pageId: automation
+      label: Factory systems
+    - pageId: achievements
+      label: Completion
+
+assets: []
+
+trust:
+  enabled: true
+  about:
+    enabled: true
+    source: site-input/trust/about.md
+  editorialMethod:
+    enabled: true
+    source: site-input/trust/editorial-method.md
+  privacy:
+    enabled: true
+    source: site-input/trust/privacy.md
+
+analytics:
+  enabled: false
