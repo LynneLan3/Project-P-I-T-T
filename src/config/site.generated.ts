@@ -60,6 +60,14 @@ export const siteConfig: GameConfig = {
 				href: "/200kg-plate/",
 			},
 			{
+				label: "Why is the Percentage Pipe stuck at 0%?",
+				href: "/percentage-pipe/",
+			},
+			{
+				label: "What does END? mean?",
+				href: "/secret-ending/",
+			},
+			{
 				label: "How do panels work in Project P.I.T.T.?",
 				href: "/automation/",
 			},
@@ -74,33 +82,31 @@ export const siteConfig: GameConfig = {
 		],
 		startHere: [
 			{
-				title: "How to Get the UP? Achievement and Place the Fuses",
-				description: "A careful guide to the three-fuse box, the UP? achievement, and what to check when a fuse or the next gate appears stuck.",
+				title: "Project P.I.T.T. Fuses Guide — Fuse Box, 3 Fuses & UP?",
+				description: "A careful Project P.I.T.T. guide to the three-fuse box, the UP? progression, evidence limits on fuse locations, and the 200kg next step.",
 				href: "/up-achievement-fuses/",
 				image: "gameplay/fuses.jpg",
-				label: "Hidden progression",
+				label: "Find the 3 Fuses",
 				badge: "Start here",
 			},
 			{
-				title: "Project P.I.T.T. 200kg Plate Guide",
-				description: "What the 200kg plate does, what can be used as weight, and what to check when the pipe or gate does not advance.",
+				title: "Project P.I.T.T. 200kg Scale Guide — How to Reach 200 kg & What to Do Next",
+				description: "How to reach 200 kilograms on the Project P.I.T.T. scale, use stable mass, and continue into the Percentage Pipe progression.",
 				href: "/200kg-plate/",
 				image: "gameplay/plate.jpg",
-				label: "Progression gate",
+				label: "Reach 200kg",
 			},
 			{
-				title: "Project P.I.T.T. Automation: Panels, Fans, and Routing",
-				description: "How to make panels, fans, magnets, pistons, and launchers behave like a reliable production lane without prescribing one best build.",
-				href: "/automation/",
-				image: "gameplay/automation.jpg",
-				label: "Factory systems",
+				title: "Project P.I.T.T. Percentage Pipe Guide — Why It Stays at 0%",
+				description: "Why ordinary ducks leave the Project P.I.T.T. Percentage Pipe at 0%, what progression follows 200kg, and how the pipe connects to the Secret Ending route.",
+				href: "/percentage-pipe/",
+				label: "Percentage Pipe stuck at 0%?",
 			},
 			{
-				title: "Project P.I.T.T. Achievements",
-				description: "All 23 Project P.I.T.T. Steam achievements, with public descriptions separated from hidden requirements.",
-				href: "/achievements/",
-				image: "gameplay/achievements.jpg",
-				label: "Completion",
+				title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
+				description: "What END? means, how the Project P.I.T.T. Secret Ending route connects to the earlier progression, and why elevator codes may be save-specific.",
+				href: "/secret-ending/",
+				label: "Find the Secret Ending",
 			},
 		],
 		evidence: {
@@ -206,6 +212,10 @@ export const siteConfig: GameConfig = {
 					type: "next-step",
 				},
 				{
+					pageId: "percentage-pipe",
+					type: "related",
+				},
+				{
 					pageId: "achievements",
 					type: "related",
 				},
@@ -235,10 +245,14 @@ export const siteConfig: GameConfig = {
 			slug: "200kg-plate",
 			role: "core",
 			assetType: "article",
-			intents: ["project-pitt-200kg-plate", "project-pitt-heavy-achievement", "project-pitt-pipe-gate"],
+			intents: ["project-pitt-200kg-plate", "project-pitt-200kg", "project-pitt-200-kg", "project-pitt-200kg-scale", "project-pitt-heavy-achievement", "project-pitt-pipe-gate"],
 			relations: [
 				{
 					pageId: "automation",
+					type: "related",
+				},
+				{
+					pageId: "percentage-pipe",
 					type: "next-step",
 				},
 				{
@@ -256,6 +270,82 @@ export const siteConfig: GameConfig = {
 					type: "other",
 					title: "Exophase achievement index — HEAVY? and OPEN?",
 					url: "https://www.exophase.com/game/project-p-i-t-t-steam/achievements/",
+				},
+				{
+					type: "official",
+					title: "Project P.I.T.T. Steam store page",
+					url: "https://store.steampowered.com/app/4026250/Project_PITT/",
+				},
+			],
+			evidence: [
+			],
+		},
+		{
+			id: "percentage-pipe",
+			slug: "percentage-pipe",
+			role: "core",
+			assetType: "article",
+			intents: ["project-pitt-percentage-pipe", "project-pitt-pipe-0-percent", "project-pitt-what-to-put-in-pipe"],
+			relations: [
+				{
+					pageId: "200kg-plate",
+					type: "related",
+				},
+				{
+					pageId: "secret-ending",
+					type: "next-step",
+				},
+			],
+			sources: [
+				{
+					type: "steam",
+					title: "Steam Community discussion — 200kg pad and pipe progression",
+					url: "https://steamcommunity.com/app/4026250/discussions/0/562534659773264624/",
+				},
+				{
+					type: "steam",
+					title: "Steam Community developer FAQ and updates",
+					url: "https://steamcommunity.com/app/4026250/",
+				},
+				{
+					type: "official",
+					title: "Project P.I.T.T. Steam store page",
+					url: "https://store.steampowered.com/app/4026250/Project_PITT/",
+				},
+			],
+			evidence: [
+			],
+		},
+		{
+			id: "secret-ending",
+			slug: "secret-ending",
+			role: "core",
+			assetType: "article",
+			intents: ["project-pitt-secret-ending", "project-pitt-ending", "project-pitt-end-question", "project-pitt-elevator-code"],
+			relations: [
+				{
+					pageId: "percentage-pipe",
+					type: "next-step",
+				},
+				{
+					pageId: "up-achievement-fuses",
+					type: "related",
+				},
+				{
+					pageId: "200kg-plate",
+					type: "related",
+				},
+			],
+			sources: [
+				{
+					type: "other",
+					title: "Exophase achievement index — END? and END!",
+					url: "https://www.exophase.com/game/project-p-i-t-t-steam/achievements/",
+				},
+				{
+					type: "steam",
+					title: "Steam Community discussions and full-release player reports",
+					url: "https://steamcommunity.com/app/4026250/",
 				},
 				{
 					type: "official",
@@ -355,18 +445,32 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "up-achievement-fuses",
 					href: "/up-achievement-fuses/",
-					title: "How to Get the UP? Achievement and Place the Fuses",
-					description: "A careful guide to the three-fuse box, the UP? achievement, and what to check when a fuse or the next gate appears stuck.",
+					title: "Project P.I.T.T. Fuses Guide — Fuse Box, 3 Fuses & UP?",
+					description: "A careful Project P.I.T.T. guide to the three-fuse box, the UP? progression, evidence limits on fuse locations, and the 200kg next step.",
 					eyebrow: "Hidden Progression",
 					image: "gameplay/fuses.jpg",
 				},
 				{
 					pageId: "200kg-plate",
 					href: "/200kg-plate/",
-					title: "Project P.I.T.T. 200kg Plate Guide",
-					description: "What the 200kg plate does, what can be used as weight, and what to check when the pipe or gate does not advance.",
+					title: "Project P.I.T.T. 200kg Scale Guide — How to Reach 200 kg & What to Do Next",
+					description: "How to reach 200 kilograms on the Project P.I.T.T. scale, use stable mass, and continue into the Percentage Pipe progression.",
 					eyebrow: "Progression Gate",
 					image: "gameplay/plate.jpg",
+				},
+				{
+					pageId: "percentage-pipe",
+					href: "/percentage-pipe/",
+					title: "Project P.I.T.T. Percentage Pipe Guide — Why It Stays at 0%",
+					description: "Why ordinary ducks leave the Project P.I.T.T. Percentage Pipe at 0%, what progression follows 200kg, and how the pipe connects to the Secret Ending route.",
+					eyebrow: "Percentage Pipe",
+				},
+				{
+					pageId: "secret-ending",
+					href: "/secret-ending/",
+					title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
+					description: "What END? means, how the Project P.I.T.T. Secret Ending route connects to the earlier progression, and why elevator codes may be save-specific.",
+					eyebrow: "Secret Ending",
 				},
 				{
 					pageId: "achievements",
@@ -380,7 +484,7 @@ export const siteConfig: GameConfig = {
 			fastAnswers: [
 				{
 					question: "What should I do after the fuses?",
-					answer: "Check the 200kg plate and treat the later pipe as a separate gate.",
+					answer: "Check the 200kg plate, then continue into the separate Percentage Pipe progression.",
 					pageId: "200kg-plate",
 					href: "/200kg-plate/",
 				},
@@ -436,7 +540,7 @@ export const siteConfig: GameConfig = {
 			id: "completion",
 			eyebrow: "Completion Route",
 			title: "Work Toward 100%",
-			description: "A compact completion path through the four V1 problem pages.",
+			description: "A compact completion path through the progression questions now producing launch-window search demand.",
 			href: "/routes/completion/",
 			visual: "gameplay/combo.jpg",
 			pages: [
@@ -451,18 +555,32 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "up-achievement-fuses",
 					href: "/up-achievement-fuses/",
-					title: "How to Get the UP? Achievement and Place the Fuses",
-					description: "A careful guide to the three-fuse box, the UP? achievement, and what to check when a fuse or the next gate appears stuck.",
+					title: "Project P.I.T.T. Fuses Guide — Fuse Box, 3 Fuses & UP?",
+					description: "A careful Project P.I.T.T. guide to the three-fuse box, the UP? progression, evidence limits on fuse locations, and the 200kg next step.",
 					eyebrow: "Hidden Progression",
 					image: "gameplay/fuses.jpg",
 				},
 				{
 					pageId: "200kg-plate",
 					href: "/200kg-plate/",
-					title: "Project P.I.T.T. 200kg Plate Guide",
-					description: "What the 200kg plate does, what can be used as weight, and what to check when the pipe or gate does not advance.",
+					title: "Project P.I.T.T. 200kg Scale Guide — How to Reach 200 kg & What to Do Next",
+					description: "How to reach 200 kilograms on the Project P.I.T.T. scale, use stable mass, and continue into the Percentage Pipe progression.",
 					eyebrow: "Progression Gate",
 					image: "gameplay/plate.jpg",
+				},
+				{
+					pageId: "percentage-pipe",
+					href: "/percentage-pipe/",
+					title: "Project P.I.T.T. Percentage Pipe Guide — Why It Stays at 0%",
+					description: "Why ordinary ducks leave the Project P.I.T.T. Percentage Pipe at 0%, what progression follows 200kg, and how the pipe connects to the Secret Ending route.",
+					eyebrow: "Percentage Pipe",
+				},
+				{
+					pageId: "secret-ending",
+					href: "/secret-ending/",
+					title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
+					description: "What END? means, how the Project P.I.T.T. Secret Ending route connects to the earlier progression, and why elevator codes may be save-specific.",
+					eyebrow: "Secret Ending",
 				},
 				{
 					pageId: "x300-combo",

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "templateVersion": "2.0.0",
   "generatorVersion": "1.0.0",
-  "specHash": "40e44ea84d693316e731949a6a79cf6c532158b6ffd5f8dc4e9ff57afe8e06a4",
+  "specHash": "82b5a78cdbe098e9a86e9fa481858fd626ec7fafc93ac8040728d6dc2b5a725a",
   "siteId": "project-p-i-t-t",
   "createdFromSpec": "site-spec.yaml",
   "managedFiles": [
@@ -53,7 +53,7 @@
     },
     {
       "path": "src/config/site.generated.ts",
-      "sha256": "01206f17258f36943fb5c853f2c2a39920ac737c3179b43d0f1e368462337c94",
+      "sha256": "467ed5312e51734dd440d9e1541aea6fb9d34192a8ed8a977a93f391b60b8ba0",
       "kind": "config"
     },
     {
@@ -78,12 +78,22 @@
     },
     {
       "path": "src/content/docs/progression-secrets/200kg-plate.md",
-      "sha256": "09016a42f04e6347a033d4bc9c8b298a5fff8b4e2d93f88d23c3e0b8a497661e",
+      "sha256": "fbe11aaed4f4b05b4e038ed89b4322656ece8909cdef240a7536c5fc5e36b3b5",
+      "kind": "page"
+    },
+    {
+      "path": "src/content/docs/progression-secrets/percentage-pipe.md",
+      "sha256": "c161c128aff2c25bac403933ab5482b6cd7115969c015d8b536aa57d3f9ba4b1",
+      "kind": "page"
+    },
+    {
+      "path": "src/content/docs/progression-secrets/secret-ending.md",
+      "sha256": "d10e021a78b98e72ee18338c46622be87ef4f661e8d99d230b1ac69bea42d6df",
       "kind": "page"
     },
     {
       "path": "src/content/docs/progression-secrets/up-achievement-fuses.md",
-      "sha256": "f6c3a478491f3ffe7d4a4725422c11a83f67f6f5709f6ecefe4919c836ebbdac",
+      "sha256": "a9c6eb16491ab65237c6fe588afcff8223881788b01427b08c53266b0c8a3bde",
       "kind": "page"
     },
     {

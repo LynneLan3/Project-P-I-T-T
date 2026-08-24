@@ -110,8 +110,8 @@ pages:
     changeSummary: Initial V1 page from the full-release Steam achievement list.
 
   - id: up-achievement-fuses
-    title: How to Get the UP? Achievement and Place the Fuses
-    description: A careful guide to the three-fuse box, the UP? achievement, and what to check when a fuse or the next gate appears stuck.
+    title: Project P.I.T.T. Fuses Guide — Fuse Box, 3 Fuses & UP?
+    description: A careful Project P.I.T.T. guide to the three-fuse box, the UP? progression, evidence limits on fuse locations, and the 200kg next step.
     category: progression-secrets
     slug: up-achievement-fuses
     source: site-input/pages/up-achievement-fuses.md
@@ -123,7 +123,7 @@ pages:
       - project-pitt-up-achievement
       - project-pitt-fuses
       - find-and-place-all-fuses
-    quickAnswer: Find all three fuses, bring them to the fuse box on the upper catwalk, and place each one into an empty socket. Steam lists UP? as “Find and place all fuses”; the box and three-socket detail are supported by the developer/community Steam discussion record.
+    quickAnswer: The Fuse Box requires three fuses. Place all three to complete the UP? progression, then continue toward the 200kg stage; exact individual fuse coordinates are not confirmed by the available evidence.
     eyebrow: Hidden Progression
     facts:
       - label: Achievement
@@ -137,10 +137,13 @@ pages:
     coverAssetId: pitt-screenshot-fuses
     related:
       - 200kg-plate
+      - percentage-pipe
       - achievements
     relations:
       - pageId: 200kg-plate
         type: next-step
+      - pageId: percentage-pipe
+        type: related
       - pageId: achievements
         type: related
     assetType: checklist
@@ -154,11 +157,11 @@ pages:
       - type: other
         title: Exophase achievement index — UP?
         url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
-    changeSummary: Initial V1 page with evidence labels for community-reported recovery steps.
+    changeSummary: Updated for the launch-window fuse-box search signal with a strict no-invented-coordinates evidence boundary.
 
   - id: 200kg-plate
-    title: Project P.I.T.T. 200kg Plate Guide
-    description: What the 200kg plate does, what can be used as weight, and what to check when the pipe or gate does not advance.
+    title: Project P.I.T.T. 200kg Scale Guide — How to Reach 200 kg & What to Do Next
+    description: How to reach 200 kilograms on the Project P.I.T.T. scale, use stable mass, and continue into the Percentage Pipe progression.
     category: progression-secrets
     slug: 200kg-plate
     source: site-input/pages/200kg-plate.md
@@ -168,9 +171,12 @@ pages:
     role: core
     intents:
       - project-pitt-200kg-plate
+      - project-pitt-200kg
+      - project-pitt-200-kg
+      - project-pitt-200kg-scale
       - project-pitt-heavy-achievement
       - project-pitt-pipe-gate
-    quickAnswer: "The HEAVY? checkpoint needs 200 kg on the weighing plate. Use stable heavy objects or a contained pile, then treat the newly opened pipe or gate as a separate progression step: raw ducks may not move its percentage."
+    quickAnswer: "The HEAVY? checkpoint needs 200 kg of mass on the weighing plate, not 200 objects. Use stable heavy objects or a contained load, then continue to the separate Percentage Pipe progression."
     eyebrow: Progression Gate
     facts:
       - label: Requirement
@@ -180,14 +186,17 @@ pages:
       - label: Main risk
         value: Loose physics objects
       - label: Afterward
-        value: Check the opened gate or pipe
+        value: Continue to Percentage Pipe
     coverAssetId: pitt-screenshot-plate
     related:
       - up-achievement-fuses
+      - percentage-pipe
       - automation
       - achievements
     relations:
       - pageId: automation
+        type: related
+      - pageId: percentage-pipe
         type: next-step
       - pageId: achievements
         type: related
@@ -202,7 +211,104 @@ pages:
       - type: official
         title: Project P.I.T.T. Steam store page
         url: https://store.steampowered.com/app/4026250/Project_PITT/
-    changeSummary: Initial V1 page separating the weight requirement from later pipe progression.
+    changeSummary: Updated for the launch-window 200kg query with direct next-step capture into Percentage Pipe.
+
+  - id: percentage-pipe
+    title: Project P.I.T.T. Percentage Pipe Guide — Why It Stays at 0%
+    description: Why ordinary ducks leave the Project P.I.T.T. Percentage Pipe at 0%, what progression follows 200kg, and how the pipe connects to the Secret Ending route.
+    category: progression-secrets
+    slug: percentage-pipe
+    source: site-input/pages/percentage-pipe.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 3
+    role: core
+    intents:
+      - project-pitt-percentage-pipe
+      - project-pitt-pipe-0-percent
+      - project-pitt-what-to-put-in-pipe
+    quickAnswer: Basic ducks are not the right input for the post-200kg Percentage Pipe. Continue the production progression until you can feed later-stage or assembled products, then follow the connected Secret Ending route.
+    eyebrow: Percentage Pipe
+    facts:
+      - label: Common display
+        value: 0%
+      - label: Wrong input
+        value: Basic ducks
+      - label: Next direction
+        value: Later or assembled products
+      - label: Connected route
+        value: Secret Ending
+    related:
+      - 200kg-plate
+      - secret-ending
+      - up-achievement-fuses
+    relations:
+      - pageId: 200kg-plate
+        type: related
+      - pageId: secret-ending
+        type: next-step
+    assetType: article
+    sources:
+      - type: steam
+        title: Steam Community discussion — 200kg pad and pipe progression
+        url: https://steamcommunity.com/app/4026250/discussions/0/562534659773264624/
+      - type: steam
+        title: Steam Community developer FAQ and updates
+        url: https://steamcommunity.com/app/4026250/
+      - type: official
+        title: Project P.I.T.T. Steam store page
+        url: https://store.steampowered.com/app/4026250/Project_PITT/
+    changeSummary: New launch-window page for the post-200kg Percentage Pipe question, with old Demo guidance clearly separated.
+
+  - id: secret-ending
+    title: Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route
+    description: What END? means, how the Project P.I.T.T. Secret Ending route connects to the earlier progression, and why elevator codes may be save-specific.
+    category: progression-secrets
+    slug: secret-ending
+    source: site-input/pages/secret-ending.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 4
+    role: core
+    intents:
+      - project-pitt-secret-ending
+      - project-pitt-ending
+      - project-pitt-end-question
+      - project-pitt-elevator-code
+    quickAnswer: END? is the Secret Ending route. Follow the progression from surveillance and Mystery Boxes through three Fuses, 200kg, Percentage Pipe, later production or minigame stages, UV clues, and elevator access; do not assume one universal elevator code.
+    eyebrow: Secret Ending
+    facts:
+      - label: Achievement
+        value: END?
+      - label: Route starts with
+        value: Surveillance progression
+      - label: Key warning
+        value: Code may be save-specific
+      - label: Earlier gates
+        value: 3 Fuses and 200kg
+    related:
+      - percentage-pipe
+      - up-achievement-fuses
+      - 200kg-plate
+    relations:
+      - pageId: percentage-pipe
+        type: next-step
+      - pageId: up-achievement-fuses
+        type: related
+      - pageId: 200kg-plate
+        type: related
+    assetType: article
+    sources:
+      - type: other
+        title: Exophase achievement index — END? and END!
+        url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
+      - type: steam
+        title: Steam Community discussions and full-release player reports
+        url: https://steamcommunity.com/app/4026250/
+      - type: official
+        title: Project P.I.T.T. Steam store page
+        url: https://store.steampowered.com/app/4026250/Project_PITT/
+    changeSummary: New launch-window page for the END? Secret Ending query, preserving save-specific-code and route-evidence boundaries.
 
   - id: automation
     title: "Project P.I.T.T. Automation: Panels, Fans, and Routing"
@@ -309,7 +415,7 @@ routes:
     visualAssetId: pitt-screenshot-fuses
     fastAnswers:
       - question: What should I do after the fuses?
-        answer: Check the 200kg plate and treat the later pipe as a separate gate.
+        answer: Check the 200kg plate, then continue into the separate Percentage Pipe progression.
         pageId: 200kg-plate
       - question: Where are all the achievement requirements?
         answer: Use the 23-achievement checklist, with hidden descriptions clearly marked.
@@ -317,6 +423,8 @@ routes:
     pages:
       - up-achievement-fuses
       - 200kg-plate
+      - percentage-pipe
+      - secret-ending
       - achievements
   - id: factory-optimization
     eyebrow: Factory Route
@@ -336,12 +444,14 @@ routes:
   - id: completion
     eyebrow: Completion Route
     title: Work Toward 100%
-    description: A compact completion path through the four V1 problem pages.
+    description: A compact completion path through the progression questions now producing launch-window search demand.
     visualAssetId: pitt-screenshot-combo
     pages:
       - achievements
       - up-achievement-fuses
       - 200kg-plate
+      - percentage-pipe
+      - secret-ending
       - x300-combo
 
 homepage:
@@ -363,6 +473,10 @@ homepage:
       pageId: up-achievement-fuses
     - label: How do I get 200 kg onto the plate?
       pageId: 200kg-plate
+    - label: Why is the Percentage Pipe stuck at 0%?
+      pageId: percentage-pipe
+    - label: What does END? mean?
+      pageId: secret-ending
     - label: How do panels work in Project P.I.T.T.?
       pageId: automation
     - label: How do I automate production?
@@ -371,14 +485,14 @@ homepage:
       pageId: x300-combo
   startHere:
     - pageId: up-achievement-fuses
-      label: Hidden progression
+      label: Find the 3 Fuses
       badge: Start here
     - pageId: 200kg-plate
-      label: Progression gate
-    - pageId: automation
-      label: Factory systems
-    - pageId: achievements
-      label: Completion
+      label: Reach 200kg
+    - pageId: percentage-pipe
+      label: Percentage Pipe stuck at 0%?
+    - pageId: secret-ending
+      label: Find the Secret Ending
 
   evidence:
     title: See the facility in action

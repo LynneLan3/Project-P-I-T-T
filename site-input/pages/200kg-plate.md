@@ -1,40 +1,64 @@
-## How do I get 200 kg onto the plate?
+## Direct Answer
 
-Reach the weighing plate and make its total reach **200 kg**. The achievement index labels this checkpoint **HEAVY?**. In practice, use objects that stay on the plate and build the pile in a controlled way; loose physics items can slide, bounce, or spill before the game counts the target.
+- The **HEAVY?** checkpoint requires 200 kilograms of mass on the weighing plate, not 200 items. The plate measures total mass.
+- Completing the Fuse Box progression is an important prerequisite before you can reliably do the 200kg step.
+- After the plate reaches 200kg you continue into the Percentage Pipe progression — 200kg is a gate, not the end of the run.
 
-## What can I use as weight?
+### Already reached 200kg?
 
-Use the heaviest stable objects currently available to your save. Community reports mention gambling crates, bumpers, remotes, or a container holding several objects as workable candidates, but these are not an official “required items” list. The reliable rule is: choose mass and containment over a tall, unstable tower of ducks.
+If your plate hit 200kg and you are wondering what to do next, proceed into [the Percentage Pipe Guide]({{page:percentage-pipe}}).
 
-If a pile is close to the edge, rebuild it lower and wider. Leave yourself a clear path to retrieve a misplaced object and keep the plate visible while testing.
+## Quick Steps
 
-## The counter reached 200 kg. What opens?
+1. Finish the Fuse Box progression first; the fuse stage comes before the scale.
+2. Gather heavy, stable objects or a contained load that will stay on the plate.
+3. Place the load centrally and ensure it will not topple or roll off.
+4. If objects slide, use bumpers, remotes, or a container to keep them in place.
+5. Watch the plate readout. When it reaches 200kg, move forward into the Percentage Pipe progression.
 
-The weight step is a progression trigger, not necessarily the final purpose of the nearby pipe. After the plate registers the threshold:
+## Prerequisites or What You Need
 
-1. Watch for the newly available gate, grate, chute, or route.
-2. Walk the immediate area and interact with the object that changed state.
-3. Read the destination’s own counter or percentage before feeding more products.
-4. If the pipe remains at zero, return later with the product or phase that the pipe expects. A raw duck entering the opening does not prove that the correct input was accepted.
+- Completed Fuse Box progression: the fuse step comes before the scale checkpoint.
+- Heavy, stable mass: current full-release community findings indicate contained piles or heavy single objects are more reliable than many loose items.
+- Tools players commonly use, reported by the community but not mandatory: Gambling Crates, bumpers, remotes, and loaded containers to move and keep weight on the plate.
 
-This distinction comes from the most common Steam Discussion question about the 0/200kg pad: reaching the weight and advancing the demo/full-game pipe are two different checks.
+## Full Explanation
 
-## Why is the plate not counting my pile?
+### Mass, not count
 
-Try these checks:
+The plate checks total kilograms. A stack of many light objects can still be far below 200kg.
 
-- Confirm the object is actually over the weighing surface, not resting on a nearby panel or lip.
-- Remove moving fans, magnets, or launchers from the plate while measuring.
-- Use fewer, heavier objects if a loose pile keeps bouncing away.
-- Step away and let the physics settle before deciding the counter is stuck.
-- Reload only after checking whether an object fell below the platform.
+### Why some items work better
 
-Do not build a permanent factory on the plate. It is easier to verify the trigger when the weighing area is isolated from your production lane.
+Heavy, compact objects, or a container filled with weight, are easier to place and keep on the plate than dozens of loose items. A contained pile resists scattering from physics jitter.
 
-## What comes after the 200kg gate?
+### Using community solutions safely
 
-If the gate is open, continue with the product-routing problem rather than repeating the weigh-in. [Automation]({{page:automation}}) covers panels, movers, and jam recovery. For completion, return to [the achievements checklist]({{page:achievements}}) and review **HEAVY?** and **OPEN?** as separate entries.
+Players consistently report success using crates or containers to hold mass, and using bumpers or remotes to push a load onto the plate and keep it centered. These are common approaches reported by the community, not an official required list.
 
-### Next question
+### Fuse relationship
 
-If your production line keeps breaking before the next gate, read [how panels and movers form a reliable lane]({{page:automation}}).
+The Fuse Box progression must be completed earlier; bypassing or skipping the fuse stage can block the scale progression.
+
+### After the weigh-in
+
+The plate unlocks the next progression gate. The next stage is the Percentage Pipe progression; the pipe's percentage check is separate from the weigh-in.
+
+## Common Mistakes
+
+- Thinking “200” means 200 objects. The plate checks kilograms, not item count.
+- Tossing lots of loose ducks or tall stacks onto the plate. Loose physics objects can topple or slide off, making this inefficient.
+- Feeding raw ducks into the next pipe and expecting that to be the percentage input. The Percentage Pipe is a separate progression, and raw ducks are not a guaranteed correct input.
+- Placing weight in an unstable pile so it slips off before the threshold registers.
+- Trying before finishing the Fuse Box progression.
+
+## What To Do Next
+
+- If you have not yet, complete the Fuse Box progression: see [the Fuse Box guide]({{page:up-achievement-fuses}}).
+- After you reach 200kg, continue to the Percentage Pipe progression. For detailed next steps, see [the Percentage Pipe Guide]({{page:percentage-pipe}}).
+- If you are stuck, try fewer, heavier items or put mass into a container so it stays on the plate.
+
+## Related Guides
+
+- [the Fuse Box guide]({{page:up-achievement-fuses}}) — complete this before the scale.
+- [the Percentage Pipe Guide]({{page:percentage-pipe}}) — the progression that follows the 200kg checkpoint.

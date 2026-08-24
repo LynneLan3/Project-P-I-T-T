@@ -1,6 +1,6 @@
 ---
-title: "How to Get the UP? Achievement and Place the Fuses"
-description: "A careful guide to the three-fuse box, the UP? achievement, and what to check when a fuse or the next gate appears stuck."
+title: "Project P.I.T.T. Fuses Guide — Fuse Box, 3 Fuses & UP?"
+description: "A careful Project P.I.T.T. guide to the three-fuse box, the UP? progression, evidence limits on fuse locations, and the 200kg next step."
 category: progression-secrets
 slug: up-achievement-fuses
 status: confirmed
@@ -13,14 +13,18 @@ intents:
   - project-pitt-up-achievement
   - project-pitt-fuses
   - find-and-place-all-fuses
-quickAnswer: "Find all three fuses, bring them to the fuse box on the upper catwalk, and place each one into an empty socket. Steam lists UP? as “Find and place all fuses”; the box and three-socket detail are supported by the developer/community Steam discussion record."
+quickAnswer: "The Fuse Box requires three fuses. Place all three to complete the UP? progression, then continue toward the 200kg stage; exact individual fuse coordinates are not confirmed by the available evidence."
 related:
   - 200kg-plate
+  - percentage-pipe
   - achievements
 relations:
   -
     slug: 200kg-plate
     type: next-step
+  -
+    slug: percentage-pipe
+    type: related
   -
     slug: achievements
     type: related
@@ -38,7 +42,7 @@ sources:
     title: "Exophase achievement index — UP?"
     url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
 cover: ../../../assets/gameplay/fuses.jpg
-changeSummary: Initial V1 page with evidence labels for community-reported recovery steps.
+changeSummary: Updated for the launch-window fuse-box search signal with a strict no-invented-coordinates evidence boundary.
 eyebrow: Hidden Progression
 facts:
   -
@@ -60,38 +64,63 @@ facts:
   Run npm run site:generate instead.
   Source: site-input/pages/up-achievement-fuses.md
 -->
-## How do I complete the UP? achievement?
+## Direct Answer
 
-Find all **three fuses**, carry them to the fuse box on the upper catwalk, and place one fuse into each empty socket. Exophase indexes the achievement text as “Find and place all fuses”; the three-socket box is also described in a Steam Community discussion.
+The Fuse Box in the full release has three fuse sockets. You must find and place all three fuses to complete that Fuse progression — completing it is an important prerequisite for the later 200kg stage. Current full-release community findings indicate the text/marker **UP?** is associated with finding and placing all fuses, but that should be treated as a player-observed index rather than official developer documentation.
 
-This page keeps the evidence boundary visible: the locations below are practical search guidance from Steam player reports, not a developer-published room-by-room walkthrough.
+## Quick Steps
 
-## Where is the fuse box?
+1. Locate the Fuse Box, which visibly accepts three fuses.
+2. Search the accessible progression areas methodically for three fuses.
+3. Place each fuse into the box; the fuse count should increase as you insert them.
+4. When all three are placed, the Fuse progression is complete and you can continue toward the 200kg stage.
 
-Look for the fuse box on the upper catwalk / top-of-map route. Player reports describe a box with three fuse slots. If you have reached the catwalk but cannot see the sockets, search around the lit upper structure instead of trying to feed products into the nearby pipe.
+## Prerequisites or What You Need
 
-## How do I find and place the fuses?
+- Access to the area that contains the Fuse Box.
+- Three fuses to insert; the progression requires three.
+- This guide uses full-release findings; the puzzle itself appeared in the Demo, but behavior may have changed.
 
-1. Search the upper routes for the loose fuse objects before building a large factory around the area.
-2. Carry each fuse back to the box. Do not assume a fuse disappears permanently if you drop it; first check the floor, ledges, and the path where it was thrown.
-3. Aim at an empty socket and use the normal interact / place action. Repeat until all three slots are filled.
-4. Wait for the state change, then leave the box and check the next progression object. **UP?** is the fuse task; the 200kg plate is a separate next question.
+## Full Explanation
 
-## A fuse fell, vanished, or will not insert. What now?
+### What the Fuse Box is
 
-Use the least destructive recovery loop first:
+It is a progression device with three socket slots. The supplied full-release evidence supports three required fuses.
 
-- Move back to the last stable room and reload only if the object is truly missing.
-- Check the socket itself and the ground below the catwalk; physics objects can land lower than expected.
-- Avoid stuffing the fuse into a product chute or pipe while testing. The fuse belongs in a socket, not in the feeding route.
-- If the game still will not accept it, update the game and use the pause-menu recovery option if available. The developer has previously documented fixes for fuses that could not be retrieved and added more visual clues around the fuse task.
+### How to confirm you are on the right progression
 
-Those recovery notes come from the Steam Community developer FAQ / update record. They are not a guarantee that every current save issue has the same cause.
+Approach the Fuse Box and verify that it accepts up to three fuses. Players consistently report that placing fuses updates the box and that the **UP?** index is tied to the finding-and-placing step. Completing all three is reported as necessary before the later 200kg content becomes available.
 
-## What should I do after UP??
+### Why it matters
 
-Go to [the 200kg plate](/200kg-plate/). The achievement list and the player reports both separate the fuse box from the later weight gate. If the plate opens a pipe or gate but its progress stays at zero, do not keep dumping raw ducks into it indefinitely; treat that as a new gate and check [how automation routes products](/automation/).
+Successful completion of this Fuse progression is an important prerequisite for the subsequent 200kg stage. If you have not completed it, that later step may remain blocked.
 
-### Next question
+### Location reporting
 
-The fuses are in, but the next object still looks dead. Read [the 200kg plate and pipe guide](/200kg-plate/).
+There is not enough reliable evidence to publish an exact room-by-room list of all three fuse locations for the full release. Community posts vary, so do not rely on coordinate lists that are not backed by multiple confirmations.
+
+## Common Mistakes
+
+- Assuming there are more than three fuses. The box has three sockets.
+- Treating Demo-era notes as exact for the Full Release. Follow full-release reports instead.
+- Expecting a single definitive all-coordinates list. Evidence is incomplete; avoid guides claiming exact positions for every run.
+- Believing a dropped fuse is always permanently retrievable. Earlier developer/community discussion noted cases where a fuse could fall into a problematic spot; there is no universal guaranteed recovery.
+
+### Safe search and recovery checks
+
+- Sweep the immediate area and directly below platforms and ledges where physics objects can fall.
+- Backtrack along recent routes; some items may be dislodged into adjacent spaces.
+- If a fuse remains missing, use the recovery options currently available in your save before hunting for alternate routes.
+- If none of those checks help, consult area-specific community reports. Do not expect a single fix that works in all situations.
+
+## What To Do Next
+
+After you have placed all three fuses and confirmed the box shows them placed, proceed to the content gated by that progression: the 200kg stage. If you are stuck because a fuse appears missing, use the conservative recovery checks above before hunting for alternate routes.
+
+## Related Guides
+
+- [the 200kg Guide](/200kg-plate/)
+
+### Finished all 3 fuses?
+
+[the 200kg Guide](/200kg-plate/)
