@@ -108,6 +108,7 @@ function ensureInsideRoot(rootDir: string, absolutePath: string, field: string):
 }
 
 function yamlQuote(value: string): string {
+	if (value.includes(': ')) return JSON.stringify(value);
 	if (/^[A-Za-z0-9 _./:-]+$/.test(value) && !/^[-?]/.test(value) && value !== '') {
 		return value;
 	}

@@ -1,69 +1,3 @@
----
-title: "Project P.I.T.T. Achievements Guide: Complete 23-Achievement Checklist"
-description: "Project P.I.T.T. has 23 Steam achievements, with public and hidden descriptions kept separate plus timing advice for completion before the ending."
-category: achievements
-slug: achievements
-status: confirmed
-featured: true
-role: core
-assetType: checklist
-sidebar:
-  order: 1
-intents:
-  - project-pitt-achievements
-  - steam-achievements
-  - 100-percent-completion
-quickAnswer: "Project P.I.T.T. has 23 Steam achievements: 14 with public descriptions and 9 hidden. Prioritize x300, 1 trillion, and buying every item before final-ending progression when practical; the available evidence does not prove an irreversible lockout or require a new save."
-related:
-  - up-achievement-fuses
-  - 200kg-plate
-  - x300-combo
-relations:
-  -
-    slug: up-achievement-fuses
-    type: next-step
-  -
-    slug: 200kg-plate
-    type: next-step
-  -
-    slug: x300-combo
-    type: next-step
-sources:
-  -
-    type: official
-    title: Project P.I.T.T. Steam store page
-    url: https://store.steampowered.com/app/4026250/Project_PITT/
-  -
-    type: steam
-    title: Steam Community achievement stats
-    url: https://steamcommunity.com/stats/4026250/achievements/
-  -
-    type: other
-    title: Exophase achievement index
-    url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
-cover: ../../../assets/gameplay/achievements.jpg
-changeSummary: "Expanded for Consumerism, Speed Radar/FAST!, x300, and achievements to finish before the ending."
-eyebrow: Completion
-facts:
-  -
-    label: Total
-    value: 23 Steam achievements
-  -
-    label: Public descriptions
-    value: 14 listed on Steam
-  -
-    label: Hidden descriptions
-    value: 9 hidden on Steam
-  -
-    label: Before-ending plan
-    value: "Finish x300, 1 trillion, and buying every item before final-ending progression when practical; no irreversible lockout is confirmed."
----
-<!--
-  This file is generated from site-spec.yaml.
-  Do not edit directly.
-  Run npm run site:generate instead.
-  Source: site-input/pages/achievements.md
--->
 Direct Answer
 
 > Short answer: Keep the full 23-achievement checklist visible, finish any long-run milestones (300 combo, the 1‑trillion milestone tied to RICH!, and buying every item for CONSUMERISM) before you push final ending progression when practical. FAST! is the game’s speed achievement (community findings: ~400 products/min). Current community evidence does not prove an irreversible lockout after the ending, but many players avoid the risk by finishing those goals first. See the x300, progression, and automation guides linked below for next steps.
@@ -121,7 +55,7 @@ Speed Radar / FAST!
 
 x300 (300 combo)
 - Direct answer: x300 refers to the 300 combo requirement in the checklist (community reference name x300). Many players must deliberately chain combos and avoid resets to reach it.
-- For focused help, see [the x300 Combo guide](/x300-combo/).
+- For focused help, see the x300 guide: [/guides/x300].
 
 RICH! (1 trillion)
 - Direct answer: Players consistently report RICH! corresponds to reaching the large 1‑trillion milestone (community-confirmed mapping). If you’re missing RICH!, you’ll need to increase total currency/profit until that threshold is met.
@@ -150,15 +84,15 @@ Common Mistakes
 
 What To Do Next
 
-- If you need help with the combo milestone, see [the x300 Combo guide](/x300-combo/).
-- If you need help planning around the ending or recovering progress, see [the Secret Ending guide](/secret-ending/).
-- If you need to scale production to hit FAST! or RICH!: see the automation guide: [/automation/]
+- If you need help with the combo milestone: see the x300 guide: [/guides/x300]
+- If you need help planning around the ending or recovering progress: see the progression guide: [/guides/progression]
+- If you need to scale production to hit FAST! or RICH!: see the automation guide: [/guides/automation]
 
 Related Guides
 
-- x300: [the x300 Combo guide](/x300-combo/)
-- Progression planning and ending: [the Secret Ending guide](/secret-ending/)
-- Automation and throughput: [/automation/]
+- x300: [/guides/x300]
+- Progression planning and ending: [/guides/progression]
+- Automation and throughput: [/guides/automation]
 
 FAQ
 
@@ -178,4 +112,4 @@ Q: Do I need to start a new save after the ending to get missing achievements?
 A: There’s no conclusive community proof that a new save is always required. Because outcomes vary, the safest approach is to finish the long-run milestones before triggering the final ending or to keep a backup save before progressing.
 
 Q: Where should I go next for step-by-step help?
-A: Start with [the x300 Combo guide](/x300-combo/) for combo strategy, [the Automation guide](/automation/) for throughput and FAST!, and [the Secret Ending guide](/secret-ending/) for ending-management.
+A: Start with the x300 guide for combo strategy, the automation guide for throughput and FAST!, and the progression guide for ending-management: [/guides/x300], [/guides/automation], [/guides/progression].

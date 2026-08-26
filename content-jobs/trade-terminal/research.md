@@ -79,3 +79,9 @@ The integrator will add a backlink from the Automation page and a homepage popul
 ## Editorial boundaries
 
 No invented room names, coordinates, lever functions, keybinds, money values, item counts, unlock timing, economy behavior, or guaranteed performance claims. Do not add a generic introduction, SEO keyword repetition, or a long machine guide. The final English title, meta description, H1, quick answer, facts, body, and FAQ wording must be produced by APIMart.
+
+LAUNCH-WINDOW EXPANSION
+- Keep the existing Trade Terminal intent and slug, but make the page a public automation guide rather than only a cleanup fallback.
+- Explain what the Terminal does, how the interaction/timing works only to the extent supported by the brief, and how object/cube value should be understood without inventing a price or economy rule. If no reliable numeric value is established, say so plainly.
+- Add a short “when it becomes useful” connection to automation, batch cleanup, and jam recovery. Link to Automation and x300 only when natural.
+- Prefer a real how-to title such as “How to Use the Trade Terminal in Project P.I.T.T.”; APIMart must choose the final natural title.

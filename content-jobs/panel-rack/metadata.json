@@ -1,0 +1,24 @@
+{
+  "title": "How to Use the Panel Rack in Project P.I.T.T.",
+  "description": "A concise how-to for the Panel Rack in Project P.I.T.T.: current operation changes, how to interact, why panels may not auto-appear, unlock and old-save notes, common mistakes, automation uses, and quick FAQ.",
+  "h1": "How to Use the Panel Rack in Project P.I.T.T.",
+  "quickAnswer": "What the Panel Rack does now: The Panel Rack is a current automation tool and part of the automation chain (Automation → Shift Scheduler → Trade Terminal → Panel Rack → x300 Combo). Recent full-release updates changed how the Panel Rack operates, so older walkthroughs can be out of date. How to use it: approach the rack and use the in-game interaction prompt shown in your control mapping; do not rely on an assumed key name — use whatever the prompt shows on your platform. Panel spawning and retrieval: panel spawning and retrieval behavior is version-sensitive. Current versions do not guarantee automatic appearance of panels; use the rack’s interaction prompt or the surrounding automation chain to obtain panels as indicated by the in-game UI. Why panels may not appear automatically: because spawn/retrieval behavior changed in recent updates, panels that previously appeared automatically may now require explicit rack interaction or upstream automation state; this varies by version and save state. Unlock and tier questions: players commonly ask why the rack is locked or how to reach higher tiers. Do not rely on third-party claims about specific tier requirements or costs — check the in-game unlock interface or tech/upgrade menus for your save. Old-save behavior: older saves and guides can differ from current behavior; recent changes to the Panel Rack mean it may not appear or behave the same in legacy saves until you follow the current in-game prompts or update progression. Common mistakes: following pre-release or outdated instructions, assuming a fixed keybind, expecting guaranteed automatic panel spawns, and skipping upstream automation checks (Shift Scheduler and Trade Terminal). Automation use cases: place the Panel Rack downstream of automation and trade systems to feed x300 Combo configurations; validate upstream modules first if panels are missing. Next steps: consult the in-game Automation and Shift Scheduler panels, check the Trade Terminal state, run Troubleshooting if something seems broken, and review x300 Combo setup for downstream behavior. FAQ (short): Q: How do I interact? A: Use the rack’s in-game interaction prompt/control mapping. Q: Why don’t panels show up automatically? A: Panel spawns/retrieval are version-sensitive; current behavior may require explicit interaction or upstream conditions. Q: How do I unlock tier 3? A: Check the in-game unlock/progression UI — do not rely on unverified external requirements. Q: Will old saves get the new behavior? A: Behavior depends on version and save state; follow in-game prompts and update progression as shown. For detailed troubleshooting, check Automation, Troubleshooting, Shift Scheduler, Trade Terminal, and x300 pages as your next steps.",
+  "facts": [
+    {
+      "label": "Tool",
+      "value": "The Panel Rack is a current automation tool and a direct player search/problem; it sits in the automation chain as Automation → Shift Scheduler → Trade Terminal → Panel Rack → x300 Combo."
+    },
+    {
+      "label": "Current operation",
+      "value": "Recent full-release versions changed the Panel Rack’s operation behavior; older instructions may no longer match current in-game interactions—use the current in-game prompts/control mapping."
+    },
+    {
+      "label": "Panel retrieval",
+      "value": "Panel spawning and retrieval are version-sensitive. Current behavior does not promise automatic panel spawning; use the rack’s interact prompt or check upstream automation state to retrieve panels per the in-game UI."
+    },
+    {
+      "label": "Unlocks",
+      "value": "Players commonly ask how to unlock tiers and why the rack is locked. Do not invent tier-3 requirements or costs; consult the in-game unlock/progression UI for exact unlock conditions for your save and version."
+    }
+  ]
+}

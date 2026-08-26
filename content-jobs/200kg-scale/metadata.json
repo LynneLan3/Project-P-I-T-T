@@ -1,0 +1,24 @@
+{
+  "title": "How to Reach 200kg in Project P.I.T.T. — Best Heavy Items & What to Do Next",
+  "h1": "How to Reach 200kg in Project P.I.T.T. — Best Heavy Items & What to Do Next",
+  "description": "The HEAVY? weighing plate requires 200 kilograms of mass, not a count of 200 objects. Make sure you have completed the Fuse Box progression first — the fuse stage comes before this checkpoint. For reliable success use heavy, stable, or contained items rather than tall, loose piles of ducks; stability matters more than object count. After the plate reaches 200kg continue into the Percentage Pipe progression. Already reached 200kg? 200kg is not the endpoint — continue on to the Percentage Pipe; see [the Percentage Pipe Guide]({{page:percentage-pipe}}). For help before this step, see [the Fuse Box guide]({{page:up-achievement-fuses}}).",
+  "quickAnswer": "Confirm the Fuse Box progression is complete, then place stable mass on the plate until it reads 200 kilograms (the goal is weight, not 200 items). Community players find contained piles or single heavy items easier to keep on the plate than many loose ducks; common community approaches include Gambling Crates, bumpers, remotes, and loaded containers (reported workable, not required). Avoid tall unstable stacks that topple. Once the plate reaches 200kg, proceed into the Percentage Pipe progression and consult [the Percentage Pipe Guide]({{page:percentage-pipe}}).",
+  "facts": [
+    {
+      "label": "Requirement",
+      "value": "The HEAVY? checkpoint specifically requires 200 kilograms of mass on the weighing plate — the goal is mass, not an object count. Completing the Fuse Box progression is an important prerequisite before this stage."
+    },
+    {
+      "label": "Stability",
+      "value": "Heavy stable objects and contained piles are more efficient and easier to keep on the plate than tall, loose piles of ducks. Common setup failures are items sliding off, stacks toppling, or physics objects bouncing away; prioritize stability over sheer number."
+    },
+    {
+      "label": "Community options",
+      "value": "Community-reported workable approaches include using Gambling Crates, bumpers, remotes, and loaded containers as ways to place mass on the plate. These are commonly successful methods reported by players, not an official required loadout; no single \"heaviest item\" is confirmed by the brief."
+    },
+    {
+      "label": "Next step",
+      "value": "When the plate reaches 200kg you should continue into the Percentage Pipe progression — the pipe's percentage is a separate progression check and not the same as the 200kg weigh-in. For guidance see [the Percentage Pipe Guide]({{page:percentage-pipe}})."
+    }
+  ]
+}

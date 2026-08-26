@@ -34,3 +34,10 @@ RELATED GUIDE AFTER
 
 ARTICLE REQUIREMENTS
 Answer when the scale is encountered, how Fuse progression relates to it, how to use heavy objects safely, why ducks are inefficient, what to do after success, and the common counting/physics mistakes. Use evidence-aware wording for community solutions.
+
+LAUNCH-WINDOW EXPANSION
+- Preserve the existing 200kg / weight / heaviest-item intent cluster and slug. Do not create a separate heaviest-item page.
+- Add how to reach 200kg, the best practical categories of heavy objects, heaviest useful objects, weight versus stability, common setup failures, what happens at 200kg, and what to do after the checkpoint.
+- Treat Gambling Crates, bumpers, remotes, and loaded containers as community-reported workable approaches, not a mandatory loadout. Do not invent which object is objectively heaviest or any exact item weight.
+- Answer the FAQ questions “What is the heaviest item?”, “What should I use to reach 200kg?”, and “What do I do after reaching 200kg?” with the evidence boundary intact.
+- Prefer a real how-to title such as “How to Reach 200kg in Project P.I.T.T. — Best Heavy Items & What to Do Next”; APIMart must choose the final natural title.

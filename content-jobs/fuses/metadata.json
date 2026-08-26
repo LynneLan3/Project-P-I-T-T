@@ -1,24 +1,24 @@
 {
-  "title": "Project P.I.T.T.: 3 Fuses, Fuse Box UP? and Next Step",
-  "description": "Three fuses must be placed in the Fuse Box in an upper/catwalk (right-side elevated) area; completing the fuse step leads into the 200kg weight puzzle next.",
-  "h1": "Project P.I.T.T.: 3 Fuses, Fuse Box UP? and Next Step",
-  "quickAnswer": "There are 3 fuses that must all be inserted into the Fuse Box located in an upper/catwalk (right-side/elevated) area; placing all three completes the fuse step, progresses to the 200kg puzzle, and is tied to UP? by community reports.",
+  "title": "How to Use 3 Fuses in Project P.I.T.T. — Fuse Box & UP?",
+  "description": "Insert all three fuses into the upper/catwalk Fuse Box (right-side/elevated area); completing the fuse progression leads into the next 200kg step and puzzle chain.",
+  "h1": "How to Use 3 Fuses in Project P.I.T.T. — Fuse Box & UP?",
+  "quickAnswer": "You must find and insert three fuses into the Fuse Box located in the facility’s upper/catwalk (right-side/elevated) area; placing all three completes the Fuse progression, advances into the 200kg step, and is linked by community reports to the UP? achievement.",
   "facts": [
     {
       "label": "Fuses required",
-      "value": "Three fuses are required by the Fuse Box."
+      "value": "The Fuse Box requires three fuses; all three must be placed to complete the Fuse progression."
     },
     {
       "label": "Fuse Box location",
-      "value": "The Fuse Box sits in an upper/catwalk, right-side or otherwise elevated portion of the facility."
+      "value": "Community descriptions place the Fuse Box in an upper/catwalk area on the facility’s right-side or otherwise elevated portion; this is a landmark-level location, not an exact coordinate."
     },
     {
-      "label": "Insertion requirement",
-      "value": "You must insert all three fuses into the Fuse Box; finding the box alone does not complete progression."
+      "label": "Progression result",
+      "value": "Placing all three fuses completes the Fuse progression and leads directly into the 200kg scale/weight-puzzle progression."
     },
     {
-      "label": "After completion",
-      "value": "Completing the fuse progression leads into the 200kg weight/scale progression; UP? is a Steam achievement that community reports consistently connect to this step."
+      "label": "UP? achievement",
+      "value": "UP? is a Steam achievement listed publicly; full-release community indexes and reports consistently connect UP? with completing the Fuse step, though that connection is community-identified rather than a Steam-official description."
     }
   ]
 }

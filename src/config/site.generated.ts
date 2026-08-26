@@ -80,22 +80,34 @@ export const siteConfig: GameConfig = {
 				href: "/trade-terminal/",
 			},
 			{
+				label: "How do I use the Shift Scheduler?",
+				href: "/shift-scheduler/",
+			},
+			{
+				label: "How do I fix crashes, low FPS, or missing tools?",
+				href: "/troubleshooting/",
+			},
+			{
+				label: "How do I use the Panel Rack?",
+				href: "/panel-rack/",
+			},
+			{
 				label: "How do I reach a x300 combo?",
 				href: "/x300-combo/",
 			},
 		],
 		startHere: [
 			{
-				title: "Project P.I.T.T.: 3 Fuses, Fuse Box UP? and Next Step",
-				description: "Three fuses must be placed in the Fuse Box in an upper/catwalk (right-side elevated) area; completing the fuse step leads into the 200kg weight puzzle next.",
+				title: "How to Use 3 Fuses in Project P.I.T.T. — Fuse Box & UP?",
+				description: "How to use three Fuses in the upper/catwalk Fuse Box, recover a missing Fuse in the current version, and continue to the 200kg progression.",
 				href: "/up-achievement-fuses/",
 				image: "gameplay/fuses.jpg",
 				label: "Find the 3 Fuses",
 				badge: "Start here",
 			},
 			{
-				title: "Project P.I.T.T. 200kg Scale Guide — How to Reach 200 kg & What to Do Next",
-				description: "How to reach 200 kilograms on the Project P.I.T.T. scale, use stable mass, and continue into the Percentage Pipe progression.",
+				title: "How to Reach 200kg in Project P.I.T.T. — Best Heavy Items & What to Do Next",
+				description: "How to reach 200kg with stable heavy objects, why weight matters more than object count, and what to do next at the Percentage Pipe.",
 				href: "/200kg-plate/",
 				image: "gameplay/plate.jpg",
 				label: "Reach 200kg",
@@ -111,6 +123,13 @@ export const siteConfig: GameConfig = {
 				description: "What END? means, how the Project P.I.T.T. Secret Ending route connects to the earlier progression, and why elevator codes may be save-specific.",
 				href: "/secret-ending/",
 				label: "Find the Secret Ending",
+			},
+			{
+				title: "How to Automate Phase 4 in Project P.I.T.T.",
+				description: "Phase 4 automation hub for reliable lanes, panels, movers, Shift Scheduler timing, Trade Terminal cleanup, Panel Rack flow, and x300 preparation.",
+				href: "/automation/",
+				image: "gameplay/automation.jpg",
+				label: "Build reliable automation",
 			},
 		],
 		evidence: {
@@ -467,6 +486,127 @@ export const siteConfig: GameConfig = {
 			evidence: [
 			],
 		},
+		{
+			id: "shift-scheduler",
+			slug: "shift-scheduler",
+			role: "core",
+			assetType: "article",
+			intents: ["project-pitt-shift-scheduler", "project-pitt-how-to-use-shift-scheduler", "project-pitt-timed-batch-automation"],
+			relations: [
+				{
+					pageId: "automation",
+					type: "related",
+				},
+				{
+					pageId: "x300-combo",
+					type: "next-step",
+				},
+				{
+					pageId: "trade-terminal",
+					type: "related",
+				},
+				{
+					pageId: "panel-rack",
+					type: "related",
+				},
+			],
+			sources: [
+				{
+					type: "steam",
+					title: "Steam Community automation discussion",
+					url: "https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/",
+				},
+				{
+					type: "steam",
+					title: "Steam Community developer FAQ and updates",
+					url: "https://steamcommunity.com/app/4026250/",
+				},
+			],
+			evidence: [
+			],
+		},
+		{
+			id: "troubleshooting",
+			slug: "troubleshooting",
+			role: "core",
+			assetType: "article",
+			intents: ["project-pitt-troubleshooting", "project-pitt-low-fps", "project-pitt-broken-save", "project-pitt-missing-tools"],
+			relations: [
+				{
+					pageId: "automation",
+					type: "related",
+				},
+				{
+					pageId: "trade-terminal",
+					type: "related",
+				},
+				{
+					pageId: "panel-rack",
+					type: "related",
+				},
+				{
+					pageId: "up-achievement-fuses",
+					type: "related",
+				},
+			],
+			sources: [
+				{
+					type: "steam",
+					title: "Steam Community developer FAQ and updates",
+					url: "https://steamcommunity.com/app/4026250/",
+				},
+				{
+					type: "steam",
+					title: "Steam Community automation discussion",
+					url: "https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/",
+				},
+			],
+			evidence: [
+			],
+		},
+		{
+			id: "panel-rack",
+			slug: "panel-rack",
+			role: "core",
+			assetType: "article",
+			intents: ["project-pitt-panel-rack", "project-pitt-how-to-use-panel-rack", "project-pitt-panel-rack-tier-3"],
+			relations: [
+				{
+					pageId: "automation",
+					type: "related",
+				},
+				{
+					pageId: "shift-scheduler",
+					type: "related",
+				},
+				{
+					pageId: "trade-terminal",
+					type: "related",
+				},
+				{
+					pageId: "troubleshooting",
+					type: "related",
+				},
+				{
+					pageId: "x300-combo",
+					type: "next-step",
+				},
+			],
+			sources: [
+				{
+					type: "steam",
+					title: "Steam Community automation discussion",
+					url: "https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/",
+				},
+				{
+					type: "steam",
+					title: "Steam Community developer FAQ and updates",
+					url: "https://steamcommunity.com/app/4026250/",
+				},
+			],
+			evidence: [
+			],
+		},
 	],
 	routes: [
 		{
@@ -480,16 +620,16 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "up-achievement-fuses",
 					href: "/up-achievement-fuses/",
-					title: "Project P.I.T.T.: 3 Fuses, Fuse Box UP? and Next Step",
-					description: "Three fuses must be placed in the Fuse Box in an upper/catwalk (right-side elevated) area; completing the fuse step leads into the 200kg weight puzzle next.",
+					title: "How to Use 3 Fuses in Project P.I.T.T. — Fuse Box & UP?",
+					description: "How to use three Fuses in the upper/catwalk Fuse Box, recover a missing Fuse in the current version, and continue to the 200kg progression.",
 					eyebrow: "Hidden Progression",
 					image: "gameplay/fuses.jpg",
 				},
 				{
 					pageId: "200kg-plate",
 					href: "/200kg-plate/",
-					title: "Project P.I.T.T. 200kg Scale Guide — How to Reach 200 kg & What to Do Next",
-					description: "How to reach 200 kilograms on the Project P.I.T.T. scale, use stable mass, and continue into the Percentage Pipe progression.",
+					title: "How to Reach 200kg in Project P.I.T.T. — Best Heavy Items & What to Do Next",
+					description: "How to reach 200kg with stable heavy objects, why weight matters more than object count, and what to do next at the Percentage Pipe.",
 					eyebrow: "Progression Gate",
 					image: "gameplay/plate.jpg",
 				},
@@ -510,8 +650,8 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "achievements",
 					href: "/achievements/",
-					title: "Project P.I.T.T. Achievements",
-					description: "All 23 Project P.I.T.T. Steam achievements, with public descriptions separated from hidden requirements.",
+					title: "Project P.I.T.T. Achievements Guide: Complete 23-Achievement Checklist",
+					description: "Project P.I.T.T. has 23 Steam achievements, with public and hidden descriptions kept separate plus timing advice for completion before the ending.",
 					eyebrow: "Completion",
 					image: "gameplay/achievements.jpg",
 				},
@@ -542,16 +682,37 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "automation",
 					href: "/automation/",
-					title: "Project P.I.T.T. Automation: Panels, Fans, and Routing",
-					description: "How to make panels, fans, magnets, pistons, and launchers behave like a reliable production lane without prescribing one best build.",
+					title: "How to Automate Phase 4 in Project P.I.T.T.",
+					description: "Phase 4 automation hub for reliable lanes, panels, movers, Shift Scheduler timing, Trade Terminal cleanup, Panel Rack flow, and x300 preparation.",
 					eyebrow: "Factory Systems",
 					image: "gameplay/automation.jpg",
 				},
 				{
+					pageId: "shift-scheduler",
+					href: "/shift-scheduler/",
+					title: "How to Use the Shift Scheduler in Project P.I.T.T.",
+					description: "How to use the Shift Scheduler with fans, magnets, remote outputs, and timed or batch automation for controlled lanes and x300 Combo setups.",
+					eyebrow: "Shift Scheduler",
+				},
+				{
+					pageId: "trade-terminal",
+					href: "/trade-terminal/",
+					title: "How to Use the Trade Terminal in Project P.I.T.T.",
+					description: "Updated for 1.0.5: Learn how to use the Trade Terminal, its player-tested right-side vacuum switch, and the Pause Menu → Clear Items fallback.",
+					eyebrow: "Trade Terminal",
+				},
+				{
+					pageId: "panel-rack",
+					href: "/panel-rack/",
+					title: "How to Use the Panel Rack in Project P.I.T.T.",
+					description: "How to use the Panel Rack after recent operation changes, including current interaction prompts, panel retrieval, unlock questions, old saves, and automation flow.",
+					eyebrow: "Panel Rack",
+				},
+				{
 					pageId: "x300-combo",
 					href: "/x300-combo/",
-					title: "How to Reach the x300 Combo in Project P.I.T.T.",
-					description: "What MORE!, EXTRA!, and MEGA! mean, plus practical ways to keep a combo alive while automation is running.",
+					title: "How to Get a 300 Combo in Project P.I.T.T. — x300 Achievement Guide",
+					description: "How to get a 300 Combo in Project P.I.T.T. with a reliable lane, automation assistance, Shift Scheduler timing, and pre-ending completion advice.",
 					eyebrow: "Combo Milestones",
 					image: "gameplay/combo.jpg",
 				},
@@ -582,24 +743,24 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "achievements",
 					href: "/achievements/",
-					title: "Project P.I.T.T. Achievements",
-					description: "All 23 Project P.I.T.T. Steam achievements, with public descriptions separated from hidden requirements.",
+					title: "Project P.I.T.T. Achievements Guide: Complete 23-Achievement Checklist",
+					description: "Project P.I.T.T. has 23 Steam achievements, with public and hidden descriptions kept separate plus timing advice for completion before the ending.",
 					eyebrow: "Completion",
 					image: "gameplay/achievements.jpg",
 				},
 				{
 					pageId: "up-achievement-fuses",
 					href: "/up-achievement-fuses/",
-					title: "Project P.I.T.T.: 3 Fuses, Fuse Box UP? and Next Step",
-					description: "Three fuses must be placed in the Fuse Box in an upper/catwalk (right-side elevated) area; completing the fuse step leads into the 200kg weight puzzle next.",
+					title: "How to Use 3 Fuses in Project P.I.T.T. — Fuse Box & UP?",
+					description: "How to use three Fuses in the upper/catwalk Fuse Box, recover a missing Fuse in the current version, and continue to the 200kg progression.",
 					eyebrow: "Hidden Progression",
 					image: "gameplay/fuses.jpg",
 				},
 				{
 					pageId: "200kg-plate",
 					href: "/200kg-plate/",
-					title: "Project P.I.T.T. 200kg Scale Guide — How to Reach 200 kg & What to Do Next",
-					description: "How to reach 200 kilograms on the Project P.I.T.T. scale, use stable mass, and continue into the Percentage Pipe progression.",
+					title: "How to Reach 200kg in Project P.I.T.T. — Best Heavy Items & What to Do Next",
+					description: "How to reach 200kg with stable heavy objects, why weight matters more than object count, and what to do next at the Percentage Pipe.",
 					eyebrow: "Progression Gate",
 					image: "gameplay/plate.jpg",
 				},
@@ -620,10 +781,24 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "x300-combo",
 					href: "/x300-combo/",
-					title: "How to Reach the x300 Combo in Project P.I.T.T.",
-					description: "What MORE!, EXTRA!, and MEGA! mean, plus practical ways to keep a combo alive while automation is running.",
+					title: "How to Get a 300 Combo in Project P.I.T.T. — x300 Achievement Guide",
+					description: "How to get a 300 Combo in Project P.I.T.T. with a reliable lane, automation assistance, Shift Scheduler timing, and pre-ending completion advice.",
 					eyebrow: "Combo Milestones",
 					image: "gameplay/combo.jpg",
+				},
+				{
+					pageId: "troubleshooting",
+					href: "/troubleshooting/",
+					title: "How to Fix Project P.I.T.T. Crashes, Low FPS, Saves & Missing Tools",
+					description: "Grouped Project P.I.T.T. troubleshooting for crashes, low FPS, mouse control, saves, lost tools, lava drops, Clear Items, and ending-save issues.",
+					eyebrow: "Troubleshooting",
+				},
+				{
+					pageId: "panel-rack",
+					href: "/panel-rack/",
+					title: "How to Use the Panel Rack in Project P.I.T.T.",
+					description: "How to use the Panel Rack after recent operation changes, including current interaction prompts, panel retrieval, unlock questions, old saves, and automation flow.",
+					eyebrow: "Panel Rack",
 				},
 			],
 		},

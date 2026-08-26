@@ -1,6 +1,6 @@
 ---
-title: "Project P.I.T.T. Automation: Panels, Fans, and Routing"
-description: "How to make panels, fans, magnets, pistons, and launchers behave like a reliable production lane without prescribing one best build."
+title: How to Automate Phase 4 in Project P.I.T.T.
+description: "Phase 4 automation hub for reliable lanes, panels, movers, Shift Scheduler timing, Trade Terminal cleanup, Panel Rack flow, and x300 preparation."
 category: automation
 slug: automation
 status: confirmed
@@ -13,8 +13,11 @@ intents:
   - project-pitt-automation
   - project-pitt-how-panels-work
   - project-pitt-fans-magnets-pistons-launchers
-quickAnswer: "Build a short, visible lane first: snap panels to stable solid surfaces, use fans or other movers to point products toward one receiver, and leave room to clear jams. Reliability comes from alignment and recovery access, not from the largest possible machine pile."
+quickAnswer: "Start with one short, visible, recoverable lane, then connect Shift Scheduler for timing, Trade Terminal for cleanup, Panel Rack for panel flow, and x300 for the combo attempt without assuming a universal build."
 related:
+  - shift-scheduler
+  - trade-terminal
+  - panel-rack
   - x300-combo
   - 200kg-plate
   - achievements
@@ -42,7 +45,7 @@ sources:
     title: Project P.I.T.T. Steam store page
     url: https://store.steampowered.com/app/4026250/Project_PITT/
 cover: ../../../assets/gameplay/automation.jpg
-changeSummary: Initial V1 page focused on reliable principles rather than a claimed best build.
+changeSummary: "Expanded into the Phase 4 automation hub for Scheduler, Terminal, Panel Rack, x300, and progression blockers."
 eyebrow: Factory Systems
 facts:
   -
@@ -55,8 +58,8 @@ facts:
     label: Sticky tools
     value: Keeps contact in place
   -
-    label: Goal
-    value: "Fewer jams, easier recovery"
+    label: Phase 4
+    value: "Stabilize the lane first, then add timed control, cleanup, Panel Rack flow, and x300 preparation."
 ---
 <!--
   This file is generated from site-spec.yaml.
@@ -64,57 +67,74 @@ facts:
   Run npm run site:generate instead.
   Source: site-input/pages/automation.md
 -->
-## How do panels work in Project P.I.T.T.?
+> Quick answer: Use a short, visible, recoverable lane with one source and one receiver as your Phase 4 automation hub, keep each mover (fan, magnet, piston, launcher) doing one clear job, use panels as fixed routing surfaces, then chain into timed control and cleanup: Automation → [Shift Scheduler](../shift-scheduler) → [Trade Terminal](../trade-terminal) → [Panel Rack](../panel-rack) → [x300 Combo](../x300-combo).
 
-Treat panels as **route walls and surfaces**, not as a finished machine by themselves. Place one panel, aim at a stable solid surface, and use the snap preview: the Steam Community FAQ describes a valid snap as a green highlight. Once the route works with one product, add the next panel and test again.
+Direct Answer
+- Start with a short, single-source → single-receiver lane and treat panels as walls/surfaces for routing.
+- Give each actuator (fan, magnet, piston, launcher) one dedicated purpose and use sticky tools to keep contact where needed.
+- Once that lane is stable, plug it into timed control and cleanup hubs in this natural chain: Automation → [Shift Scheduler](../shift-scheduler) → [Trade Terminal](../trade-terminal) → [Panel Rack](../panel-rack) → [x300 Combo](../x300-combo).
 
-The developer has also described a **sticky tools** upgrade for keeping a panel in contact with the floor or another stuck object. That makes repeatable lanes easier, but it does not remove the need to test the receiving end.
+Quick Steps
+1. Build one short lane: one source, one receiver, visible and recoverable.
+2. Use panels as fixed routing walls/surfaces; watch for a green snap preview when placing.
+3. Assign exactly one job per mover: fan = push, magnet = hold/steer, piston = extend/retract, launcher = send.
+4. Use the sticky tool to keep pieces contacting during movement or adjustments.
+5. Add the [Shift Scheduler](../shift-scheduler) for batching/timing when you need controlled windows.
+6. Add the [Trade Terminal](../trade-terminal) to consolidate and clean up outputs.
+7. Add the [Panel Rack](../panel-rack) for consistent panel retrieval/spawn behavior before attempting the [x300 Combo](../x300-combo).
 
-## What do fans, magnets, pistons, and launchers do?
+Prerequisites or What You Need
+- Panels that can act as walls/surfaces for routing.
+- Movers: fans, magnets, pistons, launchers (one clear job each).
+- Sticky tool(s) to maintain contact during movement.
+- A clearly visible lane (short, recoverable) with one source and one receiver.
+- Sufficient space to test and visually observe jams and timing.
+- Patience for timing adjustments — Phase 4 progression introduces more timing sensitivity (community findings).
 
-Use each mover for one clear job in the lane:
+Full Explanation
+- Lane design: A short, visible, recoverable lane is the recommended starting pattern because it makes jams, timing, and spawn behavior easy to see and fix. Players consistently report that longer lanes mask timing problems and increase recovery time.
+- Panels as routing: Panels can act as route walls and surfaces. When placing, a green snap preview indicates a valid snap — use that to ensure predictable alignment. Panels are reliable anchoring points for movers and reroutes.
+- Movers and responsibilities: Fans, magnets, pistons, and launchers each perform best when assigned one clear job. Mixing duties (for example, using one launcher to both align and send) increases failure modes and debugging time.
+- Sticky tool: Use sticky tools to keep contact during adjustments or to prevent unintended separation. It’s an inexpensive way to make setups recoverable.
+- Automation hub chain (what plugs into what):
+  - Automation hub: your tested short lane. Keep it stable before adding complexity.
+  - [Shift Scheduler](../shift-scheduler): adds timed/batch control and launch windows. Use it when you need precise windows for launchers or to batch several outputs.
+  - [Trade Terminal](../trade-terminal): used mainly for cleanup and consolidation of outputs before storage or combos. Players use terminals to remove stray items and tidy lanes.
+  - [Panel Rack](../panel-rack): controls panel retrieval/spawn behavior and is useful when you need predictable panel delivery for repeated runs.
+  - [x300 Combo](../x300-combo): the combo attempt is the end goal for many Phase 4 runs; feed it only after the previous hubs are stable.
+- Phase 4 (concise, evidence-aware): Current full-release community findings indicate Phase 4 increases emphasis on timing, spawn consistency, and integrated cleanup. At a high level, focus on building robust short lanes, then add timed control (Shift Scheduler) and a Trade Terminal for cleanup before tackling panel-rack consistency and combo attempts. The exact unlocks and order are not universal; follow the natural hub chain above and adapt to what your progression has opened.
+- Common progression blockers (what players report): long unseen lanes, movers sharing unclear roles, missed green snaps, insufficient staging before the scheduler, panel-spawn unpredictability, and timing mismatches between scheduler windows and launcher behavior.
 
-- **Fans**: provide directional force. Angle them to feed a receiver, not to create a chaotic cross-current.
-- **Magnets**: gather or pull compatible objects. Keep their pickup area away from the exit so they do not recapture a product that already passed.
-- **Pistons**: create a repeatable push. Give the stroke a clear landing zone and keep the return path free.
-- **Launchers**: add a deliberate transfer between two sections. Test the landing point with one product before increasing the launch rate.
+Common Mistakes
+- Making lanes too long — hidden jams and slow recovery.
+- Letting one mover try to do multiple jobs (e.g., a magnet that also tries to steer and time launches).
+- Ignoring the green snap preview and misplacing panels.
+- Not using sticky tools where temporary contact is needed during tuning.
+- Adding the scheduler or terminal before the lane is debugged — this hides root causes.
+- Expecting Panel Rack behavior to be identical across every run; panel spawn/retrieval can be finicky and needs testing.
 
-The exact unlock timing and behavior can change with patches. These are operating principles for testing the tools, not a claim that one arrangement is the best build.
+What To Do Next
+1. Stabilize one short lane until it’s reliably recoverable.
+2. Add scheduled windows with the [Shift Scheduler](../shift-scheduler) to control batch timing for launchers or pistons.
+3. Add the [Trade Terminal](../trade-terminal) to clean stray outputs and consolidate flows.
+4. Integrate the [Panel Rack](../panel-rack) only after you understand panel spawn behavior in your current layout.
+5. Attempt the [x300 Combo](../x300-combo) once lane, scheduler, terminal, and rack are behaving consistently.
 
-## How should I route products?
+Related Guides
+- [Shift Scheduler](../shift-scheduler) — timed and batch control
+- [Trade Terminal](../trade-terminal) — cleanup and consolidation
+- [Panel Rack](../panel-rack) — panel retrieval and spawn behavior
+- [x300 Combo](../x300-combo) — combo attempt workflow
 
-Build a **short, visible lane**:
+FAQs
+Q: Should I try to automate multiple lanes at Phase 4 right away?
+A: No — start with one short, recoverable lane. Players consistently report a single reliable lane let them debug timing and jams faster before scaling.
 
-1. Pick one source and one receiver.
-2. Put panels around the path so products cannot escape sideways.
-3. Use one mover to cover the first gap; do not stack fans, magnets, and launchers before you know which one failed.
-4. Keep a recovery opening near every bend and the receiver.
-5. Feed one product by hand, then watch three to five cycles before scaling.
+Q: How do I tell a panel is placed correctly?
+A: A green snap preview on placement indicates a valid snap and predictable alignment; avoid placements that don’t show that green preview.
 
-If a product misses, repair the first miss in the chain. Adding more force usually hides the real alignment problem.
+Q: When do I add the Shift Scheduler or Trade Terminal?
+A: Add them after your lane is stable. The scheduler is for timed windows and batching; the trade terminal is for cleanup. Adding them too early hides lane problems.
 
-## Why does my automation keep jamming?
-
-Check the lane in this order:
-
-- **Source**: is the machine producing at the expected pace?
-- **First transfer**: does the product leave the source cleanly?
-- **Containment**: is a panel edge catching or redirecting it?
-- **Receiver**: is the target open, or is a previous product blocking it?
-- **Recovery**: can you reach the jam without dismantling the whole build?
-
-Clear loose products before a long combo attempt. A factory that is slightly slower but easy to inspect is more useful than a dense pile that cannot be repaired.
-
-If a jam turns into a pile that blocks the scene, see [the Trade Terminal cleanup guide](/trade-terminal/) for the right-side vacuum switch and the 1.0.5 pause-menu fallback.
-
-## Is there a best automation build?
-
-Not for this V1. Steam player reports describe tunnels and fan lanes as workable but imperfect, and also report snapping and output-direction problems. The safe takeaway is to prototype in small sections, keep the lane visible, and scale only after it survives repeated cycles.
-
-## How does automation help the x300 combo?
-
-Once one lane feeds consistently, use it for [the x300 combo attempt](/x300-combo/). Keep the automation page open while you test: every missed receiver is a combo risk, and every recovery opening is time you can save.
-
-### Next question
-
-For the milestone itself, read [how MORE!, EXTRA!, and MEGA! work](/x300-combo/).
+Q: What causes the most common jams?
+A: Long unseen lanes, movers with mixed duties, and timing mismatches between launch windows and item arrival. Keep roles strict and lanes short for easier diagnosis.

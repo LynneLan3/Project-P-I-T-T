@@ -60,8 +60,8 @@ categories:
 
 pages:
   - id: achievements
-    title: Project P.I.T.T. Achievements
-    description: All 23 Project P.I.T.T. Steam achievements, with public descriptions separated from hidden requirements.
+    title: "Project P.I.T.T. Achievements Guide: Complete 23-Achievement Checklist"
+    description: Project P.I.T.T. has 23 Steam achievements, with public and hidden descriptions kept separate plus timing advice for completion before the ending.
     category: achievements
     slug: achievements
     source: site-input/pages/achievements.md
@@ -73,7 +73,7 @@ pages:
       - project-pitt-achievements
       - steam-achievements
       - 100-percent-completion
-    quickAnswer: Project P.I.T.T. has 23 Steam achievements. Use the public descriptions as the hard evidence, and treat the nine hidden-description names as leads rather than confirmed instructions.
+    quickAnswer: "Project P.I.T.T. has 23 Steam achievements: 14 with public descriptions and 9 hidden. Prioritize x300, 1 trillion, and buying every item before final-ending progression when practical; the available evidence does not prove an irreversible lockout or require a new save."
     eyebrow: Completion
     facts:
       - label: Total
@@ -82,8 +82,8 @@ pages:
         value: 14 listed on Steam
       - label: Hidden descriptions
         value: 9 hidden on Steam
-      - label: Best starting point
-        value: QWACK! then MORE!
+      - label: Before-ending plan
+        value: Finish x300, 1 trillion, and buying every item before final-ending progression when practical; no irreversible lockout is confirmed.
     coverAssetId: pitt-screenshot-achievements
     related:
       - up-achievement-fuses
@@ -107,11 +107,11 @@ pages:
       - type: other
         title: Exophase achievement index
         url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
-    changeSummary: Initial V1 page from the full-release Steam achievement list.
+    changeSummary: Expanded for Consumerism, Speed Radar/FAST!, x300, and achievements to finish before the ending.
 
   - id: up-achievement-fuses
-    title: "Project P.I.T.T.: 3 Fuses, Fuse Box UP? and Next Step"
-    description: Three fuses must be placed in the Fuse Box in an upper/catwalk (right-side elevated) area; completing the fuse step leads into the 200kg weight puzzle next.
+    title: "How to Use 3 Fuses in Project P.I.T.T. — Fuse Box & UP?"
+    description: How to use three Fuses in the upper/catwalk Fuse Box, recover a missing Fuse in the current version, and continue to the 200kg progression.
     category: progression-secrets
     slug: up-achievement-fuses
     source: site-input/pages/up-achievement-fuses.md
@@ -123,17 +123,17 @@ pages:
       - project-pitt-up-achievement
       - project-pitt-fuses
       - find-and-place-all-fuses
-    quickAnswer: There are 3 fuses that must all be inserted into the Fuse Box located in an upper/catwalk (right-side/elevated) area; placing all three completes the fuse step, progresses to the 200kg puzzle, and is tied to UP? by community reports.
+    quickAnswer: Find and insert all three Fuses into the upper/catwalk Fuse Box on the facility’s right-side/elevated portion; completing the Fuse step advances to 200kg and is linked to UP? by community reports.
     eyebrow: Hidden Progression
     facts:
       - label: Fuses required
         value: Three fuses are required by the Fuse Box.
       - label: Fuse Box location
         value: The Fuse Box sits in an upper/catwalk, right-side or otherwise elevated portion of the facility.
-      - label: Insertion requirement
-        value: You must insert all three fuses into the Fuse Box; finding the box alone does not complete progression.
-      - label: After completion
-        value: Completing the fuse progression leads into the 200kg weight/scale progression; UP? is a Steam achievement that community reports consistently connect to this step.
+      - label: Progression result
+        value: Placing all three Fuses completes the Fuse progression and leads into the 200kg scale/weight-puzzle progression.
+      - label: Missing Fuse
+        value: Check nearby/drop areas and current-version respawn behavior; an unplaced Fuse may return to its spawn/original position after saving.
     coverAssetId: pitt-screenshot-fuses
     related:
       - 200kg-plate
@@ -160,8 +160,8 @@ pages:
     changeSummary: Reframed for fuse, Fuse Box, three-fuse, UP?, upper-area, and 200kg progression intent with current-version recovery guidance.
 
   - id: 200kg-plate
-    title: Project P.I.T.T. 200kg Scale Guide — How to Reach 200 kg & What to Do Next
-    description: How to reach 200 kilograms on the Project P.I.T.T. scale, use stable mass, and continue into the Percentage Pipe progression.
+    title: "How to Reach 200kg in Project P.I.T.T. — Best Heavy Items & What to Do Next"
+    description: How to reach 200kg with stable heavy objects, why weight matters more than object count, and what to do next at the Percentage Pipe.
     category: progression-secrets
     slug: 200kg-plate
     source: site-input/pages/200kg-plate.md
@@ -176,15 +176,15 @@ pages:
       - project-pitt-200kg-scale
       - project-pitt-heavy-achievement
       - project-pitt-pipe-gate
-    quickAnswer: "The HEAVY? checkpoint needs 200 kg of mass on the weighing plate, not 200 objects. Use stable heavy objects or a contained load, then continue to the separate Percentage Pipe progression."
+    quickAnswer: "Complete Fuse progression, then place stable mass on the plate until it reads 200kg; use contained or heavy objects rather than loose ducks, and continue to Percentage Pipe afterward."
     eyebrow: Progression Gate
     facts:
       - label: Requirement
         value: 200 kg
       - label: Achievement
         value: HEAVY?
-      - label: Main risk
-        value: Loose physics objects
+      - label: Stability
+        value: Heavy stable objects or contained piles are easier to keep on the plate than loose physics objects.
       - label: Afterward
         value: Continue to Percentage Pipe
     coverAssetId: pitt-screenshot-plate
@@ -311,8 +311,8 @@ pages:
     changeSummary: New launch-window page for the END? Secret Ending query, preserving save-specific-code and route-evidence boundaries.
 
   - id: automation
-    title: "Project P.I.T.T. Automation: Panels, Fans, and Routing"
-    description: How to make panels, fans, magnets, pistons, and launchers behave like a reliable production lane without prescribing one best build.
+    title: "How to Automate Phase 4 in Project P.I.T.T."
+    description: Phase 4 automation hub for reliable lanes, panels, movers, Shift Scheduler timing, Trade Terminal cleanup, Panel Rack flow, and x300 preparation.
     category: automation
     slug: automation
     source: site-input/pages/automation.md
@@ -324,7 +324,7 @@ pages:
       - project-pitt-automation
       - project-pitt-how-panels-work
       - project-pitt-fans-magnets-pistons-launchers
-    quickAnswer: "Build a short, visible lane first: snap panels to stable solid surfaces, use fans or other movers to point products toward one receiver, and leave room to clear jams. Reliability comes from alignment and recovery access, not from the largest possible machine pile."
+    quickAnswer: Start with one short, visible, recoverable lane, then connect Shift Scheduler for timing, Trade Terminal for cleanup, Panel Rack for panel flow, and x300 for the combo attempt without assuming a universal build.
     eyebrow: Factory Systems
     facts:
       - label: First test
@@ -333,10 +333,13 @@ pages:
         value: Snap to solid surfaces
       - label: Sticky tools
         value: Keeps contact in place
-      - label: Goal
-        value: Fewer jams, easier recovery
+      - label: Phase 4
+        value: Stabilize the lane first, then add timed control, cleanup, Panel Rack flow, and x300 preparation.
     coverAssetId: pitt-screenshot-automation
     related:
+      - shift-scheduler
+      - trade-terminal
+      - panel-rack
       - x300-combo
       - 200kg-plate
       - achievements
@@ -358,11 +361,11 @@ pages:
       - type: official
         title: Project P.I.T.T. Steam store page
         url: https://store.steampowered.com/app/4026250/Project_PITT/
-    changeSummary: Initial V1 page focused on reliable principles rather than a claimed best build.
+    changeSummary: Expanded into the Phase 4 automation hub for Scheduler, Terminal, Panel Rack, x300, and progression blockers.
 
   - id: x300-combo
-    title: How to Reach the x300 Combo in Project P.I.T.T.
-    description: What MORE!, EXTRA!, and MEGA! mean, plus practical ways to keep a combo alive while automation is running.
+    title: "How to Get a 300 Combo in Project P.I.T.T. — x300 Achievement Guide"
+    description: How to get a 300 Combo in Project P.I.T.T. with a reliable lane, automation assistance, Shift Scheduler timing, and pre-ending completion advice.
     category: automation
     slug: x300-combo
     source: site-input/pages/x300-combo.md
@@ -374,7 +377,7 @@ pages:
       - project-pitt-x300-combo
       - project-pitt-mega-achievement
       - project-pitt-combo-guide
-    quickAnswer: The combo milestones are MORE! at x100, EXTRA! at x200, and MEGA! at x300. Feed on a steady rhythm, protect the route from jams, and fix one failure point before adding more machines.
+    quickAnswer: Aim for MEGA! at x300 with a short, visible, recoverable lane; test automation and Shift Scheduler timing first, and prioritize the attempt before final-ending progression if it is unfinished.
     eyebrow: Combo Milestones
     facts:
       - label: MORE!
@@ -383,11 +386,12 @@ pages:
         value: x200
       - label: MEGA!
         value: x300
-      - label: Best partner page
-        value: Automation
+      - label: Automation
+        value: Use tested panels, movers, containment, and recovery access before relying on automation; prioritize x300 before final-ending progression as a precaution, not an irreversible rule.
     coverAssetId: pitt-screenshot-combo
     related:
       - automation
+      - shift-scheduler
       - achievements
     relations:
       - pageId: automation
@@ -405,11 +409,11 @@ pages:
       - type: steam
         title: Steam Community automation discussion
         url: https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/
-    changeSummary: Initial V1 page connecting combo milestones to recoverable factory routing.
+    changeSummary: Expanded for 300 Combo reliability, automation-assisted timing, Shift Scheduler use, and pre-ending completion planning.
 
   - id: trade-terminal
-    title: "Project P.I.T.T. Trade Terminal — clear items & cleanup"
-    description: "Updated for 1.0.5: Use the Trade Terminal to clear products; player-tested right-side switch vacuums items. If blocked, use Pause Menu → Clear Items (no refund)."
+    title: "How to Use the Trade Terminal in Project P.I.T.T."
+    description: "Updated for 1.0.5: Learn how to use the Trade Terminal, its player-tested right-side vacuum switch, and the Pause Menu → Clear Items fallback."
     category: automation
     slug: trade-terminal
     source: site-input/pages/trade-terminal.md
@@ -424,7 +428,7 @@ pages:
       - project-pitt-clear-items
       - project-pitt-remove-items
       - project-pitt-cash-registers-piling-up
-    quickAnswer: "Trade Terminal clears/vacuums products; player-tested right-side switch can vacuum items; if piles cause stutter/crashes or block access use Pause Menu → Clear Items in 1.0.5 — it removes items but gives no refund."
+    quickAnswer: "Updated for 1.0.5 — the Trade Terminal clears/vacuums products, its player-tested right-side switch can vacuum them, and Pause Menu → Clear Items is the no-refund fallback when piles block access."
     eyebrow: Trade Terminal
     facts:
       - label: Function
@@ -438,6 +442,7 @@ pages:
     related:
       - automation
       - x300-combo
+      - shift-scheduler
     relations:
       - pageId: automation
         type: related
@@ -451,7 +456,158 @@ pages:
       - type: steam
         title: Steam Community discussion — Cash Register pileup and Trading Terminal
         url: https://steamcommunity.com/app/4026250/discussions/0/587309530805892814
-    changeSummary: New concise blocker page for Trade Terminal cleanup, Cash Register pileups, and the 1.0.5 Clear Items fallback.
+    changeSummary: Public automation guide for Terminal use, right-side interaction, object/value questions, cleanup mistakes, and the 1.0.5 fallback.
+
+  - id: shift-scheduler
+    title: "How to Use the Shift Scheduler in Project P.I.T.T."
+    description: How to use the Shift Scheduler with fans, magnets, remote outputs, and timed or batch automation for controlled lanes and x300 Combo setups.
+    category: automation
+    slug: shift-scheduler
+    source: site-input/pages/shift-scheduler.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 4
+    role: core
+    intents:
+      - project-pitt-shift-scheduler
+      - project-pitt-how-to-use-shift-scheduler
+      - project-pitt-timed-batch-automation
+    quickAnswer: The Shift Scheduler is a full-release automation tool for timed or batch releases; connect it to tested fans, magnets, or remote outputs, then use it for controlled lanes and x300 Combo attempts without assuming it guarantees a combo.
+    eyebrow: Shift Scheduler
+    facts:
+      - label: Tool
+        value: Current full-release automation tool for controlled releases.
+      - label: Connections
+        value: Commonly connected to fans, magnets, and remote outputs.
+      - label: Timing
+        value: Supports timed or batch behavior for tested automation lanes.
+      - label: Current version
+        value: Recent version changes fixed Shift Scheduler inconsistencies.
+    related:
+      - automation
+      - trade-terminal
+      - panel-rack
+      - x300-combo
+    relations:
+      - pageId: automation
+        type: related
+      - pageId: x300-combo
+        type: next-step
+      - pageId: trade-terminal
+        type: related
+      - pageId: panel-rack
+        type: related
+    assetType: article
+    sources:
+      - type: steam
+        title: Steam Community automation discussion
+        url: https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/
+      - type: steam
+        title: Steam Community developer FAQ and updates
+        url: https://steamcommunity.com/app/4026250/
+    changeSummary: New launch-window guide for Shift Scheduler connections, timed/batch behavior, current-version fixes, and x300 automation use.
+
+  - id: troubleshooting
+    title: "How to Fix Project P.I.T.T. Crashes, Low FPS, Saves & Missing Tools"
+    description: Grouped Project P.I.T.T. troubleshooting for crashes, low FPS, mouse control, saves, lost tools, lava drops, Clear Items, and ending-save issues.
+    category: automation
+    slug: troubleshooting
+    source: site-input/pages/troubleshooting.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 5
+    role: core
+    intents:
+      - project-pitt-troubleshooting
+      - project-pitt-low-fps
+      - project-pitt-broken-save
+      - project-pitt-missing-tools
+    quickAnswer: Start with current-version guidance and Pause Menu → Clear Items for bulk cleanup, then use the grouped steps for crashes, low FPS, mouse control, unreliable saves, and lost or stuck tools; persistent cases remain evidence-aware rather than universal fixes.
+    eyebrow: Troubleshooting
+    facts:
+      - label: Crashes
+        value: Recent full-release versions fixed multiple issues, but some reports remain unresolved.
+      - label: Performance
+        value: Low FPS and high-polling-rate mouse control problems are reported in the current issue cluster.
+      - label: Saves
+        value: Broken or unreliable saves and continue-after-ending behavior need cautious, version-aware handling.
+      - label: Tools
+        value: Lost, stuck, inaccessible, or lava-fallen tools belong in the grouped recovery guide.
+    related:
+      - automation
+      - trade-terminal
+      - panel-rack
+      - up-achievement-fuses
+    relations:
+      - pageId: automation
+        type: related
+      - pageId: trade-terminal
+        type: related
+      - pageId: panel-rack
+        type: related
+      - pageId: up-achievement-fuses
+        type: related
+    assetType: article
+    sources:
+      - type: steam
+        title: Steam Community developer FAQ and updates
+        url: https://steamcommunity.com/app/4026250/
+      - type: steam
+        title: Steam Community automation discussion
+        url: https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/
+    changeSummary: New grouped launch-window troubleshooting asset for crashes, performance, saves, mouse control, tools, cleanup, and ending continuation.
+
+  - id: panel-rack
+    title: "How to Use the Panel Rack in Project P.I.T.T."
+    description: How to use the Panel Rack after recent operation changes, including current interaction prompts, panel retrieval, unlock questions, old saves, and automation flow.
+    category: automation
+    slug: panel-rack
+    source: site-input/pages/panel-rack.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 6
+    role: core
+    intents:
+      - project-pitt-panel-rack
+      - project-pitt-how-to-use-panel-rack
+      - project-pitt-panel-rack-tier-3
+    quickAnswer: The Panel Rack is a current automation tool whose operation changed in recent versions; use the in-game interaction prompt, do not assume automatic panel spawning, and check the current unlock UI and upstream automation state for your save.
+    eyebrow: Panel Rack
+    facts:
+      - label: Tool
+        value: Current automation tool in the Automation → Shift Scheduler → Trade Terminal → Panel Rack → x300 chain.
+      - label: Current operation
+        value: Recent versions changed how the Panel Rack operates; older instructions may be stale.
+      - label: Panel retrieval
+        value: Panel spawning and retrieval are version-sensitive and are not guaranteed to happen automatically.
+      - label: Unlocks
+        value: Check the in-game unlock/progression UI rather than assuming tier requirements or costs.
+    related:
+      - automation
+      - shift-scheduler
+      - trade-terminal
+      - troubleshooting
+      - x300-combo
+    relations:
+      - pageId: automation
+        type: related
+      - pageId: shift-scheduler
+        type: related
+      - pageId: trade-terminal
+        type: related
+      - pageId: troubleshooting
+        type: related
+      - pageId: x300-combo
+        type: next-step
+    assetType: article
+    sources:
+      - type: steam
+        title: Steam Community automation discussion
+        url: https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/
+      - type: steam
+        title: Steam Community developer FAQ and updates
+        url: https://steamcommunity.com/app/4026250/
+    changeSummary: New launch-window guide for current Panel Rack operation, panel retrieval, unlock/tier questions, old saves, and automation use.
 
 routes:
   - id: hidden-progression
@@ -486,6 +642,9 @@ routes:
         pageId: x300-combo
     pages:
       - automation
+      - shift-scheduler
+      - trade-terminal
+      - panel-rack
       - x300-combo
   - id: completion
     eyebrow: Completion Route
@@ -499,6 +658,8 @@ routes:
       - percentage-pipe
       - secret-ending
       - x300-combo
+      - troubleshooting
+      - panel-rack
 
 homepage:
   primaryCta:
@@ -529,6 +690,12 @@ homepage:
       pageId: automation
     - label: How do I use the Trade Terminal?
       pageId: trade-terminal
+    - label: How do I use the Shift Scheduler?
+      pageId: shift-scheduler
+    - label: How do I fix crashes, low FPS, or missing tools?
+      pageId: troubleshooting
+    - label: How do I use the Panel Rack?
+      pageId: panel-rack
     - label: How do I reach a x300 combo?
       pageId: x300-combo
   startHere:
@@ -541,6 +708,8 @@ homepage:
       label: Percentage Pipe stuck at 0%?
     - pageId: secret-ending
       label: Find the Secret Ending
+    - pageId: automation
+      label: Build reliable automation
 
   evidence:
     title: See the facility in action

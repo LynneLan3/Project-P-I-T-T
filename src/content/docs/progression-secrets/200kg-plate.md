@@ -1,6 +1,6 @@
 ---
-title: "Project P.I.T.T. 200kg Scale Guide — How to Reach 200 kg & What to Do Next"
-description: "How to reach 200 kilograms on the Project P.I.T.T. scale, use stable mass, and continue into the Percentage Pipe progression."
+title: "How to Reach 200kg in Project P.I.T.T. — Best Heavy Items & What to Do Next"
+description: "How to reach 200kg with stable heavy objects, why weight matters more than object count, and what to do next at the Percentage Pipe."
 category: progression-secrets
 slug: 200kg-plate
 status: confirmed
@@ -16,7 +16,7 @@ intents:
   - project-pitt-200kg-scale
   - project-pitt-heavy-achievement
   - project-pitt-pipe-gate
-quickAnswer: "The HEAVY? checkpoint needs 200 kg of mass on the weighing plate, not 200 objects. Use stable heavy objects or a contained load, then continue to the separate Percentage Pipe progression."
+quickAnswer: "Complete Fuse progression, then place stable mass on the plate until it reads 200kg; use contained or heavy objects rather than loose ducks, and continue to Percentage Pipe afterward."
 related:
   - up-achievement-fuses
   - percentage-pipe
@@ -56,8 +56,8 @@ facts:
     label: Achievement
     value: "HEAVY?"
   -
-    label: Main risk
-    value: Loose physics objects
+    label: Stability
+    value: Heavy stable objects or contained piles are easier to keep on the plate than loose physics objects.
   -
     label: Afterward
     value: Continue to Percentage Pipe
@@ -68,67 +68,61 @@ facts:
   Run npm run site:generate instead.
   Source: site-input/pages/200kg-plate.md
 -->
-## Direct Answer
+Direct Answer
+------------
+The scale is looking for 200 kilograms of mass, not 200 separate items. The HEAVY? progression checkpoint requires the plate to register 200 kg. Finish the Fuse Box progression first, use compact/stable heavy objects (rather than many loose ducks), and once the plate hits 200 kg proceed into the Percentage Pipe progression.
 
-- The **HEAVY?** checkpoint requires 200 kilograms of mass on the weighing plate, not 200 items. The plate measures total mass.
-- Completing the Fuse Box progression is an important prerequisite before you can reliably do the 200kg step.
-- After the plate reaches 200kg you continue into the Percentage Pipe progression — 200kg is a gate, not the end of the run.
+Already reached 200kg?
+----------------------
+200 kg is a checkpoint, not the end of the run. After the plate reads 200 kg continue into the Percentage Pipe progression — see [the Percentage Pipe Guide](/percentage-pipe/).
 
-### Already reached 200kg?
+Quick Steps
+-----------
+1. Complete the Fuse Box progression first — it’s a prerequisite. See [the Fuse Box guide](/up-achievement-fuses/).
+2. Collect a few compact, heavy, stable items (community players report Gambling Crates, bumpers, remotes and loaded containers work well).
+3. Place those items so they sit cleanly on the plate (contained piles are easier to keep on the plate than tall, loose stacks).
+4. Avoid dumping many loose ducks onto the plate—they often scatter or topple.
+5. When the plate reaches 200 kg, continue into the Percentage Pipe progression ([the Percentage Pipe Guide](/percentage-pipe/)).
 
-If your plate hit 200kg and you are wondering what to do next, proceed into [the Percentage Pipe Guide](/percentage-pipe/).
+Prerequisites or What You Need
+------------------------------
+- Completed Fuse Box progression (required before this stage). See [the Fuse Box guide](/up-achievement-fuses/).
+- Ability to move and position heavier in-game objects.
+- Prefer compact/contained heavy items (they stay on the plate).
+- A plan to keep items from bouncing or sliding off (ramps, bumpers, or placing items inside a container helps).
 
-## Quick Steps
+Full Explanation
+----------------
+- Weight, not count: The game checks total mass on the plate. 200 refers to kilograms.
+- Stability matters as much as mass: many light objects (like ducks) add up slowly and are prone to bouncing, sliding or falling off the plate. Community-confirmed approaches favor fewer, heavier, and contained items because they maintain contact and are simpler to keep on the surface.
+- Workable community approaches: players consistently report success using Gambling Crates, bumpers, remotes, and loaded containers as practical ways to reach 200 kg. Present-day community findings indicate no single required item list—these are common solutions, not an official mandate.
+- Why ducks are inefficient: raw ducks are light, have loose physics, and frequently topple or get flung off by collisions; a pile of ducks can be harder to maintain on the plate than a single heavy item.
+- What happens at 200 kg: reaching 200 kg satisfies the HEAVY? checkpoint and the intended next step is the Percentage Pipe progression. This is a progression gate, not the final goal of the map.
 
-1. Finish the Fuse Box progression first; the fuse stage comes before the scale.
-2. Gather heavy, stable objects or a contained load that will stay on the plate.
-3. Place the load centrally and ensure it will not topple or roll off.
-4. If objects slide, use bumpers, remotes, or a container to keep them in place.
-5. Watch the plate readout. When it reaches 200kg, move forward into the Percentage Pipe progression.
+Common Mistakes
+---------------
+- Assuming “200” means 200 objects instead of 200 kg.
+- Trying to reach the target with a tall, unstable pile that collapses or tumbles off the plate.
+- Not completing the Fuse Box progression first, then wondering why nothing advances.
+- Feeding ordinary ducks into the next pipe expecting the Percentage Pipe to accept them — the pipe percentage is a separate progression check.
+- Forgetting to secure items that bounce or slide off contact before the weight is registered.
 
-## Prerequisites or What You Need
+What To Do Next
+---------------
+After the plate reaches 200 kg, continue into the Percentage Pipe progression. If you expected different behavior, double-check that the Fuse Box progression was completed and that you actually reached the 200 kg mass (not a partial stack that fell off). For the next steps, consult [the Percentage Pipe Guide](/percentage-pipe/).
 
-- Completed Fuse Box progression: the fuse step comes before the scale checkpoint.
-- Heavy, stable mass: current full-release community findings indicate contained piles or heavy single objects are more reliable than many loose items.
-- Tools players commonly use, reported by the community but not mandatory: Gambling Crates, bumpers, remotes, and loaded containers to move and keep weight on the plate.
+Related Guides
+--------------
+- Before this: [the Fuse Box guide](/up-achievement-fuses/)
+- After this: [the Percentage Pipe Guide](/percentage-pipe/)
 
-## Full Explanation
+FAQ
+---
+Q: What is the heaviest item?
+A: There is no single community-confirmed “heaviest item” listed by the developers. Current community findings show several object categories (loaded containers, Gambling Crates, bumpers, remotes) are practical because of their compact mass and stability. No official universal heaviest object is confirmed.
 
-### Mass, not count
+Q: What should I use to reach 200 kg?
+A: Use compact, stable heavy objects or contained loads so they stay on the plate. Community-reported workable choices include Gambling Crates, bumpers, remotes, and loaded containers. Avoid relying on many loose ducks.
 
-The plate checks total kilograms. A stack of many light objects can still be far below 200kg.
-
-### Why some items work better
-
-Heavy, compact objects, or a container filled with weight, are easier to place and keep on the plate than dozens of loose items. A contained pile resists scattering from physics jitter.
-
-### Using community solutions safely
-
-Players consistently report success using crates or containers to hold mass, and using bumpers or remotes to push a load onto the plate and keep it centered. These are common approaches reported by the community, not an official required list.
-
-### Fuse relationship
-
-The Fuse Box progression must be completed earlier; bypassing or skipping the fuse stage can block the scale progression.
-
-### After the weigh-in
-
-The plate unlocks the next progression gate. The next stage is the Percentage Pipe progression; the pipe's percentage check is separate from the weigh-in.
-
-## Common Mistakes
-
-- Thinking “200” means 200 objects. The plate checks kilograms, not item count.
-- Tossing lots of loose ducks or tall stacks onto the plate. Loose physics objects can topple or slide off, making this inefficient.
-- Feeding raw ducks into the next pipe and expecting that to be the percentage input. The Percentage Pipe is a separate progression, and raw ducks are not a guaranteed correct input.
-- Placing weight in an unstable pile so it slips off before the threshold registers.
-- Trying before finishing the Fuse Box progression.
-
-## What To Do Next
-
-- If you have not yet, complete the Fuse Box progression: see [the Fuse Box guide](/up-achievement-fuses/).
-- After you reach 200kg, continue to the Percentage Pipe progression. For detailed next steps, see [the Percentage Pipe Guide](/percentage-pipe/).
-- If you are stuck, try fewer, heavier items or put mass into a container so it stays on the plate.
-
-## Related Guides
-
-- [the Fuse Box guide](/up-achievement-fuses/) — complete this before the scale.
-- [the Percentage Pipe Guide](/percentage-pipe/) — the progression that follows the 200kg checkpoint.
+Q: What do I do after reaching 200 kg?
+A: Proceed into the Percentage Pipe progression — the 200 kg readout is a HEAVY? checkpoint and the next progression is handled by the Percentage Pipe. See [the Percentage Pipe Guide](/percentage-pipe/).

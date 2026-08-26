@@ -1,24 +1,24 @@
 {
-  "title": "Project P.I.T.T. Trade Terminal — clear items & cleanup",
-  "description": "Updated for 1.0.5: Use the Trade Terminal to clear products; player-tested right-side switch vacuums items. If blocked, use Pause Menu → Clear Items (no refund).",
-  "h1": "Project P.I.T.T. Trade Terminal — clear items & cleanup",
-  "quickAnswer": "Trade Terminal clears/vacuums products; player-tested right-side switch can vacuum items; if piles cause stutter/crashes or block access use Pause Menu → Clear Items in 1.0.5 — it removes items but gives no refund.",
+  "title": "How to Use the Trade Terminal in Project P.I.T.T.",
+  "description": "Updated for 1.0.5 — The Trade Terminal clears products; players report the right-side switch vacuums items. If access is blocked, use Pause → Clear Items (no refund).",
+  "h1": "How to Use the Trade Terminal in Project P.I.T.T.",
+  "quickAnswer": "Updated for 1.0.5 — The Trade Terminal clears/vacuums products; a player-tested right-side switch can vacuum them, and if piles block access use Pause Menu → Clear Items (official, no refund).",
   "facts": [
     {
-      "label": "Function",
-      "value": "Clears/removes or vacuums products from the scene."
+      "label": "Trade Terminal",
+      "value": "Used to clear/remove or vacuum products from the scene."
     },
     {
       "label": "Right-side switch",
-      "value": "Player-tested report: the switch on the terminal's right can vacuum products (Steam discussion)."
+      "value": "Player-tested Steam report: the switch on the right can vacuum products."
     },
     {
-      "label": "Pause Menu Clear Items",
-      "value": "Official 1.0.5 patch adds a 'Clear Items' button to remove items that may cause crashes or unplayable scenes."
+      "label": "Clear Items (pause menu)",
+      "value": "Official 1.0.5 update: adds a Pause Menu → Clear Items button to remove annoying items that can cause crashes or unplayable scenes."
     },
     {
-      "label": "No refund",
-      "value": "Official 1.0.5 note: 'Clear Items' will not give back any money."
+      "label": "Clear Items refund",
+      "value": "Official 1.0.5 note: Clear Items will not give back any money."
     }
   ]
 }

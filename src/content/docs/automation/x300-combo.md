@@ -1,6 +1,6 @@
 ---
-title: How to Reach the x300 Combo in Project P.I.T.T.
-description: "What MORE!, EXTRA!, and MEGA! mean, plus practical ways to keep a combo alive while automation is running."
+title: "How to Get a 300 Combo in Project P.I.T.T. — x300 Achievement Guide"
+description: "How to get a 300 Combo in Project P.I.T.T. with a reliable lane, automation assistance, Shift Scheduler timing, and pre-ending completion advice."
 category: automation
 slug: x300-combo
 status: confirmed
@@ -13,9 +13,10 @@ intents:
   - project-pitt-x300-combo
   - project-pitt-mega-achievement
   - project-pitt-combo-guide
-quickAnswer: "The combo milestones are MORE! at x100, EXTRA! at x200, and MEGA! at x300. Feed on a steady rhythm, protect the route from jams, and fix one failure point before adding more machines."
+quickAnswer: "Aim for MEGA! at x300 with a short, visible, recoverable lane; test automation and Shift Scheduler timing first, and prioritize the attempt before final-ending progression if it is unfinished."
 related:
   - automation
+  - shift-scheduler
   - achievements
 relations:
   -
@@ -38,7 +39,7 @@ sources:
     title: Steam Community automation discussion
     url: https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/
 cover: ../../../assets/gameplay/combo.jpg
-changeSummary: Initial V1 page connecting combo milestones to recoverable factory routing.
+changeSummary: "Expanded for 300 Combo reliability, automation-assisted timing, Shift Scheduler use, and pre-ending completion planning."
 eyebrow: Combo Milestones
 facts:
   -
@@ -51,8 +52,8 @@ facts:
     label: "MEGA!"
     value: x300
   -
-    label: Best partner page
-    value: Automation
+    label: Automation
+    value: "Use tested panels, movers, containment, and recovery access before relying on automation; prioritize x300 before final-ending progression as a precaution, not an irreversible rule."
 ---
 <!--
   This file is generated from site-spec.yaml.
@@ -60,52 +61,74 @@ facts:
   Run npm run site:generate instead.
   Source: site-input/pages/x300-combo.md
 -->
-## What are the MORE!, EXTRA!, and MEGA! combo achievements?
+Direct Answer — MEGA! (x300 / 300 Combo)
+> Quick answer: MEGA! (x300) is earned by sustaining a continuous, recoverable handoff long enough to reach the MEGA tier. The reliable practical pattern confirmed by the community is a short, highly visible lane with a single tested source → route → receiver, backed by basic automation for alignment, containment, and jam recovery. Prioritize your attempt before final/ending progression as a timing precaution (see Safest progression timing).
 
-They are three combo milestones:
+Quick Steps
+1. Build a short, visible lane: keep transfers minimal so you can spot and clear jams quickly.
+2. Use one source, one route, one receiver and verify single-item throughput first.
+3. Add basic automation for alignment and containment (panels, fans, magnets, pistons, launchers) and a simple jam-recovery path.
+4. Ramp up in controlled bursts while watching the lane; stop and fix the first sign of misalignment.
+5. Optionally use the Shift Scheduler for timed batches after you’ve confirmed the physical handoff works.
 
-| Achievement | Target |
-| --- | ---: |
-| MORE! | x100 |
-| EXTRA! | x200 |
-| MEGA! | x300 |
+What You Need (Prerequisites)
+- A tested single source → route → receiver path.
+- A short, visible, recoverable lane (fewer transfer points = safer).
+- Access to basic automation components (community guides cover panels, fans, magnets, pistons, launchers, alignment, containment, jam recovery).
+- Time to test and iterate before attempting a full MEGA run.
+- If you plan timed batches, a tested Shift Scheduler setup.
 
-The first two are useful practice gates. **MEGA!** is the x300 target, so the winning habit is not a dramatic burst of products; it is a lane that keeps feeding while you fix problems before the combo window expires.
+Reliable Method (Full Explanation)
+- Keep the production lane short and visible. The main player problem is maintaining a reliable production handoff rather than simply generating a large burst. Short lanes reduce unseen jams and make manual or automated recovery practical.
+- Start by proving a one-item, one-route handoff repeatedly until it succeeds reliably. Only then increase throughput.
+- Use containment to prevent uncontrolled backflow or overflow at the receiver. Use alignment devices (fans/magnets/pistons/launchers) to ensure items enter the receiver cleanly.
+- Implement simple jam detection and recovery: a diversion or temporary stop that clears the lane and returns items to the source or a safe buffer. Community automation guidance already covers common techniques for these devices.
+- Test the full chain under load in short windows. Do not rely on a single long unattended burst until every handoff and recovery path has been validated.
 
-## How do I keep a combo alive?
+What Resets or Breaks the Combo
+- Jams or items getting stuck in the lane break the continuous count.
+- Timing mismatches at transfer points (misaligned launches, delayed pistons/fans) will drop or lose items and break the run.
+- Losing the tested route to a new build or untested modification can introduce hidden failure points.
+- Players consistently report that late-stage progression changes can make attempts riskier; current full-release community findings indicate it’s safer to complete the MEGA attempt before entering final/ending progression. This is a timing recommendation, not a claim that the achievement becomes impossible afterward.
 
-Start with a route you can watch from source to receiver. Feed a small batch, confirm the receiver accepts it, then increase the rate. If you lose the combo, identify the first missed handoff rather than rebuilding the entire factory.
+Common Failure Reasons
+- Overlong or complex lanes with multiple transfer points.
+- Ramping throughput before the single-unit handoff is rock solid.
+- Mis-timed actuators (fans/pistons/launchers) or poor alignment.
+- No containment or buffer, causing overflow and hard-to-clear jams.
+- Relying on an untested Shift Scheduler or automation script without first validating the physical handoff.
 
-Use these checks before the serious attempt:
+How Automation Helps
+- Automation stabilizes alignment and repeatable timing for launches, fans, pistons, and magnets so the handoff is consistent.
+- Containment logic and panels can prevent overflow and isolate jams.
+- Automated jam-recovery routines can clear lanes quickly without losing the route.
+- Existing community automation guidance covers panels, fans, magnets, pistons, launchers, alignment, containment, and jam recovery — use those patterns after you’ve confirmed the basic lane. See the Automation guide for setup ideas: [Automation](/automation/).
 
-- The source does not overproduce into a blocked exit.
-- Panels contain the route but leave a recovery opening.
-- Fans, magnets, pistons, or launchers do not push products back into an earlier section.
-- The receiver has room for the next product.
-- Loose products from an earlier experiment are cleared from the lane.
+How the Shift Scheduler Can Help
+- The Shift Scheduler is useful for timed or batched behavior (start/stop windows, repeat bursts) when it’s connected and tested with your lane.
+- Do not assume scheduler settings are correct on first try: test scheduler pulses at the exact moment items need to transfer.
+- The scheduler is most helpful once the physical handoff and jam-recovery work reliably; for setup and timing examples, consult the Shift Scheduler guide: [the Shift Scheduler Guide](/shift-scheduler/).
 
-## What should I upgrade or change first?
+Safest Progression Timing
+- Current full-release community findings indicate it’s safer to attempt MEGA! before entering final/ending progression. That recommendation is about risk management and timing, not a confirmed permanent lockout or irreversible state. If you haven’t reached x300 yet, plan the attempt while you still have time to test and iterate.
 
-Choose the change that removes the first failure you can observe. If the timer expires while the lane is still feeding, a timing or throughput improvement may help. If products miss the receiver, fix alignment and containment first. If the area is full of debris, clean the floor before adding another mover.
+FAQ
+Q: Is MEGA! the same as EXTRA! or MORE!?
+A: No. MORE! corresponds to x100, EXTRA! to x200, and MEGA! is the x300 tier. Each tier requires progressively longer reliable handoffs.
 
-This page does not call any upgrade path a universal best build. The game’s physics and production behavior make a compact, recoverable lane a better starting point than a huge untested machine stack.
+Q: Can automation alone guarantee MEGA!?
+A: No automation recipe universally guarantees it. Automation greatly increases reliability when applied to a lane that has already been proven manually (one source → one route → one receiver). Community guides provide useful automation patterns, but you must test them on your layout.
 
-## Can I use automation for MEGA!?
+Q: Will entering the ending/progression immediately stop me from getting x300?
+A: The community advises attempting MEGA! before final/ending progression as a safer choice. This is a timing recommendation based on current full-release findings, not proof of a permanent block.
 
-Yes, but prove the lane before relying on it. [Automation](/automation/) explains the one-source / one-receiver test, snap behavior, mover roles, and jam recovery. Run that small test until the route is boring, then extend it toward the x300 attempt.
+Q: Should I run multiple lanes in parallel to get MEGA!?
+A: Players consistently report that a single short, recoverable lane is the safest practical approach. Multiple lanes add complexity and more potential failure points unless you have robust automation and isolation between lanes.
 
-## What if the combo breaks at x100 or x200?
+Q: My lane jammed — can I still recover the run?
+A: If you have a tested jam-recovery path or containment that isolates and clears the jam without breaking the route, you can continue. That’s why designing a recoverable lane is a core recommendation.
 
-That is useful evidence, not a failed run. Note where the break happened:
-
-1. Source stopped or overfilled.
-2. Product escaped a panel.
-3. Mover redirected or recaptured it.
-4. Receiver was blocked.
-5. Loose products caused a physics pile-up.
-
-Fix that one point, clear the lane, and restart with a smaller batch. Save the deliberate **MESS!** and **LAG!** loose-product challenges for a separate session so they do not contaminate your MEGA! setup.
-
-### Next question
-
-If you are chasing full completion, return to [all 23 achievements](/achievements/). If the x300 attempt fails because the lane jams, go back to [automation fundamentals](/automation/).
+Related Guides
+- [Automation](/automation/) — lane setup and device patterns.
+- [the Shift Scheduler Guide](/shift-scheduler/) — timed and batch control.
+- [the Achievements Guide](/achievements/) — timing and completion notes.

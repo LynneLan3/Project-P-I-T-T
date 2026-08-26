@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "templateVersion": "2.0.0",
   "generatorVersion": "1.0.0",
-  "specHash": "2ba27ba60a27a0382772ab6bcea013188a2e4b6a350a44010b2daf2e07e7a2a6",
+  "specHash": "2da87c7114e80e42d58f17289bd91262d048edec1dc1ea99785ee52d4aecb0cc",
   "siteId": "project-p-i-t-t",
   "createdFromSpec": "site-spec.yaml",
   "managedFiles": [
@@ -53,27 +53,42 @@
     },
     {
       "path": "src/config/site.generated.ts",
-      "sha256": "16ab2223b4d21b5fe2066a440a6020a754a5fd56f60bc413f3ebba23a9ae3973",
+      "sha256": "d2ae190ea7be5aea9aacf699bd6035197089c3c908947c7aae46879f517650fe",
       "kind": "config"
     },
     {
       "path": "src/content/docs/achievements/achievements.md",
-      "sha256": "77d27485dec0c72c59883a95460c7e10afff92ab26fea16f9cbd0529fe7a9a5a",
+      "sha256": "bd378916077e3d42f67a027e3af3d0f38bac4a575567c64f6948f21188a6c810",
       "kind": "page"
     },
     {
       "path": "src/content/docs/automation/automation.md",
-      "sha256": "9cdf3ee1ee7f35e82844da9e9298a35f83bf68cd60d0a6e1ebbc4f12ce93ae3e",
+      "sha256": "7c306e4e2ee27175e76d86fd9c500314384a4077d32ef9fed44f7e6dc72a6d8f",
+      "kind": "page"
+    },
+    {
+      "path": "src/content/docs/automation/panel-rack.md",
+      "sha256": "86706351ee89fc26bec9534e5f5ba1ebaa16857203d2a643d4304d585a5769b0",
+      "kind": "page"
+    },
+    {
+      "path": "src/content/docs/automation/shift-scheduler.md",
+      "sha256": "145e82960ff5e23247c61bf46bd611705e43d43819b69551aa24ee64e1f92de4",
       "kind": "page"
     },
     {
       "path": "src/content/docs/automation/trade-terminal.md",
-      "sha256": "0f54f775e51cf9e2b222859f20096860f4519ac7587031341bc1de3b8f76e03a",
+      "sha256": "4e4bd366d205b5ab188f521b37a8e64d6f349bf82ce9ef3e05f17f6cd7653e19",
+      "kind": "page"
+    },
+    {
+      "path": "src/content/docs/automation/troubleshooting.md",
+      "sha256": "e3b4ffcbd81727dfd4f61bad28581ceea55fc896a8930c9f070c0f917ca0f471",
       "kind": "page"
     },
     {
       "path": "src/content/docs/automation/x300-combo.md",
-      "sha256": "4406f80efb4b58765c21e9096480e7b2c39e3ccc946f9658e83e9e2b38525cf6",
+      "sha256": "8ae14c74026c21531c59ee99f4eb4569411ac2db7543e2af0d8b3348215a12fd",
       "kind": "page"
     },
     {
@@ -83,7 +98,7 @@
     },
     {
       "path": "src/content/docs/progression-secrets/200kg-plate.md",
-      "sha256": "fbe11aaed4f4b05b4e038ed89b4322656ece8909cdef240a7536c5fc5e36b3b5",
+      "sha256": "5d252eee94b9dad63a416340186b400e64c93c7a567a14158207a211cdab51d0",
       "kind": "page"
     },
     {
@@ -98,7 +113,7 @@
     },
     {
       "path": "src/content/docs/progression-secrets/up-achievement-fuses.md",
-      "sha256": "3581d230875096e945418eed652e9f39d80ba088950940a7b78125f1e8587935",
+      "sha256": "3ea21487c05b9724be88c1c7f8de71af1aae7bb163f23f14b4db7945e3f79eb9",
       "kind": "page"
     },
     {
