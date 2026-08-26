@@ -1,5 +1,6 @@
 ---
 import { game } from '../config/game';
+import VercelAnalytics from '@vercel/analytics/astro';
 
 const analytics = game.analytics;
 const enabled = Boolean(analytics?.enabled && import.meta.env.PROD);
@@ -7,9 +8,9 @@ const siteHost = enabled ? new URL(game.siteUrl).hostname : '';
 const config =
 	enabled && analytics
 		? {
-				measurementId: analytics.measurementId,
 				siteHost,
 				trackOutbound: analytics.trackOutbound,
+				...(analytics.provider === 'ga4' ? { measurementId: analytics.measurementId } : {}),
 			}
 		: null;
 ---
@@ -19,6 +20,8 @@ const config =
 		<script type="application/json" id="gw-analytics-config" set:html={JSON.stringify(config)} />
 	)
 }
+
+{config && analytics?.provider === 'vercel' && <VercelAnalytics />}
 
 {
 	config && analytics?.provider === 'ga4' && (

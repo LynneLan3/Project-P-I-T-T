@@ -1,41 +1,61 @@
-Direct Answer
-- The Fuse Box in the full release has three fuse sockets. You must find and place all three fuses to complete that Fuse progression — completing it is an important prerequisite for the later 200kg stage. Current full‑release community findings indicate the text/marker "UP?" is associated with finding/placing all fuses, but that should be treated as a player‑observed index rather than official developer documentation.
+## Direct Answer
+There are three Fuses. The Fuse Box is located in an upper/catwalk area on the facility’s right-side/elevated portion. You must insert all three Fuses into the Fuse Box to complete that progression — simply finding the box does not finish it. Completing the Fuse step unlocks the next stage (the 200kg scale/weight puzzle). Full‑release community findings and achievement indexes consistently connect the Steam achievement UP? with finishing the Fuse step (Steam’s public listing shows the achievement but has no official description).
 
-Quick Steps
-1. Locate the Fuse Box (it visibly accepts three fuses).
-2. Search the accessible progression areas methodically for three fuses.
-3. Place each fuse into the box; the fuse count should increase as you insert them.
-4. When all three are placed, the Fuse progression is complete and you can continue toward the 200kg stage.
+## Where Is the Fuse Box?
+The Fuse Box sits up in an elevated/catwalk area on the facility’s right-side or otherwise higher portion, according to community descriptions. Expect surveillance cameras and height/movement obstacles on the route; the box is accessed via those upper/catwalk spaces rather than a ground‑level console. Do not treat this as a step‑by‑step route — use it as a landmark: look to the right-side/elevated catwalks and platforms when hunting the box.
 
-Prerequisites or What You Need
-- Access to the area that contains the Fuse Box.
-- Three fuses to insert (the progression requires three; do not expect more).
-- Any normal in‑game traversal or keys needed to reach the rooms where fuses can be found. (This guide uses full‑release findings; the puzzle itself appeared in the Demo but behavior may have changed.)
+## How to Get All 3 Fuses
+Progress states: 0/3 → 1/3 → 2/3 → 3/3.
 
-Full Explanation
-- What the Fuse Box is: it’s a progression device with three socket slots. The Full Release confirms three required fuses.
-- How to confirm you’re on the right progression: approach the Fuse Box and verify it accepts up to three fuses. Players consistently report that placing fuses updates the box and that the UP? index is tied to the finding/placing step. Completing all three is reported as necessary before the later 200kg content becomes available.
-- Why it matters: successful completion of this Fuse progression is a prerequisite for the subsequent 200kg stage; if you haven’t completed it you may be blocked from that next step.
-- Location reporting: there is not enough reliable evidence to publish an exact room‑by‑room list of all three fuse locations for the full release. Community posts vary; don’t rely on coordinate lists that aren’t backed by multiple confirmations.
+Recommended methodical search route (use as a checklist, not exact coordinates):
+1. Sweep visible elevated areas and catwalks first — the Fuse Box is up high, so nearby Fuses often sit on or near raised platforms.
+2. Check nearby platforms and accessible upper alcoves you can see from the catwalks.
+3. Inspect places below likely drop points (items can fall); look under ledges and nearby ground-level drop zones.
+4. Look for objects that could have been knocked down — community reports show Fuses sometimes end up on lowered debris or pushed items.
+5. Continue until you reach 3/3, then bring them to the Fuse Box and insert all three.
 
-Common Mistakes
-- Assuming there are more than three fuses. The box has three sockets — plan to find exactly three.
-- Treating Demo-era notes as exact for the Full Release. The puzzle existed in the Demo but follow full‑release reports instead.
-- Expecting a single definitive “all coordinates” list. Evidence is incomplete; avoid guides claiming exact positions for every seed or run.
-- Believing a dropped fuse is always permanently retrievable. Earlier developer/community discussion noted cases where a fuse could fall into a problematic spot; there is no universal guaranteed recovery.
+Do not expect any single universal location for each Fuse; treat the search as a methodical sweep of elevated and adjacent areas.
 
-Safe search / recovery checks (conservative guidance)
-- Sweep the immediate area and directly below platforms and ledges where physics objects can fall.
-- Backtrack along recent routes; some items are dislodged into adjacent spaces.
-- Try leaving the area (fast‑travel/exit) and returning — some players report this can respawn/reset misplaced objects, but results vary.
-- Load an earlier save if you have one and the fuse was lost after a recent action.
-- If none of the above help, consult community threads for the exact area you’re in; other players sometimes share area‑specific workarounds. Do not expect a single fix that works in all situations.
+## How to Reach the Upper Area
+The upper route may include cameras/surveillance and height or movement obstacles. Players consistently report these player‑reported workarounds (labelled as community methods, not official solutions):
+- Dealing with or avoiding cameras (timing, line‑of‑sight avoidance).
+- Knocking down elevated objects so they drop within reach.
+- Prop‑jumping or other physics‑based movement to gain height.
 
-What To Do Next
-- After you’ve placed all three fuses and confirmed the box shows them placed, proceed to the content gated by that progression (the 200kg stage). If you’re stuck because a fuse appears missing, use the conservative recovery checks above before hunting for alternate routes.
+Treat these as community‑reported options to explore — the game does not require a single canonical trick that applies in every situation.
 
-Related Guides
-- [the 200kg Guide]({{page:200kg-plate}})
+## What Happens After You Place All 3 Fuses?
+Insert all three Fuses into the Fuse Box → Fuse progression completes → the run continues into the 200kg scale / weight‑puzzle progression. For the next step, see [the 200kg Guide]({{page:200kg-plate}}).
 
-Finished all 3 fuses?
+## UP? Achievement
+UP? appears on Steam’s global achievement list but Steam does not show a detailed description for it. Current full‑release community reports and achievement indexes consistently connect UP? with completing the Fuse step; that connection is community‑reported rather than a Steam‑published description.
+
+## Missing Fuse / Fuse Stuck
+Current full‑release recovery flow (evidence‑aware):
+1. Check nearby and below likely drop/placement areas — items can fall or land out of sight.
+2. Wait briefly or otherwise confirm key‑item respawn; Official Update 1.0.5 fixed cases where key items could remain permanently stuck and added respawn behavior for relevant items.
+3. Use the recovery method available in your current save/version (follow your game’s available save/retry options).
+
+Do not assume permanent loss in current full release; follow the nearby/drop checks and respawn confirmation steps first.
+
+## FAQ
+Q: How many fuses are there in Project P.I.T.T.?
+A: There are three Fuses.
+
+Q: Where is the Fuse Box?
+A: The Fuse Box is in an upper/catwalk area on the facility’s right‑side/elevated portion. Expect cameras and height/movement obstacles on the route.
+
+Q: What happens when you place all 3 fuses?
+A: Placing all three completes the Fuse progression and advances the run into the 200kg scale/weight puzzle.
+
+Q: Is the fuse puzzle related to UP??
+A: UP? is a Steam achievement with no official Steam description. Full‑release community findings and achievement trackers consistently link UP? to completing the Fuse step, but that link is community‑reported rather than a Steam‑published description.
+
+Q: What should I do if a fuse is missing?
+A: Check nearby and below drop areas, wait or confirm key‑item respawn, then use the recovery method provided by your current save/version. Update 1.0.5 addressed permanent‑stuck key items and added respawn behavior.
+
+Q: What comes after the Fuse Box?
+A: The next progression is the 200kg scale / weight puzzle — see [the 200kg Guide]({{page:200kg-plate}}).
+
+## Related Guide
 [the 200kg Guide]({{page:200kg-plate}})

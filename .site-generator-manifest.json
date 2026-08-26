@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "templateVersion": "2.0.0",
   "generatorVersion": "1.0.0",
-  "specHash": "82b5a78cdbe098e9a86e9fa481858fd626ec7fafc93ac8040728d6dc2b5a725a",
+  "specHash": "2ba27ba60a27a0382772ab6bcea013188a2e4b6a350a44010b2daf2e07e7a2a6",
   "siteId": "project-p-i-t-t",
   "createdFromSpec": "site-spec.yaml",
   "managedFiles": [
@@ -53,7 +53,7 @@
     },
     {
       "path": "src/config/site.generated.ts",
-      "sha256": "467ed5312e51734dd440d9e1541aea6fb9d34192a8ed8a977a93f391b60b8ba0",
+      "sha256": "16ab2223b4d21b5fe2066a440a6020a754a5fd56f60bc413f3ebba23a9ae3973",
       "kind": "config"
     },
     {
@@ -63,7 +63,12 @@
     },
     {
       "path": "src/content/docs/automation/automation.md",
-      "sha256": "459811c3c1d18080ef20523e83c4dc924544eeab078389af96613879bb126ea2",
+      "sha256": "9cdf3ee1ee7f35e82844da9e9298a35f83bf68cd60d0a6e1ebbc4f12ce93ae3e",
+      "kind": "page"
+    },
+    {
+      "path": "src/content/docs/automation/trade-terminal.md",
+      "sha256": "0f54f775e51cf9e2b222859f20096860f4519ac7587031341bc1de3b8f76e03a",
       "kind": "page"
     },
     {
@@ -93,7 +98,7 @@
     },
     {
       "path": "src/content/docs/progression-secrets/up-achievement-fuses.md",
-      "sha256": "a9c6eb16491ab65237c6fe588afcff8223881788b01427b08c53266b0c8a3bde",
+      "sha256": "3581d230875096e945418eed652e9f39d80ba088950940a7b78125f1e8587935",
       "kind": "page"
     },
     {
@@ -108,7 +113,7 @@
     },
     {
       "path": "src/content/trust/privacy.md",
-      "sha256": "1fd0c6bcb696f3da3a392a2372e3a917060fd4202e9a0b6c3925f95aff821428",
+      "sha256": "09749cd620d6d9cc053e6fd1e7ec7a82d50fdcaed42cc01a93a6420154ece49f",
       "kind": "trust"
     }
   ],

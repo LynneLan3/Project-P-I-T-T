@@ -278,12 +278,19 @@ export const gameConfigSchema = z.object({
 		})
 		.optional(),
 	analytics: z
-		.object({
-			enabled: z.literal(true),
-			provider: z.literal('ga4'),
-			measurementId: z.string().regex(/^G-[A-Z0-9]+$/, 'measurementId must be a GA4 ID such as G-XXXXXXXXXX'),
-			trackOutbound: z.boolean(),
-		})
+		.union([
+			z.object({
+				enabled: z.literal(true),
+				provider: z.literal('ga4'),
+				measurementId: z.string().regex(/^G-[A-Z0-9]+$/, 'measurementId must be a GA4 ID such as G-XXXXXXXXXX'),
+				trackOutbound: z.boolean(),
+			}),
+			z.object({
+				enabled: z.literal(true),
+				provider: z.literal('vercel'),
+				trackOutbound: z.boolean(),
+			}),
+		])
 		.optional(),
 	social: z
 		.object({

@@ -4,7 +4,9 @@ Write only the Markdown body of the requested guide. Do not include YAML frontma
 
 Use only the brief's verified facts and community-confirmed findings. If the brief says evidence is incomplete, preserve that boundary in natural language. Never invent room names, exact coordinates, item counts, item names, codes, unlock timing, mechanics, rewards, or a universal solution. Do not use model memory to fill an evidence gap. Do not present old Demo information as Full Release information.
 
-Structure the body with answer-first Markdown headings:
+Structure the body with answer-first Markdown headings. If the brief specifies a
+custom intent-first order or headings, follow that order while keeping the
+prose concise:
 
 - Direct Answer
 - Quick Steps
@@ -13,6 +15,10 @@ Structure the body with answer-first Markdown headings:
 - Common Mistakes
 - What To Do Next
 - Related Guides
+
+If the brief requests a real FAQ section, include it near the end with the
+requested questions and answers. Do not add FAQ schema or invisible content;
+the site template controls structured data.
 
 Include the requested prominent answer block and the requested internal-guide links using the exact Markdown links supplied in the brief. Keep the prose practical, concise, native-sounding, and player-focused. Use short paragraphs, numbered steps, and bullets where useful. Do not pad to a target word count, repeat the same answer across sections, add generic game introductions, or use SEO filler. Do not claim personal gameplay experience.
 

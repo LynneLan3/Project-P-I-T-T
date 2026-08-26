@@ -110,8 +110,8 @@ pages:
     changeSummary: Initial V1 page from the full-release Steam achievement list.
 
   - id: up-achievement-fuses
-    title: Project P.I.T.T. Fuses Guide — Fuse Box, 3 Fuses & UP?
-    description: A careful Project P.I.T.T. guide to the three-fuse box, the UP? progression, evidence limits on fuse locations, and the 200kg next step.
+    title: "Project P.I.T.T.: 3 Fuses, Fuse Box UP? and Next Step"
+    description: Three fuses must be placed in the Fuse Box in an upper/catwalk (right-side elevated) area; completing the fuse step leads into the 200kg weight puzzle next.
     category: progression-secrets
     slug: up-achievement-fuses
     source: site-input/pages/up-achievement-fuses.md
@@ -123,17 +123,17 @@ pages:
       - project-pitt-up-achievement
       - project-pitt-fuses
       - find-and-place-all-fuses
-    quickAnswer: The Fuse Box requires three fuses. Place all three to complete the UP? progression, then continue toward the 200kg stage; exact individual fuse coordinates are not confirmed by the available evidence.
+    quickAnswer: There are 3 fuses that must all be inserted into the Fuse Box located in an upper/catwalk (right-side/elevated) area; placing all three completes the fuse step, progresses to the 200kg puzzle, and is tied to UP? by community reports.
     eyebrow: Hidden Progression
     facts:
-      - label: Achievement
-        value: UP?
-      - label: Required pieces
-        value: 3 fuses
-      - label: Destination
-        value: Upper catwalk fuse box
-      - label: Next check
-        value: 200kg plate
+      - label: Fuses required
+        value: Three fuses are required by the Fuse Box.
+      - label: Fuse Box location
+        value: The Fuse Box sits in an upper/catwalk, right-side or otherwise elevated portion of the facility.
+      - label: Insertion requirement
+        value: You must insert all three fuses into the Fuse Box; finding the box alone does not complete progression.
+      - label: After completion
+        value: Completing the fuse progression leads into the 200kg weight/scale progression; UP? is a Steam achievement that community reports consistently connect to this step.
     coverAssetId: pitt-screenshot-fuses
     related:
       - 200kg-plate
@@ -157,7 +157,7 @@ pages:
       - type: other
         title: Exophase achievement index — UP?
         url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
-    changeSummary: Updated for the launch-window fuse-box search signal with a strict no-invented-coordinates evidence boundary.
+    changeSummary: Reframed for fuse, Fuse Box, three-fuse, UP?, upper-area, and 200kg progression intent with current-version recovery guidance.
 
   - id: 200kg-plate
     title: Project P.I.T.T. 200kg Scale Guide — How to Reach 200 kg & What to Do Next
@@ -407,6 +407,52 @@ pages:
         url: https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/
     changeSummary: Initial V1 page connecting combo milestones to recoverable factory routing.
 
+  - id: trade-terminal
+    title: "Project P.I.T.T. Trade Terminal — clear items & cleanup"
+    description: "Updated for 1.0.5: Use the Trade Terminal to clear products; player-tested right-side switch vacuums items. If blocked, use Pause Menu → Clear Items (no refund)."
+    category: automation
+    slug: trade-terminal
+    source: site-input/pages/trade-terminal.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 3
+    role: core
+    intents:
+      - project-pitt-trade-terminal
+      - project-pitt-trading-terminal
+      - project-pitt-how-to-use-trade-terminal
+      - project-pitt-clear-items
+      - project-pitt-remove-items
+      - project-pitt-cash-registers-piling-up
+    quickAnswer: "Trade Terminal clears/vacuums products; player-tested right-side switch can vacuum items; if piles cause stutter/crashes or block access use Pause Menu → Clear Items in 1.0.5 — it removes items but gives no refund."
+    eyebrow: Trade Terminal
+    facts:
+      - label: Function
+        value: Clears/removes or vacuums products from the scene.
+      - label: Right-side switch
+        value: "Player-tested report: the switch on the terminal's right can vacuum products (Steam discussion)."
+      - label: Pause Menu Clear Items
+        value: "Official 1.0.5 patch adds a 'Clear Items' button to remove items that may cause crashes or unplayable scenes."
+      - label: No refund
+        value: "Official 1.0.5 note: 'Clear Items' will not give back any money."
+    related:
+      - automation
+      - x300-combo
+    relations:
+      - pageId: automation
+        type: related
+      - pageId: x300-combo
+        type: related
+    assetType: article
+    sources:
+      - type: steam
+        title: Project P.I.T.T. Steam Community — Update 1.0.5
+        url: https://steamcommunity.com/app/4026250/
+      - type: steam
+        title: Steam Community discussion — Cash Register pileup and Trading Terminal
+        url: https://steamcommunity.com/app/4026250/discussions/0/587309530805892814
+    changeSummary: New concise blocker page for Trade Terminal cleanup, Cash Register pileups, and the 1.0.5 Clear Items fallback.
+
 routes:
   - id: hidden-progression
     eyebrow: Progression Route
@@ -481,6 +527,8 @@ homepage:
       pageId: automation
     - label: How do I automate production?
       pageId: automation
+    - label: How do I use the Trade Terminal?
+      pageId: trade-terminal
     - label: How do I reach a x300 combo?
       pageId: x300-combo
   startHere:
@@ -577,4 +625,6 @@ trust:
     source: site-input/trust/privacy.md
 
 analytics:
-  enabled: false
+  enabled: true
+  provider: vercel
+  trackOutbound: false

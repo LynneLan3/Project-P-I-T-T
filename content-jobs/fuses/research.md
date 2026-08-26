@@ -1,28 +1,55 @@
-# APIMart content brief: Project P.I.T.T. Fuses and Fuse Box
+# APIMart content brief: Project P.I.T.T. Fuses, Fuse Box, and UP?
 
-TARGET QUERY: project pitt fuses
-SECONDARY QUERIES: project pitt fuse; project pitt fuse box; project pitt 3 fuses; project pitt UP; project pitt fuse puzzle
+PRIMARY INTENT
+Where are the fuses and Fuse Box in Project P.I.T.T., what do I do with them, and what happens after I place all three?
 
-PLAYER PROBLEM
-Players know there is a Fuse Box but do not know how many fuses it takes, whether they are on the correct progression, or what to do when a fuse is difficult to recover. Searchers often ask for all exact locations, but the evidence does not support a reliable room-by-room coordinate list.
+PRIORITY QUERY CLUSTER
+- project pitt fuses
+- project pitt fuse box
+- project pitt fuse
+- project pitt up achievement
 
-VERIFIED FACTS
-- The progression contains a Fuse Box with three fuse sockets.
-- Completing the Fuse progression is an important prerequisite for the later 200kg stage.
-- UP? is associated with finding and placing all fuses.
-- The Fuse puzzle was already present in the Demo, but this guide is for the 2026-08-19 Full Release.
-- Earlier version/developer discussion material addressed a fuse falling into an unrecoverable position; phrase recovery conservatively and do not promise a universal fix.
+SECONDARY INTENT
+- how many fuses
+- what do the fuses do
+- how to reach the Fuse Box
+- what happens after all 3 fuses
+- fuse missing / fuse stuck
+- 200kg next step
+
+VERIFIED FACTS TO USE
+- The Fuse Box requires three Fuses.
+- The Fuse Box is in an upper / catwalk area, in the right-side or otherwise elevated portion of the facility according to the available community descriptions.
+- The player must place all three Fuses in the Fuse Box; finding the box alone does not complete the progression.
+- Completing the Fuse progression leads into the 200kg scale / weight-puzzle progression.
+- UP? is a Steam achievement. Steam Global Achievements publicly shows the achievement, but does not publicly show a detailed description for it. Full-release community reports and achievement indexes consistently connect UP? with completing the Fuse step; do not present that connection as a Steam-official description.
+- The upper route can involve cameras / surveillance and height or movement obstacles.
+- Player-reported methods include dealing with cameras, knocking elevated objects down, and prop-jumping or other physics movement. Label these as player-reported workarounds, not as an official standard route.
+- Official Update 1.0.5 states that key items should no longer remain permanently stuck in walls and that relevant key items should respawn.
 
 EVIDENCE BOUNDARY
-- There is not enough reliable evidence for the precise individual coordinates of all three fuses.
-- Do not write an "All Fuse Locations" guide, invent rooms, or let the model infer coordinates.
-- Focus on the Fuse Box, the required count, how to confirm the player is in the right progression, safe search/recovery checks, and the next step.
+- Do not invent Fuse #1, Fuse #2, or Fuse #3 exact coordinates, room names, or a room-by-room location list.
+- Use upper area, catwalk, right side of the map, visible elevated areas, nearby platforms, landmark-based guidance, and a methodical search route only where the brief supports them.
+- Do not present Demo-era permanent-loss behavior as current Full Release behavior.
+- Do not claim that a Fuse is definitely in an elevated area, that players find one in a particular place, or that a specific stair, crate, passage, or route exists.
+- Do not invent reload, checkpoint, fast-travel, or area-reset instructions. The recovery wording must stay at checking nearby/drop areas, waiting or confirming key-item respawn, and using the current-version recovery method available in the save.
+- Do not add HUD counters, pickup-state claims, named props, or extra recovery mechanics. Do not expand “dealing with cameras” into a specific camera tactic unless the brief states it.
 
-PROMINENT ANSWER REQUIRED
-End with a clear block headed "Finished all 3 fuses?" linking to [the 200kg Guide]({{page:200kg-plate}}).
+REQUIRED PAGE ORDER AND ANSWERS
+1. Hero / Quick Answer: immediately answer that there are 3 Fuses, the Fuse Box is in the upper/catwalk area, all 3 must be inserted, completion leads to the 200kg progression, and this is tied to UP? progression.
+2. Where Is the Fuse Box?: answer the fuse-box query directly with upper/catwalk and right-side/elevated-area landmark guidance. Explain the surveillance or movement obstacle without inventing a precise route, stairs, room, or landmark.
+3. How to Get All 3 Fuses: use the progress states 0 / 3 → 1 / 3 → 2 / 3 → 3 / 3. Give a recommended search route using visible elevated areas, nearby platforms, catwalk sweep, and checking objects that may have been knocked down. Do not mention HUD counters, named props, or claim any particular Fuse is in any one of those places; do not split into unsupported exact Fuse # locations.
+4. How to Reach the Upper Area: describe cameras, elevated objects, and prop / physics movement as player-reported methods, clearly labeled as such.
+5. What Happens After You Place All 3 Fuses?: state Fuse Box → all 3 inserted → Fuse progression complete → continue to 200kg. Include this exact internal guide link: [the 200kg Guide]({{page:200kg-plate}}). Do not repeat the 200kg tutorial.
+6. UP? Achievement: distinguish the public Steam achievement listing from the community/index evidence connecting it to the Fuse step.
+7. Missing Fuse / Fuse Stuck: current Full Release recovery flow is check nearby and below the drop area, wait or confirm key-item respawn, then use the current-version recovery method available in the save. Do not expand this into reload/checkpoint/fast-travel, pickup-state, or other invented mechanics, and do not say the Fuse is permanently lost or unrecoverable.
+8. FAQ: answer all of these in natural English, with the answers also covered by the body: How many fuses are there in Project P.I.T.T.? Where is the Fuse Box? What happens when you place all 3 fuses? Is the fuse puzzle related to UP?? What should I do if a fuse is missing? What comes after the Fuse Box?
 
-RELATED GUIDE AFTER
+RELATED GUIDE
 [the 200kg Guide]({{page:200kg-plate}})
 
-ARTICLE REQUIREMENTS
-Answer what the Fuse Box is, how many fuses it needs, how the player can verify the progression, what to do after placing them, and common stuck/recovery mistakes. Mention UP? without treating a secondary index as official developer documentation. Use evidence-aware language where appropriate.
+WRITING RULES
+- Write an answer-first, concise player guide, not an achievement-definition article.
+- Keep the evidence boundary out of the first sentence when a direct answer is possible, but make the limitation clear before the location discussion could be mistaken for exact coordinates.
+- Do not add unsupported item counts, codes, rewards, room names, or universal recovery instructions.
+- All final title, meta description, H1, Quick Answer, body, FAQ, and troubleshooting prose must be generated by the APIMart provider. This brief supplies facts and constraints only.

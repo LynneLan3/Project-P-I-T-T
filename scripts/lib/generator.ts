@@ -402,7 +402,9 @@ function renderSiteGeneratedTs(config: GameConfig): string {
 		lines.push('\tanalytics: {');
 		lines.push('\t\tenabled: true,');
 		lines.push(`\t\tprovider: ${tsString(config.analytics.provider)},`);
-		lines.push(`\t\tmeasurementId: ${tsString(config.analytics.measurementId)},`);
+		if (config.analytics.provider === 'ga4') {
+			lines.push(`\t\tmeasurementId: ${tsString(config.analytics.measurementId)},`);
+		}
 		lines.push(`\t\ttrackOutbound: ${config.analytics.trackOutbound},`);
 		lines.push('\t},');
 	}
@@ -522,12 +524,15 @@ function buildSocialConfig(spec: SiteSpec): GameSocialConfig | undefined {
 
 function buildAnalyticsConfig(spec: SiteSpec): GameAnalyticsConfig | undefined {
 	if (!spec.analytics?.enabled) return undefined;
-	return {
-		enabled: true,
+	const base = {
+		enabled: true as const,
 		provider: spec.analytics.provider,
-		measurementId: spec.analytics.measurementId,
 		trackOutbound: spec.analytics.trackOutbound,
 	};
+	if (spec.analytics.provider === 'ga4') {
+		return { ...base, provider: 'ga4', measurementId: spec.analytics.measurementId! };
+	}
+	return { ...base, provider: 'vercel' };
 }
 
 function buildMonetizationConfig(spec: SiteSpec): GameMonetizationConfig | undefined {

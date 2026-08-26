@@ -1,0 +1,24 @@
+{
+  "title": "Project P.I.T.T. Trade Terminal — clear items & cleanup",
+  "description": "Updated for 1.0.5: Use the Trade Terminal to clear products; player-tested right-side switch vacuums items. If blocked, use Pause Menu → Clear Items (no refund).",
+  "h1": "Project P.I.T.T. Trade Terminal — clear items & cleanup",
+  "quickAnswer": "Trade Terminal clears/vacuums products; player-tested right-side switch can vacuum items; if piles cause stutter/crashes or block access use Pause Menu → Clear Items in 1.0.5 — it removes items but gives no refund.",
+  "facts": [
+    {
+      "label": "Function",
+      "value": "Clears/removes or vacuums products from the scene."
+    },
+    {
+      "label": "Right-side switch",
+      "value": "Player-tested report: the switch on the terminal's right can vacuum products (Steam discussion)."
+    },
+    {
+      "label": "Pause Menu Clear Items",
+      "value": "Official 1.0.5 patch adds a 'Clear Items' button to remove items that may cause crashes or unplayable scenes."
+    },
+    {
+      "label": "No refund",
+      "value": "Official 1.0.5 note: 'Clear Items' will not give back any money."
+    }
+  ]
+}

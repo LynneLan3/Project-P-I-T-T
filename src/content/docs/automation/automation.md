@@ -105,6 +105,8 @@ Check the lane in this order:
 
 Clear loose products before a long combo attempt. A factory that is slightly slower but easy to inspect is more useful than a dense pile that cannot be repaired.
 
+If a jam turns into a pile that blocks the scene, see [the Trade Terminal cleanup guide](/trade-terminal/) for the right-side vacuum switch and the 1.0.5 pause-menu fallback.
+
 ## Is there a best automation build?
 
 Not for this V1. Steam player reports describe tunnels and fan lanes as workable but imperfect, and also report snapping and output-direction problems. The safe takeaway is to prototype in small sections, keep the lane visible, and scale only after it survives repeated cycles.

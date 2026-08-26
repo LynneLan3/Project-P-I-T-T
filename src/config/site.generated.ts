@@ -76,14 +76,18 @@ export const siteConfig: GameConfig = {
 				href: "/automation/",
 			},
 			{
+				label: "How do I use the Trade Terminal?",
+				href: "/trade-terminal/",
+			},
+			{
 				label: "How do I reach a x300 combo?",
 				href: "/x300-combo/",
 			},
 		],
 		startHere: [
 			{
-				title: "Project P.I.T.T. Fuses Guide — Fuse Box, 3 Fuses & UP?",
-				description: "A careful Project P.I.T.T. guide to the three-fuse box, the UP? progression, evidence limits on fuse locations, and the 200kg next step.",
+				title: "Project P.I.T.T.: 3 Fuses, Fuse Box UP? and Next Step",
+				description: "Three fuses must be placed in the Fuse Box in an upper/catwalk (right-side elevated) area; completing the fuse step leads into the 200kg weight puzzle next.",
 				href: "/up-achievement-fuses/",
 				image: "gameplay/fuses.jpg",
 				label: "Find the 3 Fuses",
@@ -432,6 +436,37 @@ export const siteConfig: GameConfig = {
 			evidence: [
 			],
 		},
+		{
+			id: "trade-terminal",
+			slug: "trade-terminal",
+			role: "core",
+			assetType: "article",
+			intents: ["project-pitt-trade-terminal", "project-pitt-trading-terminal", "project-pitt-how-to-use-trade-terminal", "project-pitt-clear-items", "project-pitt-remove-items", "project-pitt-cash-registers-piling-up"],
+			relations: [
+				{
+					pageId: "automation",
+					type: "related",
+				},
+				{
+					pageId: "x300-combo",
+					type: "related",
+				},
+			],
+			sources: [
+				{
+					type: "steam",
+					title: "Project P.I.T.T. Steam Community — Update 1.0.5",
+					url: "https://steamcommunity.com/app/4026250/",
+				},
+				{
+					type: "steam",
+					title: "Steam Community discussion — Cash Register pileup and Trading Terminal",
+					url: "https://steamcommunity.com/app/4026250/discussions/0/587309530805892814",
+				},
+			],
+			evidence: [
+			],
+		},
 	],
 	routes: [
 		{
@@ -445,8 +480,8 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "up-achievement-fuses",
 					href: "/up-achievement-fuses/",
-					title: "Project P.I.T.T. Fuses Guide — Fuse Box, 3 Fuses & UP?",
-					description: "A careful Project P.I.T.T. guide to the three-fuse box, the UP? progression, evidence limits on fuse locations, and the 200kg next step.",
+					title: "Project P.I.T.T.: 3 Fuses, Fuse Box UP? and Next Step",
+					description: "Three fuses must be placed in the Fuse Box in an upper/catwalk (right-side elevated) area; completing the fuse step leads into the 200kg weight puzzle next.",
 					eyebrow: "Hidden Progression",
 					image: "gameplay/fuses.jpg",
 				},
@@ -555,8 +590,8 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "up-achievement-fuses",
 					href: "/up-achievement-fuses/",
-					title: "Project P.I.T.T. Fuses Guide — Fuse Box, 3 Fuses & UP?",
-					description: "A careful Project P.I.T.T. guide to the three-fuse box, the UP? progression, evidence limits on fuse locations, and the 200kg next step.",
+					title: "Project P.I.T.T.: 3 Fuses, Fuse Box UP? and Next Step",
+					description: "Three fuses must be placed in the Fuse Box in an upper/catwalk (right-side elevated) area; completing the fuse step leads into the 200kg weight puzzle next.",
 					eyebrow: "Hidden Progression",
 					image: "gameplay/fuses.jpg",
 				},
@@ -618,6 +653,11 @@ export const siteConfig: GameConfig = {
 				robots: "noindex,follow",
 			},
 		},
+	},
+	analytics: {
+		enabled: true,
+		provider: "vercel",
+		trackOutbound: false,
 	},
 	social: {
 		defaultImage: {

@@ -43,8 +43,8 @@ export function trustDescriptionForLocale(
 			'zh-CN': `本站的 ${gameName} 攻略内容如何取材、核对与更新。`,
 		},
 		privacy: {
-			en: `Starter privacy copy for ${gameName} Guide & Wiki. Update before adding analytics, ads, or affiliate links.`,
-			'zh-CN': `${gameName} 攻略 Wiki 的 starter 隐私说明。接入统计、广告或 Affiliate 前请按实际用途修改。`,
+			en: `Privacy information for ${gameName} Guide & Wiki, including analytics and third-party links.`,
+			'zh-CN': `${gameName} 攻略 Wiki 的隐私信息，包括统计与第三方链接说明。`,
 		},
 		affiliateDisclosure: {
 			en: `Starter affiliate disclosure for ${gameName} Guide & Wiki. Replace before enabling real affiliate links.`,

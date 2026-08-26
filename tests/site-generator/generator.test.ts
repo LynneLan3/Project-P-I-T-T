@@ -835,6 +835,12 @@ analytics:
   measurementId: G-TEST123456
 `;
 
+const VERCEL_ANALYTICS_ENABLED_BLOCK = `
+analytics:
+  enabled: true
+  provider: vercel
+`;
+
 test('13.1 no analytics config omits runtime analytics', () => {
 	const workspace = copyTemplateWorkspace();
 	try {
@@ -878,6 +884,21 @@ test('13.3 enabled ga4 with privacy emits runtime config and defaults trackOutbo
 		assert.match(generated, /provider: "ga4"/);
 		assert.match(generated, /measurementId: "G-TEST123456"/);
 		assert.match(generated, /trackOutbound: true/);
+	} finally {
+		rmSync(workspace, { recursive: true, force: true });
+	}
+});
+
+test('13.3b enabled vercel emits runtime config without a measurementId', () => {
+	const workspace = copyTemplateWorkspace();
+	try {
+		installFixture(workspace, 'valid-site');
+		appendSpecBlock(workspace, VERCEL_ANALYTICS_ENABLED_BLOCK);
+		generateSite({ specPath: path.join(workspace, 'site-spec.yaml'), rootDir: workspace });
+		const generated = readFileSync(path.join(workspace, 'src/config/site.generated.ts'), 'utf8');
+		assert.match(generated, /provider: "vercel"/);
+		assert.match(generated, /trackOutbound: false/);
+		assert.doesNotMatch(generated, /measurementId:/);
 	} finally {
 		rmSync(workspace, { recursive: true, force: true });
 	}

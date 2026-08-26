@@ -212,14 +212,20 @@ export interface GameSocialConfig {
 	defaultImage?: SocialImageRef;
 }
 
-export type AnalyticsProvider = 'ga4';
+export type AnalyticsProvider = 'ga4' | 'vercel';
 
-export interface GameAnalyticsConfig {
-	enabled: true;
-	provider: AnalyticsProvider;
-	measurementId: string;
-	trackOutbound: boolean;
-}
+export type GameAnalyticsConfig =
+	| {
+			enabled: true;
+			provider: 'ga4';
+			measurementId: string;
+			trackOutbound: boolean;
+		}
+	| {
+			enabled: true;
+			provider: 'vercel';
+			trackOutbound: boolean;
+		};
 
 export interface GameAffiliateConfig {
 	enabled: boolean;

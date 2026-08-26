@@ -26,11 +26,19 @@ function firstEnv(names) {
 
 function parseArgs(argv) {
 	const dryRun = argv.includes('--dry-run');
+	const metadata = argv.includes('--metadata');
 	const positional = argv.filter((arg) => !arg.startsWith('--'));
-	if (positional.length !== 1) fail('Usage: node scripts/generate-article.mjs <slug> [--dry-run]');
+	if (positional.length !== 1) fail('Usage: node scripts/generate-article.mjs <slug> [--dry-run] [--metadata]');
 	const [slug] = positional;
 	if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) fail(`Invalid slug "${slug}".`);
-	return { dryRun, slug };
+	return { dryRun, metadata, slug };
+}
+
+function resolveJobSlug(slug) {
+	const aliases = {
+		'up-achievement-fuses': 'fuses',
+	};
+	return aliases[slug] || slug;
 }
 
 function resolveConfig(requireComplete) {
@@ -76,6 +84,32 @@ function extractText(payload) {
 		}
 	}
 	return '';
+}
+
+function parseMetadata(article) {
+	let metadata;
+	try {
+		metadata = JSON.parse(article);
+	} catch {
+		fail('APIMart metadata response was not valid JSON.');
+	}
+	if (!metadata || typeof metadata !== 'object' || Array.isArray(metadata)) {
+		fail('APIMart metadata response must be a JSON object.');
+	}
+	for (const field of ['title', 'description', 'h1', 'quickAnswer']) {
+		if (typeof metadata[field] !== 'string' || !metadata[field].trim()) {
+			fail(`APIMart metadata is missing a non-empty ${field}.`);
+		}
+	}
+	if (metadata.h1 !== metadata.title) {
+		fail('APIMart metadata title and h1 must match for the generated guide template.');
+	}
+	if (!Array.isArray(metadata.facts) || metadata.facts.length !== 4 || metadata.facts.some((fact) =>
+		!fact || typeof fact.label !== 'string' || !fact.label.trim() || typeof fact.value !== 'string' || !fact.value.trim()
+	)) {
+		fail('APIMart metadata must contain exactly four labeled facts.');
+	}
+	return metadata;
 }
 
 async function readRequired(filePath, label) {
@@ -136,32 +170,48 @@ async function requestArticle(config, prompt, brief) {
 }
 
 async function main() {
-	const { dryRun, slug } = parseArgs(process.argv.slice(2));
-	const jobDir = path.join(JOBS_ROOT, slug);
+	const { dryRun, metadata, slug } = parseArgs(process.argv.slice(2));
+	const jobSlug = resolveJobSlug(slug);
+	const jobDir = path.join(JOBS_ROOT, jobSlug);
 	const briefFile = path.join(jobDir, 'research.md');
 	const articleFile = path.join(jobDir, 'article.md');
-	const promptFile = path.join(PROJECT_ROOT, 'scripts', 'prompts', 'game-guide-writer.md');
+	const metadataFile = path.join(jobDir, 'metadata.json');
+	const defaultPromptFile = path.join(PROJECT_ROOT, 'scripts', 'prompts', metadata ? 'game-guide-metadata-writer.md' : 'game-guide-writer.md');
+	const jobPromptFile = path.join(jobDir, metadata ? 'metadata-prompt.md' : 'article-prompt.md');
 	const brief = await readRequired(briefFile, 'Content brief');
-	const prompt = await readRequired(promptFile, 'Writer prompt');
+	let prompt;
+	try {
+		prompt = await readFile(jobPromptFile, 'utf8');
+		if (!prompt.trim()) fail(`Writer prompt is empty: ${relativePath(jobPromptFile)}`);
+	} catch (error) {
+		if (error?.code !== 'ENOENT') throw error;
+		prompt = await readRequired(defaultPromptFile, 'Writer prompt');
+	}
 	const config = resolveConfig(!dryRun);
 	if (dryRun) {
 		console.log('dry-run: PASS');
 		console.log(`input file: ${relativePath(briefFile)}`);
+		console.log(`mode: ${metadata ? 'metadata' : 'article'}`);
 		console.log('API call: skipped');
 		return;
 	}
 	const article = await requestArticle(config, prompt, brief);
 	await mkdir(jobDir, { recursive: true });
-	const temporaryFile = `${articleFile}.tmp-${process.pid}`;
+	const outputFile = metadata ? metadataFile : articleFile;
+	const output = metadata ? `${JSON.stringify(parseMetadata(article), null, 2)}\n` : `${article}\n`;
+	const temporaryFile = `${outputFile}.tmp-${process.pid}`;
 	try {
-		await writeFile(temporaryFile, `${article}\n`, 'utf8');
-		await rename(temporaryFile, articleFile);
+		await writeFile(temporaryFile, output, 'utf8');
+		await rename(temporaryFile, outputFile);
 	} finally {
 		await rm(temporaryFile, { force: true });
 	}
 	console.log(`model: ${config.model.value}`);
+	console.log(`requested slug: ${slug}`);
+	console.log(`job slug: ${jobSlug}`);
 	console.log(`input file: ${relativePath(briefFile)}`);
-	console.log(`output file: ${relativePath(articleFile)}`);
+	console.log(`mode: ${metadata ? 'metadata' : 'article'}`);
+	console.log(`output file: ${relativePath(outputFile)}`);
 	console.log(`output character count: ${article.length}`);
 }
 

@@ -416,13 +416,13 @@ export interface SiteSpecTrust {
 	privacy?: SiteSpecTrustPage;
 }
 
-export const ALLOWED_ANALYTICS_PROVIDERS = ['ga4'] as const;
+export const ALLOWED_ANALYTICS_PROVIDERS = ['ga4', 'vercel'] as const;
 export type AnalyticsProvider = (typeof ALLOWED_ANALYTICS_PROVIDERS)[number];
 
 export interface SiteSpecAnalytics {
 	enabled: boolean;
 	provider: AnalyticsProvider;
-	measurementId: string;
+	measurementId?: string;
 	trackOutbound: boolean;
 }
 
@@ -1401,26 +1401,29 @@ function parseAnalytics(raw: unknown, location: string): SiteSpecAnalytics | und
 			'analytics.provider',
 			provider,
 			`${location}.provider`,
-			'V1 only supports provider: ga4.',
+			'Use provider: ga4 with measurementId, or provider: vercel.',
 		);
 	}
-	const measurementId = requireString(raw, 'measurementId', `${location}.measurementId`);
-	if (!measurementId || !GA4_MEASUREMENT_ID.test(measurementId)) {
-		fail(
-			'analytics.measurementId must be a GA4 ID.',
-			'analytics.measurementId',
-			measurementId,
-			`${location}.measurementId`,
-			'Use a GA4 measurement ID such as G-XXXXXXXXXX.',
-		);
+	let measurementId: string | undefined;
+	if (provider === 'ga4') {
+		measurementId = requireString(raw, 'measurementId', `${location}.measurementId`);
+		if (!measurementId || !GA4_MEASUREMENT_ID.test(measurementId)) {
+			fail(
+				'analytics.measurementId must be a GA4 ID.',
+				'analytics.measurementId',
+				measurementId,
+				`${location}.measurementId`,
+				'Use a GA4 measurement ID such as G-XXXXXXXXXX.',
+			);
+		}
 	}
 	const trackOutbound = requireBoolean(raw, 'trackOutbound', `${location}.trackOutbound`, {
 		optional: true,
-		defaultValue: true,
+		defaultValue: provider === 'ga4',
 	})!;
 	return {
 		enabled: true,
-		provider: 'ga4',
+		provider: provider as AnalyticsProvider,
 		measurementId,
 		trackOutbound,
 	};
