@@ -844,6 +844,16 @@ export const siteConfig: GameConfig = {
 		provider: "vercel",
 		trackOutbound: false,
 	},
+	monetization: {
+		enabled: true,
+		affiliate: {
+			enabled: false,
+			disclosure: true,
+		},
+		ads: {
+			enabled: true,
+		},
+	},
 	social: {
 		defaultImage: {
 			asset: "social/project-pitt.jpg",

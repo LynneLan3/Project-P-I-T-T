@@ -31,6 +31,16 @@ test('unknown placement produces no slot', () => {
 	assert.equal(adSlotDatasetFor(true, 'not-a-slot' as AdPlacement), null);
 });
 
+test('AdSlot contains the configured Adsterra unit', () => {
+	const adSlot = readFileSync(path.join(ROOT, 'src/components/AdSlot.astro'), 'utf8');
+	assert.match(adSlot, /data-cfasync="false"/);
+	assert.match(
+		adSlot,
+		/src="https:\/\/pl31055290\.profitableratecpmnetwork\.com\/dcd3a104a99f11ab577ca98dd180ec29\/invoke\.js"/,
+	);
+	assert.match(adSlot, /id="container-dcd3a104a99f11ab577ca98dd180ec29"/);
+});
+
 test('default Guide slot is before related, never before Quick Answer', () => {
 	const pageTitle = readFileSync(path.join(ROOT, 'src/components/overrides/PageTitle.astro'), 'utf8');
 	const footer = readFileSync(path.join(ROOT, 'src/components/overrides/Footer.astro'), 'utf8');

@@ -807,3 +807,8 @@ analytics:
   enabled: true
   provider: vercel
   trackOutbound: false
+
+monetization:
+  enabled: true
+  ads:
+    enabled: true

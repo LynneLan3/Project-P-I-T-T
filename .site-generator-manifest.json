@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "templateVersion": "2.0.0",
   "generatorVersion": "1.0.0",
-  "specHash": "bc15e976c29190fa1aca774d71235ce0ac473ba9193e9ad7753780d06ba7f1b1",
+  "specHash": "9aecba605542e20fb01f9da401e3da0b8088c6bf22bb41ed208d445fea75e8a6",
   "siteId": "project-p-i-t-t",
   "createdFromSpec": "site-spec.yaml",
   "managedFiles": [
@@ -53,7 +53,7 @@
     },
     {
       "path": "src/config/site.generated.ts",
-      "sha256": "8fb1505a129de4df416f18f5dc434101651966ffed0f20ca2b748f25a73bc6b2",
+      "sha256": "136c331a81c7a562230272e9491131293c7f3ddecf005334ba790d100acaeb19",
       "kind": "config"
     },
     {
