@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "templateVersion": "2.0.0",
   "generatorVersion": "1.0.0",
-  "specHash": "2da87c7114e80e42d58f17289bd91262d048edec1dc1ea99785ee52d4aecb0cc",
+  "specHash": "bc15e976c29190fa1aca774d71235ce0ac473ba9193e9ad7753780d06ba7f1b1",
   "siteId": "project-p-i-t-t",
   "createdFromSpec": "site-spec.yaml",
   "managedFiles": [
@@ -53,7 +53,7 @@
     },
     {
       "path": "src/config/site.generated.ts",
-      "sha256": "d2ae190ea7be5aea9aacf699bd6035197089c3c908947c7aae46879f517650fe",
+      "sha256": "8fb1505a129de4df416f18f5dc434101651966ffed0f20ca2b748f25a73bc6b2",
       "kind": "config"
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "path": "src/content/docs/automation/shift-scheduler.md",
-      "sha256": "145e82960ff5e23247c61bf46bd611705e43d43819b69551aa24ee64e1f92de4",
+      "sha256": "95ab5d5c505d87db6b06d83fb05da37c5ff4a6ea8877e9462c08f01481477bb8",
       "kind": "page"
     },
     {

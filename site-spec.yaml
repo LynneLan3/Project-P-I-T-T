@@ -459,8 +459,8 @@ pages:
     changeSummary: Public automation guide for Terminal use, right-side interaction, object/value questions, cleanup mistakes, and the 1.0.5 fallback.
 
   - id: shift-scheduler
-    title: "How to Use the Shift Scheduler in Project P.I.T.T."
-    description: How to use the Shift Scheduler with fans, magnets, remote outputs, and timed or batch automation for controlled lanes and x300 Combo setups.
+    title: "Project P.I.T.T. Shift Scheduler: how to use it, Duck Crank block"
+    description: "Updated for 1.0.6: Use Project P.I.T.T. Shift Scheduler to schedule automatic or switchable tools; it will not act as a button for the Manual Duck Crank. Re-test old reports."
     category: automation
     slug: shift-scheduler
     source: site-input/pages/shift-scheduler.md
@@ -472,17 +472,21 @@ pages:
       - project-pitt-shift-scheduler
       - project-pitt-how-to-use-shift-scheduler
       - project-pitt-timed-batch-automation
-    quickAnswer: The Shift Scheduler is a full-release automation tool for timed or batch releases; connect it to tested fans, magnets, or remote outputs, then use it for controlled lanes and x300 Combo attempts without assuming it guarantees a combo.
+      - project-pitt-shift-scheduler-not-working
+      - project-pitt-scheduler-remote
+      - project-pitt-scheduler-timer
+      - project-pitt-manual-duck-crank-scheduler
+    quickAnswer: "The Shift Scheduler controls supported automatic or switchable tools; it is not a button-press replacement for a Manual Duck Crank. Community testing shows Remote can work with the Scheduler, and official 1.0.6 notes only say: \"Fixed the shift scheduler inconsistencies.\" Re-test older reports."
     eyebrow: Shift Scheduler
     facts:
       - label: Tool
-        value: Current full-release automation tool for controlled releases.
+        value: "Manual Duck Crank is unsupported for Scheduler use; Cannon is documented as linkable in current guides, while Fan and Magnet remain community examples to verify."
       - label: Connections
-        value: Commonly connected to fans, magnets, and remote outputs.
+        value: "Remote has community-confirmed compatibility; other automatic or switchable tools require in-game verification."
       - label: Timing
-        value: Supports timed or batch behavior for tested automation lanes.
+        value: "Used for timed or batch-release setups such as gathering output before releasing it together; no undocumented timer values are stated."
       - label: Current version
-        value: Recent version changes fixed Shift Scheduler inconsistencies.
+        value: "Updated for 1.0.6 — official note: \"Fixed the shift scheduler inconsistencies.\" The note does not specify the changed behavior."
     related:
       - automation
       - trade-terminal
@@ -500,11 +504,17 @@ pages:
     assetType: article
     sources:
       - type: steam
-        title: Steam Community automation discussion
-        url: https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/
+        title: Steam Community discussion — Shift Scheduler, Manual Duck Crank, Remote
+        url: https://steamcommunity.com/app/4026250/discussions/0/587309829717073562/
       - type: steam
-        title: Steam Community developer FAQ and updates
+        title: Steam Community developer Update 1.0.6
         url: https://steamcommunity.com/app/4026250/
+      - type: other
+        title: Project P.I.T.T. Tools & Upgrades — Cannon
+        url: https://projectpitt.online/guides/tools-and-upgrades/
+      - type: other
+        title: Project P.I.T.T. All Items and Tools List — Cannon
+        url: https://ninewiki.com/item/project-p-i-t-t-all-items-and-tools-list/
     changeSummary: New launch-window guide for Shift Scheduler connections, timed/batch behavior, current-version fixes, and x300 automation use.
 
   - id: troubleshooting

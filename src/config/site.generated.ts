@@ -491,7 +491,7 @@ export const siteConfig: GameConfig = {
 			slug: "shift-scheduler",
 			role: "core",
 			assetType: "article",
-			intents: ["project-pitt-shift-scheduler", "project-pitt-how-to-use-shift-scheduler", "project-pitt-timed-batch-automation"],
+			intents: ["project-pitt-shift-scheduler", "project-pitt-how-to-use-shift-scheduler", "project-pitt-timed-batch-automation", "project-pitt-shift-scheduler-not-working", "project-pitt-scheduler-remote", "project-pitt-scheduler-timer", "project-pitt-manual-duck-crank-scheduler"],
 			relations: [
 				{
 					pageId: "automation",
@@ -513,13 +513,23 @@ export const siteConfig: GameConfig = {
 			sources: [
 				{
 					type: "steam",
-					title: "Steam Community automation discussion",
-					url: "https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/",
+					title: "Steam Community discussion — Shift Scheduler, Manual Duck Crank, Remote",
+					url: "https://steamcommunity.com/app/4026250/discussions/0/587309829717073562/",
 				},
 				{
 					type: "steam",
-					title: "Steam Community developer FAQ and updates",
+					title: "Steam Community developer Update 1.0.6",
 					url: "https://steamcommunity.com/app/4026250/",
+				},
+				{
+					type: "other",
+					title: "Project P.I.T.T. Tools & Upgrades — Cannon",
+					url: "https://projectpitt.online/guides/tools-and-upgrades/",
+				},
+				{
+					type: "other",
+					title: "Project P.I.T.T. All Items and Tools List — Cannon",
+					url: "https://ninewiki.com/item/project-p-i-t-t-all-items-and-tools-list/",
 				},
 			],
 			evidence: [
@@ -690,8 +700,8 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "shift-scheduler",
 					href: "/shift-scheduler/",
-					title: "How to Use the Shift Scheduler in Project P.I.T.T.",
-					description: "How to use the Shift Scheduler with fans, magnets, remote outputs, and timed or batch automation for controlled lanes and x300 Combo setups.",
+					title: "Project P.I.T.T. Shift Scheduler: how to use it, Duck Crank block",
+					description: "Updated for 1.0.6: Use Project P.I.T.T. Shift Scheduler to schedule automatic or switchable tools; it will not act as a button for the Manual Duck Crank. Re-test old reports.",
 					eyebrow: "Shift Scheduler",
 				},
 				{
