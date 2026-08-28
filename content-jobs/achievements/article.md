@@ -1,115 +1,69 @@
-Direct Answer
+> Answer — Plan for all 23 achievements by finishing your big progress goals (x300 combo, 1 trillion, and buying every item) before you trigger the ending; treat Speed Radar visibility as an unreliable blocker and consult the links at the end if you hit problems.
 
-> Short answer: Keep the full 23-achievement checklist visible, finish any long-run milestones (300 combo, the 1‑trillion milestone tied to RICH!, and buying every item for CONSUMERISM) before you push final ending progression when practical. FAST! is the game’s speed achievement (community findings: ~400 products/min). Current community evidence does not prove an irreversible lockout after the ending, but many players avoid the risk by finishing those goals first. See the x300, progression, and automation guides linked below for next steps.
+Direct Answer
+- Project P.I.T.T. has 23 Steam achievements (14 public, 9 hidden). Preserve this checklist:
+  - QWACK!
+  - KACHING!
+  - MORE!
+  - MESS!
+  - EXTRA!
+  - LAG!
+  - FIESTA!
+  - GAMBLING!
+  - STUFFED!
+  - WEIRD!
+  - MEGA!
+  - RICH!
+  - CONSUMERISM!
+  - FAST!
+  - BAD?
+  - UP?
+  - INVISIBLE?
+  - HEAVY?
+  - OPEN?
+  - LOOP?
+  - SECRET?
+  - END?
+  - END!
+- Plain statement: END? = Secret Ending. END! = Main Ending.
+- Consumerism means unlocking and buying everything.
+- FAST! represents speed/throughput at 400 products per minute (the game text). The Speed Radar unlock trigger is not confirmed; treat it as a current community-known blocker/FAQ rather than a strict requirement.
 
 Quick Steps
-
-1. Open the 23-achievement checklist below and identify which goals you still need.
-2. Prioritize: 300 combo (x300), the 1‑trillion milestone (RICH!), and buying every item (CONSUMERISM).
-3. Use automation and throughput tuning to hit FAST! (community: ~400 products/min) — link to automation.
-4. If you must trigger the ending, make a backup save or finish the three recommended milestones first.
-5. If you’ve already entered the ending and miss achievements, consult the progression and automation pages for recovery options.
+1. Check your achievement list and note which of the big progression goals remain: x300 combo, RICH!/1 trillion, and purchase-every-item (Consumerism).
+2. Complete remaining build/automation work to reach x300 combo and 400 products/min (for FAST!) before final ending progression when practical.
+3. Buy and unlock everything you can to progress toward CONSUMERISM! before ending triggers.
+4. Trigger the ending only after you’re satisfied those goals are done, or have a reliable save/test if you want to risk it.
+5. If anything fails after an ending, consult Troubleshooting and the Secret Ending guide links below.
 
 Prerequisites or What You Need
-
-- The game’s 23 Steam achievements (14 show public descriptions on Steam; 9 are hidden there). This guide preserves the checklist names as the source of truth.
-- Patience for long-run goals: large-combo counters, very-high-currency totals, and buying every listed product can require extended play or focused automation.
-- Saves/backups if you want to avoid risk when triggering the final ending.
+- Knowledge of which achievements remain (use the in-game checklist).
+- Enough production/automation progress to reach x300 combo and, separately, 1 trillion currency for RICH!.
+- Access to all unlockable items to work toward CONSUMERISM!.
+- Awareness: some players report entering an ending or an infinite-ending loop while still missing the three big targets listed above; plan accordingly.
 
 Full Explanation
 
-23‑achievement checklist (preserved)
-- QWACK!
-- KACHING!
-- MORE!
-- MESS!
-- EXTRA!
-- LAG!
-- FIESTA!
-- GAMBLING!
-- STUFFED!
-- WEIRD!
-- MEGA!
-- RICH!
-- CONSUMERISM!
-- FAST!
-- BAD?
-- UP?
-- INVISIBLE?
-- HEAVY?
-- OPEN?
-- LOOP?
-- SECRET?
-- END?
-- END!
+END? vs END!
+- Direct answer: END? is the Secret Ending; END! is the Main Ending.
+- Explanation: The two endings are separate achievement triggers. Community findings show some players encounter ending progression (including looping behavior) while a few major achievement conditions remain incomplete, so plan completion of major milestones before activating endings when practical.
 
-Note: Steam currently shows public descriptions for 14 achievements and hides 9 descriptions; the checklist above preserves the official/community names as the single reliable index.
-
-Consumerism (buy-everything)
-- Direct answer: CONSUMERISM! is described (community-verified) as unlocking and buying every item. That is the working definition used by players.
-- Planning tip: “Buying everything” requires both item unlock conditions and purchasing. If you’re missing CONSUMERISM!, confirm you have both unlocked and purchased each item category the game lists.
+Consumerism
+- Direct answer: CONSUMERISM! = unlock and buy everything.
+- Explanation: Players should interpret this as “own every purchasable/unlockable item” in your run. Current community wording confirms it’s about purchasing/owning all items rather than a different hidden mechanic.
 
 Speed Radar / FAST!
-- Direct answer: FAST! is the speed/throughput achievement players refer to as “Speed Radar.” Current community findings indicate the speed target sits at about 400 products per minute. Use throughput-optimizing automation and belt/layout tuning to reach it.
-- Note: Do not treat “Speed Radar” as a separate achievement — FAST! is the checklist entry.
+- Direct answer: FAST! is tied to throughput (game text shows 400 products/minute).
+- Explanation: FAST! represents a speed/throughput milestone (400 products/minute per the achievement text). The Speed Radar (an in-game indicator many players expect to see) has an unclear unlock trigger in community findings — it’s reported by many players as a blocker when it doesn’t appear, but that trigger has not been confirmed by official sources. Treat Speed Radar visibility as an unreliable indicator; aim for the throughput number itself and use automation checks instead.
 
-x300 (300 combo)
-- Direct answer: x300 refers to the 300 combo requirement in the checklist (community reference name x300). Many players must deliberately chain combos and avoid resets to reach it.
-- For focused help, see the x300 guide: [/guides/x300].
+x300 (the combo)
+- Direct answer: x300 is the 300-combo milestone.
+- Explanation: Community-confirmed importance: several completion problems stem from players triggering the ending before a 300 combo is reached. Make the 300 combo a checklist item before final ending steps when practical. If you miss it, consult the x300 Combo guide linked below.
 
 RICH! (1 trillion)
-- Direct answer: Players consistently report RICH! corresponds to reaching the large 1‑trillion milestone (community-confirmed mapping). If you’re missing RICH!, you’ll need to increase total currency/profit until that threshold is met.
-- Long-run strategies: scaling automation, offline income, and production multipliers help close the gap.
+- Direct answer: RICH! is the high-currency milestone (1 trillion).
+- Explanation: RICH! is a major progression target that some players still lack after ending loops. Current community findings report cases where the main or secret ending occurs while RICH! remains incomplete; it’s safest to reach RICH! prior to final ending progression.
 
 Purchase-every-item timing
-- Direct answer: Best practice is to finish item-unlock and purchase goals before triggering the final ending progression when practical.
-- Evidence boundary: current community evidence does not prove an irreversible lockout after the ending nor that you must start a new save; however, multiple player reports show cases where players entered an ending loop while still missing the 300 combo, the 1‑trillion RICH! milestone, or CONSUMERISM!. Because outcomes vary, finishing those goals first reduces risk.
-
-Achievements to Finish Before the Ending
-
-Direct recommendation (answer-first):
-- Whenever practical, finish these three before final ending progression:
-  1. x300 (300 combo)
-  2. RICH! (the 1‑trillion milestone as reported by the community)
-  3. CONSUMERISM! (unlocking and buying every item)
-
-Why: Players repeatedly report entering the end/loop state while still missing these high-investment goals. While no conclusive proof exists that they become impossible afterward, finishing them beforehand is the safest, lowest-effort path.
-
-Common Mistakes
-
-- Triggering the final ending without checking long-run/milestone achievements (300 combo, 1T, buy-every-item).
-- Confusing “Speed Radar” for a separate achievement — FAST! is the one to track.
-- Assuming hidden achievements are impossible because Steam hides their descriptions; hidden makes the requirement less obvious, not necessarily impossible post-ending.
-- Not backing up saves before ending/loop progression.
-
-What To Do Next
-
-- If you need help with the combo milestone: see the x300 guide: [/guides/x300]
-- If you need help planning around the ending or recovering progress: see the progression guide: [/guides/progression]
-- If you need to scale production to hit FAST! or RICH!: see the automation guide: [/guides/automation]
-
-Related Guides
-
-- x300: [/guides/x300]
-- Progression planning and ending: [/guides/progression]
-- Automation and throughput: [/guides/automation]
-
-FAQ
-
-Q: I entered the ending but I’m still missing the 300 combo achievement — can I still get it?
-A: Short answer: Possibly. Current community reports are mixed. Many players avoid risk by finishing x300 before the ending, but the evidence does not definitively prove a permanent lockout. If you have an earlier save, roll back; otherwise consult the progression and x300 guides for late-game strategies.
-
-Q: I hit the ending loop and RICH! (1 trillion) didn’t pop — is it impossible now?
-A: Short answer: No confirmed universal impossibility. Players report both successful post-ending completions and failures. Recommended: finish the 1‑trillion milestone before final ending progression when practical; if already past it, check the progression guide for recovery tips.
-
-Q: Does CONSUMERISM! require unlocking each item before buying it?
-A: Direct answer: Community-verified definitions indicate CONSUMERISM! requires both unlocking and buying everything. Confirm you have purchased each listed product after unlocking it.
-
-Q: What exactly is “Speed Radar”? How do I unlock FAST!?
-A: “Speed Radar” in community wording refers to the game’s speed achievement, FAST!. Current community findings indicate the threshold is about 400 products per minute. Use automation and throughput tuning to reach that rate.
-
-Q: Do I need to start a new save after the ending to get missing achievements?
-A: There’s no conclusive community proof that a new save is always required. Because outcomes vary, the safest approach is to finish the long-run milestones before triggering the final ending or to keep a backup save before progressing.
-
-Q: Where should I go next for step-by-step help?
-A: Start with the x300 guide for combo strategy, the automation guide for throughput and FAST!, and the progression guide for ending-management: [/guides/x300], [/guides/automation], [/guides/progression].
+- Direct answer: Buy everything before ending when practical.
+- Explanation: Community reports show purchase-every-item (CONSUMERISM!) may remain incomplete after an ending in some runs. Because the exact interaction between ending triggers and remaining

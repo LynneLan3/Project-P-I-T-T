@@ -33,8 +33,8 @@ game:
     - PC (Steam)
 
 theme:
-  accentColor: "#f0b45a"
-  accentForeground: "#1a1108"
+  accentColor: "#f0442e"
+  accentForeground: "#1b0808"
   heroAssetId: pitt-hero
   heroPosition: center
 
@@ -61,7 +61,7 @@ categories:
 pages:
   - id: achievements
     title: "Project P.I.T.T. Achievements Guide: Complete 23-Achievement Checklist"
-    description: Project P.I.T.T. has 23 Steam achievements, with public and hidden descriptions kept separate plus timing advice for completion before the ending.
+    description: "One practical guide to preserve the 23-achievement checklist and help plan completion around progression and the endings. This guide preserves the exact checklist: QWACK!, KACHING!, MORE!, MESS!, EXTRA!, LAG!, FIESTA!, GAMBLING!, STUFFED!, WEIRD!, MEGA!, RICH!, CONSUMERISM!, FAST!, BAD?, UP?, INVISIBLE?, HEAVY?, OPEN?, LOOP?, SECRET?, END?, END!. END? = Secret Ending. END! = Main Ending. It clarifies Consumerism (unlocking and buying everything), notes FAST! represents throughput of 400 products per minute, and treats Speed Radar only as a known FAQ/blocker with an unconfirmed unlock trigger. It recommends a precautionary before-ending plan: finish the 300 combo, reach 1 trillion, and purchase-every-item work before triggering the ending when practical."
     category: achievements
     slug: achievements
     source: site-input/pages/achievements.md
@@ -73,17 +73,17 @@ pages:
       - project-pitt-achievements
       - steam-achievements
       - 100-percent-completion
-    quickAnswer: "Project P.I.T.T. has 23 Steam achievements: 14 with public descriptions and 9 hidden. Prioritize x300, 1 trillion, and buying every item before final-ending progression when practical; the available evidence does not prove an irreversible lockout or require a new save."
+    quickAnswer: "Answer-first: If you’re aiming for completion, finish the 300 combo, reach 1 trillion, and complete purchase-every-item work before final ending progression when practical. END? = Secret Ending; END! = Main Ending. Consumerism means unlocking and buying everything. FAST! tracks ~400 products/min throughput; Speed Radar is a known FAQ/blocker with no confirmed trigger. If you enter an ending/infinite-ending loop while missing x300, 1 trillion, or purchase-every-item, use Troubleshooting/Automation to recover progress where possible."
     eyebrow: Completion
     facts:
-      - label: Total
-        value: 23 Steam achievements
-      - label: Public descriptions
-        value: 14 listed on Steam
-      - label: Hidden descriptions
-        value: 9 hidden on Steam
-      - label: Before-ending plan
-        value: Finish x300, 1 trillion, and buying every item before final-ending progression when practical; no irreversible lockout is confirmed.
+      - label: "Total achievements"
+        value: 23 achievements
+      - label: "Public descriptions"
+        value: 14 public descriptions
+      - label: "Hidden descriptions"
+        value: 9 hidden descriptions
+      - label: "Before-ending plan"
+        value: "Finish 300 combo, reach 1 trillion, and purchase-every-item work before final ending progression when practical"
     coverAssetId: pitt-screenshot-achievements
     related:
       - up-achievement-fuses
@@ -261,8 +261,8 @@ pages:
     changeSummary: New launch-window page for the post-200kg Percentage Pipe question, with old Demo guidance clearly separated.
 
   - id: secret-ending
-    title: Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route
-    description: What END? means, how the Project P.I.T.T. Secret Ending route connects to the earlier progression, and why elevator codes may be save-specific.
+    title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route"
+    description: "END? is the game’s Secret Ending label according to newer achievement information. The verified route progresses in this order: camera / surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame / production progression → UV-related clue progression → elevator access / keycard → save-specific four-digit keypad code → Secret Ending route. The four-digit code is tied to your save and discovered with UV clues; it corresponds to the four manual production machines and must be entered in the machine-unlock order Duck → Cash Register → Piñata → Anomaly. Keycard steps and prior progression stages must be completed to access the elevator and keypad; UV is part of finding the hidden digits. Community reports include one playthrough code of 2640, but that is from a specific save and is not a universal answer — many players report 2640 does not work. If you are stuck, return to the last progression stage you completed (for example check UV clues, keycard steps, or the minigame/production tasks) rather than trying an internet-wide code."
     category: progression-secrets
     slug: secret-ending
     source: site-input/pages/secret-ending.md
@@ -275,17 +275,17 @@ pages:
       - project-pitt-ending
       - project-pitt-end-question
       - project-pitt-elevator-code
-    quickAnswer: END? is the Secret Ending route. Follow the progression from surveillance and Mystery Boxes through three Fuses, 200kg, Percentage Pipe, later production or minigame stages, UV clues, and elevator access; do not assume one universal elevator code.
+    quickAnswer: "END? = the Secret Ending. Follow the verified progression through surveillance → upper areas → Mystery Boxes → fuses → 200kg → Percentage Pipe → production/minigame → UV clues → elevator/keycard → save-specific 4-digit keypad → Secret Ending. The four digits are found with UV in your save, correspond to the four manual production machines, and must be entered in Duck → Cash Register → Piñata → Anomaly order. 2640 is a code reported from one specific playthrough and is not guaranteed to work for everyone; many players report 2640 does not work."
     eyebrow: Secret Ending
     facts:
-      - label: Achievement
-        value: END?
-      - label: Route starts with
-        value: Surveillance progression
-      - label: Key warning
-        value: Code may be save-specific
-      - label: Earlier gates
-        value: 3 Fuses and 200kg
+      - label: "What END? is"
+        value: "END? is the Secret Ending label indicated by newer achievement information; do not conflate END? with other ending labels from older guides."
+      - label: "Verified route stages"
+        value: "camera / surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame / production progression → UV-related clue progression → elevator access / keycard → save-specific four-digit keypad code → Secret Ending route."
+      - label: "Four-digit keypad rule"
+        value: "The four-digit keypad code is save-specific and must be found using UV clues in your own playthrough. The digits correspond to the four manual production machines and must be entered in this machine order: Duck → Cash Register → Piñata → Anomaly. A code such as 2640 has been reported from one playthrough only and should not be treated as universal; current player reports include that 2640 does not work for many saves."
+      - label: "Why players lose the thread and troubleshooting"
+        value: "Common fail points are missing UV clues, incomplete keycard steps, or skipping production/minigame progression. Elevator/keypad access requires completing the keycard progression and the UV-related clues. If stuck, go back to the last verified progression stage you completed instead of trying to brute-force an internet code or assuming a universal elevator code."
     related:
       - percentage-pipe
       - up-achievement-fuses
@@ -519,7 +519,7 @@ pages:
 
   - id: troubleshooting
     title: "How to Fix Project P.I.T.T. Crashes, Low FPS, Saves & Missing Tools"
-    description: Grouped Project P.I.T.T. troubleshooting for crashes, low FPS, mouse control, saves, lost tools, lava drops, Clear Items, and ending-save issues.
+    description: "Grouped Project P.I.T.T. troubleshooting for crashes, low FPS, mouse control, saves, lost tools, lava drops, Clear Items, and ending-save issues."
     category: automation
     slug: troubleshooting
     source: site-input/pages/troubleshooting.md
@@ -532,7 +532,7 @@ pages:
       - project-pitt-low-fps
       - project-pitt-broken-save
       - project-pitt-missing-tools
-    quickAnswer: Start with current-version guidance and Pause Menu → Clear Items for bulk cleanup, then use the grouped steps for crashes, low FPS, mouse control, unreliable saves, and lost or stuck tools; persistent cases remain evidence-aware rather than universal fixes.
+    quickAnswer: "Start with current-version guidance and Pause Menu → Clear Items for bulk cleanup, then use the grouped steps for crashes, low FPS, mouse control, unreliable saves, and lost or stuck tools; persistent cases remain evidence-aware rather than universal fixes."
     eyebrow: Troubleshooting
     facts:
       - label: Crashes

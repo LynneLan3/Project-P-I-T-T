@@ -1,87 +1,103 @@
-Direct Answer
+## Direct Answer
 
-> If you’re hitting the launch-window problem cluster (crashes, bad saves, low FPS, mouse control problems, or lost/stuck tools), first make sure you’re on a current full-release build and then use the in-game cleanup fallback (Pause Menu → Clear Items) for quick bulk removal. If that doesn’t help, follow the targeted steps below and consult the linked guide for missing key items.
+Short: 1.0.6 ships several intended reliability and recovery improvements (saving, some crashes, mouse polling, lost-tool recall and lava-respawn, and continuing-after-ending). However, community reports show residual problems remain (infinite ending loop, intermittent crashes, unreliable saves, UV Light pickup softlocks, and mouse/FPS issues). Treat 1.0.6 as an improvement attempt, not a universal fix; use conservative save habits and file support reports for unresolved cases.
 
-Quick Steps
+> Quick summary: 1.0.6 aims to improve saves, mouse polling, and lost-tool respawns, but do not assume every affected playthrough is fixed — back up saves and report repeat failures.
 
-1. Confirm you’re running a current full-release build (recent releases have fixed many issues).
-2. Try the in-game cleanup: Pause Menu → Clear Items (note: it removes items and does not refund money).
-3. If mouse/control problems persist, test with a different mouse or polling configuration (players report high-polling-rate mice can cause issues) and try default pointer settings.
-4. For missing-key-item recovery, follow the guidance on the [Fuse](/guides/fuse) page.
-5. If saves behave unreliably or continue-after-ending occurs, stop playing into suspect saves, try loading earlier saves, and report the case to support with as much detail as you can.
-6. Use related guides for cleanup and automation problems: [Trade Terminal](/guides/trade-terminal), [Panel Rack](/guides/panel-rack), [Automation](/guides/automation).
+## Quick Steps
 
-Prerequisites or What You Need
+1. Before risky actions (near endings, big automation runs, or Secret Ending steps) make a manual backup of your save files.
+2. If you hit a crash or corrupted save, note timestamps and reproduce steps if possible; include those when reporting.
+3. If a tool is missing, check recent autosave slots and load the most recent safe backup before the loss; see the Fuse recovery note in Full Explanation.
+4. For mouse/FPS problems, try a clean game restart and lower background input utilities; 1.0.6 improves some high-polling-rate cases but not all.
+5. If you encounter an infinite ending loop or cannot restore free play after the ending, stop using that save and report with details — do not rely on an automatic universal workaround.
 
-- The game at a current full-release version (current-version wording: recent full-release updates addressed multiple issues).
-- Access to the Pause Menu and ability to use Pause Menu → Clear Items.
-- Basic ability to load older saves or create a new run if needed.
-- Willingness to consult the [Fuse](/guides/fuse) page if a key tool/item is missing.
+## Prerequisites or What You Need
 
-Full Explanation
+- Game updated to 1.0.6 (verify via launcher/store).
+- A copy of your current saves (make backups before troubleshooting).
+- Time stamps and a short reproduction note for support reports (what you did immediately before the issue).
+- If asking the community, include platform and approximate runtime before failure.
 
-Crashes
-- Current community findings: crashes reported at launch or during play have been reduced by recent full-release updates, but some cases remain.
-- What to try: ensure you’re on a recent full-release build (community guidance). If crashes persist, relaunch the game and use Clear Items as a mitigation for situations caused by item/panel overload. Collect crash logs and report them to support if the problem continues.
-- Evidence-aware note: not every crash is universal; players consistently report varied causes.
+## Full Explanation
 
-Low FPS and Performance
-- Players report low FPS with heavy builds or many placed items. Recent releases improved several performance regressions.
-- What to try: reduce in-game load (remove excess placed objects via Clear Items when appropriate), close unnecessary background programs, and use a current game build. Community reports indicate these steps often help but do not guarantee a fix in every hardware/configuration case.
+### Official 1.0.6 intended changes
+Answer-first: 1.0.6 is intended to improve saving reliability; fix being stuck when continuing after the main ending; address high-polling-rate mouse FPS problems; improve lost unique tool recall; and add lava-lost tools respawn behavior. These are intended fixes and improvements, not guaranteed universal resolutions.
 
-Mouse Unable to Turn / Mouse Control & High-Polling-Rate Mice
-- Players consistently report that very high polling-rate mice and some control settings can cause turning/aim issues.
-- What to try: test with a different mouse or a lower polling configuration (community reports only; avoid claiming exact numbers), and check default pointer/input settings in-game. If the problem resolves with a different mouse, that suggests a hardware/polling interaction rather than an in-game bug.
+### Crashes
+Answer-first: Crashes still occur for some players after 1.0.6.
+- Community-confirmed: players still report crashes during long sessions and crashes on quit. 1.0.6 reduces some cases but does not prove all crashes are resolved.
+- Troubleshooting: capture when it happens, reproduce steps, and include logs/timestamps in a support report.
 
-Save Reliability and Continue-After-Ending Behavior
-- Community reports include unreliable or broken saves and unexpected behavior when continuing after an ending.
-- Current-version guidance: recent updates addressed some save issues, but inconsistent cases remain. If you encounter suspect save behavior:
-  - Stop using that save for important progress.
-  - Try loading an earlier manual save or a backup if you have one.
-  - Report the incident to support with time/steps and any available save metadata.
-- Do not rely on autosave alone when you suspect a save bug; community findings recommend conservative save handling in unresolved cases.
+### Low FPS
+Answer-first: Low FPS reports persist despite 1.0.6 improvements.
+- Evidence-aware: players consistently report low FPS in some situations. 1.0.6 may mitigate some mouse-polling-related FPS drops but does not universally fix every FPS scenario.
 
-Missing, Stuck, or Lava-Lost Tools
-- Players report tools becoming inaccessible, stuck in geometry, or falling into lava.
-- Current guidance: check the [Fuse](/guides/fuse) page for missing-key-item recovery steps (do not create a separate missing-Fuse page). Some reports resolve via in-game recovery options; others remain unresolved and require support help.
-- Evidence-aware wording: some recoveries are community-confirmed while other cases are still under investigation.
+### High-polling-rate mouse / mouse control
+Answer-first: 1.0.6 targets high-polling-rate mouse FPS issues but residual problems remain.
+- Community findings indicate improvements for some setups, while others still see poor responsiveness or jitter. Do a clean restart and disable third-party input utilities when testing; results vary by system.
 
-Clear Items and Bulk Removal
-- The in-game cleanup fallback is Pause Menu → Clear Items (noted in current 1.0.5 guidance). It removes placed items quickly but does not refund money.
-- Use Clear Items when a cluttered scene, many panels, or automation failures are contributing to performance or control problems.
-- For panel, trade, or automation-specific cleanup, consult the relevant guides: [Trade Terminal](/guides/trade-terminal), [Panel Rack](/guides/panel-rack), [Automation](/guides/automation).
+### Save reliability
+Answer-first: Saving reliability was an intended 1.0.6 target, but save problems continue for some users.
+- Players still report broken or unreliable saves. Use manual save backups and avoid relying on a single autosave slot when performing high-risk actions.
 
-Common Mistakes
+### Infinite ending loop / continue-after-ending saves
+Answer-first: Reports of an infinite ending loop remain after 1.0.6; this is a current unresolved/residual issue for some players.
+- Community reports: a save made near the ending trigger can retrigger the ending automatically, return you to the menu, and on load return you to just before the ending — making free play unreliable.
+- No verified universal workaround exists. Conservative save handling (multiple backups, separate profiles) is recommended. Report instances with reproduction notes and timestamps.
 
-- Expecting Clear Items to refund money (it does not).
-- Assuming every report equals a universal bug — many issues are hardware/configuration-dependent or fixed in later builds.
-- Continuing to use a save after seeing inconsistent/incorrect behavior instead of loading an earlier save or pausing play and reporting the problem.
-- Skipping the [Fuse](/guides/fuse) guidance when a key item is missing.
+### Missing / stuck / lava-lost tools
+Answer-first: 1.0.6 intends to improve unique tool recall and add lava-lost tool respawn, but behavior can still be inconsistent.
+- If a unique key item/tool is missing, check alternate save backups first.
+- For missing key items that gate progress, consult the Fuse recovery guidance on the Fuse page: [Fuse]({{page:fuse}}).
+- Do not assume automatic respawn in every case; treat respawn as intended behavior but not guaranteed for every player/report.
 
-What To Do Next
+### UV Light softlock
+Answer-first: UV Light pickup can softlock for some players; this is a reported residual issue affecting Secret Ending progression.
+- Current full-release community findings indicate attempting to pick up the UV Light can make it disappear in some runs, blocking the Secret Ending route for those saves.
+- If you plan Secret Ending attempts, back up saves before the pickup and consult the community guide: [the Secret Ending guide]({{page:secret-ending}}).
 
-1. If a quick Clear Items pass fixes the immediate problem, proceed but keep an eye on save behavior afterward.
-2. If issues persist after the above steps, collect as much detail as you can (what happened, steps to reproduce, what you tried) and file a support report.
-3. When the problem is automation-, trade-, or panel-related, follow the specific cleanup/repair suggestions in [Trade Terminal](/guides/trade-terminal), [Panel Rack](/guides/panel-rack), and [Automation](/guides/automation).
-4. For missing essential tools, consult [Fuse](/guides/fuse) first before opening a separate support ticket.
+### Clear Items / bulk removal
+Answer-first: Pause Menu → Clear Items permanently removes items without refunding money.
+- Verified: using Clear Items will delete items and does not restore spent resources. Use backups before bulk clears or experimental cleanups.
+- For panel cleanup and automation issues related to panels, see [Panel Rack]({{page:panel-rack}}) and related automation/cleanup pages.
 
-Related Guides
+## Common Mistakes
 
-- [Fuse](/guides/fuse) — missing-key-item recovery guidance
-- [Trade Terminal](/guides/trade-terminal) — trade and terminal cleanup
-- [Panel Rack](/guides/panel-rack) — panel placement and removal guidance
-- [Automation](/guides/automation) — automation troubleshooting and cleanup
+- Relying on a single autosave slot near the ending or Secret Ending actions (use multiple manual backups).
+- Assuming 1.0.6 completely fixes every crash, save, or respawn case — residual reports persist.
+- Using Clear Items without backing up saves when attempting a large cleanup.
+- Treating an item disappearance as a guaranteed respawn instead of reporting it for investigation.
 
-FAQ
+## What To Do Next
 
-Q: Will Pause Menu → Clear Items recover lost tools or refund money?
-A: Clear Items removes placed items quickly but does not refund money. It can help recover performance or clear stuck setups but is not a guaranteed tool-recovery method.
+1. Back up your saves now (especially before endings or Secret Ending attempts).
+2. Reproduce the bug if possible and collect timestamps, platform, runtime length, and steps.
+3. Attach logs/screenshots and submit a support report for crashes, infinite ending loops, UV Light softlocks, or missing tools.
+4. For missing key items that prevent progression, check your backups and the [Fuse]({{page:fuse}}) recovery guidance.
+5. For panel cleanup or automation failures, consult [Panel Rack]({{page:panel-rack}}) and neighboring pages (Trade Terminal, Automation) for clean-up strategies.
+6. Track community threads for any emerging reliable workarounds; do not assume a single reported fix applies universally.
 
-Q: My mouse won’t turn the camera — is the game broken?
-A: Players consistently report that very high-polling-rate mice and certain input interactions can cause turn/control issues. Try a different mouse or default/input settings; if that helps, the issue may be hardware or polling-related rather than a universal game bug.
+## Related Guides
 
-Q: I lost a unique tool after it fell into lava — can I get it back?
-A: Check the [Fuse](/guides/fuse) page for current missing-key-item recovery guidance. Some cases are recoverable via the game’s recovery paths; others may require a support report.
+- [the Secret Ending guide]({{page:secret-ending}})
+- [Achievements]({{page:achievements}})
+- [Panel Rack]({{page:panel-rack}})
+- For missing key-item guidance, see [Fuse]({{page:fuse}})
 
-Q: Are there guaranteed fixes for crashes and save corruption?
-A: Recent full-release versions fixed multiple issues, but not every case is universally solved. If crashes or save problems persist after updating and trying in-game cleanup, collect details and contact support.
+## FAQ
+
+Q: Did 1.0.6 fix the infinite ending loop?
+A: 1.0.6 aimed to fix continue-after-ending issues, but current residual reports show the infinite ending loop still affects some saves. There is no verified universal workaround; use conservative save backups and report occurrences.
+
+Q: Will 1.0.6 stop my crashes and broken saves?
+A: 1.0.6 targets saving and crash improvements, and some players see benefits, but crashes and unreliable saves are still reported. Collect logs/timestamps and report repeat failures.
+
+Q: I lost a unique tool — will it always respawn?
+A: 1.0.6 intends improved recall and lava-lost tool respawn, but behavior has been inconsistent across reports. Check backups and the Fuse recovery guidance; do not count on guaranteed respawn.
+
+Q: Picking up the UV Light made it disappear — can I still get the Secret Ending?
+A: This UV Light softlock has been reported in the full release. Back up saves before attempting the pickup and consult [the Secret Ending guide]({{page:secret-ending}}) for community advice. Report the softlock if it occurs.
+
+Q: Does Clear Items refund money or resources?
+A: No — Pause Menu → Clear Items removes items and does not refund spent money. Back up before bulk removal.

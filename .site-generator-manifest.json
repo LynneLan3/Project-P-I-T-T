@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "templateVersion": "2.0.0",
   "generatorVersion": "1.0.0",
-  "specHash": "9aecba605542e20fb01f9da401e3da0b8088c6bf22bb41ed208d445fea75e8a6",
+  "specHash": "da74ae69ec2015da10b0819e828d8bd7631f241aea2b92892862d0071f74e09e",
   "siteId": "project-p-i-t-t",
   "createdFromSpec": "site-spec.yaml",
   "managedFiles": [
@@ -53,12 +53,12 @@
     },
     {
       "path": "src/config/site.generated.ts",
-      "sha256": "136c331a81c7a562230272e9491131293c7f3ddecf005334ba790d100acaeb19",
+      "sha256": "18f73db426d1bba4af450edbaeeb391d3daf8ac4a028867bf3295c32a395d855",
       "kind": "config"
     },
     {
       "path": "src/content/docs/achievements/achievements.md",
-      "sha256": "bd378916077e3d42f67a027e3af3d0f38bac4a575567c64f6948f21188a6c810",
+      "sha256": "46fca50f452e4ce6b99061235f01d9481c2daa1929c1e31c0ceadc10decab79e",
       "kind": "page"
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "path": "src/content/docs/automation/panel-rack.md",
-      "sha256": "86706351ee89fc26bec9534e5f5ba1ebaa16857203d2a643d4304d585a5769b0",
+      "sha256": "f3f08668ec51072b1170bf47fa4869b189e9b56188911acb2fb5793566c3ba6b",
       "kind": "page"
     },
     {
@@ -83,7 +83,7 @@
     },
     {
       "path": "src/content/docs/automation/troubleshooting.md",
-      "sha256": "e3b4ffcbd81727dfd4f61bad28581ceea55fc896a8930c9f070c0f917ca0f471",
+      "sha256": "9b1f81a074697e0117dd7c1da04a1972c018501fc3cfed4d06b482713489d286",
       "kind": "page"
     },
     {
@@ -108,7 +108,7 @@
     },
     {
       "path": "src/content/docs/progression-secrets/secret-ending.md",
-      "sha256": "d10e021a78b98e72ee18338c46622be87ef4f661e8d99d230b1ac69bea42d6df",
+      "sha256": "fa75c02ff3d64b1c123b4d95a7ce2e39a8941718b2813f30a142015be6a20827",
       "kind": "page"
     },
     {
