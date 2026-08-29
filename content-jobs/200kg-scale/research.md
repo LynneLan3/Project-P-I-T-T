@@ -1,4 +1,10 @@
-# APIMart content brief: Project P.I.T.T. 200kg Scale
+# APIMart content brief: Project P.I.T.T. 200kg Scale — PITT-GSC-INTENT-REFRESH-20260829
+
+INTERVENTION SCOPE
+- Batch / InterventionID: PITT-GSC-INTENT-REFRESH-20260829
+- Existing URL only: /200kg-plate/
+- ActionType: CONTENT_REFRESH
+- This is the current winner: make only a light evidence-bounded reinforcement; do not rewrite the intent, split the URL, or make unsupported claims.
 
 TARGET QUERY: project pitt 200kg
 SECONDARY QUERIES: project pitt 200 kg; project pitt 200kg scale; project pitt 200kg puzzle; project pitt heavy achievement; what to do after 200kg project pitt
@@ -41,3 +47,7 @@ LAUNCH-WINDOW EXPANSION
 - Treat Gambling Crates, bumpers, remotes, and loaded containers as community-reported workable approaches, not a mandatory loadout. Do not invent which object is objectively heaviest or any exact item weight.
 - Answer the FAQ questions “What is the heaviest item?”, “What should I use to reach 200kg?”, and “What do I do after reaching 200kg?” with the evidence boundary intact.
 - Prefer a real how-to title such as “How to Reach 200kg in Project P.I.T.T. — Best Heavy Items & What to Do Next”; APIMart must choose the final natural title.
+
+LIGHTWEIGHT REFRESH REQUIREMENTS
+- Add only concise, evidence-bounded guidance on item weights/mass, reliable 200kg combinations, a weight query, and the next step after completion.
+- Keep Gambling Crates, bumpers, remotes, and loaded containers as community-reported workable combinations; do not rank one as objectively heaviest or invent numeric weights.

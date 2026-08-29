@@ -1,41 +1,39 @@
 Direct Answer
 
-Players see ducks come out at 0% because ordinary/basic ducks are not the correct input for the Percentage Pipe at the post‑200kg stage. The Percentage Pipe is the next progression step after the 200kg checkpoint and expects later-stage/assembled products from continuing production, not the basic ducks that worked earlier. Current full‑release (2026-08-19) community findings indicate feeding later products into the pipe moves the percentage; if basic ducks still show 0% that is expected behavior, not definitive evidence of a universal bug.
+> Short answer: After the 200kg checkpoint, ordinary/basic ducks will not move the Percentage Pipe because they are not the correct inputs for that later stage. In the current Full Release (2026-08-19) the concrete resolution is to feed the pipe 10 Anomalies (each contributing 10%) to reach 100%, then proceed into IGTAP — the pipe progression ties into the later Secret Ending route.
 
 Quick Steps
 
-1. Confirm you have passed the 200kg checkpoint (that checkpoint is separate from the pipe’s input requirement).
-2. Continue your production chain past basic ducks until you can produce later/assembled products.
-3. Put those later-stage/assembled products into the Percentage Pipe.
-4. Watch the pipe percentage — it should progress when the correct product class is used.
-5. If percentage doesn’t change after trying later products, collect info (what item you used, screenshots, logs) and report to support or community — the issue may be situational.
+1. Finish the 200kg stage (see [the 200kg Guide]({{page:200kg-plate}})).
+2. Stop using ordinary/basic ducks — they don’t affect the post-200kg percentage.
+3. Produce or assemble the later-stage item type used as pipe input (community and full-release findings call these Anomalies).
+4. Insert ten Anomalies into the pipe (10 × 10% → 100%).
+5. After 100% completes, continue into IGTAP and follow the connected Secret Ending route.
 
 Prerequisites or What You Need
 
-- Progressed beyond the 200kg stage (the Percentage Pipe is the next progression).
-- A working production chain that produces later-stage or assembled products (not basic/ordinary ducks).
-- Access to the Percentage Pipe itself.
-- Patience: the pipe expects a different input class than earlier stages; don’t rely on demo-era assumptions.
+- Completed the 200kg checkpoint.
+- Access to the later-stage production path that yields the items recognized by the pipe (community-confirmed as Anomalies for the Full Release).
+- Ability to move those items into the Percentage Pipe one at a time until the pipe reaches 100%.
 
 Full Explanation
 
-- Two separate things: the 200kg checkpoint and the Percentage Pipe input. Hitting 200kg is a milestone in production progression; it does not mean the pipe will accept the same raw/basic items you used earlier.
-- Community-confirmed behavior for the Full Release (2026-08-19) shows ordinary/basic ducks will not move the Percentage Pipe from 0%. The pipe requires later production outputs (assembled or higher-tier products) as its inputs. The guide does not invent or specify exact product names, recipes, counts, or increment values — community reports only indicate a later-stage product is required.
-- The pipe progression ties into the Secret Ending route. Advancing the pipe with the correct later-stage items is part of continuing toward that route; the Percentage Pipe is not a cosmetic or dead-end system in the Full Release.
-- If you still see 0% after feeding later products, that could indicate a situational problem. Do not assume a universal bug from a single instance; gather details and check community forums or support for similar reports.
+- 200kg is a progression checkpoint, not the pipe’s input requirement. Reaching 200kg does not change what the pipe accepts afterward.
+- Current full-release community findings indicate ordinary/basic ducks are not the correct inputs for the Percentage Pipe in the post-200kg stage. Dumping ducks will leave the display at 0% because the pipe ignores them at this stage.
+- The Full Release (2026-08-19) resolution that players have confirmed is: feed the pipe 10 Anomalies, each counting as 10%, for a total of 100%. After reaching 100% the game advances into IGTAP; IGTAP is the next step on the route that connects to the Secret Ending.
+- The pipe progression is therefore an active part of late-game routing and is intentionally linked to the Secret Ending pathway rather than being an end-point on its own.
 
 Common Mistakes
 
-- Throwing basic/ordinary ducks into the pipe expecting the 200kg-era behavior.
-- Treating the 200kg checkpoint as the end of content (older Demo-era posts said later areas were teasers; those comments are outdated for the Full Release).
-- Reporting a bug without first trying later-stage/assembled products.
-- Expecting a single universal product, percentage increment, or recipe — Full Release behavior requires later products but exact values and recipes are not provided here.
+- Assuming 0% means a universal bug — players consistently report 0% when using the wrong items (ducks), not always a software error. If your inserted item is not a recognized later-stage product, the percentage will remain unchanged.
+- Treating 200kg as the final stop. That was a Demo-era impression — the Full Release continues beyond it.
+- Relying on old Demo threads that said the pipe wasn’t implemented or the area was only a teaser. Those statements are outdated for the 2026-08-19 Full Release.
 
 What To Do Next
 
-- Continue your production chain past the 200kg stage until you can make assembled/later-stage products, then feed those into the Percentage Pipe.
-- If the pipe still won’t advance, collect evidence (item used, screenshots, timestamps) and check official patch notes or community reports for known issues.
-- Once you get the pipe to advance, follow the connected route toward the Secret Ending.
+- If you’re stuck at 200kg, follow [the 200kg Guide]({{page:200kg-plate}}) to finish that checkpoint.
+- Start producing or assembling the late-stage items (Anomalies) and feed them into the pipe until you hit 100%, then proceed into IGTAP.
+- Once IGTAP is active, follow the connected steps toward the Secret Ending; start with [the Secret Ending Guide]({{page:secret-ending}}) for the next phase.
 
 Related Guides
 

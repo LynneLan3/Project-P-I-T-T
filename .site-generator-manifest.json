@@ -88,7 +88,7 @@
     },
     {
       "path": "src/content/docs/automation/x300-combo.md",
-      "sha256": "8ae14c74026c21531c59ee99f4eb4569411ac2db7543e2af0d8b3348215a12fd",
+      "sha256": "65f76db83d3c0520583c7cbeeca103e963d546f763238c932472da0fc648f655",
       "kind": "page"
     },
     {
@@ -98,12 +98,12 @@
     },
     {
       "path": "src/content/docs/progression-secrets/200kg-plate.md",
-      "sha256": "5d252eee94b9dad63a416340186b400e64c93c7a567a14158207a211cdab51d0",
+      "sha256": "ce37e94b4155cf01b0a0f9276fe452d6ac15a5d18500097e291061b2342ccb78",
       "kind": "page"
     },
     {
       "path": "src/content/docs/progression-secrets/percentage-pipe.md",
-      "sha256": "c161c128aff2c25bac403933ab5482b6cd7115969c015d8b536aa57d3f9ba4b1",
+      "sha256": "fff74c8c9a7390e3bb77bd979dc4bf75c382160d2641f85513b882697aab5ab0",
       "kind": "page"
     },
     {
@@ -113,7 +113,7 @@
     },
     {
       "path": "src/content/docs/progression-secrets/up-achievement-fuses.md",
-      "sha256": "3ea21487c05b9724be88c1c7f8de71af1aae7bb163f23f14b4db7945e3f79eb9",
+      "sha256": "bb747c7bed4be4e80419c0c62493763fc1dda563d0edeceed4ebf313c59524cb",
       "kind": "page"
     },
     {

@@ -1,4 +1,10 @@
-# APIMart content brief: Project P.I.T.T. Fuses, Fuse Box, and UP?
+# APIMart content brief: Project P.I.T.T. Fuses, Fuse Box, and UP? — PITT-GSC-INTENT-REFRESH-20260829
+
+INTERVENTION SCOPE
+- Batch / InterventionID: PITT-GSC-INTENT-REFRESH-20260829
+- Existing URL only: /up-achievement-fuses/
+- ActionType: CONTENT_REFRESH
+- Do not create /fuse/ or any new fuse-locations URL.
 
 PRIMARY INTENT
 Where are the fuses and Fuse Box in Project P.I.T.T., what do I do with them, and what happens after I place all three?
@@ -44,6 +50,9 @@ REQUIRED PAGE ORDER AND ANSWERS
 6. UP? Achievement: distinguish the public Steam achievement listing from the community/index evidence connecting it to the Fuse step.
 7. Missing Fuse / Fuse Stuck: current Full Release recovery flow is check nearby and below the drop area, wait or confirm key-item respawn, then use the current-version recovery method available in the save. Do not expand this into reload/checkpoint/fast-travel, pickup-state, or other invented mechanics, and do not say the Fuse is permanently lost or unrecoverable.
 8. FAQ: answer all of these in natural English, with the answers also covered by the body: How many fuses are there in Project P.I.T.T.? Where is the Fuse Box? What happens when you place all 3 fuses? Is the fuse puzzle related to UP?? What should I do if a fuse is missing? What comes after the Fuse Box?
+
+LOCATION CLARITY REQUIREMENT
+- Make each of the three Fuse locations actionable without inventing exact coordinates: explain the three search targets as the upper/right-side elevated area, visible nearby platforms/catwalk sweep, and drop/landing areas around moved elevated objects. State that these are search landmarks and methods, not Fuse #1/#2/#3 fixed coordinates.
 
 RELATED GUIDE
 [the 200kg Guide]({{page:200kg-plate}})

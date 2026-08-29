@@ -1,4 +1,10 @@
-# APIMart content brief: Project P.I.T.T. x300 Combo
+# APIMart content brief: Project P.I.T.T. x300 Combo — PITT-GSC-INTENT-REFRESH-20260829
+
+INTERVENTION SCOPE
+- Batch / InterventionID: PITT-GSC-INTENT-REFRESH-20260829
+- Existing URL only: /x300-combo/
+- ActionType: CONTENT_REFRESH
+- Do not create a new combo or achievement URL.
 
 PRIMARY INTENT
 How to get the x300 / 300 Combo achievement in Project P.I.T.T. without losing the route to jams, timing errors, or a late progression reset.
@@ -18,7 +24,7 @@ DO NOT CLAIM
 - Do not turn this into a generic automation encyclopedia.
 
 REQUIRED STRUCTURE
-Use answer-first headings for the x300 / 300 combo answer, reliable method, what resets or breaks the combo, common failure reasons, how automation helps, how the Shift Scheduler can help, safest progression timing, and FAQ.
+Use answer-first headings for the x300 / 300 combo answer, a concrete manual setup and operating sequence, what resets or breaks the combo, common failure reasons, how automation helps, how the Shift Scheduler can help, safest progression timing, and FAQ. The page must read as an executable 300 Combo procedure, not an abstract automation overview.
 
 INTERNAL LINKS
 - Link to [Automation]({{page:automation}}) for lane setup.

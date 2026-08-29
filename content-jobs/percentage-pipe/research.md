@@ -1,4 +1,10 @@
-# APIMart content brief: Project P.I.T.T. Percentage Pipe
+# APIMart content brief: Project P.I.T.T. Percentage Pipe — PITT-GSC-INTENT-REFRESH-20260829
+
+INTERVENTION SCOPE
+- Batch / InterventionID: PITT-GSC-INTENT-REFRESH-20260829
+- Existing URL only: /percentage-pipe/
+- ActionType: CONTENT_REFRESH
+- Do not create a new Percentage Pipe, IGTAP, or other URL.
 
 TARGET QUERY: project pitt percentage pipe
 SECONDARY QUERIES: project pitt pipe 0%; project pitt 0 percent; project pitt what to put in pipe; what to do after 200kg project pitt
@@ -12,6 +18,8 @@ VERIFIED FACTS
 - The correct direction is later products or assembled products from the continuing production progression; do not invent a specific product name unless the brief provides one.
 - The pipe progression is connected to the later Secret Ending route.
 - The 2026-08-19 Full Release is the relevant version.
+- Full Release resolution: 10 Anomalies × 10% = 100%, then continue to IGTAP.
+- Treat that 10 × 10% sequence as the concrete solution for the current Full Release brief; do not replace it with a generic later-products-only answer.
 
 VERSION WARNING
 Older Steam Demo discussions may say that 200kg is nearly the end, that later areas are only a teaser, or that the pipe's full use was not implemented. Those statements describe the old Demo and must be labeled as outdated for the Full Release, without attacking other sites.
@@ -28,4 +36,4 @@ RELATED GUIDE AFTER
 [the Secret Ending Guide]({{page:secret-ending}})
 
 ARTICLE REQUIREMENTS
-Answer quickly why ducks leave the pipe at 0%, distinguish the 200kg checkpoint from the pipe's input requirement, explain the correct later-production direction at a high level, address the old Demo warning, and connect the player to the Secret Ending route.
+Answer quickly why ducks leave the pipe at 0%, distinguish the 200kg checkpoint from the pipe's input requirement, explain the concrete 10 Anomalies × 10% → 100% → IGTAP route, address the old Demo warning, and connect the player to the Secret Ending route where supported.
