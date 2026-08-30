@@ -69,3 +69,6 @@ LAUNCH-WINDOW EXPANSION
 - Add a clearly labeled lost/missing Fuse and “Fuse disappeared after save” recovery answer. In the current full release, an unplaced Fuse may return to its spawn/original location after saving; phrase this as a possible recovery behavior, not a guarantee or an exact respawn rule.
 - Connect the progression naturally as Fuse → 200kg → Percentage Pipe, linking to the 200kg Guide for the next step without repeating its tutorial.
 - Prefer a real how-to title such as “How to Use Fuses in Project P.I.T.T. — Fuse Box, Lost Fuse & Next Step”; APIMart must choose the final natural title.
+
+CURRENT VERSION CORRECTION
+- Update the first answer for Missing Fuse / Fuse Stuck to official 1.0.6: unplaced Fuses should return to their spawn position when saving (unless placed). Keep this as the current behavior and do not leave the first answer framed only as the older 1.0.5 generic key-item respawn guidance.

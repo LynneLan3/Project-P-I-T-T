@@ -1,24 +1,24 @@
 {
   "title": "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
-  "description": "END? is the game’s Secret Ending label according to newer achievement information. The verified route progresses in this order: camera / surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame / production progression → UV-related clue progression → elevator access / keycard → save-specific four-digit keypad code → Secret Ending route. The four-digit code is tied to your save and discovered with UV clues; it corresponds to the four manual production machines and must be entered in the machine-unlock order Duck → Cash Register → Piñata → Anomaly. Keycard steps and prior progression stages must be completed to access the elevator and keypad; UV is part of finding the hidden digits. Community reports include one playthrough code of 2640, but that is from a specific save and is not a universal answer — many players report 2640 does not work. If you are stuck, return to the last progression stage you completed (for example check UV clues, keycard steps, or the minigame/production tasks) rather than trying an internet-wide code.",
+  "description": "Reach the Secret Ending (END?), why 2640 may fail, how the save-specific UV-based code works and the Duck→Cash Register→Piñata→Anomaly entry order.",
   "h1": "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
-  "quickAnswer": "END? = the Secret Ending. Follow the verified progression through surveillance → upper areas → Mystery Boxes → fuses → 200kg → Percentage Pipe → production/minigame → UV clues → elevator/keycard → save-specific 4-digit keypad → Secret Ending. The four digits are found with UV in your save, correspond to the four manual production machines, and must be entered in Duck → Cash Register → Piñata → Anomaly order. 2640 is a code reported from one specific playthrough and is not guaranteed to work for everyone; many players report 2640 does not work.",
+  "quickAnswer": "Why doesn’t 2640 work? 2640 is not a universal code; current players report 2640 does not work. END? is the Secret Ending. The four-digit elevator/keypad code comes from UV clues in your own save; the digits correspond to the four manual production machines and must be entered in machine-unlock order: Duck → Cash Register → Piñata → Anomaly.",
   "facts": [
     {
-      "label": "What END? is",
-      "value": "END? is the Secret Ending label indicated by newer achievement information; do not conflate END? with other ending labels from older guides."
+      "label": "END? meaning",
+      "value": "END? is the Secret Ending in Project P.I.T.T., unlocked after completing the full hidden route and entering the save-specific code; treat END? as the secret outcome distinct from other ending labels."
     },
     {
-      "label": "Verified route stages",
-      "value": "camera / surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame / production progression → UV-related clue progression → elevator access / keycard → save-specific four-digit keypad code → Secret Ending route."
+      "label": "Route",
+      "value": "Verified full-release progression: camera/surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame/production progression → UV-related clue progression → elevator access/keycard → save-specific four-digit keypad code → Secret Ending route."
     },
     {
-      "label": "Four-digit keypad rule",
-      "value": "The four-digit keypad code is save-specific and must be found using UV clues in your own playthrough. The digits correspond to the four manual production machines and must be entered in this machine order: Duck → Cash Register → Piñata → Anomaly. A code such as 2640 has been reported from one playthrough only and should not be treated as universal; current player reports include that 2640 does not work for many saves."
+      "label": "Code",
+      "value": "The four-digit Secret Ending keypad code is tied to the current save. Use UV to reveal four digits in your save; the digits correspond to the four manual production machines. Enter them in machine-unlock order: Duck → Cash Register → Piñata → Anomaly. 2640 was reported from one specific playthrough but is not universal and many players report 2640 does not work."
     },
     {
-      "label": "Why players lose the thread and troubleshooting",
-      "value": "Common fail points are missing UV clues, incomplete keycard steps, or skipping production/minigame progression. Elevator/keypad access requires completing the keycard progression and the UV-related clues. If stuck, go back to the last verified progression stage you completed instead of trying to brute-force an internet code or assuming a universal elevator code."
+      "label": "Keypad troubleshooting",
+      "value": "Why doesn’t 2640 work? Because the code is save-specific. If the keypad or elevator is unavailable, check that you completed required Keycard steps, found the UV clues in your save, and finished prerequisite progression (camera/surveillance, Mystery Boxes, 3 Fuses, 200kg, Percentage Pipe, production progression). Return to the last completed progression stage rather than guessing public codes. FAQ: Why does 2640 not work? It was from one save only. Is the elevator code the same for everyone? No—it's save-specific. Where do I find the four Secret Ending digits? They are revealed by UV clues tied to your playthrough. What order do I enter the digits? Duck → Cash Register → Piñata → Anomaly. Why can’t I use the keypad yet? You likely need to finish Keycard, UV, or other prerequisite progression steps first."
     }
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "title": "Project P.I.T.T. Anomaly: Recipe, Phase 4 Role, and the Percentage Pipe",
+  "description": "Craft Anomalies: recipe, Phase 4 role, staging tips, and how 10 Anomalies fill the Percentage Pipe to 100%.",
+  "h1": "Project P.I.T.T. Anomaly: Recipe, Phase 4 Role, and the Percentage Pipe",
+  "quickAnswer": "1 Duck + 1 Cash Register + 1 Piñata at the Anomaly workbench makes 1 Anomaly, and that 10 Anomalies fill the Percentage Pipe to 100%.",
+  "facts": [
+    {
+      "label": "Recipe",
+      "value": "The Anomaly workbench consumes 1 Duck + 1 Cash Register + 1 Piñata when activated to produce 1 Anomaly."
+    },
+    {
+      "label": "Phase 4",
+      "value": "Anomalies are the Phase 4 late-stage product in the current full release and are produced at the Anomaly workbench as the Phase 4 progression step."
+    },
+    {
+      "label": "Keep inputs supplied",
+      "value": "Duck, Cash Register, and Piñata are earlier products and are consumed to make Anomalies. Stage one of each where the workbench can receive them, load all three, activate the bench, remove the finished Anomaly before the next cycle, track each supply separately, test a single batch first, and fix the slowest or missing input before scaling."
+    },
+    {
+      "label": "Percentage Pipe",
+      "value": "The Percentage Pipe advances 10% per Anomaly; 10 Anomalies bring it to 100%, after which progression continues into IGTAP and the connected Secret Ending route."
+    }
+  ]
+}

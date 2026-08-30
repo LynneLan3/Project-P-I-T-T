@@ -36,4 +36,4 @@ RELATED GUIDE AFTER
 [the Secret Ending Guide]({{page:secret-ending}})
 
 ARTICLE REQUIREMENTS
-Answer quickly why ducks leave the pipe at 0%, distinguish the 200kg checkpoint from the pipe's input requirement, explain the concrete 10 Anomalies × 10% → 100% → IGTAP route, address the old Demo warning, and connect the player to the Secret Ending route where supported.
+Answer quickly why ducks leave the pipe at 0%, distinguish the 200kg checkpoint from the pipe's input requirement, explain the concrete 10 Anomalies × 10% → 100% → IGTAP route, address the old Demo warning, and connect the player to the Secret Ending route where supported. Add the explicit question “How do I make Anomalies?” in both Quick Answer and What To Do Next, with a direct link to [the Anomaly Guide]({{page:anomaly}}). Make clear that the next layer is one Duck + one Cash Register + one Piñata at the Anomaly workbench; do not add unsupported automation or layout claims.

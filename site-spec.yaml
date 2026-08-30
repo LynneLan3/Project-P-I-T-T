@@ -133,7 +133,7 @@ pages:
       - label: Progression result
         value: Placing all three Fuses completes the Fuse progression and leads into the 200kg scale/weight-puzzle progression.
       - label: Missing Fuse
-        value: Check nearby/drop areas and current-version respawn behavior; an unplaced Fuse may return to its spawn/original position after saving.
+        value: "Official 1.0.6 behavior: an unplaced Fuse should return to its spawn position when saving, unless it is already placed; also check nearby/drop areas."
     coverAssetId: pitt-screenshot-fuses
     related:
       - 200kg-plate
@@ -227,7 +227,7 @@ pages:
       - project-pitt-percentage-pipe
       - project-pitt-pipe-0-percent
       - project-pitt-what-to-put-in-pipe
-    quickAnswer: Basic ducks are not the right input for the post-200kg Percentage Pipe. Continue the production progression until you can feed later-stage or assembled products, then follow the connected Secret Ending route.
+    quickAnswer: "Basic ducks are not the right input for the post-200kg Percentage Pipe. How do I make Anomalies? Use 1 Duck + 1 Cash Register + 1 Piñata at the Anomaly workbench, then feed 10 Anomalies to reach 100% and continue into the connected Secret Ending route."
     eyebrow: Percentage Pipe
     facts:
       - label: Common display
@@ -240,12 +240,15 @@ pages:
         value: Secret Ending
     related:
       - 200kg-plate
+      - anomaly
       - secret-ending
       - up-achievement-fuses
     relations:
       - pageId: 200kg-plate
         type: related
       - pageId: secret-ending
+        type: next-step
+      - pageId: anomaly
         type: next-step
     assetType: article
     sources:
@@ -262,7 +265,7 @@ pages:
 
   - id: secret-ending
     title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route"
-    description: "END? is the game’s Secret Ending label according to newer achievement information. The verified route progresses in this order: camera / surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame / production progression → UV-related clue progression → elevator access / keycard → save-specific four-digit keypad code → Secret Ending route. The four-digit code is tied to your save and discovered with UV clues; it corresponds to the four manual production machines and must be entered in the machine-unlock order Duck → Cash Register → Piñata → Anomaly. Keycard steps and prior progression stages must be completed to access the elevator and keypad; UV is part of finding the hidden digits. Community reports include one playthrough code of 2640, but that is from a specific save and is not a universal answer — many players report 2640 does not work. If you are stuck, return to the last progression stage you completed (for example check UV clues, keycard steps, or the minigame/production tasks) rather than trying an internet-wide code."
+    description: "Reach the Secret Ending (END?), understand why 2640 may fail, and use the save-specific UV code with the Duck → Cash Register → Piñata → Anomaly order."
     category: progression-secrets
     slug: secret-ending
     source: site-input/pages/secret-ending.md
@@ -275,17 +278,17 @@ pages:
       - project-pitt-ending
       - project-pitt-end-question
       - project-pitt-elevator-code
-    quickAnswer: "END? = the Secret Ending. Follow the verified progression through surveillance → upper areas → Mystery Boxes → fuses → 200kg → Percentage Pipe → production/minigame → UV clues → elevator/keycard → save-specific 4-digit keypad → Secret Ending. The four digits are found with UV in your save, correspond to the four manual production machines, and must be entered in Duck → Cash Register → Piñata → Anomaly order. 2640 is a code reported from one specific playthrough and is not guaranteed to work for everyone; many players report 2640 does not work."
+    quickAnswer: "Why doesn’t 2640 work? It is not universal. END? is the Secret Ending; use the four digits revealed by UV in your own save, entering them Duck → Cash Register → Piñata → Anomaly."
     eyebrow: Secret Ending
     facts:
       - label: "What END? is"
-        value: "END? is the Secret Ending label indicated by newer achievement information; do not conflate END? with other ending labels from older guides."
+        value: "END? is the Secret Ending in Project P.I.T.T."
       - label: "Verified route stages"
-        value: "camera / surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame / production progression → UV-related clue progression → elevator access / keycard → save-specific four-digit keypad code → Secret Ending route."
+        value: "Camera/surveillance → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later progression → UV clues → elevator/keypad → Secret Ending."
       - label: "Four-digit keypad rule"
-        value: "The four-digit keypad code is save-specific and must be found using UV clues in your own playthrough. The digits correspond to the four manual production machines and must be entered in this machine order: Duck → Cash Register → Piñata → Anomaly. A code such as 2640 has been reported from one playthrough only and should not be treated as universal; current player reports include that 2640 does not work for many saves."
+        value: "Use the four digits revealed by UV in your own save. Enter them in machine order: Duck → Cash Register → Piñata → Anomaly. 2640 is not universal."
       - label: "Why players lose the thread and troubleshooting"
-        value: "Common fail points are missing UV clues, incomplete keycard steps, or skipping production/minigame progression. Elevator/keypad access requires completing the keycard progression and the UV-related clues. If stuck, go back to the last verified progression stage you completed instead of trying to brute-force an internet code or assuming a universal elevator code."
+        value: "If the keypad is unavailable, check Keycard, UV, and prerequisite progression before trying another code."
     related:
       - percentage-pipe
       - up-achievement-fuses
@@ -309,6 +312,64 @@ pages:
         title: Project P.I.T.T. Steam store page
         url: https://store.steampowered.com/app/4026250/Project_PITT/
     changeSummary: New launch-window page for the END? Secret Ending query, preserving save-specific-code and route-evidence boundaries.
+
+  - id: anomaly
+    title: "Project P.I.T.T. Anomaly: Recipe, Phase 4 Role, and the Percentage Pipe"
+    description: "Craft Anomalies in Phase 4 with 1 Duck, 1 Cash Register, and 1 Piñata, then use 10 Anomalies to fill the Percentage Pipe to 100%."
+    category: progression-secrets
+    slug: anomaly
+    source: site-input/pages/anomaly.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 5
+    role: core
+    intents:
+      - project-pitt-anomaly
+      - project-pitt-how-to-make-anomaly
+      - project-pitt-anomaly-recipe
+      - project-pitt-anomaly-workbench
+      - project-pitt-phase-4-anomaly
+      - project-pitt-better-way-to-make-anomalies
+    quickAnswer: "Load 1 Duck, 1 Cash Register, and 1 Piñata into the Anomaly workbench to make 1 Anomaly in Phase 4. Ten Anomalies fill the Percentage Pipe to 100%."
+    eyebrow: Phase 4 Production
+    facts:
+      - label: Recipe
+        value: One Duck + one Cash Register + one Piñata at the Anomaly workbench produces one Anomaly when activated.
+      - label: Phase 4 position
+        value: Anomalies are the late-stage Phase 4 production step.
+      - label: Keeping inputs in sync
+        value: Keep Duck, Cash Register, and Piñata supplies running; stage one of each and test small batches before scaling.
+      - label: Percentage Pipe
+        value: Ten Anomalies advance the Pipe by 10% each to reach 100%, then the route continues into IGTAP and the connected Secret Ending.
+    related:
+      - percentage-pipe
+      - secret-ending
+      - automation
+      - trade-terminal
+      - troubleshooting
+    relations:
+      - pageId: percentage-pipe
+        type: next-step
+      - pageId: secret-ending
+        type: next-step
+      - pageId: automation
+        type: related
+      - pageId: trade-terminal
+        type: related
+      - pageId: troubleshooting
+        type: related
+    assetType: article
+    sources:
+      - type: steam
+        title: Steam Community — current full-release Anomaly discussions
+        url: https://steamcommunity.com/app/4026250/
+      - type: steam
+        title: Steam Community — current full-release Percentage Pipe reports
+        url: https://steamcommunity.com/app/4026250/discussions/0/572666489558215965/
+      - type: official
+        title: Project P.I.T.T. Steam store page
+        url: https://store.steampowered.com/app/4026250/Project_PITT/
+    changeSummary: New answer-first Phase 4 Anomaly guide for recipe, workbench, synchronized inputs, cautious automation, and the 10-Anomaly Percentage Pipe handoff.
 
   - id: automation
     title: "How to Automate Phase 4 in Project P.I.T.T."
@@ -636,6 +697,7 @@ routes:
       - up-achievement-fuses
       - 200kg-plate
       - percentage-pipe
+      - anomaly
       - secret-ending
       - achievements
   - id: factory-optimization
@@ -655,6 +717,7 @@ routes:
       - shift-scheduler
       - trade-terminal
       - panel-rack
+      - anomaly
       - x300-combo
   - id: completion
     eyebrow: Completion Route
@@ -692,6 +755,8 @@ homepage:
       pageId: 200kg-plate
     - label: Why is the Percentage Pipe stuck at 0%?
       pageId: percentage-pipe
+    - label: How do I make Anomalies?
+      pageId: anomaly
     - label: What does END? mean?
       pageId: secret-ending
     - label: How do panels work in Project P.I.T.T.?
@@ -716,6 +781,8 @@ homepage:
       label: Reach 200kg
     - pageId: percentage-pipe
       label: Percentage Pipe stuck at 0%?
+    - pageId: anomaly
+      label: Make Anomalies in Phase 4
     - pageId: secret-ending
       label: Find the Secret Ending
     - pageId: automation

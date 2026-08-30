@@ -85,3 +85,8 @@ LAUNCH-WINDOW EXPANSION
 - Explain what the Terminal does, how the interaction/timing works only to the extent supported by the brief, and how object/cube value should be understood without inventing a price or economy rule. If no reliable numeric value is established, say so plainly.
 - Add a short “when it becomes useful” connection to automation, batch cleanup, and jam recovery. Link to Automation and x300 only when natural.
 - Prefer a real how-to title such as “How to Use the Trade Terminal in Project P.I.T.T.”; APIMart must choose the final natural title.
+
+REQUIRED NEW SHORT SECTION: Trade Terminal vs Clear Items vs removing placed tools
+- Trade Terminal: current player-tested community behavior is a product vacuum / cleanup function; do not call it a confirmed money-selling or refund system.
+- Pause Menu → Clear Items: official 1.0.5 emergency cleanup for annoying items that may make the game crash or become unplayable; it gives no refund.
+- Placed tools / panels: only describe deletion or removal through another method if reliable evidence exists. Otherwise say the available evidence does not establish a general way to delete placed tools, and do not infer that Clear Items or the Terminal refunds or selectively removes placed tools.

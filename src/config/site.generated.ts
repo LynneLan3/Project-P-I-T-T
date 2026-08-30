@@ -64,6 +64,10 @@ export const siteConfig: GameConfig = {
 				href: "/percentage-pipe/",
 			},
 			{
+				label: "How do I make Anomalies?",
+				href: "/anomaly/",
+			},
+			{
 				label: "What does END? mean?",
 				href: "/secret-ending/",
 			},
@@ -119,8 +123,14 @@ export const siteConfig: GameConfig = {
 				label: "Percentage Pipe stuck at 0%?",
 			},
 			{
+				title: "Project P.I.T.T. Anomaly: Recipe, Phase 4 Role, and the Percentage Pipe",
+				description: "Craft Anomalies in Phase 4 with 1 Duck, 1 Cash Register, and 1 Piñata, then use 10 Anomalies to fill the Percentage Pipe to 100%.",
+				href: "/anomaly/",
+				label: "Make Anomalies in Phase 4",
+			},
+			{
 				title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
-				description: "END? is the game’s Secret Ending label according to newer achievement information. The verified route progresses in this order: camera / surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame / production progression → UV-related clue progression → elevator access / keycard → save-specific four-digit keypad code → Secret Ending route. The four-digit code is tied to your save and discovered with UV clues; it corresponds to the four manual production machines and must be entered in the machine-unlock order Duck → Cash Register → Piñata → Anomaly. Keycard steps and prior progression stages must be completed to access the elevator and keypad; UV is part of finding the hidden digits. Community reports include one playthrough code of 2640, but that is from a specific save and is not a universal answer — many players report 2640 does not work. If you are stuck, return to the last progression stage you completed (for example check UV clues, keycard steps, or the minigame/production tasks) rather than trying an internet-wide code.",
+				description: "Reach the Secret Ending (END?), understand why 2640 may fail, and use the save-specific UV code with the Duck → Cash Register → Piñata → Anomaly order.",
 				href: "/secret-ending/",
 				label: "Find the Secret Ending",
 			},
@@ -318,6 +328,10 @@ export const siteConfig: GameConfig = {
 					pageId: "secret-ending",
 					type: "next-step",
 				},
+				{
+					pageId: "anomaly",
+					type: "next-step",
+				},
 			],
 			sources: [
 				{
@@ -369,6 +383,54 @@ export const siteConfig: GameConfig = {
 					type: "steam",
 					title: "Steam Community discussions and full-release player reports",
 					url: "https://steamcommunity.com/app/4026250/",
+				},
+				{
+					type: "official",
+					title: "Project P.I.T.T. Steam store page",
+					url: "https://store.steampowered.com/app/4026250/Project_PITT/",
+				},
+			],
+			evidence: [
+			],
+		},
+		{
+			id: "anomaly",
+			slug: "anomaly",
+			role: "core",
+			assetType: "article",
+			intents: ["project-pitt-anomaly", "project-pitt-how-to-make-anomaly", "project-pitt-anomaly-recipe", "project-pitt-anomaly-workbench", "project-pitt-phase-4-anomaly", "project-pitt-better-way-to-make-anomalies"],
+			relations: [
+				{
+					pageId: "percentage-pipe",
+					type: "next-step",
+				},
+				{
+					pageId: "secret-ending",
+					type: "next-step",
+				},
+				{
+					pageId: "automation",
+					type: "related",
+				},
+				{
+					pageId: "trade-terminal",
+					type: "related",
+				},
+				{
+					pageId: "troubleshooting",
+					type: "related",
+				},
+			],
+			sources: [
+				{
+					type: "steam",
+					title: "Steam Community — current full-release Anomaly discussions",
+					url: "https://steamcommunity.com/app/4026250/",
+				},
+				{
+					type: "steam",
+					title: "Steam Community — current full-release Percentage Pipe reports",
+					url: "https://steamcommunity.com/app/4026250/discussions/0/572666489558215965/",
 				},
 				{
 					type: "official",
@@ -651,10 +713,17 @@ export const siteConfig: GameConfig = {
 					eyebrow: "Percentage Pipe",
 				},
 				{
+					pageId: "anomaly",
+					href: "/anomaly/",
+					title: "Project P.I.T.T. Anomaly: Recipe, Phase 4 Role, and the Percentage Pipe",
+					description: "Craft Anomalies in Phase 4 with 1 Duck, 1 Cash Register, and 1 Piñata, then use 10 Anomalies to fill the Percentage Pipe to 100%.",
+					eyebrow: "Phase 4 Production",
+				},
+				{
 					pageId: "secret-ending",
 					href: "/secret-ending/",
 					title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
-					description: "END? is the game’s Secret Ending label according to newer achievement information. The verified route progresses in this order: camera / surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame / production progression → UV-related clue progression → elevator access / keycard → save-specific four-digit keypad code → Secret Ending route. The four-digit code is tied to your save and discovered with UV clues; it corresponds to the four manual production machines and must be entered in the machine-unlock order Duck → Cash Register → Piñata → Anomaly. Keycard steps and prior progression stages must be completed to access the elevator and keypad; UV is part of finding the hidden digits. Community reports include one playthrough code of 2640, but that is from a specific save and is not a universal answer — many players report 2640 does not work. If you are stuck, return to the last progression stage you completed (for example check UV clues, keycard steps, or the minigame/production tasks) rather than trying an internet-wide code.",
+					description: "Reach the Secret Ending (END?), understand why 2640 may fail, and use the save-specific UV code with the Duck → Cash Register → Piñata → Anomaly order.",
 					eyebrow: "Secret Ending",
 				},
 				{
@@ -717,6 +786,13 @@ export const siteConfig: GameConfig = {
 					title: "How to Use the Panel Rack in Project P.I.T.T.",
 					description: "How to use the Panel Rack after recent operation changes, including current interaction prompts, panel retrieval, unlock questions, old saves, and automation flow.",
 					eyebrow: "Panel Rack",
+				},
+				{
+					pageId: "anomaly",
+					href: "/anomaly/",
+					title: "Project P.I.T.T. Anomaly: Recipe, Phase 4 Role, and the Percentage Pipe",
+					description: "Craft Anomalies in Phase 4 with 1 Duck, 1 Cash Register, and 1 Piñata, then use 10 Anomalies to fill the Percentage Pipe to 100%.",
+					eyebrow: "Phase 4 Production",
 				},
 				{
 					pageId: "x300-combo",
@@ -785,7 +861,7 @@ export const siteConfig: GameConfig = {
 					pageId: "secret-ending",
 					href: "/secret-ending/",
 					title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
-					description: "END? is the game’s Secret Ending label according to newer achievement information. The verified route progresses in this order: camera / surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame / production progression → UV-related clue progression → elevator access / keycard → save-specific four-digit keypad code → Secret Ending route. The four-digit code is tied to your save and discovered with UV clues; it corresponds to the four manual production machines and must be entered in the machine-unlock order Duck → Cash Register → Piñata → Anomaly. Keycard steps and prior progression stages must be completed to access the elevator and keypad; UV is part of finding the hidden digits. Community reports include one playthrough code of 2640, but that is from a specific save and is not a universal answer — many players report 2640 does not work. If you are stuck, return to the last progression stage you completed (for example check UV clues, keycard steps, or the minigame/production tasks) rather than trying an internet-wide code.",
+					description: "Reach the Secret Ending (END?), understand why 2640 may fail, and use the save-specific UV code with the Duck → Cash Register → Piñata → Anomaly order.",
 					eyebrow: "Secret Ending",
 				},
 				{
