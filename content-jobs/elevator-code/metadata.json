@@ -1,0 +1,24 @@
+{
+  "title": "Project P.I.T.T. Elevator Code — Why 2640 Doesn't Work & How to Find Yours",
+  "description": "2640 is not a universal elevator code; the four save-specific digits are revealed by using a Keycard plus UV Light to read your save's hidden clues.",
+  "h1": "Project P.I.T.T. Elevator Code — Why 2640 Doesn't Work & How to Find Yours",
+  "quickAnswer": "Do not treat 2640 as a fixed elevator code; it's from one playthrough — use your Keycard plus UV Light to reveal the four save-specific digits, then enter them in machine-unlock order: Duck → Cash Register → Piñata → Anomaly.",
+  "facts": [
+    {
+      "label": "Why 2640 fails",
+      "value": "Reported from one specific playthrough; current players report 2640 does not work."
+    },
+    {
+      "label": "Your code",
+      "value": "The four-digit elevator/keypad code is tied to the current save and must be discovered in your own playthrough."
+    },
+    {
+      "label": "What you need",
+      "value": "A Keycard for elevator/keypad access and a UV Light to reveal the four save-specific digits; do not guess locations."
+    },
+    {
+      "label": "Entry order",
+      "value": "Map the revealed digits to the four manual production machines and enter them in this machine-unlock order: Duck → Cash Register → Piñata → Anomaly."
+    }
+  ]
+}

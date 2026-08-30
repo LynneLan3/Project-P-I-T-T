@@ -1,6 +1,6 @@
 ---
-title: How to Use the Panel Rack in Project P.I.T.T.
-description: "How to use the Panel Rack after recent operation changes, including current interaction prompts, panel retrieval, unlock questions, old saves, and automation flow."
+title: "Project P.I.T.T. Panel Rack — How to Unlock, Upgrade & Use It"
+description: "Updated for 1.0.6: use the in-game unlock UI to check Panel Rack unlocks and upgrades; it now uses a dedicated key and won’t auto-dispense the next panel."
 category: automation
 slug: panel-rack
 status: confirmed
@@ -11,9 +11,10 @@ sidebar:
   order: 6
 intents:
   - project-pitt-panel-rack
+  - project-pitt-how-to-get-panel-rack-upgrades
   - project-pitt-how-to-use-panel-rack
   - project-pitt-panel-rack-tier-3
-quickAnswer: "The Panel Rack is a current automation tool whose operation changed in recent versions; use the in-game interaction prompt, do not assume automatic panel spawning, and check the current unlock UI and upstream automation state for your save."
+quickAnswer: "Check the current in-game unlock UI to unlock and upgrade the Panel Rack; Updated for 1.0.6 it now uses a dedicated Panel Rack key — after placing a panel it won’t auto-dispense, so press the Panel Rack key again for the next panel."
 related:
   - automation
   - shift-scheduler
@@ -45,21 +46,21 @@ sources:
     type: steam
     title: Steam Community developer FAQ and updates
     url: https://steamcommunity.com/app/4026250/
-changeSummary: "New launch-window guide for current Panel Rack operation, panel retrieval, unlock/tier questions, old saves, and automation use."
+changeSummary: "Updated for 1.0.6 dedicated keybind, no auto-dispense, and unlock/upgrade/use intent."
 eyebrow: Panel Rack
 facts:
   -
-    label: Tool
-    value: "Current automation tool in the Automation → Shift Scheduler → Trade Terminal → Panel Rack → x300 chain."
+    label: Unlock
+    value: "Check the current in-game unlock UI for your save; exact unlock requirements are not reliably documented."
   -
-    label: Current operation
-    value: "Recent versions changed how the Panel Rack operates; older instructions may be stale."
+    label: Upgrades
+    value: "View Panel Rack upgrades in the in-game unlock UI; there is no confirmed Tier 3 or universal upgrade formula available."
   -
-    label: Panel retrieval
-    value: Panel spawning and retrieval are version-sensitive and are not guaranteed to happen automatically.
+    label: 1.0.6 use
+    value: In 1.0.6 the Panel Rack has its own dedicated keybind and no longer automatically dispenses the next panel after placement.
   -
-    label: Unlocks
-    value: Check the in-game unlock/progression UI rather than assuming tier requirements or costs.
+    label: Next panel
+    value: "Press the dedicated Panel Rack key (current mapping) again to obtain the next panel; do not expect automatic continuous dispense."
 ---
 <!--
   This file is generated from site-spec.yaml.
@@ -67,60 +68,68 @@ facts:
   Run npm run site:generate instead.
   Source: site-input/pages/panel-rack.md
 -->
-Direct Answer
+## Quick Answer
 
-> After 1.0.6 the Panel Rack uses a dedicated Panel Rack key (use your current mapping). After you place a panel the rack will not auto-dispense another one — press the Panel Rack key again to obtain the next panel.
+Updated for 1.0.6
 
-Quick Steps
+- Unlocks and upgrades: check the current in-game unlock UI for your save — the game’s unlock interface shows whether the Panel Rack and its upgrades are available. There is no reliable public Tier 3 / upgrade formula to cite; always verify in-game.
+- Using the Panel Rack (1.0.6): the Panel Rack now has its own dedicated keybind. After you place one panel, it will no longer automatically dispense the next panel — press the Panel Rack key (or your current mapping) again to obtain the next panel.
 
-1. Place one panel from the rack as normal.
-2. Press the dedicated Panel Rack key (your current mapping) to get the next panel.
-3. Repeat step 2 for each panel you want to retrieve.
+## How to Unlock the Panel Rack
 
-Prerequisites or What You Need
+Do not rely on external lists or assumed chains. Open the in-game unlock UI for your save and look for the Panel Rack entry. The unlock UI is the authoritative source for whether the Panel Rack is available in your current save or scenario.
 
-- Panel Rack is an automation tool found under Automation → Shift Scheduler → Trade Terminal → Panel Rack → x300 Combo.
-- Make sure the Panel Rack key is mapped in your controls; the key is a dedicated binding and uses your current mapping.
-- Tier/unlock status: check the in-game unlock UI for whether the rack (and higher tiers) are available.
+## How to Get Panel Rack Upgrades
 
-Full Explanation
+Use the same in-game unlock UI to view upgrade availability and progression for the Panel Rack. No verified, universal upgrade costs or a confirmed Tier 3 prerequisite formula is available; check the UI on your save to see exact status and requirements.
 
-- Keybind behavior (verified for 1.0.6): Panel Rack now has its own dedicated keybind. That key is the explicit control to dispense the next panel after you place one.
-- Dispense change (verified for 1.0.6): The rack no longer automatically provides the next panel after a placement. You must press the dedicated Panel Rack key each time you want another panel.
-- Where it fits: Panel Rack remains under Automation → Shift Scheduler → Trade Terminal → Panel Rack → x300 Combo.
-- Unlock/tier questions: there is no reliable, community-confirmed formula for Tier 3 unlock requirements available. Use the in-game unlock UI to see exact prerequisites and costs for your save.
-- Old-save behavior: players have reported differences between older saves and the current update state. Exact migration rules or whether older saves automatically gain the Panel Rack are not confirmed.
+## How to Use the Panel Rack
 
-Common Mistakes
+(Behavior confirmed in 1.0.6)
+- The Panel Rack has a dedicated keybind. Do not expect the old automatic continuous dispense behavior.
+- After you place one panel, the rack will not automatically dispense the next one. Press the Panel Rack key (or your configured mapping) again to get the next panel.
+- If the key is unbound or set to something you don’t recognize, open Controls/Keybindings and locate the Panel Rack entry to bind or check the current mapping.
 
-- Expecting automatic dispense: assuming panels will appear without pressing the Panel Rack key (this was changed in 1.0.6).
-- Not checking key mapping: the rack uses its own binding — if it’s unbound you won’t get panels.
-- Relying on outdated info: older guides or demos may describe automatic dispensing; full-release behavior changed.
-- Assuming unlock conditions: attempting to follow a single community “formula” for Tier 3 — no universally confirmed formula exists.
+## Old Saves and Missing Rack
 
-What To Do Next
+Players have reported differences after updates and with older saves. Exact migration rules are not confirmed. If the Panel Rack appears missing or locked in an older save:
+- Check the in-game unlock UI for that save as the first step.
+- Check keybindings and troubleshooting steps if behavior differs.
+- If the UI shows it unlocked but behavior is unexpected, consult troubleshooting resources or report the issue; migration specifics are not universally documented.
 
-- Verify and bind the Panel Rack key in your control settings.
-- Test on a rack: place a panel, press the Panel Rack key to confirm the next panel dispenses.
-- If the rack doesn’t appear in your build menu, open the in-game unlock/progression UI to confirm availability.
-- If you run into problems, consult [Troubleshooting](/troubleshooting/) for general checks and diagnostics.
+## Common Mistakes
 
-FAQ
+- Expecting automatic continuous dispense after placing a panel (1.0.6 changed this).
+- Assuming a publicly documented Tier 3/unlock formula — none is reliably confirmed.
+- Not checking or binding the dedicated Panel Rack key in Controls.
+- Looking for external “spawn” or retrieval mechanics rather than verifying the unlock UI.
 
-Q: Why doesn’t another panel appear automatically after I place one?
-A: As of 1.0.6 this is intended behavior: the rack no longer auto-dispenses the next panel. Press the dedicated Panel Rack key (your current mapping) to obtain the next panel.
+## Automation Use
 
-Q: What exactly does the Panel Rack key do?
-A: The key is the explicit dispense command for the Panel Rack. After placing a panel, press that key to receive the next panel.
+Brief pointer: the Panel Rack is part of the automation chain listed in the game as Automation → Shift Scheduler → Trade Terminal → Panel Rack → x300 Combo. Use the in-game automation menus to slot the Panel Rack where needed; for a deep step-by-step automation setup, see the x300 Combo guide linked below.
 
-Q: Why isn’t the Panel Rack unlocked for me / how do I unlock Tier 3?
-A: Unlock conditions vary and an exact Tier 3 prerequisite is not reliably confirmed by the community. Check the in-game unlock UI for your save to see current requirements.
+## FAQ
 
-Q: My save is from before 1.0.6 and the rack is different — is that a bug?
-A: Players report older-save/update-state differences, but exact migration behavior isn’t confirmed. Check the unlock UI and [Troubleshooting](/troubleshooting/) if things look missing.
+### How do I use the Panel Rack?
+In 1.0.6, use the Panel Rack’s dedicated keybind. After placing one panel, it no longer auto-dispenses the next; press the Panel Rack key (your current mapping) again to obtain the next panel.
 
-Related Guides
+### How do I unlock the Panel Rack?
+Check the current in-game unlock UI for your save. The in-game unlock interface is the authoritative source for availability — do not rely on unverified external formulas.
+
+### How do I get Panel Rack upgrades?
+Open the in-game unlock UI to view upgrade options and status. There is no confirmed universal upgrade formula or cost to cite; use the UI for your save.
+
+### Why doesn’t another panel appear automatically?
+As of 1.0.6 the Panel Rack no longer auto-dispenses the next panel after you place one. You must press the Panel Rack key again to get the next panel.
+
+### What does the Panel Rack key do?
+The dedicated Panel Rack key (or your current mapping) requests/dispenses the next panel from the rack. In 1.0.6 it replaces the previous auto-dispense behavior — press it each time you need another panel.
+
+### How do I unlock Tier 3?
+There is no reliably confirmed, universal Tier 3 unlock formula available. Check the in-game unlock UI for exact Tier information and requirements on your save.
+
+## Related Guides
 
 - [Automation](/automation/)
-- [the x300 Combo guide](/x300-combo/)
 - [Troubleshooting](/troubleshooting/)
+- [the x300 Combo guide](/x300-combo/)

@@ -102,8 +102,8 @@ export const siteConfig: GameConfig = {
 		],
 		startHere: [
 			{
-				title: "How to Use 3 Fuses in Project P.I.T.T. — Fuse Box & UP?",
-				description: "How to use three Fuses in the upper/catwalk Fuse Box, recover a missing Fuse in the current version, and continue to the 200kg progression.",
+				title: "Project P.I.T.T. Fuse Box Locations — All 3 Fuses & UP? Achievement",
+				description: "Project P.I.T.T.: the Fuse Box sits on the facility's upper catwalk (right-side elevated area), you need to find and place all three fuses, then tackle 200kg step.",
 				href: "/up-achievement-fuses/",
 				image: "gameplay/fuses.jpg",
 				label: "Find the 3 Fuses",
@@ -130,7 +130,7 @@ export const siteConfig: GameConfig = {
 			},
 			{
 				title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
-				description: "Reach the Secret Ending (END?), understand why 2640 may fail, and use the save-specific UV code with the Duck → Cash Register → Piñata → Anomaly order.",
+				description: "How to reach Project P.I.T.T.'s Secret Ending (END?) and why the elevator uses a save-specific keypad code.",
 				href: "/secret-ending/",
 				label: "Find the Secret Ending",
 			},
@@ -238,7 +238,7 @@ export const siteConfig: GameConfig = {
 			slug: "up-achievement-fuses",
 			role: "core",
 			assetType: "checklist",
-			intents: ["project-pitt-up-achievement", "project-pitt-fuses", "find-and-place-all-fuses"],
+			intents: ["project-pitt-fuse-box-locations", "project-pitt-fuse-box", "project-pitt-all-3-fuses", "project-pitt-up-achievement", "project-pitt-fuses"],
 			relations: [
 				{
 					pageId: "200kg-plate",
@@ -358,8 +358,12 @@ export const siteConfig: GameConfig = {
 			slug: "secret-ending",
 			role: "core",
 			assetType: "article",
-			intents: ["project-pitt-secret-ending", "project-pitt-ending", "project-pitt-end-question", "project-pitt-elevator-code"],
+			intents: ["project-pitt-secret-ending", "project-pitt-ending", "project-pitt-end-question"],
 			relations: [
+				{
+					pageId: "elevator-code",
+					type: "related",
+				},
 				{
 					pageId: "percentage-pipe",
 					type: "next-step",
@@ -371,6 +375,38 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "200kg-plate",
 					type: "related",
+				},
+			],
+			sources: [
+				{
+					type: "other",
+					title: "Exophase achievement index — END? and END!",
+					url: "https://www.exophase.com/game/project-p-i-t-t-steam/achievements/",
+				},
+				{
+					type: "steam",
+					title: "Steam Community discussions and full-release player reports",
+					url: "https://steamcommunity.com/app/4026250/",
+				},
+				{
+					type: "official",
+					title: "Project P.I.T.T. Steam store page",
+					url: "https://store.steampowered.com/app/4026250/Project_PITT/",
+				},
+			],
+			evidence: [
+			],
+		},
+		{
+			id: "elevator-code",
+			slug: "elevator-code",
+			role: "core",
+			assetType: "article",
+			intents: ["project-pitt-elevator-code", "project-pitt-code-2640-does-not-work", "project-pitt-keypad-code"],
+			relations: [
+				{
+					pageId: "secret-ending",
+					type: "next-step",
 				},
 			],
 			sources: [
@@ -641,7 +677,7 @@ export const siteConfig: GameConfig = {
 			slug: "panel-rack",
 			role: "core",
 			assetType: "article",
-			intents: ["project-pitt-panel-rack", "project-pitt-how-to-use-panel-rack", "project-pitt-panel-rack-tier-3"],
+			intents: ["project-pitt-panel-rack", "project-pitt-how-to-get-panel-rack-upgrades", "project-pitt-how-to-use-panel-rack", "project-pitt-panel-rack-tier-3"],
 			relations: [
 				{
 					pageId: "automation",
@@ -692,9 +728,9 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "up-achievement-fuses",
 					href: "/up-achievement-fuses/",
-					title: "How to Use 3 Fuses in Project P.I.T.T. — Fuse Box & UP?",
-					description: "How to use three Fuses in the upper/catwalk Fuse Box, recover a missing Fuse in the current version, and continue to the 200kg progression.",
-					eyebrow: "Hidden Progression",
+					title: "Project P.I.T.T. Fuse Box Locations — All 3 Fuses & UP? Achievement",
+					description: "Project P.I.T.T.: the Fuse Box sits on the facility's upper catwalk (right-side elevated area), you need to find and place all three fuses, then tackle 200kg step.",
+					eyebrow: "Fuse Box",
 					image: "gameplay/fuses.jpg",
 				},
 				{
@@ -723,8 +759,15 @@ export const siteConfig: GameConfig = {
 					pageId: "secret-ending",
 					href: "/secret-ending/",
 					title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
-					description: "Reach the Secret Ending (END?), understand why 2640 may fail, and use the save-specific UV code with the Duck → Cash Register → Piñata → Anomaly order.",
+					description: "How to reach Project P.I.T.T.'s Secret Ending (END?) and why the elevator uses a save-specific keypad code.",
 					eyebrow: "Secret Ending",
+				},
+				{
+					pageId: "elevator-code",
+					href: "/elevator-code/",
+					title: "Project P.I.T.T. Elevator Code — Why 2640 Doesn't Work & How to Find Yours",
+					description: "2640 is not a universal elevator code; the four save-specific digits are revealed by using a Keycard plus UV Light to read your save's hidden clues.",
+					eyebrow: "Elevator Code",
 				},
 				{
 					pageId: "achievements",
@@ -783,8 +826,8 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "panel-rack",
 					href: "/panel-rack/",
-					title: "How to Use the Panel Rack in Project P.I.T.T.",
-					description: "How to use the Panel Rack after recent operation changes, including current interaction prompts, panel retrieval, unlock questions, old saves, and automation flow.",
+					title: "Project P.I.T.T. Panel Rack — How to Unlock, Upgrade & Use It",
+					description: "Updated for 1.0.6: use the in-game unlock UI to check Panel Rack unlocks and upgrades; it now uses a dedicated key and won’t auto-dispense the next panel.",
 					eyebrow: "Panel Rack",
 				},
 				{
@@ -837,9 +880,9 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "up-achievement-fuses",
 					href: "/up-achievement-fuses/",
-					title: "How to Use 3 Fuses in Project P.I.T.T. — Fuse Box & UP?",
-					description: "How to use three Fuses in the upper/catwalk Fuse Box, recover a missing Fuse in the current version, and continue to the 200kg progression.",
-					eyebrow: "Hidden Progression",
+					title: "Project P.I.T.T. Fuse Box Locations — All 3 Fuses & UP? Achievement",
+					description: "Project P.I.T.T.: the Fuse Box sits on the facility's upper catwalk (right-side elevated area), you need to find and place all three fuses, then tackle 200kg step.",
+					eyebrow: "Fuse Box",
 					image: "gameplay/fuses.jpg",
 				},
 				{
@@ -861,7 +904,7 @@ export const siteConfig: GameConfig = {
 					pageId: "secret-ending",
 					href: "/secret-ending/",
 					title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
-					description: "Reach the Secret Ending (END?), understand why 2640 may fail, and use the save-specific UV code with the Duck → Cash Register → Piñata → Anomaly order.",
+					description: "How to reach Project P.I.T.T.'s Secret Ending (END?) and why the elevator uses a save-specific keypad code.",
 					eyebrow: "Secret Ending",
 				},
 				{
@@ -882,8 +925,8 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "panel-rack",
 					href: "/panel-rack/",
-					title: "How to Use the Panel Rack in Project P.I.T.T.",
-					description: "How to use the Panel Rack after recent operation changes, including current interaction prompts, panel retrieval, unlock questions, old saves, and automation flow.",
+					title: "Project P.I.T.T. Panel Rack — How to Unlock, Upgrade & Use It",
+					description: "Updated for 1.0.6: use the in-game unlock UI to check Panel Rack unlocks and upgrades; it now uses a dedicated key and won’t auto-dispense the next panel.",
 					eyebrow: "Panel Rack",
 				},
 			],

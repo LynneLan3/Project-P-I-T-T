@@ -110,8 +110,8 @@ pages:
     changeSummary: Expanded for Consumerism, Speed Radar/FAST!, x300, and achievements to finish before the ending.
 
   - id: up-achievement-fuses
-    title: "How to Use 3 Fuses in Project P.I.T.T. — Fuse Box & UP?"
-    description: How to use three Fuses in the upper/catwalk Fuse Box, recover a missing Fuse in the current version, and continue to the 200kg progression.
+    title: "Project P.I.T.T. Fuse Box Locations — All 3 Fuses & UP? Achievement"
+    description: "Project P.I.T.T.: the Fuse Box sits on the facility's upper catwalk (right-side elevated area), you need to find and place all three fuses, then tackle 200kg step."
     category: progression-secrets
     slug: up-achievement-fuses
     source: site-input/pages/up-achievement-fuses.md
@@ -120,20 +120,22 @@ pages:
     sidebarOrder: 1
     role: core
     intents:
+      - project-pitt-fuse-box-locations
+      - project-pitt-fuse-box
+      - project-pitt-all-3-fuses
       - project-pitt-up-achievement
       - project-pitt-fuses
-      - find-and-place-all-fuses
-    quickAnswer: Find and insert all three Fuses into the upper/catwalk Fuse Box on the facility’s right-side/elevated portion; completing the Fuse step advances to 200kg and is linked to UP? by community reports.
-    eyebrow: Hidden Progression
+    quickAnswer: "The Fuse Box is on the facility's upper/catwalk right-side elevated area; the box requires three Fuses (finding it alone won't complete the step); community reports and achievement indexes connect placing all three with the Steam-listed UP? achievement (Steam shows the achievement but provides no detailed description); after all three are placed the Fuse progression continues into the 200kg scale/weight-puzzle step."
+    eyebrow: Fuse Box
     facts:
-      - label: Fuses required
-        value: Three fuses are required by the Fuse Box.
-      - label: Fuse Box location
-        value: The Fuse Box sits in an upper/catwalk, right-side or otherwise elevated portion of the facility.
-      - label: Progression result
-        value: Placing all three Fuses completes the Fuse progression and leads into the 200kg scale/weight-puzzle progression.
-      - label: Missing Fuse
-        value: "Official 1.0.6 behavior: an unplaced Fuse should return to its spawn position when saving, unless it is already placed; also check nearby/drop areas."
+      - label: Fuse Box
+        value: Located in an upper/catwalk area on the facility's right-side or otherwise elevated portion, per community descriptions.
+      - label: All 3 Fuses
+        value: The Fuse Box requires three Fuses; you must place all three for the progression—finding the box alone does not complete the step.
+      - label: UP?
+        value: UP? is a Steam achievement; community reports and achievement indexes consistently connect it to completing the Fuse step, while Steam's public listing does not include a detailed description.
+      - label: After completion
+        value: Fuse Box → all 3 inserted → Fuse progression complete → continue to the 200kg scale/weight-puzzle progression.
     coverAssetId: pitt-screenshot-fuses
     related:
       - 200kg-plate
@@ -157,7 +159,7 @@ pages:
       - type: other
         title: Exophase achievement index — UP?
         url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
-    changeSummary: Reframed for fuse, Fuse Box, three-fuse, UP?, upper-area, and 200kg progression intent with current-version recovery guidance.
+    changeSummary: Reframed for Fuse Box locations, all 3 fuses, UP?, 200kg next step, and official 1.0.6 unplaced-fuse spawn return.
 
   - id: 200kg-plate
     title: "How to Reach 200kg in Project P.I.T.T. — Best Heavy Items & What to Do Next"
@@ -265,7 +267,7 @@ pages:
 
   - id: secret-ending
     title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route"
-    description: "Reach the Secret Ending (END?), understand why 2640 may fail, and use the save-specific UV code with the Duck → Cash Register → Piñata → Anomaly order."
+    description: "How to reach Project P.I.T.T.'s Secret Ending (END?) and why the elevator uses a save-specific keypad code."
     category: progression-secrets
     slug: secret-ending
     source: site-input/pages/secret-ending.md
@@ -277,23 +279,25 @@ pages:
       - project-pitt-secret-ending
       - project-pitt-ending
       - project-pitt-end-question
-      - project-pitt-elevator-code
-    quickAnswer: "Why doesn’t 2640 work? It is not universal. END? is the Secret Ending; use the four digits revealed by UV in your own save, entering them Duck → Cash Register → Piñata → Anomaly."
+    quickAnswer: "END? is the Secret Ending; the route culminates at an elevator that requires a save-specific four-digit keypad code (2640 is not universal)."
     eyebrow: Secret Ending
     facts:
-      - label: "What END? is"
-        value: "END? is the Secret Ending in Project P.I.T.T."
-      - label: "Verified route stages"
-        value: "Camera/surveillance → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later progression → UV clues → elevator/keypad → Secret Ending."
-      - label: "Four-digit keypad rule"
-        value: "Use the four digits revealed by UV in your own save. Enter them in machine order: Duck → Cash Register → Piñata → Anomaly. 2640 is not universal."
-      - label: "Why players lose the thread and troubleshooting"
-        value: "If the keypad is unavailable, check Keycard, UV, and prerequisite progression before trying another code."
+      - label: "END? meaning"
+        value: "Newer achievement information identifies END? as the Secret Ending; treat END? as the game's secret ending rather than conflating it with END!."
+      - label: Route
+        value: "camera / surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame / production progression → UV-related clue progression → elevator access / keycard → save-specific four-digit keypad code → Secret Ending route."
+      - label: Code
+        value: "The elevator requires a save-specific four-digit keypad code; 2640 is not a universal solution. Use the Keycard + UV Light method to reveal your save’s digits — see the Elevator Code guide for why 2640 fails and how to find your code. Entry order (if needed): Duck → Cash Register → Piñata → Anomaly."
+      - label: "Next if the code fails"
+        value: "If the keypad code fails, consult the Elevator Code guide rather than looking for a universal internet code. If you're stuck earlier, return to the last completed progression stage (for example Percentage Pipe, 200kg, or the fuses)."
     related:
+      - elevator-code
       - percentage-pipe
       - up-achievement-fuses
       - 200kg-plate
     relations:
+      - pageId: elevator-code
+        type: related
       - pageId: percentage-pipe
         type: next-step
       - pageId: up-achievement-fuses
@@ -311,7 +315,50 @@ pages:
       - type: official
         title: Project P.I.T.T. Steam store page
         url: https://store.steampowered.com/app/4026250/Project_PITT/
-    changeSummary: New launch-window page for the END? Secret Ending query, preserving save-specific-code and route-evidence boundaries.
+    changeSummary: Points elevator-code and 2640 questions to /elevator-code/ while keeping the END? route.
+
+  - id: elevator-code
+    title: "Project P.I.T.T. Elevator Code — Why 2640 Doesn't Work & How to Find Yours"
+    description: "2640 is not a universal elevator code; the four save-specific digits are revealed by using a Keycard plus UV Light to read your save's hidden clues."
+    category: progression-secrets
+    slug: elevator-code
+    source: site-input/pages/elevator-code.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 6
+    role: core
+    intents:
+      - project-pitt-elevator-code
+      - project-pitt-code-2640-does-not-work
+      - project-pitt-keypad-code
+    quickAnswer: "Do not treat 2640 as a fixed elevator code; it's from one playthrough — use your Keycard plus UV Light to reveal the four save-specific digits, then enter them in machine-unlock order: Duck → Cash Register → Piñata → Anomaly."
+    eyebrow: Elevator Code
+    facts:
+      - label: "Why 2640 fails"
+        value: Reported from one specific playthrough; current players report 2640 does not work.
+      - label: Your code
+        value: The four-digit elevator/keypad code is tied to the current save and must be discovered in your own playthrough.
+      - label: What you need
+        value: A Keycard for elevator/keypad access and a UV Light to reveal the four save-specific digits; do not guess locations.
+      - label: Entry order
+        value: "Map the revealed digits to the four manual production machines and enter them in this machine-unlock order: Duck → Cash Register → Piñata → Anomaly."
+    related:
+      - secret-ending
+    relations:
+      - pageId: secret-ending
+        type: next-step
+    assetType: article
+    sources:
+      - type: other
+        title: Exophase achievement index — END? and END!
+        url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
+      - type: steam
+        title: Steam Community discussions and full-release player reports
+        url: https://steamcommunity.com/app/4026250/
+      - type: official
+        title: Project P.I.T.T. Steam store page
+        url: https://store.steampowered.com/app/4026250/Project_PITT/
+    changeSummary: New exact-intent page for elevator code / 2640 does not work, with Keycard + UV Light save-specific digits and a Secret Ending handoff.
 
   - id: anomaly
     title: "Project P.I.T.T. Anomaly: Recipe, Phase 4 Role, and the Percentage Pipe"
@@ -629,8 +676,8 @@ pages:
     changeSummary: New grouped launch-window troubleshooting asset for crashes, performance, saves, mouse control, tools, cleanup, and ending continuation.
 
   - id: panel-rack
-    title: "How to Use the Panel Rack in Project P.I.T.T."
-    description: How to use the Panel Rack after recent operation changes, including current interaction prompts, panel retrieval, unlock questions, old saves, and automation flow.
+    title: "Project P.I.T.T. Panel Rack — How to Unlock, Upgrade & Use It"
+    description: "Updated for 1.0.6: use the in-game unlock UI to check Panel Rack unlocks and upgrades; it now uses a dedicated key and won’t auto-dispense the next panel."
     category: automation
     slug: panel-rack
     source: site-input/pages/panel-rack.md
@@ -640,19 +687,20 @@ pages:
     role: core
     intents:
       - project-pitt-panel-rack
+      - project-pitt-how-to-get-panel-rack-upgrades
       - project-pitt-how-to-use-panel-rack
       - project-pitt-panel-rack-tier-3
-    quickAnswer: The Panel Rack is a current automation tool whose operation changed in recent versions; use the in-game interaction prompt, do not assume automatic panel spawning, and check the current unlock UI and upstream automation state for your save.
+    quickAnswer: "Check the current in-game unlock UI to unlock and upgrade the Panel Rack; Updated for 1.0.6 it now uses a dedicated Panel Rack key — after placing a panel it won’t auto-dispense, so press the Panel Rack key again for the next panel."
     eyebrow: Panel Rack
     facts:
-      - label: Tool
-        value: Current automation tool in the Automation → Shift Scheduler → Trade Terminal → Panel Rack → x300 chain.
-      - label: Current operation
-        value: Recent versions changed how the Panel Rack operates; older instructions may be stale.
-      - label: Panel retrieval
-        value: Panel spawning and retrieval are version-sensitive and are not guaranteed to happen automatically.
-      - label: Unlocks
-        value: Check the in-game unlock/progression UI rather than assuming tier requirements or costs.
+      - label: Unlock
+        value: Check the current in-game unlock UI for your save; exact unlock requirements are not reliably documented.
+      - label: Upgrades
+        value: View Panel Rack upgrades in the in-game unlock UI; there is no confirmed Tier 3 or universal upgrade formula available.
+      - label: "1.0.6 use"
+        value: In 1.0.6 the Panel Rack has its own dedicated keybind and no longer automatically dispenses the next panel after placement.
+      - label: Next panel
+        value: Press the dedicated Panel Rack key (current mapping) again to obtain the next panel; do not expect automatic continuous dispense.
     related:
       - automation
       - shift-scheduler
@@ -678,7 +726,7 @@ pages:
       - type: steam
         title: Steam Community developer FAQ and updates
         url: https://steamcommunity.com/app/4026250/
-    changeSummary: New launch-window guide for current Panel Rack operation, panel retrieval, unlock/tier questions, old saves, and automation use.
+    changeSummary: Updated for 1.0.6 dedicated keybind, no auto-dispense, and unlock/upgrade/use intent.
 
 routes:
   - id: hidden-progression
@@ -699,6 +747,7 @@ routes:
       - percentage-pipe
       - anomaly
       - secret-ending
+      - elevator-code
       - achievements
   - id: factory-optimization
     eyebrow: Factory Route

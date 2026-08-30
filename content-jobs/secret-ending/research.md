@@ -1,22 +1,21 @@
 # APIMart content brief: Project P.I.T.T. Secret Ending
 
 TARGET QUERY: project pitt secret ending
-SECONDARY QUERIES: project pitt ending; project pitt END?; project pitt elevator code; project pitt secret
+SECONDARY QUERIES: project pitt ending; project pitt END?; project pitt secret
 
 PLAYER PROBLEM
-Players want to know what END? means, how the Secret Ending route works, and why a searched elevator code may not work. The guide must orient them through the progression without pretending there is one universal code or a fully verified room-by-room walkthrough.
+Players want to know what END? means and how the Secret Ending route works. Elevator-code / 2640 troubleshooting now has a dedicated page at /elevator-code/. This page must keep the route and send keypad-code questions there instead of repeating that full blocker guide.
 
 VERIFIED PROGRESSION
 Use this progression as the current full-release route structure:
 camera / surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame / production progression → UV-related clue progression → elevator access / keycard → save-specific four-digit keypad code → Secret Ending route.
 
-KEYPAD CODE BOUNDARY
-- The four-digit Secret Ending keypad code is tied to the current save / playthrough rather than safely universal for all players.
-- Players need to use UV to find four digits in their own save.
-- The four digits correspond to the four manual production machines.
-- Enter them in machine unlock order: Duck → Cash Register → Piñata → Anomaly.
-- Do not give 2640 as a universal answer. If mentioned, describe it only as a code reported from one specific playthrough / save; current player reports include “2640 does not work.”
-- Keypad / elevator progression also requires completing the relevant Keycard steps. UV is part of discovering this hidden progression.
+KEYPAD CODE POINTER
+- Do not retell the full elevator-code guide here.
+- Keep one short early note: 2640 is not a universal code; the four-digit keypad code is save-specific.
+- Send players to [the Elevator Code guide]({{page:elevator-code}}) for why 2640 fails and how to use Keycard + UV Light to find the current save’s four digits.
+- If mentioned, the entry order is Duck → Cash Register → Piñata → Anomaly.
+- Do not give 2640 as a universal answer.
 
 VERIFIED NAMING
 - Newer achievement information points to END? as the Secret Ending.
@@ -24,18 +23,20 @@ VERIFIED NAMING
 
 COMMUNITY-CONFIRMED / EVIDENCE-AWARE DETAILS
 - Current full-release community findings indicate the elevator code can be save-specific rather than one code that works for every player.
-- The UV-related clue progression appears to be part of the route to the elevator access/code.
-- If a player is stuck, send them back to the last completed progression stage instead of telling them to brute-force an internet code.
+- If a player is stuck on the code, send them to the Elevator Code guide rather than brute-forcing an internet code.
+- If a player is stuck earlier, send them back to the last completed progression stage.
 
 DO NOT CLAIM
 - Do not invent the actual code for a reader’s save, exact keycard location, precise UV clue locations, exact Mystery Box locations, minigame names beyond the supplied wording, or unsupported item counts.
 - Do not claim END? and END! are in a universal fixed order unless the evidence supports the wording.
 - Do not present community findings as official developer documentation.
+- Do not duplicate the full Why 2640 Doesn't Work / How to Find Your Code walkthrough from the Elevator Code page.
 
 RELATED GUIDE LINKS
+- Elevator code: [the Elevator Code guide]({{page:elevator-code}})
 - Secret Ending ↔ Troubleshooting: [Troubleshooting]({{page:troubleshooting}})
 - Secret Ending ↔ Achievements: [Achievements]({{page:achievements}})
 - Earlier progression: [the Percentage Pipe Guide]({{page:percentage-pipe}}), [the Fuse Box guide]({{page:up-achievement-fuses}}), and [the 200kg Guide]({{page:200kg-plate}})
 
 ARTICLE REQUIREMENTS
-Answer what END? is, outline the route in practical stages, and near the top add a prominent troubleshooting block headed “Why doesn’t 2640 work?” State: 2640 is not a universal code; current players still report that 2640 does not work; use the four UV-revealed digits from your own save; enter them in Duck → Cash Register → Piñata → Anomaly machine-unlock order; if the keypad is unavailable, check Keycard, UV, and prerequisite progression rather than guessing more codes. Explain the save-specific four-digit keypad rule, the role of UV and Keycard steps, and common points where players lose the thread. Do not invent the exact UV viewing location. Include FAQ questions: Why does 2640 not work? Is the elevator code the same for everyone? Where do I find the four Secret Ending digits? What order do I enter the digits? Why can’t I use the keypad yet? Keep the route concise and evidence-aware. Preserve the existing natural title unless a factual correction makes a title change genuinely necessary.
+Answer what END? is and outline the route in practical stages. Near the top, include a short keypad note that 2640 is not universal and link to [the Elevator Code guide]({{page:elevator-code}}) instead of a full 2640 troubleshooting block. Keep FAQ focused on the Secret Ending route: What is END?? How do I reach the Secret Ending? Is END? the same as END!? Where do I get the elevator code? Why doesn’t 2640 work? The last two FAQ answers must point to the Elevator Code guide rather than repeating that page. Preserve the existing natural title unless a factual correction makes a title change genuinely necessary.

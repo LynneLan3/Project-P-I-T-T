@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "templateVersion": "2.0.0",
   "generatorVersion": "1.0.0",
-  "specHash": "5dbff1e74c29903fb39ae10302378a4d4b11d769fbae9a39cb5dd5c6b1603501",
+  "specHash": "85c425580c8cb360bdc52560e516c0600743c227f5749c02d37f6e38b2b37670",
   "siteId": "project-p-i-t-t",
   "createdFromSpec": "site-spec.yaml",
   "managedFiles": [
@@ -53,7 +53,7 @@
     },
     {
       "path": "src/config/site.generated.ts",
-      "sha256": "5fef59a124a02ee0cf76a1a606983a4eb185504209fe17e518ffdae07dfc6669",
+      "sha256": "db6084bd6d507aa955337888d97458b6c5d243079a40063f8c83017d81511197",
       "kind": "config"
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "path": "src/content/docs/automation/panel-rack.md",
-      "sha256": "f3f08668ec51072b1170bf47fa4869b189e9b56188911acb2fb5793566c3ba6b",
+      "sha256": "40c726acd788c081191793c58cb9c1b9fa097dd9f1e3d646c521e184f7ef5770",
       "kind": "page"
     },
     {
@@ -107,18 +107,23 @@
       "kind": "page"
     },
     {
+      "path": "src/content/docs/progression-secrets/elevator-code.md",
+      "sha256": "dc935d1b42a16dd6083a44e1756d118809e7c14ef6648dfbcebc641a19fab98b",
+      "kind": "page"
+    },
+    {
       "path": "src/content/docs/progression-secrets/percentage-pipe.md",
       "sha256": "cb48a0410f9d611e1408e331a67cd5280eeb8aaefa5227f5cf1abb2cd4d57e47",
       "kind": "page"
     },
     {
       "path": "src/content/docs/progression-secrets/secret-ending.md",
-      "sha256": "d70d6bc7a67c48908b6313340b3cf7abfdc97420cd24dc12dce0eb505d31cd59",
+      "sha256": "47cea5a254a35785fd94eaefc8fa2adc3c6d3af604901c1e53cf295c35f8bb17",
       "kind": "page"
     },
     {
       "path": "src/content/docs/progression-secrets/up-achievement-fuses.md",
-      "sha256": "36eeb138cdc4a775d459cccea01d5c65c689f3b6c48bdaebc4f5773ef2940d22",
+      "sha256": "728dbbd4c7ec15733f7ac502832e66aac8dfeed613efb10e49934d6be9d152c6",
       "kind": "page"
     },
     {

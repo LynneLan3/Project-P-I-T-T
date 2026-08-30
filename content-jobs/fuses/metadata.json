@@ -1,24 +1,24 @@
 {
-  "title": "How to Use 3 Fuses in Project P.I.T.T. — Fuse Box & UP?",
-  "description": "Insert all three fuses into the upper/catwalk Fuse Box (right-side/elevated area); completing the fuse progression leads into the next 200kg step and puzzle chain.",
-  "h1": "How to Use 3 Fuses in Project P.I.T.T. — Fuse Box & UP?",
-  "quickAnswer": "You must find and insert three fuses into the Fuse Box located in the facility’s upper/catwalk (right-side/elevated) area; placing all three completes the Fuse progression, advances into the 200kg step, and is linked by community reports to the UP? achievement.",
+  "title": "Project P.I.T.T. Fuse Box Locations — All 3 Fuses & UP? Achievement",
+  "description": "Project P.I.T.T.: the Fuse Box sits on the facility's upper catwalk (right-side elevated area), you need to find and place all three fuses, then tackle 200kg step.",
+  "h1": "Project P.I.T.T. Fuse Box Locations — All 3 Fuses & UP? Achievement",
+  "quickAnswer": "The Fuse Box is on the facility's upper/catwalk right-side elevated area; the box requires three Fuses (finding it alone won't complete the step); community reports and achievement indexes connect placing all three with the Steam-listed UP? achievement (Steam shows the achievement but provides no detailed description); after all three are placed the Fuse progression continues into the 200kg scale/weight-puzzle step.",
   "facts": [
     {
-      "label": "Fuses required",
-      "value": "The Fuse Box requires three fuses; all three must be placed to complete the Fuse progression."
+      "label": "Fuse Box",
+      "value": "Located in an upper/catwalk area on the facility's right-side or otherwise elevated portion, per community descriptions."
     },
     {
-      "label": "Fuse Box location",
-      "value": "Community descriptions place the Fuse Box in an upper/catwalk area on the facility’s right-side or otherwise elevated portion; this is a landmark-level location, not an exact coordinate."
+      "label": "All 3 Fuses",
+      "value": "The Fuse Box requires three Fuses; you must place all three for the progression—finding the box alone does not complete the step."
     },
     {
-      "label": "Progression result",
-      "value": "Placing all three fuses completes the Fuse progression and leads directly into the 200kg scale/weight-puzzle progression."
+      "label": "UP?",
+      "value": "UP? is a Steam achievement; community reports and achievement indexes consistently connect it to completing the Fuse step, while Steam's public listing does not include a detailed description."
     },
     {
-      "label": "UP? achievement",
-      "value": "UP? is a Steam achievement listed publicly; full-release community indexes and reports consistently connect UP? with completing the Fuse step, though that connection is community-identified rather than a Steam-official description."
+      "label": "After completion",
+      "value": "Fuse Box → all 3 inserted → Fuse progression complete → continue to the 200kg scale/weight-puzzle progression."
     }
   ]
 }
