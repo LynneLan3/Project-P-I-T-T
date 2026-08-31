@@ -1,8 +1,10 @@
 ---
-/** Formal Guides Index (player-facing Route Map). */
+/** Formal Guides Index (player-facing Route Map + complete published guide library). */
 import GameShell from '../components/experience/GameShell.astro';
 import RouteIndex from '../components/experience/routes/RouteIndex.astro';
+import GuideGrid from '../components/GuideGrid.astro';
 import { game } from '../config/game';
+import { getGuides, sortGuides } from '../lib/guides';
 import { ui } from '../lib/ui';
 import { experienceNav } from '../lib/experience-nav';
 import '../styles/routes.css';
@@ -10,8 +12,16 @@ import '../styles/routes.css';
 const t = ui();
 const { nav, footerLinks, homeHref, guidesHref } = experienceNav();
 const routes = game.routes ?? [];
+const guides = (await getGuides()).sort(sortGuides);
 ---
 
 <GameShell title={`${t.allGuides} — ${game.title}`} description={game.description} canonical={new URL(guidesHref, game.siteUrl).href} siteTitle={game.shortName} homeHref={homeHref} nav={nav} activePath={guidesHref} footerLinks={footerLinks} footerText={game.title}>
 	<RouteIndex routes={routes} />
+	<section class="exp-section" aria-labelledby="all-published-guides-heading">
+		<div class="exp-content">
+			<p class="exp-eyebrow">{t.allGuides}</p>
+			<h2 class="exp-h2" id="all-published-guides-heading">All published guides</h2>
+			<GuideGrid entries={guides} />
+		</div>
+	</section>
 </GameShell>
