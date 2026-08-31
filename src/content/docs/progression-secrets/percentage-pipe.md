@@ -1,6 +1,6 @@
 ---
 title: "Project P.I.T.T. Percentage Pipe Guide — Why It Stays at 0%"
-description: "Why ordinary ducks leave the Project P.I.T.T. Percentage Pipe at 0%, what progression follows 200kg, and how the pipe connects to the Secret Ending route."
+description: "Why basic ducks leave the Percentage Pipe at 0% after 200kg, the 10 Anomalies route, and when to keep Piñatas intact for Phase 4."
 category: progression-secrets
 slug: percentage-pipe
 status: confirmed
@@ -13,10 +13,10 @@ intents:
   - project-pitt-percentage-pipe
   - project-pitt-pipe-0-percent
   - project-pitt-what-to-put-in-pipe
-quickAnswer: "Basic ducks are not the right input for the post-200kg Percentage Pipe. How do I make Anomalies? Use 1 Duck + 1 Cash Register + 1 Piñata at the Anomaly workbench, then feed 10 Anomalies to reach 100% and continue into the connected Secret Ending route."
+quickAnswer: "Basic ducks are not the right post-200kg input; feed 10 Anomalies (Duck + Cash Register + intact Piñata at the workbench) to reach 100%, and keep Piñatas intact during transport when Phase 4 requires them."
 related:
   - 200kg-plate
-  - anomaly
+  - anomaly-phase-4
   - secret-ending
   - up-achievement-fuses
 relations:
@@ -24,10 +24,10 @@ relations:
     slug: 200kg-plate
     type: related
   -
-    slug: secret-ending
+    slug: anomaly-phase-4
     type: next-step
   -
-    slug: anomaly
+    slug: secret-ending
     type: next-step
 sources:
   -
@@ -42,21 +42,21 @@ sources:
     type: official
     title: Project P.I.T.T. Steam store page
     url: https://store.steampowered.com/app/4026250/Project_PITT/
-changeSummary: "New launch-window page for the post-200kg Percentage Pipe question, with old Demo guidance clearly separated."
+changeSummary: "Added Phase 3 Piñata break vs transport answer and Anomaly Phase 4 link."
 eyebrow: Percentage Pipe
 facts:
   -
     label: Common display
-    value: "0%"
+    value: "0% after 200kg when using basic ducks"
   -
     label: Wrong input
-    value: Basic ducks
+    value: Basic ducks do not advance the post-200kg Percentage Pipe
   -
-    label: Next direction
-    value: Later or assembled products
+    label: Correct direction
+    value: "10 Anomalies at 10% each to reach 100%, then continue toward IGTAP"
   -
-    label: Connected route
-    value: Secret Ending
+    label: "Piñata note"
+    value: "Transport and break are separate — Phase 4 needs an intact Piñata as an Anomaly input"
 ---
 <!--
   This file is generated from site-spec.yaml.
@@ -65,51 +65,66 @@ facts:
   Source: site-input/pages/percentage-pipe.md
 -->
 ## Direct Answer
-Ordinary/basic ducks leave the Percentage Pipe at 0% because, after the 200kg checkpoint, the pipe no longer accepts simple ducks as the progression input. The Full Release (2026-08-19) resolution is concrete: 10 Anomalies × 10% = 100%, then continue to IGTAP. How do I make Anomalies? See [the Anomaly Guide](/anomaly/). An Anomaly is produced at the Anomaly workbench from 1 Duck + 1 Cash Register + 1 Piñata.
+
+Ordinary (basic) ducks leave the Percentage Pipe at 0% because basic ducks are the wrong input for the Percentage Pipe mechanic — they do not register as Anomalies. To fill the pipe you need Anomalies. 10 Anomalies × 10% = 100% then IGTAP. How do I make Anomalies? See [the Anomaly Guide](/anomaly/). The Anomaly recipe (as recorded in existing evidence) is: 1 Duck + 1 Cash Register + 1 Piñata at the Anomaly workbench.
 
 ## Quick Steps
-- Reach and complete the 200kg checkpoint (see [the 200kg Guide](/200kg-plate/)).
-- Stop feeding ordinary/basic ducks into the Percentage Pipe — they will show 0% at this stage.
-- Produce Anomalies (the Full Release solution uses 10 Anomalies, each giving 10% toward the pipe).
-- Insert the 10 Anomalies into the pipe to reach 100%, then continue to IGTAP.
-- How do I make Anomalies? Follow [the Anomaly Guide](/anomaly/). Recipe at the Anomaly workbench: 1 Duck + 1 Cash Register + 1 Piñata.
+
+- Do not feed basic ducks directly into the Percentage Pipe — they will register as 0%.
+- Craft Anomalies at the Anomaly workbench using: 1 Duck + 1 Cash Register + 1 Piñata.
+- Insert Anomalies into the Percentage Pipe. Ten Anomalies are required to reach 100% (10 × 10% = 100%), then IGTAP occurs.
+- For Piñata-related tasks in Phase 3: keep the Piñata intact during transport and only break it where the task requires candy containment; Phase 4 requires an intact Piñata as one Anomaly input. See [Anomaly Phase 4](/anomaly-phase-4/).
 
 ## Prerequisites or What You Need
-- Progressed past the 200kg stage (the Percentage Pipe is the next progression layer).
-- Access to the Anomaly workbench and materials to craft Anomalies (Duck, Cash Register, Piñata).
-- Understanding that the Full Release progression requires Anomalies (10 × 10% → 100%) rather than simple ducks.
+
+- Access to an Anomaly workbench (as referenced in full-release/demo-era evidence).
+- Items: 1 Duck (ordinary), 1 Cash Register, 1 Piñata.
+- The game state that includes the post-200kg pipe (see [200kg Guide](/200kg-plate/) for context).
+- Awareness of the Phase 3/4 Piñata handling requirements (Phase 4 requires an intact Piñata).
 
 ## Full Explanation
-The Percentage Pipe is the next progression mechanic after the 200kg checkpoint in the Full Release (2026-08-19). In that release the intended route to fill the pipe is explicitly the Anomaly-based sequence: delivering 10 Anomalies at 10% each to total 100%, after which you continue into IGTAP. Ordinary/basic ducks that worked earlier in the run are not the required inputs at this later stage; they will register 0% when thrown into the pipe because the pipe’s accepted input has advanced to assembled/later products (specifically Anomalies in the current Full Release sequence).
 
-Do not conflate old Demo-era reports with the Full Release: discussions from the Steam Demo indicated the pipe’s full use was not implemented or that 200kg was “nearly the end.” Those demo-era statements are outdated for the Full Release and should not be followed as the current solution.
+The Percentage Pipe responds to Anomalies; basic ducks do not qualify and therefore report 0% when sent into the pipe. The pipe’s progression is tracked in 10% increments per Anomaly under the documented evidence: 10 Anomalies × 10% = 100% then IGTAP. To create a valid Anomaly you must combine the three recorded inputs at the Anomaly workbench: 1 Duck + 1 Cash Register + 1 Piñata. Once formed, each Anomaly contributes the documented 10% to the Percentage Pipe.
 
-The pipe’s progression is tied into the longer route that leads toward the Secret Ending; using the Anomaly sequence is the supported way forward in this release. After reaching 100% via the Anomalies, follow the next-stage instructions (IGTAP) and consult the Secret Ending route where appropriate.
+Piñata handling is two distinct concerns: transporting intact Piñatas, and breaking them for Candy containment. During Phase 3 tasks the transport reliability of an intact Piñata matters — keep it unbroken until the destination or task specifically requires breaking. If your goal is candy containment (for a single-use payout or effect), plan a single deliberate break point. For Phase 4 Anomaly creation, an intact Piñata is explicitly required as one of the inputs; do not break the Piñata earlier if you intend to use it for Anomaly assembly. See [Anomaly Phase 4](/anomaly-phase-4/) for Phase 4 specifics.
+
+This guide preserves the existing full-release and demo-era evidence boundaries and avoids extrapolating beyond documented inputs and percentages.
 
 ## Common Mistakes
-- Throwing ordinary/basic ducks into the pipe after 200kg and expecting the percentage to change — this is why you see 0%.
-- Relying on Demo-era advice that the Percentage Pipe was unfinished or that 200kg was the final step — that advice is outdated for the Full Release.
-- Skipping the Anomaly production step or attempting unverified items; the Full Release sequence requires the Anomalies solution (10 × 10%).
+
+- Feeding ordinary/basic ducks into the Percentage Pipe and expecting progress — they register as 0%.
+- Breaking Piñatas during transport when Phase 3 tasks or Phase 4 Anomalies require an intact Piñata.
+- Miscounting Anomalies; the documented progression is exactly 10 Anomalies to reach 100% at 10% each.
+- Assuming multiple breaks or partial Piñata states can substitute for an intact Piñata in Anomaly assembly — evidence requires an intact Piñata input.
 
 ## What To Do Next
-- Produce Anomalies and feed them to the Percentage Pipe until you reach the 10 Anomalies → 100% milestone, then continue to IGTAP.
-- How do I make Anomalies? See [the Anomaly Guide](/anomaly/). Remember the recipe at the Anomaly workbench: 1 Duck + 1 Cash Register + 1 Piñata.
-- After 100% and IGTAP, consult the [Secret Ending Guide](/secret-ending/) for the subsequent route.
+
+- Make Anomalies at the Anomaly workbench using the recorded recipe (1 Duck + 1 Cash Register + 1 Piñata).
+- Use ten assembled Anomalies to fill the Percentage Pipe to 100%, then proceed with the IGTAP event.
+- If you need a refresher on Piñata handling for Phase 4, follow [Anomaly Phase 4](/anomaly-phase-4/).
+- Review the post-200kg pipe context in the [200kg Guide](/200kg-plate/).
+- If you are chasing endgame content tied to the pipe, consult the [Secret Ending](/secret-ending/).
 
 ## FAQ
-Q: Is the 0% display a bug?
-A: Not necessarily — in the Full Release the pipe expects Anomalies (assembled/later products). Ordinary ducks will display 0% because they are not the correct progression input at this stage.
 
-Q: How many Anomalies are required?
-A: The Full Release resolution is 10 Anomalies × 10% = 100%; after that you proceed to IGTAP.
+Q: Is it better to break piñatas or not?
+A: Piñata transport and break are separate problems. Keep Piñatas intact during transport when tasks require them intact. Use one planned break point when Candy containment is the goal. For Phase 4 Anomaly inputs you need an intact Piñata. See [Anomaly Phase 4](/anomaly-phase-4/).
 
-Q: Does the pipe still work the same as in the Demo?
-A: No. Demo-era descriptions that suggested the pipe was unfinished or that 200kg was nearly the end are outdated for the Full Release (2026-08-19). Follow the Full Release progression instead.
+Q: Why does the Percentage Pipe stay at 0% when I send ducks?
+A: Ordinary/basic ducks are the wrong input and register as 0%. Only properly assembled Anomalies contribute the recorded 10% increments.
 
-Q: Is the Percentage Pipe connected to the Secret Ending?
-A: Yes — the pipe progression is part of the later route that leads toward the Secret Ending. See [the Secret Ending Guide](/secret-ending/) after completing the pipe sequence.
+Q: How many Anomalies fill the pipe?
+A: 10 Anomalies × 10% = 100% then IGTAP.
+
+Q: How do I make Anomalies?
+A: The documented recipe is 1 Duck + 1 Cash Register + 1 Piñata at the Anomaly workbench. For full crafting and context, see [the Anomaly Guide](/anomaly/).
+
+Q: Do I need the post-200kg pipe?
+A: The post-200kg pipe is part of the documented environment for these mechanics; see the [200kg Guide](/200kg-plate/) for details.
 
 ## Related Guides
-- [the 200kg Guide](/200kg-plate/) — checkpoint that precedes the Percentage Pipe
-- [the Anomaly Guide](/anomaly/) — how to craft Anomalies (recipe and workbench)
-- [the Secret Ending Guide](/secret-ending/) — route after IGTAP and the pipe sequence
+
+- [the Anomaly Guide](/anomaly/)
+- [Anomaly Phase 4](/anomaly-phase-4/)
+- [200kg Guide](/200kg-plate/)
+- [Secret Ending](/secret-ending/)

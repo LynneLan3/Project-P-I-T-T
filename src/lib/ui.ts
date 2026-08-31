@@ -76,6 +76,7 @@ type UiDictionary = {
 	guideCategories: string;
 	breadcrumb: string;
 	guidesNav: string;
+	updatesNav: string;
 	aboutGame: (name: string) => string;
 	guidesInCategory: (label: string) => string;
 	guideCount: (count: number) => string;
@@ -175,6 +176,7 @@ const en: UiDictionary = {
 	guideCategories: 'Guide categories',
 	breadcrumb: 'Breadcrumb',
 	guidesNav: 'Guides',
+	updatesNav: 'Updates',
 	aboutGame: (name) => `About ${name}`,
 	guidesInCategory: (label) => `Guides in ${label}`,
 	guideCount: (count) => (count === 1 ? '1 guide' : `${count} guides`),
@@ -285,6 +287,7 @@ const zhCN: UiDictionary = {
 	guideCategories: '攻略分类',
 	breadcrumb: '面包屑导航',
 	guidesNav: '攻略',
+	updatesNav: '更新',
 	aboutGame: (name) => `关于 ${name}`,
 	guidesInCategory: (label) => `${label} 中的攻略`,
 	guideCount: (count) => (count === 1 ? '1 篇攻略' : `${count} 篇攻略`),

@@ -1,0 +1,24 @@
+{
+  "title": "Project P.I.T.T. Updates & Patch Notes — Latest Changes Explained",
+  "description": "Project P.I.T.T. patch notes explained: latest 1.0.7 changes and which guides were updated.",
+  "h1": "Project P.I.T.T. Updates & Patch Notes — Latest Changes Explained",
+  "quickAnswer": "Update 1.0.7 primarily reworks pistons so tools can attach and move with piston heads while also adding Panel Rack interact binding and an auto-dispense toggle to improve automation control.",
+  "facts": [
+    {
+      "label": "Latest version",
+      "value": "Update 1.0.7 (August 30, 2026)"
+    },
+    {
+      "label": "Panel Rack",
+      "value": "Can bind the interact key and gains a new auto-dispense toggle"
+    },
+    {
+      "label": "Pistons",
+      "value": "Tools can stick to piston heads and move with them; turning a piston off locks its current position and turning it back on resumes previous motion"
+    },
+    {
+      "label": "Save fix",
+      "value": "Official fix for main-ending bricked saves applied in 1.0.7"
+    }
+  ]
+}

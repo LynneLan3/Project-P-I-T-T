@@ -9,9 +9,8 @@
  * absent.
  *
  * Section order:
- *   Hero → Status Strip → Choose Your Route → Start Here →
- *   Popular Questions → Featured → Field Notes → Recently Updated →
- *   Evidence → About (id="about")
+ *   Hero → Popular Questions → Status Strip → Choose Your Route → Start Here →
+ *   Featured → Field Notes → Recently Updated → Evidence → About (id="about")
  */
 import { Image } from 'astro:assets';
 import AdSlot from '../AdSlot.astro';
@@ -185,7 +184,29 @@ const showAbout = game.portal?.showAbout !== false;
 	</div>
 </section>
 
-<!-- 02 STATUS STRIP -->
+<!-- 02 POPULAR QUESTIONS -->
+{popularQuestions.length > 0 && (
+	<section class="exp-section exp-section--tinted exp-home-questions" aria-labelledby="exp-home-questions-heading">
+		<div class="exp-content">
+			<p class="exp-eyebrow">{t.popularQuestions}</p>
+			<h2 class="exp-h2" id="exp-home-questions-heading">{t.popularQuestions}</h2>
+			<p class="exp-lede">{t.popularQuestionsLede}</p>
+			<div class="exp-questions">
+				{popularQuestions.map((question) => (
+					<a class="exp-question" href={question.href}>
+						<span class="exp-question__copy">
+							<span class="exp-question__title">{question.label}</span>
+							{question.context && <span class="exp-question__context">{question.context}</span>}
+						</span>
+						<span class="exp-question__cta">{t.readGuide}</span>
+					</a>
+				))}
+			</div>
+		</div>
+	</section>
+)}
+
+<!-- 03 STATUS STRIP -->
 {statusItems.length > 0 && (
 	<dl class="exp-home-status" aria-label={t.gameFacts}>
 		{statusItems.map((item) => (
@@ -198,7 +219,7 @@ const showAbout = game.portal?.showAbout !== false;
 )}
 
 <div class="exp-home-flow">
-	<!-- 03 ROUTES / PRIMARY PATH -->
+	<!-- 04 ROUTES / PRIMARY PATH -->
 	{routes.length > 1 && <ExperienceRouteShowcase routes={routes} />}
 
 	{singleRoute && (
@@ -226,7 +247,7 @@ const showAbout = game.portal?.showAbout !== false;
 		</section>
 	)}
 
-	<!-- 04 START HERE -->
+	<!-- 05 START HERE -->
 	{!singleRoute && startHere.length > 0 && (
 		<>
 			<section class="exp-section exp-home-start" aria-labelledby="exp-home-start-heading">
@@ -247,28 +268,6 @@ const showAbout = game.portal?.showAbout !== false;
 			</section>
 			<AdSlot placement="hub-after-start-here" />
 		</>
-	)}
-
-	<!-- 05 POPULAR QUESTIONS -->
-	{popularQuestions.length > 0 && (
-		<section class="exp-section exp-section--tinted exp-home-questions" aria-labelledby="exp-home-questions-heading">
-			<div class="exp-content">
-				<p class="exp-eyebrow">{t.popularQuestions}</p>
-				<h2 class="exp-h2" id="exp-home-questions-heading">{t.popularQuestions}</h2>
-				<p class="exp-lede">{t.popularQuestionsLede}</p>
-				<div class="exp-questions">
-					{popularQuestions.map((question) => (
-						<a class="exp-question" href={question.href}>
-							<span class="exp-question__copy">
-								<span class="exp-question__title">{question.label}</span>
-								{question.context && <span class="exp-question__context">{question.context}</span>}
-							</span>
-							<span class="exp-question__cta">{t.readGuide}</span>
-						</a>
-					))}
-				</div>
-			</div>
-		</section>
 	)}
 
 	<!-- 06 FEATURED -->

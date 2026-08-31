@@ -1,64 +1,54 @@
-## Quick Answer
+Direct Answer
 
-- The Trade Terminal is used to clear/vacuum products/items from the scene.
-- Current player-tested community findings report the switch on the right side of the Terminal can vacuum all the products.
-- If a pile of items makes the game stutter, crash, or blocks access to the Terminal, use Pause Menu → Clear Items (new in 1.0.5) as an emergency fallback.
-- Clear Items will not give back any money (official 1.0.5 update note).
+> Updated for 1.0.7 — Quick answer: Long-press the Trade Terminal’s tool lever to wipe all placed tools. The terminal’s normal Clear/Vacuum action (right-side switch) still removes loose products, and the Pause Menu → Clear Items emergency option remains (no refund). In 1.0.7 the terminal’s Clear All also removes Gambling Crates.
 
-Updated for 1.0.5
+Quick Steps
 
-## Where is the Trade Terminal?
+1. Approach the Trade Terminal.
+2. Long-press the tool lever to perform a wipe-all of placed tools.
+3. Use the right-side switch to vacuum loose products normally.
+4. If things are still stuck, use Pause Menu → Clear Items as an emergency fallback (no refund).
 
-This page explains how to use the Terminal once you can reach it. The available evidence does not establish a single fixed room name, exact coordinates, or a guaranteed route — location and access can vary by run. Do not assume a specific placement from this guide.
+Prerequisites or What You Need
 
-## How to use the Trade Terminal
+- Access to a Trade Terminal (in-game).
+- A controller or input that supports a distinguishable long press on the tool lever.
+- Awareness that wipe-all is destructive: it removes placed tools and cannot refund spent resources.
 
-- Purpose: it is a scene-cleanup device for products/items; use it when you can physically access its interface.
-- Community-tested behavior: players report a right-side switch that vacuums products from the scene. That is the only reliably reported action tied to the Terminal in current community findings.
-- When it becomes useful: the Terminal is practical for batch cleanup, jam recovery, and as part of automation or larger tidy-up routines once you can reach it. See [Project P.I.T.T. Automation guide]({{page:automation}}). For downstream automation concerns that mention high-volume clearing, see the [x300 combo guide]({{page:x300-combo}}).
+Full Explanation
 
-## What does the right switch do?
+- What the long-press does: Updated for 1.0.7, a long press on the Trade Terminal tool lever triggers a wipe-all that removes placed tools from the scene. This is intended for destructive cleanup before rebuilding or when tools block progress.
+- Normal Trade Terminal use: The terminal’s right-side switch is used to vacuum loose products and cleared items from the scene. This behavior is player-tested and remains the routine, non-destructive cleanup method.
+- Gambling Crates: As of 1.0.7, the Trade Terminal’s Clear All (wipe/clear actions) now handles Gambling Crates as well. You can include them in a Clear All; this is a confirmed change in 1.0.7.
+- Pause Menu → Clear Items: Official 1.0.5 behavior still applies — the Pause Menu Clear Items option will remove items from the scene as an emergency fallback but provides no refunds and is not intended as a primary cleanup tool.
+- Destructive vs non-destructive: Use the right-side switch or short clears when you only need to remove loose products. Use long-press wipe-all when you want to remove placed tools and crates as part of a rebuild or full teardown.
 
-Current player-tested community findings indicate the right-side switch can vacuum products — players report flipping it removes products from the scene. Other switch/lever functions are not reliably evidenced; available reports do not establish a confirmed role for the other controls.
+Common Mistakes
 
-## Trade Terminal vs Clear Items
+- Expecting refunds: Using wipe-all or Pause Menu → Clear Items does not refund resources. This is destructive removal.
+- Confusing inputs: A short press and a long press on the tool lever are different actions. Long press = wipe-all; short press = normal tool interaction (do not expect wipe-all).
+- Relying on Clear Items for targeted cleanup: Pause Menu clear is an emergency fallback, not a precise method for selective cleanup.
+- Assuming old Demo behavior or coordinates: Do not rely on demo-era specifics or invented room names — follow in-game prompts and the terminal’s current controls.
 
-- Trade Terminal: community-tested cleanup/vacuum function you use when you can reach the device; right-side switch reported to pull products. The Terminal's behavior beyond that community finding is not established in the available evidence.
-- Pause Menu → Clear Items: official 1.0.5 emergency cleanup option intended to remove annoying items that can make the game crash or become unplayable. Official note: Clear Items will not give back any money.
+What To Do Next
 
-Use the Terminal when reachable for normal cleanup. Use Clear Items from the pause menu when the scene is unplayable, the Terminal is buried, or the game is unstable.
+- If you plan to rebuild, long-press the tool lever to remove tools first, then re-place tools in the new layout.
+- If only loose products block belts or machines, try the right-side switch vacuum first to avoid destructive teardown.
+- If items persist after standard clears, use Pause Menu → Clear Items as a last resort (no refund).
 
-## Trade Terminal vs Clear Items vs removing placed tools
+Related Guides
 
-- Trade Terminal: current player-tested community behavior is a product vacuum/cleanup function.
-- Pause Menu → Clear Items: official 1.0.5 emergency cleanup for annoying items that may make the game crash or become unplayable; official wording: Clear Items will not give back any money.
-- Placed tools / panels: the available evidence does not establish a general way to delete or recover placed tools. Do not assume Clear Items or the Terminal selectively removes or refunds placed tools; there is no reliable community or official confirmation on that point.
-
-## Cash Registers piling up / game crashing
-
-Players have reported a mountain of Cash Registers (or similar piled items) causing physics lag and crashes. Some reports say the Terminal was only reachable after several crashes; other players could not reach it at all. These reports illustrate why the pause-menu Clear Items option (1.0.5) matters as an emergency fallback when the scene becomes unplayable or the Terminal is inaccessible.
-
-## FAQ
-
-### How do I use the Trade Terminal?
-Use it when you can reach it to clear or vacuum products from the scene. Community reports identify a right-side switch that vacuums products; further interaction details beyond that are not established by the available evidence.
-
-### What does the Trade Terminal remove?
-Community-tested findings indicate it removes/vacuums products/items from the scene. Exact selection rules or economy behavior beyond that community finding are not established.
-
-### How do I remove lots of items?
-If you can reach the Trade Terminal, use its cleanup function (players report the right switch vacuums products). If the pile prevents access or makes the game unstable, use Pause Menu → Clear Items (added in 1.0.5) as an emergency cleanup.
-
-### How do I clear Cash Registers?
-Community reports show piled Cash Registers can cause severe lag/crashes. If you can reach the Trade Terminal, its vacuuming behavior (right switch) is the community-tested option. If the pile blocks access or the game is crashing, use Pause Menu → Clear Items.
-
-### What if I cannot reach the Trade Terminal?
-If the Terminal is buried or you cannot reach it because of crashes or piled items, use Pause Menu → Clear Items (1.0.5) to clear annoying items from the scene.
-
-### Does Clear Items refund money?
-No. The official 1.0.5 update notes explicitly state: Clear Items will not give back any money.
-
-## Related Guides
-
-- [Project P.I.T.T. Automation guide]({{page:automation}})
+- [Automation]({{page:automation}})
 - [x300 combo guide]({{page:x300-combo}})
+- [Updates hub]({{page:updates}})
+
+FAQ
+
+Q: How do I wipe all placed tools?
+A: Updated for 1.0.7 — long-press the Trade Terminal’s tool lever. This triggers a wipe-all that removes placed tools from the scene. This action is destructive and does not refund spent resources.
+
+Q: Does wipe-all remove Gambling Crates?
+A: Yes. In 1.0.7 the Trade Terminal’s Clear All/wipe functions handle Gambling Crates as part of the cleared items.
+
+Q: When should I use wipe-all vs normal cleanup?
+A: Use the right-side switch (vacuum) for routine removal of loose products. Use long-press wipe-all when you need to teardown placed tools or perform a full rebuild. Use Pause Menu → Clear Items only as an emergency fallback; it removes items without refund.

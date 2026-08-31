@@ -1,24 +1,24 @@
 {
   "title": "How to Get a 300 Combo in Project P.I.T.T. — x300 Achievement Guide",
+  "description": "Operational steps to earn the MEGA! x300 combo in Project P.I.T.T.: build one reliable feed lane with a short visible recoverable section, keep product arrival continuous, test MORE! x100 and EXTRA! x200 runs first, use Automation and the Shift Scheduler to maintain flow, and time the final attempt before any ending progression.",
   "h1": "How to Get a 300 Combo in Project P.I.T.T. — x300 Achievement Guide",
-  "quickAnswer": "Aim for MEGA! (x300) by building a short, visible, recoverable lane and maintaining a reliable production handoff; test one source → one route → one receiver, add tested automation, and attempt this before entering final/ending progression.",
-  "description": "x300 / 300 combo answer\nMEGA! is x300 and is the target for the 300 Combo achievement; MORE! is x100 and EXTRA! is x200. The core problem to solve is not launching a big burst but keeping a reliable production handoff long enough to hit MEGA!.\n\nreliable method\nUse a short, visible, recoverable lane pattern that you can watch and fix quickly. Prioritize a single tested source, a single tested route, and a single tested receiver so items transfer predictably. Practice hitting MORE! and EXTRA! as stepping stones before pushing for MEGA!.\n\nwhat resets or breaks the combo\nAnything that stops the continuous, observable handoff can reset the combo: jams, misalignment, containment failures, or a receiver dropping items out of sequence. Unreliable multi-source routes are a common cause of interruption.\n\ncommon failure reasons\n- Poorly observed lanes that hide jams or misfeeds.\n- Multiple untested sources or receivers creating race conditions.\n- Trying an unproven long burst instead of stabilizing a short recoverable lane.\n\nhow automation helps\nAutomation can assist once you have one source, one route, and one receiver tested. Existing automation guidance covers panels, fans, magnets, pistons, launchers, alignment, containment, and jam recovery — use those tested tools to hold the lane and recover quickly. See [Automation]({{page:automation}}) for lane setup details and tested components.\n\nhow the Shift Scheduler can help\nThe Shift Scheduler can help with timed or batch behavior when it is connected and tested correctly; use it to coordinate repeatable timing windows or batch launches after you have validated the single-source route. Refer to [the Shift Scheduler Guide]({{page:shift-scheduler}}) for setup and testing tips.\n\nsafest progression timing\nIf you have not completed x300, it is safer to prioritize the attempt before entering final/ending progression. This is a timing recommendation based on player reports, not a claim that the achievement becomes impossible afterward. For completion timing guidance see [the Achievements Guide]({{page:achievements}}).\n\nFAQ\nQ: Should I automate immediately?\nA: Only after you have tested the one source → one route → one receiver flow manually; automation is helpful but must be validated to avoid hidden failures.\n\nQ: Are there required machines or a combo timer?\nA: No. Do not rely on any single universal layout or claimed exact combo timer — focus on a reliable, short, recoverable lane and validated automation.\n\nQ: Will attempting this after ending progression break the achievement?\nA: The community recommends attempting x300 before final/ending progression if you haven’t done it yet; this is precautionary, not a statement that it becomes impossible later.",
+  "quickAnswer": "Build one reliable feed lane with a short visible recoverable section, keep arrivals continuous and avoid gaps, store a safety margin above exactly 300 products, test MORE! x100 and EXTRA! x200 first, use Automation and the Shift Scheduler to sustain flow, and prioritize the attempt before final-ending progression to prevent jams and resets.",
   "facts": [
     {
       "label": "x300 target",
-      "value": "MEGA! is x300 — the achievement target; MORE! is x100 and EXTRA! is x200."
+      "value": "Progression names: MORE! x100, EXTRA! x200, MEGA! x300. Maintain a safety margin above exactly 300 products so the combo does not fall short during the final release."
     },
     {
       "label": "Practice milestones",
-      "value": "Build reliability: first consistently hit MORE! (x100), then EXTRA! (x200) before attempting MEGA!; a short, visible, recoverable lane is the safest pattern."
+      "value": "Test runs at x100 and x200 before attempting x300. Build one reliable feed lane, keep product arrival continuous, and avoid gaps that reset the combo. Use a short visible recoverable lane to spot and recover small interruptions quickly."
     },
     {
       "label": "Automation",
-      "value": "Automation can help once one source, one route, and one receiver are tested; guidance covers panels, fans, magnets, pistons, launchers, alignment, containment, and jam recovery."
+      "value": "Use Automation and the Shift Scheduler to keep feed timing consistent, reduce manual gaps, and flag potential jams before they affect the lane. Automation helps sustain continuous arrival during an x300 attempt."
     },
     {
       "label": "Timing",
-      "value": "If you haven’t completed x300, prioritize the attempt before entering final/ending progression as a safer timing recommendation (not an irreversible restriction)."
+      "value": "Prioritize the x300 attempt before any final-ending progression as a precaution. Prevent jams before the final release, maintain continuous arrival without gaps, and rely on the short visible recoverable lane to correct small disruptions."
     }
   ]
 }

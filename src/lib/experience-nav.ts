@@ -4,7 +4,7 @@
  * All Experience pages (Routes Index, Guides Index, Route Hubs, formal
  * Homepage) share this single source for the top bar and footer:
  *
- *   Home / Routes / Guides / About   (+ Search rendered by GameShell)
+ *   Home / Routes / Guides / Updates / About   (+ Search rendered by GameShell)
  *
  * Home points at the formal hub homepage (`/{hubPath}/`) and About at
  * `/{hubPath}/#about`. `activeMatch` lets Route Hub pages keep "Routes"
@@ -21,6 +21,7 @@ export interface ExperienceNav {
 	homeHref: string;
 	routesHref: string;
 	guidesHref: string;
+	updatesHref: string;
 	aboutHref: string;
 }
 
@@ -30,12 +31,14 @@ export function experienceNav(): ExperienceNav {
 	const homeHref = hubHref(hub);
 	const routesHref = pageHref(hub, 'routes');
 	const guidesHref = pageHref(hub, 'guides');
+	const updatesHref = pageHref(hub, 'updates');
 	const aboutHref = `${homeHref}#about`;
 
 	const nav: NavItem[] = [
 		{ label: t.homeNav, href: homeHref },
 		{ label: t.routesNav, href: routesHref, activeMatch: [routesHref] },
 		{ label: t.guidesNav, href: guidesHref },
+		{ label: t.updatesNav, href: updatesHref, activeMatch: [updatesHref] },
 		{ label: t.aboutNav, href: aboutHref },
 	];
 
@@ -45,6 +48,7 @@ export function experienceNav(): ExperienceNav {
 		homeHref,
 		routesHref,
 		guidesHref,
+		updatesHref,
 		aboutHref,
 	};
 }

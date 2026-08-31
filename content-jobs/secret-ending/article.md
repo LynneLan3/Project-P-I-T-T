@@ -1,65 +1,53 @@
 ## Direct Answer
-END? is the Secret Ending.
-Keypad note: 2640 is not a universal code — the four-digit keypad code is save-specific. For why 2640 can fail and how to use Keycard + UV Light to find your save’s digits, see [the Elevator Code guide]({{page:elevator-code}}).
+END? as the Secret Ending — the keypad uses the four digits you discover in your own save (they are save-specific). Short keypad note: the discovery order is Duck → Cash Register → Piñata → Anomaly. For troubleshooting and the broader elevator-code guide, see [Elevator Code]({{page:elevator-code}}).
 
 ## Quick Steps
-- Complete the surveillance/camera progression and upper-area exploration.
-- Open Mystery Boxes and secure the required production/minigame items.
-- Collect the 3 Fuses and finish the 200kg plate objective.
-- Follow the Percentage Pipe sequence and complete the later minigame / production progression.
-- Progress the UV-related clue progression and get elevator access via keycard.
-- Use Keycard + UV hints to reveal your save-specific four-digit keypad code (entry order, if needed: Duck → Cash Register → Piñata → Anomaly).
-- Enter the code at the elevator keypad to trigger the Secret Ending route and reach END?.
+- Collect the four keypad digits in your current save (follow the discovery order: Duck → Cash Register → Piñata → Anomaly).
+- When the elevator keypad appears, enter the digits you found in that save.
+- Choosing the END? route (secret) or the END! route (main) depends on the in-game choices and which path you take — they are distinct outcomes.
 
 ## Prerequisites or What You Need
-- Progression through camera / surveillance → upper exploration → Mystery Boxes.
-- The three fuses (per progression), completion of the 200kg task, and the Percentage Pipe step.
-- Items/unlocks from the later minigame / production progression.
-- UV-related clues and elevator access (keycard).
-- A save-specific four-digit keypad code (do not rely on a single universal number).
+- A playthrough/save that has uncovered the four keypad digits (they are not universal).
+- Access to the elevator/keypad event in your save.
+- Completion of the associated anomaly phase to obtain the final digit — see [Anomaly Phase 4]({{page:anomaly-phase-4}}) for details on that step.
+- If you care about completion stats or rewards, consult [Percentage Pipe]({{page:percentage-pipe}}) and [Achievements]({{page:achievements}}).
 
 ## Full Explanation
-END? is unlocked by following the full-release route sequence used by the community: camera / surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame / production progression → UV-related clue progression → elevator access / keycard → save-specific four-digit keypad code → Secret Ending route.
+There are two separate endings commonly confused:
+- END? is the secret ending — it requires entering the save-specific keypad code assembled from digits you located during that playthrough.
+- END! is the main ending and follows a different route; the two are mutually exclusive outcomes based on choices and sequence.
 
-The route is structured: early exploration unlocks boxes and items that feed into mid-game goals (fuses, weight/plate tasks, percentage pipe). Later you complete production/minigame tasks that lead to UV clues. UV progression is used alongside a keycard to access elevator controls and a keypad. The four-digit keypad code is tied to the player’s save; community-confirmed findings show the code is not the same across saves.
+Keypad digits are not a global code printed on a wiki. They are discovered within each save in a fixed discovery sequence: Duck, then Cash Register, then Piñata, then the Anomaly (the latter ties to the anomaly phase). Once you have those four digits in your save, input them on the elevator keypad when prompted to trigger the secret route.
 
-When you reach the keypad stage, use the UV/clue steps to determine the digits (and, only if applicable, the advised entry order: Duck → Cash Register → Piñata → Anomaly). Entering the correct save-specific code launches the Secret Ending sequence labelled END?.
-
-Do not expect a one-size-fits-all numerical answer in guides or comment sections. If you cannot find the code from UV/keycard clues in your save, consult [the Elevator Code guide]({{page:elevator-code}}) for the methodology that explains save-specific codes and why a single posted number often fails.
+Do not expect a single universal number to work across all saves. Threads and storefront pages sometimes show a specific sequence (or a single-string code), which reflects a particular save — that is why players see conflicting reports like “Lost on ending.” If the code you try fails, consult [Elevator Code]({{page:elevator-code}}) for troubleshooting steps that respect save-specific fixes rather than blanket codes.
 
 ## Common Mistakes
-- Assuming a single universal code will work for every save. (2640 is commonly referenced but not universal.)
-- Skipping earlier progression steps — missing fuses, uncompleted Percentage Pipe, or unfinished minigame/production tasks will block later clues.
-- Ignoring UV clues or failing to use the keycard to access elevator systems.
-- Trying to brute-force public codes rather than following the save-specific UV/keycard method.
-- Confusing END? with other endings due to older or mixed walkthroughs; rely on the verified progression above.
+- Treating a single posted code as universal — codes are save-specific.
+- Entering digits in the wrong order (use your discovered order).
+- Skipping the Anomaly phase or misunderstanding where the final digit appears — refer to [Anomaly Phase 4]({{page:anomaly-phase-4}}).
+- Using sites or comments that post fixed numbers without clarifying save dependence.
 
 ## What To Do Next
-- If you’re stuck on the keypad/code step: read [the Elevator Code guide]({{page:elevator-code}}).
-- For general route issues or bugs: see [Troubleshooting]({{page:troubleshooting}}).
-- For achievement ties and how END? affects completion lists: see [Achievements]({{page:achievements}}).
-- If you’re stuck earlier, revisit the last verified progression stage: [the Percentage Pipe Guide]({{page:percentage-pipe}}), [the Fuse Box guide]({{page:up-achievement-fuses}}), or [the 200kg Guide]({{page:200kg-plate}}).
+- Re-scan your current save for the four digit sources in the order above.
+- If you can’t get the keypad to accept your discovered digits, check the troubleshooting steps at [Elevator Code]({{page:elevator-code}}) and [Troubleshooting]({{page:troubleshooting}}).
+- Track completion and rewards via [Percentage Pipe]({{page:percentage-pipe}}) and [Achievements]({{page:achievements}}).
 
 ## FAQ
-### What is END??
-END? is the Secret Ending designation used by current achievement and route information. It’s the labeled result of the save-specific elevator/keypad route described above.
+### What is the keypad code?
+There is no single universal keypad code. The keypad code for END? is built from four digits you find in your own save (Duck → Cash Register → Piñata → Anomaly). Do not rely on codes copied from other players’ saves.
 
-### How do I reach the Secret Ending?
-Follow the full progression: camera/surveillance → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame/production → UV-related clues → elevator access/keycard → obtain your save’s four-digit keypad code → enter it to trigger END?.
+### Where do I find my elevator code?
+Find each digit during your playthrough in the four locations listed above, then enter them on the elevator keypad in that same save. If you’re stuck on locating the final digit or the anomaly step, see [Anomaly Phase 4]({{page:anomaly-phase-4}}) and the general [Elevator Code]({{page:elevator-code}}) troubleshooting guide.
 
-### Is END? the same as END!?
-No — treat END? as the Secret Ending referenced in current achievement notes. Do not conflate END? and END! without checking achievement descriptions or community resources; they may be distinct in route/requirements.
+### Why doesn't 2640 work?
+If you tried “2640” (or any single posted number) and it failed, that’s because keypad codes are save-specific; a number that worked in one save will often fail in another. For troubleshooting and steps that respect save-specific fixes, use [Elevator Code]({{page:elevator-code}}) and [Troubleshooting]({{page:troubleshooting}}).
 
-### Where do I get the elevator code?
-The four-digit code is save-specific and derived using the Keycard + UV Light clue progression. For the method and troubleshooting (including why public codes often fail), see [the Elevator Code guide]({{page:elevator-code}}).
-
-### Why doesn’t 2640 work?
-Community findings show the elevator code can be save-specific; 2640 is not guaranteed to work for every save. For a concise explanation and the steps to find your save’s digits using Keycard + UV, consult [the Elevator Code guide]({{page:elevator-code}}).
+### How do END? and END! differ?
+END? is the secret ending triggered by entering the save-specific keypad code and following that route. END! is the main ending achieved through the standard progression. They are different outcomes and should not be conflated.
 
 ## Related Guides
-- [the Elevator Code guide]({{page:elevator-code}})
-- [Troubleshooting]({{page:troubleshooting}})
+- [Elevator Code]({{page:elevator-code}})
+- [Anomaly Phase 4]({{page:anomaly-phase-4}})
+- [Percentage Pipe]({{page:percentage-pipe}})
 - [Achievements]({{page:achievements}})
-- [the Percentage Pipe Guide]({{page:percentage-pipe}})
-- [the Fuse Box guide]({{page:up-achievement-fuses}})
-- [the 200kg Guide]({{page:200kg-plate}})
+- [Troubleshooting]({{page:troubleshooting}})

@@ -371,6 +371,14 @@ export interface SiteSpecStatusItem {
 	value: string;
 }
 
+export interface SiteSpecRecentUpdate {
+	pageId: string;
+	title?: string;
+	date: string;
+	changeSummary?: string;
+	tag?: string;
+}
+
 export interface SiteSpecHomepage {
 	heroBadge?: string;
 	primaryCta?: SiteSpecLinkTarget;
@@ -380,6 +388,10 @@ export interface SiteSpecHomepage {
 	evidence?: SiteSpecEvidence;
 	/** Optional Hub status rail. Omit to derive from game fields. Max 4; empty values skipped. */
 	statusItems?: SiteSpecStatusItem[];
+	/** Optional curated Recently Updated rows for the Hub. */
+	recentUpdates?: SiteSpecRecentUpdate[];
+	showRecentlyUpdated?: boolean;
+	maxRecent?: number;
 }
 
 export interface SiteSpecAsset {
@@ -1272,6 +1284,39 @@ function parseHomepage(raw: unknown, location: string, pageIds: Set<string>): Si
 				};
 			}),
 		};
+	}
+	const recentUpdates = requireArray(raw, 'recentUpdates', `${location}.recentUpdates`, { optional: true });
+	if (recentUpdates) {
+		homepage.recentUpdates = recentUpdates.map((item, index) => {
+			const loc = `${location}.recentUpdates[${index}]`;
+			if (!isRecord(item)) {
+				fail('recentUpdates entry must be a mapping.', `homepage.recentUpdates[${index}]`, item, loc, 'Fix the entry.');
+			}
+			const pageId = requireString(item, 'pageId', `${loc}.pageId`)!;
+			if (!pageIds.has(pageId)) {
+				fail(
+					'recentUpdates.pageId references an unknown page.',
+					`homepage.recentUpdates[${index}].pageId`,
+					pageId,
+					`${loc}.pageId`,
+					'Use a page id declared under pages:.',
+				);
+			}
+			return {
+				pageId,
+				title: requireString(item, 'title', `${loc}.title`, { optional: true }),
+				date: requireString(item, 'date', `${loc}.date`)!,
+				changeSummary: requireString(item, 'changeSummary', `${loc}.changeSummary`, { optional: true }),
+				tag: requireString(item, 'tag', `${loc}.tag`, { optional: true }),
+			};
+		});
+	}
+	if (raw.showRecentlyUpdated !== undefined) {
+		homepage.showRecentlyUpdated = requireBoolean(raw, 'showRecentlyUpdated', `${location}.showRecentlyUpdated`);
+	}
+	if (raw.maxRecent !== undefined) {
+		const maxRecent = requireNumber(raw, 'maxRecent', `${location}.maxRecent`);
+		if (maxRecent !== undefined) homepage.maxRecent = maxRecent;
 	}
 	return homepage;
 }

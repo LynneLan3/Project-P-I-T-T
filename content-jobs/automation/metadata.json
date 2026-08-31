@@ -1,24 +1,24 @@
 {
   "title": "How to Automate Phase 4 in Project P.I.T.T.",
-  "description": "Concise Phase 4 guide to building a reliable Project P.I.T.T. automation hub, covering a recommended starter lane, panel and mover guidance, and how to chain Shift Scheduler, Trade Terminal, Panel Rack, and x300 Combo.",
+  "description": "Phase 4 automation hub: three-input staging, 1.0.7 Pistons, Piñata protection, Shift Scheduler, Trade Terminal, Panel Rack, and Anomaly Phase 4 cross-links.",
   "h1": "How to Automate Phase 4 in Project P.I.T.T.",
-  "quickAnswer": "Begin with a short, visible, recoverable lane (one source, one receiver); use panels as route surfaces and give fans/magnets/pistons/launchers one clear job. In Phase 4 focus on connecting the Shift Scheduler, Trade Terminal, Panel Rack, and x300 Combo while avoiding routing jams and unclear tool roles.",
+  "quickAnswer": "Start with one short visible recoverable lane, balance Duck, Cash Register, and Piñata on separate lanes before merge, use 1.0.7 Pistons for attached tools, then link Shift Scheduler, Trade Terminal, Panel Rack, and Anomaly Phase 4 before x300.",
   "facts": [
     {
       "label": "First test",
-      "value": "A short, visible, recoverable lane with one source and one receiver is the recommended starting pattern."
+      "value": "One product through one short visible recoverable lane before scaling"
     },
     {
-      "label": "Panels",
-      "value": "Panels can act as route walls and surfaces; a green snap preview indicates a valid snap. Sticky tools help keep contact in place, and fans, magnets, pistons, and launchers should each have one clear job."
+      "label": "Phase 4 inputs",
+      "value": "Stage Duck, Cash Register, and Piñata on separate lanes before final merge"
     },
     {
-      "label": "Phase 4",
-      "value": "Phase 4 shifts focus to chaining timed and cleanup systems rather than new unlock claims; players should stabilize a short lane, then add timed control and cleanup links. Key tools to prioritize are Shift Scheduler for timed/batch control, Trade Terminal for cleanup, Panel Rack for panel retrieval/spawn behavior, and x300 for the combo attempt. Common blockers include routing jams, unclear tool roles, and poor panel/mover placement."
+      "label": "Pistons 1.0.7",
+      "value": "Tools stick to piston head; off locks position; on resumes motion"
     },
     {
-      "label": "Next tools",
-      "value": "Establish the natural hub chain: Automation → Shift Scheduler → Trade Terminal → Panel Rack → x300 Combo. Link Trade Terminal for cleanup, Shift Scheduler for timed/batch control, Panel Rack for panel retrieval and spawn behavior, and x300 for the combo attempt."
+      "label": "Next step",
+      "value": "See Anomaly Phase 4 for recipe and workbench fixes before scaling automation"
     }
   ]
 }

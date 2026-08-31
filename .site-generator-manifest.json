@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "templateVersion": "2.0.0",
   "generatorVersion": "1.0.0",
-  "specHash": "85c425580c8cb360bdc52560e516c0600743c227f5749c02d37f6e38b2b37670",
+  "specHash": "512c86262a209fe17570e7ecfd70c361dc1b45990145251796e35a7b1aa50130",
   "siteId": "project-p-i-t-t",
   "createdFromSpec": "site-spec.yaml",
   "managedFiles": [
@@ -53,7 +53,7 @@
     },
     {
       "path": "src/config/site.generated.ts",
-      "sha256": "db6084bd6d507aa955337888d97458b6c5d243079a40063f8c83017d81511197",
+      "sha256": "8eaf8d51a2c7475f7aab179499ca2698b5ac2ee425bc720cacaa9f0774ed9b05",
       "kind": "config"
     },
     {
@@ -63,12 +63,12 @@
     },
     {
       "path": "src/content/docs/automation/automation.md",
-      "sha256": "7c306e4e2ee27175e76d86fd9c500314384a4077d32ef9fed44f7e6dc72a6d8f",
+      "sha256": "1a11fccacaf7276d7b20d5f25263dfbcae34725079acce913ab11a8771ce2ecf",
       "kind": "page"
     },
     {
       "path": "src/content/docs/automation/panel-rack.md",
-      "sha256": "40c726acd788c081191793c58cb9c1b9fa097dd9f1e3d646c521e184f7ef5770",
+      "sha256": "adc1b53e01a9572edf0c8c4c278fd7740d2e62d67ed46dcf41556023416a12db",
       "kind": "page"
     },
     {
@@ -78,17 +78,17 @@
     },
     {
       "path": "src/content/docs/automation/trade-terminal.md",
-      "sha256": "fe4b7b27ca21ca32efc26b670ee9943092a384ca27b577a9d20545d1f8c6e7ff",
+      "sha256": "932dac36933a995cb90dcd069582189775222726a6177c6762e932181224ad51",
       "kind": "page"
     },
     {
       "path": "src/content/docs/automation/troubleshooting.md",
-      "sha256": "9b1f81a074697e0117dd7c1da04a1972c018501fc3cfed4d06b482713489d286",
+      "sha256": "2ed4de790d8249b66b2e4ef60782edb546e2fb9312c01b91a5c06843575f58be",
       "kind": "page"
     },
     {
       "path": "src/content/docs/automation/x300-combo.md",
-      "sha256": "65f76db83d3c0520583c7cbeeca103e963d546f763238c932472da0fc648f655",
+      "sha256": "c7ea4b484702f760dfe93b0a6c51d9ca4060b16ac45b7ac8345c19dab2e5b3e9",
       "kind": "page"
     },
     {
@@ -102,8 +102,13 @@
       "kind": "page"
     },
     {
+      "path": "src/content/docs/progression-secrets/anomaly-phase-4.md",
+      "sha256": "6c80652642e4bbad75a9b456ed57e775ba5ce7840f8c911dcabed4b936ed7b24",
+      "kind": "page"
+    },
+    {
       "path": "src/content/docs/progression-secrets/anomaly.md",
-      "sha256": "b7dc0bf87f0beba22aedee3a52e02600f196c2fc73153e5a9dfd215aa59cb4a6",
+      "sha256": "1ebdcba4d7cb3242399283c862cd18c1ea721a81871b91f80dfd64559396cc33",
       "kind": "page"
     },
     {
@@ -113,17 +118,22 @@
     },
     {
       "path": "src/content/docs/progression-secrets/percentage-pipe.md",
-      "sha256": "cb48a0410f9d611e1408e331a67cd5280eeb8aaefa5227f5cf1abb2cd4d57e47",
+      "sha256": "3e705e471abbd7999a3d61dbfc960f424336678529206e72cd7b9557e5458be0",
       "kind": "page"
     },
     {
       "path": "src/content/docs/progression-secrets/secret-ending.md",
-      "sha256": "47cea5a254a35785fd94eaefc8fa2adc3c6d3af604901c1e53cf295c35f8bb17",
+      "sha256": "55cee98cfebe84c2219eea8dba2c01b37a469c5ba8734d0bcd23e472c466f5ba",
       "kind": "page"
     },
     {
       "path": "src/content/docs/progression-secrets/up-achievement-fuses.md",
       "sha256": "728dbbd4c7ec15733f7ac502832e66aac8dfeed613efb10e49934d6be9d152c6",
+      "kind": "page"
+    },
+    {
+      "path": "src/content/docs/updates/updates.md",
+      "sha256": "853303b357f12cedc2c2f98fe9ae010cd89f33f57bbfd52578fb8600ecc82731",
       "kind": "page"
     },
     {

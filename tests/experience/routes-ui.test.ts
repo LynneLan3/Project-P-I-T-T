@@ -132,11 +132,12 @@ test('formal routes UI: guides index + dynamic route hubs render from runtime ro
 		assert.match(routesIndexHtml, /<title>Routes — Example Game Guide &amp; Wiki/);
 		assert.match(routesIndexHtml, /rel="canonical" href="https:\/\/example-game\.example\/routes\//);
 
-		// Unified top navigation: Home / Routes / Guides / About on every Experience page
+		// Unified top navigation: Home / Routes / Guides / Updates / About on every Experience page
 		const guidesNav = guidesHtml.match(/<nav class="exp-topbar__nav"[\s\S]*?<\/nav>/)?.[0] ?? '';
 		assert.match(guidesNav, /href="\/"[^>]*>Home</);
 		assert.match(guidesNav, /href="\/routes\/"[^>]*>Routes</);
 		assert.match(guidesNav, /href="\/guides\/"[^>]*>Guides</);
+		assert.match(guidesNav, /href="\/updates\/"[^>]*>Updates</);
 		assert.match(guidesNav, /href="\/#about"[^>]*>About</);
 		assert.doesNotMatch(guidesNav, /\/prototype\//, 'Experience chrome must never link the prototype homepage');
 		assert.match(guidesNav, /aria-current="page"/, 'guides index should mark Guides active');
@@ -149,6 +150,7 @@ test('formal routes UI: guides index + dynamic route hubs render from runtime ro
 		assert.match(guidesFooter, /href="\/"[^>]*>Home</);
 		assert.match(guidesFooter, /href="\/routes\/"[^>]*>Routes</);
 		assert.match(guidesFooter, /href="\/guides\/"[^>]*>Guides</);
+		assert.match(guidesFooter, /href="\/updates\/"[^>]*>Updates</);
 		assert.match(guidesFooter, /href="\/#about"[^>]*>About</);
 
 		// Follow the Route preserves site-spec order

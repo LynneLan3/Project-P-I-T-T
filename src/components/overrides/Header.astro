@@ -11,8 +11,12 @@ const isExperience = isExperienceGuide(
 	Astro.locals.starlightRoute.entry,
 	Astro.url.pathname,
 );
-const { nav, homeHref, guidesHref } = experienceNav();
+const { nav, homeHref, guidesHref, updatesHref } = experienceNav();
 const siteTitle = game.shortName ?? game.title;
+const pathname = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const updatesPath = updatesHref.replace(/\/+$/, '') || '/';
+const guideActivePath =
+	pathname === updatesPath ? updatesHref : isExperience ? guidesHref : undefined;
 ---
 
 {
@@ -20,12 +24,12 @@ const siteTitle = game.shortName ?? game.title;
 		// Formal Homepage: unified top bar with Home active
 		<GameShellTopbar siteTitle={siteTitle} homeHref={homeHref} nav={nav} activePath={homeHref} />
 	) : isExperience ? (
-		// Guide content pages: highlight "Guides" in the unified top bar
+		// Guide content pages: highlight "Guides" or "Updates" in the unified top bar
 		<GameShellTopbar
 			siteTitle={siteTitle}
 			homeHref={homeHref}
 			nav={nav}
-			activePath={guidesHref}
+			activePath={guideActivePath}
 		/>
 	) : (
 		<div class="gw-header-stack">

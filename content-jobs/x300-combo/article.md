@@ -1,85 +1,61 @@
-## Direct Answer — MEGA! / x300 combo (quick summary)
-Current full-release community findings indicate the MEGA! achievement is the x300 combo tier. The reliable way to reach x300 is not a single massive burst but a sustained, recoverable production handoff: keep a short, visible lane with one source → one route → one receiver, operate the handoff cleanly, and recover jams immediately. Automation and the Shift Scheduler can help once that simple lane and handoff are proven manually. If you haven’t done x300 yet, it is safer to attempt it before entering final/ending progression — that is a timing recommendation based on player reports, not proof that the achievement becomes impossible later.
+Direct Answer
+> Build and run one reliable feed lane with a short, visible recoverable buffer, keep product arrival continuous (no gaps), hold a safety margin above 300 products, test with MORE! x100 and EXTRA! x200 runs, and use Automation or the Shift Scheduler to stabilize input timing before releasing for the MEGA! x300 attempt.
 
-Note: MORE! = x100, EXTRA! = x200, MEGA! = x300.
+Quick Steps
+1. Pick a single feed lane and commit to it — do not split product sources.
+2. Add a short, visible recoverable lane/buffer that you can monitor and manually clear.
+3. Configure feeders (or Automation/Shift Scheduler) so products arrive with no gaps.
+4. Run a MORE! x100 attempt, then an EXTRA! x200 to validate throughput and jam handling.
+5. Build up products until you have a safety margin above the 300 mark, then release.
+6. Prevent jams at merge points and before the release trigger; retry if any pauses occur.
 
-## Concrete manual setup and operating sequence
-This is an executable manual procedure players consistently report works as a baseline. Do not treat it as the only layout — use it to prove the handoff before automating.
+Prerequisites or What You Need
+- One reliable single feed lane (short path, no alternate infeed).
+- A short, visible recoverable lane/buffer you can watch and clear manually.
+- Means to control steady input: in-game Automation or the Shift Scheduler (where available).
+- Practice runs at x100 and x200 to confirm timing and jam resistance.
+- Awareness to perform the attempt before final-ending progression events as a precaution.
 
-1. Build a short, visible lane where you can watch every item move from source to sink. Keep the lane minimal so you can see and reach jams.
-2. Use a single, dedicated source (one item producer) and a single receiver (one container/acceptor) for the test lane. Avoid merges or branching.
-3. Place simple containment/alignment so items travel predictably (players use panels/fans/magnets in automation guides; tune them to keep items centered).
-4. Start a small run and observe the timing between source output and receiver intake. Adjust spacing so items arrive in a steady stream without pileups.
-5. Begin the x300 attempt by feeding the lane steadily — not by bursting everything at once. Maintain the handoff rhythm you tuned.
-6. Watch for the first sign of a jam or misalignment; pause source output immediately, clear the jam, then resume the same steady rhythm.
-7. If you must move or open other systems, pause the lane entirely before doing so to avoid late resets.
+Full Explanation
+- Why a single feed lane: multiple lanes or merged sources introduce timing variance and micro-gaps. Community findings show a single, dedicated feed lane is the most consistent way to avoid resets caused by intermittent arrival.
+- Continuous arrival and no gaps: the combo breaks on detectable arrival gaps. Use steady feeder settings, automation scripts, or a Shift Scheduler profile to keep cadence uniform. If you must use manual input, keep finger/trigger discipline and avoid any pause longer than the normal product spacing.
+- Short visible recoverable lane: place a short buffer between feeder and combo counter so you can see and fix problems immediately. This lane should be short enough to reset quickly but long enough to store enough items for brief corrections.
+- Test x100 and x200 first: players consistently report that validating the full feed and jam-tolerance at lower milestones exposes timing and mechanical issues without wasting attempts. Treat x100 as a throughput check and x200 as a stress test.
+- Safety margin above 300: don’t aim to have exactly 300 items at release. Current community guidance is to hold a margin above the target so small, unavoidable production variance won’t drop you below the threshold during the final sequence.
+- Prevent jams before final release: clear intersections, avoid tight merges, and ensure any release triggers are far enough downstream of potential jam points. If your layout has a known clog spot, resolve it before starting the MEGA! attempt.
+- Automation and Shift Scheduler: where players have verified these tools, they’re used to lock a steady input tempo and remove human-induced pauses. Link your Automation profiles to the feed lane and/or schedule a continuous shift that spans the full attempt window to reduce operator error. See [Automation]({{page:automation}}) and [Shift Scheduler]({{page:shift-scheduler}}).
+- Prioritize before final-ending progression: make the attempt early enough in a session or run so end-of-run progression events (which can alter spawns or logistics) won’t interfere. This is a precaution players use to avoid unexpected resets late in progression.
 
-Operate with patience: the player problem is maintaining a reliable handoff, so prioritize consistent delivery over raw speed.
+Common Mistakes
+- Splitting inputs or using multiple lanes (creates micro-gaps and timing variance).
+- Relying on invisible/long queues instead of a short visible buffer.
+- Releasing with exactly 300 items rather than holding a safety margin.
+- Not testing x100/x200 first — missing throughput problems until too late.
+- Letting jams form at merges or intersections that are upstream of the final release.
+- Starting attempts close to end-of-run progression events that change logistics.
+- Expecting manual timing to match automation — human input is more error-prone.
 
-## What resets or breaks the combo
-Players report these actions commonly break or reset the route to jams or timing errors:
+What To Do Next
+1. Build the single feed lane and a short visible buffer.
+2. Configure Automation or a Shift Scheduler profile to deliver steady feed.
+3. Run MORE! x100 and EXTRA! x200 tests; fix any jams or timing drift.
+4. When stable, accumulate a safety margin above 300 and attempt MEGA! x300.
+5. If the attempt fails, inspect the recoverable lane for gaps/jams and iterate.
 
-- Introducing additional routes, merges, or receivers into your test lane mid-attempt.
-- Long, visually hidden lanes where you cannot clear jams quickly.
-- Allowing intermittent bursts that cause receiver buildup rather than steady flow.
-- Changing machine alignment or power state without pausing the handoff first.
-- Late progression actions (entering final/ending screens) during a critical timing window — again, this is a player-timing recommendation, not proof of a hard lock.
+Related Guides
+- [Automation]({{page:automation}})
+- [Shift Scheduler]({{page:shift-scheduler}})
+- [Achievements]({{page:achievements}})
 
-If any system in the single source→route→receiver chain is altered while attempting the combo, treat it as a reset and re-tune the lane before continuing.
+FAQ
+Q: Do I need Automation or the Shift Scheduler to reach MEGA! x300?
+A: No, they aren’t strictly required, but current full-release community findings indicate Automation or Shift Scheduler greatly reduce timing gaps and operator error. If you use manual control, compensate with a larger visible buffer and conservative pacing.
 
-## Common failure reasons (and quick fixes)
-- Jam at choke points: shorten the lane, add containment/alignment, and clear the jam before resuming.
-- Receiver overflow: slow the source or add a short buffer you can monitor and clear.
-- Invisible delay (items stuck out of sight): shorten/relocate the lane so all movement is visible.
-- Sporadic timing from multi-source setups: revert to one source until the handoff is proven reliable.
-- Trying automation before manual proof: prove the manual route first, then automate.
+Q: How large should the safety margin be?
+A: The brief evidence recommends storing a margin above the 300 target rather than trying to hit exactly 300. Do not rely on an exact count; keep extra products so minor variance won’t drop you below the threshold.
 
-For each failure, return to a single-source visible lane and rebuild the steady rhythm before retrying.
+Q: Why did my combo reset even though items were coming?
+A: Resets are usually caused by short arrival gaps, merged-lane collisions, or a jam clearing that temporarily pauses input. Use a single feed lane and a short visible recoverable buffer to diagnose the exact moment the flow pauses.
 
-## How automation helps (and where it must be tested)
-Automation can reduce human timing errors once the manual handoff is reliable. Community-confirmed automation assistance includes panels, fans, magnets, pistons, launchers, alignment, containment, and jam recovery patterns. Use automation only after these steps:
-
-1. Prove the lane manually (single source → single route → single receiver).
-2. Automate one element at a time (e.g., automate the source, confirm timing; then automate the receiver).
-3. Include automated jam detection/recovery or manual quick-clear access inside your short lane.
-4. Test the full automated run multiple times at the same session settings you’ll use for MEGA!.
-
-Do not assume an automation setup that worked in a demo works in full release — confirm it in your current game version.
-
-See [Automation]({{page:automation}}) for panel/fan/magnet and jam-recovery patterns the community uses.
-
-## How the Shift Scheduler can help
-The Shift Scheduler can assist with timed or batch behavior when it is connected and tested correctly. Community findings suggest:
-
-- Use the scheduler to produce consistent batches or to pause other systems between handoffs.
-- Connect and test scheduler toggles on the lane components (source on/off, short buffer release) before relying on it during a MEGA! run.
-- Use the scheduler to prevent human-induced timing drift (e.g., automated short pauses to allow receiver catch-up).
-
-For full setup and testing advice, consult [the Shift Scheduler Guide]({{page:shift-scheduler}}) and only run MEGA! after you’ve verified the scheduler’s timing in the exact lane you plan to use.
-
-## Safest progression timing
-Players consistently report it’s safer to complete x300 before entering final/ending progression. Treat this as a precautionary timing recommendation:
-
-- Attempt MEGA! while you still have direct access to rebuild or shorten lanes easily.
-- If you’re near final/ending progression and haven’t done x300, pause progression and run the MEGA! attempt first.
-- This is not a confirmed irreversible lock; it’s community advice to avoid last-minute complications.
-
-See [the Achievements Guide]({{page:achievements}}) for completion-timing context.
-
-## FAQ
-Q: Do I need automation to get MEGA!?
-A: No. Automation helps remove human timing errors, but community findings show you should first prove a manual single-source → single-route → single-receiver lane. Automate only after that.
-
-Q: Will ending progression permanently prevent x300?
-A: Current full-release community findings recommend attempting x300 before final/ending progression as a safety measure. This is a timing recommendation, not definitive evidence that the achievement becomes impossible afterward.
-
-Q: What should I do if a jam happens late in the run?
-A: Pause source output immediately, clear the jam, then resume the same steady rhythm. Short, visible lanes and quick-clear access are the safest recovery design.
-
-Q: Can I merge multiple lanes to reach x300 faster?
-A: Players consistently report merges introduce timing variability and are a common cause of failure. Establish a reliable single lane first before attempting any multi-lane merge.
-
-Q: Are there exact timers or required components for x300?
-A: No. Community guidance emphasizes a reliable handoff pattern rather than a universal timer or part. Do not rely on invented universal layouts or timings.
-
-If you need deeper automation patterns or scheduler wiring after you’ve proven the manual lane, consult [Automation]({{page:automation}}) and [the Shift Scheduler Guide]({{page:shift-scheduler}}). For when to prioritize the attempt, see [the Achievements Guide]({{page:achievements}}).
+Q: Is it better to attempt MEGA! x300 early in a run?
+A: Yes. Prioritize the attempt before final-ending progression events as a precaution — players report fewer unexpected changes to spawn/logistics early in progression.

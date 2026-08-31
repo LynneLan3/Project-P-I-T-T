@@ -1,0 +1,24 @@
+{
+  "title": "How to Make Anomalies in Project P.I.T.T. — Phase 4 Recipe & Workbench Fixes",
+  "description": "Phase 4 recipe, workbench fixes, and Piñata staging tips for making Anomalies in Project P.I.T.T.",
+  "h1": "How to Make Anomalies in Project P.I.T.T. — Phase 4 Recipe & Workbench Fixes",
+  "quickAnswer": "Recipe: Duck + Cash Register + Piñata at the Anomaly workbench. Complete one successful manual Anomaly before scaling automation.",
+  "facts": [
+    {
+      "label": "Recipe",
+      "value": "Observed recipe: Duck + Cash Register + Piñata at the Anomaly workbench."
+    },
+    {
+      "label": "Phase 4",
+      "value": "Anomaly belongs to Phase 4."
+    },
+    {
+      "label": "Workbench issue",
+      "value": "All three inputs must truly enter the corresponding workbench process — not merely arrive nearby; misalignment or multiple inputs can make the workbench appear not to work and automation can amplify jams."
+    },
+    {
+      "label": "Piñata",
+      "value": "Piñata is fragile during transport and can break before reaching the workbench; stage and secure it to avoid breakage."
+    }
+  ]
+}

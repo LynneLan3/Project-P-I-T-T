@@ -1,71 +1,70 @@
-> Quick answer: Use a short, visible, recoverable lane with one source and one receiver as your Phase 4 automation hub, keep each mover (fan, magnet, piston, launcher) doing one clear job, use panels as fixed routing surfaces, then chain into timed control and cleanup: Automation → [Shift Scheduler](../shift-scheduler) → [Trade Terminal](../trade-terminal) → [Panel Rack](../panel-rack) → [x300 Combo](../x300-combo).
-
 Direct Answer
-- Start with a short, single-source → single-receiver lane and treat panels as walls/surfaces for routing.
-- Give each actuator (fan, magnet, piston, launcher) one dedicated purpose and use sticky tools to keep contact where needed.
-- Once that lane is stable, plug it into timed control and cleanup hubs in this natural chain: Automation → [Shift Scheduler](../shift-scheduler) → [Trade Terminal](../trade-terminal) → [Panel Rack](../panel-rack) → [x300 Combo](../x300-combo).
+> Set up a short visible recoverable lane, stage the three Phase‑4 inputs (Duck / Cash Register / Piñata) on separate lanes, balance supply across those lanes, protect Piñatas during transport, then merge late into the factory hub chain: Automation → [Shift Scheduler]({{page:shift-scheduler}}) → [Trade Terminal]({{page:trade-terminal}}) → [Panel Rack]({{page:panel-rack}}) → [x300 Combo]({{page:x300-combo}}). For recipe/workbench fixes see [Anomaly Phase 4]({{page:anomaly-phase-4}}). Current 1.0.7 piston behavior (tools stick, movement follows, off locks position, on resumes) applies inside this setup.
 
 Quick Steps
-1. Build one short lane: one source, one receiver, visible and recoverable.
-2. Use panels as fixed routing walls/surfaces; watch for a green snap preview when placing.
-3. Assign exactly one job per mover: fan = push, magnet = hold/steer, piston = extend/retract, launcher = send.
-4. Use the sticky tool to keep pieces contacting during movement or adjustments.
-5. Add the [Shift Scheduler](../shift-scheduler) for batching/timing when you need controlled windows.
-6. Add the [Trade Terminal](../trade-terminal) to consolidate and clean up outputs.
-7. Add the [Panel Rack](../panel-rack) for consistent panel retrieval/spawn behavior before attempting the [x300 Combo](../x300-combo).
+1. Build a short visible recoverable lane up-front so you can catch overflow and observe failing inputs.
+2. Create three distinct input staging lanes for Duck, Cash Register, and Piñata — keep Piñata on its own gentle lane.
+3. Use local balancing (splitters/priority routing) so no single input starves the others; keep lanes separate until just before the final merge.
+4. Protect Piñatas in transport (separate lane, avoid high-speed impacts or mixing) and test with small batches.
+5. Hook each stage into the hub chain: Automation → [Shift Scheduler]({{page:shift-scheduler}}) → [Trade Terminal]({{page:trade-terminal}}) → [Panel Rack]({{page:panel-rack}}) → [x300 Combo]({{page:x300-combo}}).
+6. If an input overflows or stops, use the visible lane and isolated shutdowns to diagnose which feed failed.
+7. If you need recipe/workbench changes, consult [Anomaly Phase 4]({{page:anomaly-phase-4}}).
 
 Prerequisites or What You Need
-- Panels that can act as walls/surfaces for routing.
-- Movers: fans, magnets, pistons, launchers (one clear job each).
-- Sticky tool(s) to maintain contact during movement.
-- A clearly visible lane (short, recoverable) with one source and one receiver.
-- Sufficient space to test and visually observe jams and timing.
-- Patience for timing adjustments — Phase 4 progression introduces more timing sensitivity (community findings).
+- Basic automation components: movers, splitters/routing, pistons (1.0.7 behavior applies), and local buffers.
+- Factory hub components in this chain: [Shift Scheduler]({{page:shift-scheduler}}), [Trade Terminal]({{page:trade-terminal}}), [Panel Rack]({{page:panel-rack}}), [x300 Combo]({{page:x300-combo}}).
+- A short, visible recoverable lane (front-end buffer) to observe flow and catch failed output.
+- Access to the [Anomaly Phase 4]({{page:anomaly-phase-4}}) page for current recipe/workbench troubleshooting.
+- Note community-confirmed behavior: panels snap, tools can stick to moving parts, and each mover type should handle a single job.
 
 Full Explanation
-- Lane design: A short, visible, recoverable lane is the recommended starting pattern because it makes jams, timing, and spawn behavior easy to see and fix. Players consistently report that longer lanes mask timing problems and increase recovery time.
-- Panels as routing: Panels can act as route walls and surfaces. When placing, a green snap preview indicates a valid snap — use that to ensure predictable alignment. Panels are reliable anchoring points for movers and reroutes.
-- Movers and responsibilities: Fans, magnets, pistons, and launchers each perform best when assigned one clear job. Mixing duties (for example, using one launcher to both align and send) increases failure modes and debugging time.
-- Sticky tool: Use sticky tools to keep contact during adjustments or to prevent unintended separation. It’s an inexpensive way to make setups recoverable.
-- Automation hub chain (what plugs into what):
-  - Automation hub: your tested short lane. Keep it stable before adding complexity.
-  - [Shift Scheduler](../shift-scheduler): adds timed/batch control and launch windows. Use it when you need precise windows for launchers or to batch several outputs.
-  - [Trade Terminal](../trade-terminal): used mainly for cleanup and consolidation of outputs before storage or combos. Players use terminals to remove stray items and tidy lanes.
-  - [Panel Rack](../panel-rack): controls panel retrieval/spawn behavior and is useful when you need predictable panel delivery for repeated runs.
-  - [x300 Combo](../x300-combo): the combo attempt is the end goal for many Phase 4 runs; feed it only after the previous hubs are stable.
-- Phase 4 (concise, evidence-aware): Current full-release community findings indicate Phase 4 increases emphasis on timing, spawn consistency, and integrated cleanup. At a high level, focus on building robust short lanes, then add timed control (Shift Scheduler) and a Trade Terminal for cleanup before tackling panel-rack consistency and combo attempts. The exact unlocks and order are not universal; follow the natural hub chain above and adapt to what your progression has opened.
-- Common progression blockers (what players report): long unseen lanes, movers sharing unclear roles, missed green snaps, insufficient staging before the scheduler, panel-spawn unpredictability, and timing mismatches between scheduler windows and launcher behavior.
+- Short visible recoverable lane first: This front buffer is the quickest way to see which input is backing up or failing. Players consistently report it saves rebuild time and helps spot jammed or empty feeds before they affect the whole chain.
+- Three-input staging: Phase‑4 production uses three inputs (Duck / Cash Register / Piñata). Current full-release community findings indicate best uptime when each input is staged separately and balanced before merging.
+- Supply balancing: Don’t merge inputs early. Use local splitters or conditional routing so each lane keeps roughly equal throughput into the final assembly. The exact splitter/router settings depend on your local production rates and must be tuned per factory — there is no universal numeric setting.
+- Protect fragile Piñatas: Community-confirmed practice is to keep Piñatas on a dedicated, gentle lane and avoid aggressive merges or high‑speed collision zones. Separate the Piñata lane until just before the final combine to reduce breakage.
+- Separate lanes before final merge: Keep each input lane distinct through most of the transport path to simplify diagnosis and balancing. Merge late and only after buffers smooth out short bursts.
+- Diagnose overflowing / failed input: Use the visible recoverable lane and isolate each feed (stop or slow it) to confirm which input is overflowing or stalled. Visual lane fill levels and stopping one input at a time are the standard community troubleshooting steps. For recipe/workbench fixes and confirmed recipe details, consult [Anomaly Phase 4]({{page:anomaly-phase-4}}).
+- Pistons (1.0.7) — verified behavior to include:
+  - Tools can stick to piston heads.
+  - Attached tools follow piston movement.
+  - Turning a piston off locks its current piston position.
+  - Turning it back on resumes the prior motion.
+  Treat sticky tools and piston locking as part of your transport and timing considerations; do not rely on pistons to reset or re-home unless you intentionally toggle them.
+- Other confirmed facts to preserve: panels snap into place, tools can be sticky, and movers should be assigned one job each to avoid contention. Integrate these behaviors into your lane design and mover assignments.
 
 Common Mistakes
-- Making lanes too long — hidden jams and slow recovery.
-- Letting one mover try to do multiple jobs (e.g., a magnet that also tries to steer and time launches).
-- Ignoring the green snap preview and misplacing panels.
-- Not using sticky tools where temporary contact is needed during tuning.
-- Adding the scheduler or terminal before the lane is debugged — this hides root causes.
-- Expecting Panel Rack behavior to be identical across every run; panel spawn/retrieval can be finicky and needs testing.
+- Merging inputs too early and creating collisions that damage Piñatas or cause downstream jams.
+- Skipping the short visible recoverable lane and losing the fastest diagnostic feedback.
+- Treating pistons as stateless movers — on/off changes lock/restore position and can leave tools stuck where you don’t expect.
+- Assigning multiple jobs to one mover type or relying on panels to compensate for poor routing — panels snap but won’t fix upstream imbalance.
+- Forgetting to consult [Anomaly Phase 4]({{page:anomaly-phase-4}}) for recipe/workbench inconsistencies before redesigning automation.
 
 What To Do Next
-1. Stabilize one short lane until it’s reliably recoverable.
-2. Add scheduled windows with the [Shift Scheduler](../shift-scheduler) to control batch timing for launchers or pistons.
-3. Add the [Trade Terminal](../trade-terminal) to clean stray outputs and consolidate flows.
-4. Integrate the [Panel Rack](../panel-rack) only after you understand panel spawn behavior in your current layout.
-5. Attempt the [x300 Combo](../x300-combo) once lane, scheduler, terminal, and rack are behaving consistently.
+- Build a minimal three-lane test rig with a small buffer and run short batches to tune balancing.
+- Add the hub chain components: [Shift Scheduler]({{page:shift-scheduler}}) rules, [Trade Terminal]({{page:trade-terminal}}) hooks, and output staging into [Panel Rack]({{page:panel-rack}}) → [x300 Combo]({{page:x300-combo}}).
+- If a recipe or workbench issue appears, check [Anomaly Phase 4]({{page:anomaly-phase-4}}) for community fixes.
+- Track changes and check [Updates]({{page:updates}}) for any engine or piston behavior patches that affect your layout.
 
 Related Guides
-- [Shift Scheduler](../shift-scheduler) — timed and batch control
-- [Trade Terminal](../trade-terminal) — cleanup and consolidation
-- [Panel Rack](../panel-rack) — panel retrieval and spawn behavior
-- [x300 Combo](../x300-combo) — combo attempt workflow
+- [Anomaly Phase 4]({{page:anomaly-phase-4}}) — recipes and workbench fixes.
+- [Shift Scheduler]({{page:shift-scheduler}}) — hub timing and job routing.
+- [Trade Terminal]({{page:trade-terminal}}) — economy hookup and export rules.
+- [Panel Rack]({{page:panel-rack}}) — panel snapping and output staging.
+- [x300 Combo]({{page:x300-combo}}) — final combo handling.
+- [Updates]({{page:updates}}) — engine and behavior patch notes.
 
-FAQs
-Q: Should I try to automate multiple lanes at Phase 4 right away?
-A: No — start with one short, recoverable lane. Players consistently report a single reliable lane let them debug timing and jams faster before scaling.
+FAQ
+Q: Will a tool attached to a piston stay attached during movement?
+A: Yes. Current full-release behavior (1.0.7) confirms tools can stick to piston heads and will follow piston movement.
 
-Q: How do I tell a panel is placed correctly?
-A: A green snap preview on placement indicates a valid snap and predictable alignment; avoid placements that don’t show that green preview.
+Q: If I turn a piston off, will it return to a home position?
+A: No. Turning a piston off locks it in its current position; turning it back on resumes the previous motion sequence.
 
-Q: When do I add the Shift Scheduler or Trade Terminal?
-A: Add them after your lane is stable. The scheduler is for timed windows and batching; the trade terminal is for cleanup. Adding them too early hides lane problems.
+Q: How do I stop Piñatas from breaking in transport?
+A: Community findings recommend a dedicated gentle lane for Piñatas, avoiding aggressive merges and late-stage collisions. Keep the Piñata lane separate until the final merge and test with small batches to tune handling.
 
-Q: What causes the most common jams?
-A: Long unseen lanes, movers with mixed duties, and timing mismatches between launch windows and item arrival. Keep roles strict and lanes short for easier diagnosis.
+Q: Where do I check recipe or workbench issues that affect Phase 4 output?
+A: See [Anomaly Phase 4]({{page:anomaly-phase-4}}) for the latest community-confirmed fixes and notes on workbench/recipe problems.
+
+Q: What’s the recommended hub chain for Phase 4 automation?
+A: Use the known hub chain: Automation → [Shift Scheduler]({{page:shift-scheduler}}) → [Trade Terminal]({{page:trade-terminal}}) → [Panel Rack]({{page:panel-rack}}) → [x300 Combo]({{page:x300-combo}}).

@@ -1,7 +1,6 @@
 schemaVersion: 1
 templateVersion: 2.0.0
 mode: generated-site
-
 site:
   id: project-p-i-t-t
   mode: standalone
@@ -12,15 +11,13 @@ site:
   shortName: Project P.I.T.T.
   description: Answer-first Project P.I.T.T. guides for achievements, fuses, the 200kg plate, automation, combos, and other full-release problems.
   disclaimer: Unofficial fan site. This site is not affiliated with Froke or Pretty Soon.
-
 deployment:
   provider: vercel
-  orgId: "team_yAOizMTSVuT0RJATgFdAlQuG"
+  orgId: team_yAOizMTSVuT0RJATgFdAlQuG
   projectId: prj_oIgnTKtZEaw8QmUzClRUC8QlCNBE
   projectName: project-p-i-t-t
   productionUrl: https://project-p-i-t-t.vercel.app
   productionBranch: main
-
 game:
   name: Project P.I.T.T.
   hubTitle: Project P.I.T.T. Guide
@@ -31,13 +28,11 @@ game:
   publisher: Pretty Soon
   platforms:
     - PC (Steam)
-
 theme:
   accentColor: "#f0442e"
   accentForeground: "#1b0808"
   heroAssetId: pitt-hero
   heroPosition: center
-
 categories:
   - id: achievements
     label: Achievements
@@ -57,7 +52,12 @@ categories:
     icon: puzzle
     order: 3
     imageAssetId: null
-
+  - id: updates
+    label: Updates
+    description: Patch notes and version changes explained for current runs.
+    icon: document
+    order: 4
+    imageAssetId: null
 pages:
   - id: achievements
     title: "Project P.I.T.T. Achievements Guide: Complete 23-Achievement Checklist"
@@ -76,14 +76,14 @@ pages:
     quickAnswer: "Answer-first: If you’re aiming for completion, finish the 300 combo, reach 1 trillion, and complete purchase-every-item work before final ending progression when practical. END? = Secret Ending; END! = Main Ending. Consumerism means unlocking and buying everything. FAST! tracks ~400 products/min throughput; Speed Radar is a known FAQ/blocker with no confirmed trigger. If you enter an ending/infinite-ending loop while missing x300, 1 trillion, or purchase-every-item, use Troubleshooting/Automation to recover progress where possible."
     eyebrow: Completion
     facts:
-      - label: "Total achievements"
+      - label: Total achievements
         value: 23 achievements
-      - label: "Public descriptions"
+      - label: Public descriptions
         value: 14 public descriptions
-      - label: "Hidden descriptions"
+      - label: Hidden descriptions
         value: 9 hidden descriptions
-      - label: "Before-ending plan"
-        value: "Finish 300 combo, reach 1 trillion, and purchase-every-item work before final ending progression when practical"
+      - label: Before-ending plan
+        value: Finish 300 combo, reach 1 trillion, and purchase-every-item work before final ending progression when practical
     coverAssetId: pitt-screenshot-achievements
     related:
       - up-achievement-fuses
@@ -108,9 +108,8 @@ pages:
         title: Exophase achievement index
         url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
     changeSummary: Expanded for Consumerism, Speed Radar/FAST!, x300, and achievements to finish before the ending.
-
   - id: up-achievement-fuses
-    title: "Project P.I.T.T. Fuse Box Locations — All 3 Fuses & UP? Achievement"
+    title: Project P.I.T.T. Fuse Box Locations — All 3 Fuses & UP? Achievement
     description: "Project P.I.T.T.: the Fuse Box sits on the facility's upper catwalk (right-side elevated area), you need to find and place all three fuses, then tackle 200kg step."
     category: progression-secrets
     slug: up-achievement-fuses
@@ -125,7 +124,7 @@ pages:
       - project-pitt-all-3-fuses
       - project-pitt-up-achievement
       - project-pitt-fuses
-    quickAnswer: "The Fuse Box is on the facility's upper/catwalk right-side elevated area; the box requires three Fuses (finding it alone won't complete the step); community reports and achievement indexes connect placing all three with the Steam-listed UP? achievement (Steam shows the achievement but provides no detailed description); after all three are placed the Fuse progression continues into the 200kg scale/weight-puzzle step."
+    quickAnswer: The Fuse Box is on the facility's upper/catwalk right-side elevated area; the box requires three Fuses (finding it alone won't complete the step); community reports and achievement indexes connect placing all three with the Steam-listed UP? achievement (Steam shows the achievement but provides no detailed description); after all three are placed the Fuse progression continues into the 200kg scale/weight-puzzle step.
     eyebrow: Fuse Box
     facts:
       - label: Fuse Box
@@ -160,9 +159,8 @@ pages:
         title: Exophase achievement index — UP?
         url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
     changeSummary: Reframed for Fuse Box locations, all 3 fuses, UP?, 200kg next step, and official 1.0.6 unplaced-fuse spawn return.
-
   - id: 200kg-plate
-    title: "How to Reach 200kg in Project P.I.T.T. — Best Heavy Items & What to Do Next"
+    title: How to Reach 200kg in Project P.I.T.T. — Best Heavy Items & What to Do Next
     description: How to reach 200kg with stable heavy objects, why weight matters more than object count, and what to do next at the Percentage Pipe.
     category: progression-secrets
     slug: 200kg-plate
@@ -178,7 +176,7 @@ pages:
       - project-pitt-200kg-scale
       - project-pitt-heavy-achievement
       - project-pitt-pipe-gate
-    quickAnswer: "Complete Fuse progression, then place stable mass on the plate until it reads 200kg; use contained or heavy objects rather than loose ducks, and continue to Percentage Pipe afterward."
+    quickAnswer: Complete Fuse progression, then place stable mass on the plate until it reads 200kg; use contained or heavy objects rather than loose ducks, and continue to Percentage Pipe afterward.
     eyebrow: Progression Gate
     facts:
       - label: Requirement
@@ -214,10 +212,9 @@ pages:
         title: Project P.I.T.T. Steam store page
         url: https://store.steampowered.com/app/4026250/Project_PITT/
     changeSummary: Updated for the launch-window 200kg query with direct next-step capture into Percentage Pipe.
-
   - id: percentage-pipe
     title: Project P.I.T.T. Percentage Pipe Guide — Why It Stays at 0%
-    description: Why ordinary ducks leave the Project P.I.T.T. Percentage Pipe at 0%, what progression follows 200kg, and how the pipe connects to the Secret Ending route.
+    description: Why basic ducks leave the Percentage Pipe at 0% after 200kg, the 10 Anomalies route, and when to keep Piñatas intact for Phase 4.
     category: progression-secrets
     slug: percentage-pipe
     source: site-input/pages/percentage-pipe.md
@@ -229,28 +226,28 @@ pages:
       - project-pitt-percentage-pipe
       - project-pitt-pipe-0-percent
       - project-pitt-what-to-put-in-pipe
-    quickAnswer: "Basic ducks are not the right input for the post-200kg Percentage Pipe. How do I make Anomalies? Use 1 Duck + 1 Cash Register + 1 Piñata at the Anomaly workbench, then feed 10 Anomalies to reach 100% and continue into the connected Secret Ending route."
+    quickAnswer: Basic ducks are not the right post-200kg input; feed 10 Anomalies (Duck + Cash Register + intact Piñata at the workbench) to reach 100%, and keep Piñatas intact during transport when Phase 4 requires them.
     eyebrow: Percentage Pipe
     facts:
       - label: Common display
-        value: 0%
+        value: 0% after 200kg when using basic ducks
       - label: Wrong input
-        value: Basic ducks
-      - label: Next direction
-        value: Later or assembled products
-      - label: Connected route
-        value: Secret Ending
+        value: Basic ducks do not advance the post-200kg Percentage Pipe
+      - label: Correct direction
+        value: 10 Anomalies at 10% each to reach 100%, then continue toward IGTAP
+      - label: Piñata note
+        value: Transport and break are separate — Phase 4 needs an intact Piñata as an Anomaly input
     related:
       - 200kg-plate
-      - anomaly
+      - anomaly-phase-4
       - secret-ending
       - up-achievement-fuses
     relations:
       - pageId: 200kg-plate
         type: related
-      - pageId: secret-ending
+      - pageId: anomaly-phase-4
         type: next-step
-      - pageId: anomaly
+      - pageId: secret-ending
         type: next-step
     assetType: article
     sources:
@@ -263,11 +260,10 @@ pages:
       - type: official
         title: Project P.I.T.T. Steam store page
         url: https://store.steampowered.com/app/4026250/Project_PITT/
-    changeSummary: New launch-window page for the post-200kg Percentage Pipe question, with old Demo guidance clearly separated.
-
+    changeSummary: Added Phase 3 Piñata break vs transport answer and Anomaly Phase 4 link.
   - id: secret-ending
-    title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route"
-    description: "How to reach Project P.I.T.T.'s Secret Ending (END?) and why the elevator uses a save-specific keypad code."
+    title: Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route
+    description: Reach the END? secret ending and find your save-specific elevator keypad code; 2640 is not a universal fix.
     category: progression-secrets
     slug: secret-ending
     source: site-input/pages/secret-ending.md
@@ -279,30 +275,33 @@ pages:
       - project-pitt-secret-ending
       - project-pitt-ending
       - project-pitt-end-question
-    quickAnswer: "END? is the Secret Ending; the route culminates at an elevator that requires a save-specific four-digit keypad code (2640 is not universal)."
+      - project-pitt-keypad-code
+    quickAnswer: END? is the Secret Ending; the route ends at an elevator that requires a save-specific keypad code assembled from four discovered digits — 2640 is not universal.
     eyebrow: Secret Ending
     facts:
-      - label: "END? meaning"
-        value: "Newer achievement information identifies END? as the Secret Ending; treat END? as the game's secret ending rather than conflating it with END!."
+      - label: END? meaning
+        value: END? is the Secret Ending, distinct from the main END! conclusion. It’s unlocked by the secret route and concludes at the elevator keypad rather than the standard ending path.
       - label: Route
-        value: "camera / surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame / production progression → UV-related clue progression → elevator access / keycard → save-specific four-digit keypad code → Secret Ending route."
+        value: "The secret route gathers four digits in this discovery order: Duck → Cash Register → Piñata → Anomaly. Completing those steps brings you to the elevator for END?."
       - label: Code
-        value: "The elevator requires a save-specific four-digit keypad code; 2640 is not a universal solution. Use the Keycard + UV Light method to reveal your save’s digits — see the Elevator Code guide for why 2640 fails and how to find your code. Entry order (if needed): Duck → Cash Register → Piñata → Anomaly."
-      - label: "Next if the code fails"
-        value: "If the keypad code fails, consult the Elevator Code guide rather than looking for a universal internet code. If you're stuck earlier, return to the last completed progression stage (for example Percentage Pipe, 200kg, or the fuses)."
+        value: The elevator keypad code is save-specific and constructed from the four digits you discovered in that save. Do not assume a universal code—2640 is not guaranteed.
+      - label: Next if the code fails
+        value: If the code fails, confirm all four digits were found in this save and in the correct order, and that Anomaly Phase 4 is completed. For full 2640 troubleshooting see the Elevator Code guide; also consult the Troubleshooting and Percentage Pipe pages if needed.
     related:
       - elevator-code
       - percentage-pipe
       - up-achievement-fuses
       - 200kg-plate
+      - anomaly-phase-4
+      - achievements
     relations:
       - pageId: elevator-code
         type: related
       - pageId: percentage-pipe
         type: next-step
-      - pageId: up-achievement-fuses
+      - pageId: anomaly-phase-4
         type: related
-      - pageId: 200kg-plate
+      - pageId: achievements
         type: related
     assetType: article
     sources:
@@ -315,11 +314,10 @@ pages:
       - type: official
         title: Project P.I.T.T. Steam store page
         url: https://store.steampowered.com/app/4026250/Project_PITT/
-    changeSummary: Points elevator-code and 2640 questions to /elevator-code/ while keeping the END? route.
-
+    changeSummary: Strengthened END? route, save-specific keypad FAQ, and two-endings clarity for GSC keypad queries.
   - id: elevator-code
-    title: "Project P.I.T.T. Elevator Code — Why 2640 Doesn't Work & How to Find Yours"
-    description: "2640 is not a universal elevator code; the four save-specific digits are revealed by using a Keycard plus UV Light to read your save's hidden clues."
+    title: Project P.I.T.T. Elevator Code — Why 2640 Doesn't Work & How to Find Yours
+    description: 2640 is not a universal elevator code; the four save-specific digits are revealed by using a Keycard plus UV Light to read your save's hidden clues.
     category: progression-secrets
     slug: elevator-code
     source: site-input/pages/elevator-code.md
@@ -334,7 +332,7 @@ pages:
     quickAnswer: "Do not treat 2640 as a fixed elevator code; it's from one playthrough — use your Keycard plus UV Light to reveal the four save-specific digits, then enter them in machine-unlock order: Duck → Cash Register → Piñata → Anomaly."
     eyebrow: Elevator Code
     facts:
-      - label: "Why 2640 fails"
+      - label: Why 2640 fails
         value: Reported from one specific playthrough; current players report 2640 does not work.
       - label: Your code
         value: The four-digit elevator/keypad code is tied to the current save and must be discovered in your own playthrough.
@@ -359,10 +357,9 @@ pages:
         title: Project P.I.T.T. Steam store page
         url: https://store.steampowered.com/app/4026250/Project_PITT/
     changeSummary: New exact-intent page for elevator code / 2640 does not work, with Keycard + UV Light save-specific digits and a Secret Ending handoff.
-
   - id: anomaly
     title: "Project P.I.T.T. Anomaly: Recipe, Phase 4 Role, and the Percentage Pipe"
-    description: "Craft Anomalies in Phase 4 with 1 Duck, 1 Cash Register, and 1 Piñata, then use 10 Anomalies to fill the Percentage Pipe to 100%."
+    description: Craft Anomalies in Phase 4 with 1 Duck, 1 Cash Register, and 1 Piñata, then use 10 Anomalies to fill the Percentage Pipe to 100%.
     category: progression-secrets
     slug: anomaly
     source: site-input/pages/anomaly.md
@@ -377,7 +374,7 @@ pages:
       - project-pitt-anomaly-workbench
       - project-pitt-phase-4-anomaly
       - project-pitt-better-way-to-make-anomalies
-    quickAnswer: "Load 1 Duck, 1 Cash Register, and 1 Piñata into the Anomaly workbench to make 1 Anomaly in Phase 4. Ten Anomalies fill the Percentage Pipe to 100%."
+    quickAnswer: Load 1 Duck, 1 Cash Register, and 1 Piñata into the Anomaly workbench to make 1 Anomaly in Phase 4. Ten Anomalies fill the Percentage Pipe to 100%.
     eyebrow: Phase 4 Production
     facts:
       - label: Recipe
@@ -392,6 +389,7 @@ pages:
       - percentage-pipe
       - secret-ending
       - automation
+      - anomaly-phase-4
       - trade-terminal
       - troubleshooting
     relations:
@@ -400,6 +398,8 @@ pages:
       - pageId: secret-ending
         type: next-step
       - pageId: automation
+        type: related
+      - pageId: anomaly-phase-4
         type: related
       - pageId: trade-terminal
         type: related
@@ -417,10 +417,110 @@ pages:
         title: Project P.I.T.T. Steam store page
         url: https://store.steampowered.com/app/4026250/Project_PITT/
     changeSummary: New answer-first Phase 4 Anomaly guide for recipe, workbench, synchronized inputs, cautious automation, and the 10-Anomaly Percentage Pipe handoff.
-
+  - id: anomaly-phase-4
+    title: How to Make Anomalies in Project P.I.T.T. — Phase 4 Recipe & Workbench Fixes
+    description: Phase 4 recipe, workbench fixes, and Piñata staging tips for making Anomalies in Project P.I.T.T.
+    category: progression-secrets
+    slug: anomaly-phase-4
+    source: site-input/pages/anomaly-phase-4.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 7
+    role: core
+    intents:
+      - project-pitt-anomaly-phase-4
+      - project-pitt-how-to-make-anomaly
+      - project-pitt-anomaly-workbench-not-working
+      - project-pitt-anomaly-recipe
+      - project-pitt-phase-4-anomaly
+    quickAnswer: "Recipe: Duck + Cash Register + Piñata at the Anomaly workbench. Complete one successful manual Anomaly before scaling automation."
+    eyebrow: Phase 4 Anomaly
+    facts:
+      - label: Recipe
+        value: "Observed recipe: Duck + Cash Register + Piñata at the Anomaly workbench."
+      - label: Phase 4
+        value: Anomaly belongs to Phase 4.
+      - label: Workbench issue
+        value: All three inputs must truly enter the corresponding workbench process — not merely arrive nearby; misalignment or multiple inputs can make the workbench appear not to work and automation can amplify jams.
+      - label: Piñata
+        value: Piñata is fragile during transport and can break before reaching the workbench; stage and secure it to avoid breakage.
+    related:
+      - automation
+      - percentage-pipe
+      - secret-ending
+      - troubleshooting
+    relations:
+      - pageId: automation
+        type: related
+      - pageId: percentage-pipe
+        type: related
+      - pageId: secret-ending
+        type: next-step
+      - pageId: troubleshooting
+        type: related
+    assetType: article
+    sources:
+      - type: steam
+        title: Steam Community — Phase 4 Anomaly discussions
+        url: https://steamcommunity.com/app/4026250/
+      - type: official
+        title: Project P.I.T.T. Steam store page
+        url: https://store.steampowered.com/app/4026250/Project_PITT/
+    changeSummary: New Phase 4 Anomaly recipe and workbench troubleshooting page, complementing Automation.
+  - id: updates
+    title: Project P.I.T.T. Updates & Patch Notes — Latest Changes Explained
+    description: "Project P.I.T.T. patch notes explained: latest 1.0.7 changes and which guides were updated."
+    category: updates
+    slug: updates
+    source: site-input/pages/updates.md
+    status: confirmed
+    featured: true
+    sidebarOrder: 1
+    role: core
+    intents:
+      - project-pitt-updates
+      - project-pitt-patch-notes
+      - project-pitt-update-1-0-7
+    quickAnswer: Update 1.0.7 primarily reworks pistons so tools can attach and move with piston heads while also adding Panel Rack interact binding and an auto-dispense toggle to improve automation control.
+    eyebrow: Patch Notes
+    facts:
+      - label: Latest version
+        value: Update 1.0.7 (August 30, 2026)
+      - label: Panel Rack
+        value: Can bind the interact key and gains a new auto-dispense toggle
+      - label: Pistons
+        value: Tools can stick to piston heads and move with them; turning a piston off locks its current position and turning it back on resumes previous motion
+      - label: Save fix
+        value: Official fix for main-ending bricked saves applied in 1.0.7
+    related:
+      - panel-rack
+      - trade-terminal
+      - automation
+      - troubleshooting
+      - anomaly-phase-4
+    relations:
+      - pageId: panel-rack
+        type: related
+      - pageId: trade-terminal
+        type: related
+      - pageId: automation
+        type: related
+      - pageId: troubleshooting
+        type: related
+      - pageId: anomaly-phase-4
+        type: related
+    assetType: article
+    sources:
+      - type: steam
+        title: Steam Community developer updates
+        url: https://steamcommunity.com/app/4026250/
+      - type: official
+        title: Project P.I.T.T. Steam store page
+        url: https://store.steampowered.com/app/4026250/Project_PITT/
+    changeSummary: New permanent Updates hub with 1.0.7 summary and version history.
   - id: automation
-    title: "How to Automate Phase 4 in Project P.I.T.T."
-    description: Phase 4 automation hub for reliable lanes, panels, movers, Shift Scheduler timing, Trade Terminal cleanup, Panel Rack flow, and x300 preparation.
+    title: How to Automate Phase 4 in Project P.I.T.T.
+    description: "Phase 4 automation hub: three-input staging, 1.0.7 Pistons, Piñata protection, Shift Scheduler, Trade Terminal, Panel Rack, and Anomaly Phase 4 cross-links."
     category: automation
     slug: automation
     source: site-input/pages/automation.md
@@ -432,31 +532,36 @@ pages:
       - project-pitt-automation
       - project-pitt-how-panels-work
       - project-pitt-fans-magnets-pistons-launchers
-    quickAnswer: Start with one short, visible, recoverable lane, then connect Shift Scheduler for timing, Trade Terminal for cleanup, Panel Rack for panel flow, and x300 for the combo attempt without assuming a universal build.
+      - project-pitt-phase-4-automation
+    quickAnswer: Start with one short visible recoverable lane, balance Duck, Cash Register, and Piñata on separate lanes before merge, use 1.0.7 Pistons for attached tools, then link Shift Scheduler, Trade Terminal, Panel Rack, and Anomaly Phase 4 before x300.
     eyebrow: Factory Systems
     facts:
       - label: First test
-        value: One product, one lane
-      - label: Panels
-        value: Snap to solid surfaces
-      - label: Sticky tools
-        value: Keeps contact in place
-      - label: Phase 4
-        value: Stabilize the lane first, then add timed control, cleanup, Panel Rack flow, and x300 preparation.
+        value: One product through one short visible recoverable lane before scaling
+      - label: Phase 4 inputs
+        value: Stage Duck, Cash Register, and Piñata on separate lanes before final merge
+      - label: Pistons 1.0.7
+        value: Tools stick to piston head; off locks position; on resumes motion
+      - label: Next step
+        value: See Anomaly Phase 4 for recipe and workbench fixes before scaling automation
     coverAssetId: pitt-screenshot-automation
     related:
+      - anomaly-phase-4
       - shift-scheduler
       - trade-terminal
       - panel-rack
       - x300-combo
-      - 200kg-plate
-      - achievements
+      - updates
     relations:
+      - pageId: anomaly-phase-4
+        type: related
       - pageId: x300-combo
         type: next-step
-      - pageId: 200kg-plate
+      - pageId: shift-scheduler
         type: related
-      - pageId: achievements
+      - pageId: trade-terminal
+        type: related
+      - pageId: panel-rack
         type: related
     assetType: article
     sources:
@@ -469,11 +574,10 @@ pages:
       - type: official
         title: Project P.I.T.T. Steam store page
         url: https://store.steampowered.com/app/4026250/Project_PITT/
-    changeSummary: Expanded into the Phase 4 automation hub for Scheduler, Terminal, Panel Rack, x300, and progression blockers.
-
+    changeSummary: Expanded Phase 4 hub with three-input staging, 1.0.7 Pistons, and Anomaly Phase 4 cross-link.
   - id: x300-combo
-    title: "How to Get a 300 Combo in Project P.I.T.T. — x300 Achievement Guide"
-    description: How to get a 300 Combo in Project P.I.T.T. with a reliable lane, automation assistance, Shift Scheduler timing, and pre-ending completion advice.
+    title: How to Get a 300 Combo in Project P.I.T.T. — x300 Achievement Guide
+    description: "Operational steps to earn the MEGA! x300 combo in Project P.I.T.T.: build one reliable feed lane with a short visible recoverable section, keep product arrival continuous, test MORE! x100 and EXTRA! x200 runs first, use Automation and the Shift Scheduler to maintain flow, and time the final attempt before any ending progression."
     category: automation
     slug: x300-combo
     source: site-input/pages/x300-combo.md
@@ -485,17 +589,17 @@ pages:
       - project-pitt-x300-combo
       - project-pitt-mega-achievement
       - project-pitt-combo-guide
-    quickAnswer: Aim for MEGA! at x300 with a short, visible, recoverable lane; test automation and Shift Scheduler timing first, and prioritize the attempt before final-ending progression if it is unfinished.
+    quickAnswer: Build one reliable feed lane with a short visible recoverable section, keep arrivals continuous and avoid gaps, store a safety margin above exactly 300 products, test MORE! x100 and EXTRA! x200 first, use Automation and the Shift Scheduler to sustain flow, and prioritize the attempt before final-ending progression to prevent jams and resets.
     eyebrow: Combo Milestones
     facts:
-      - label: MORE!
-        value: x100
-      - label: EXTRA!
-        value: x200
-      - label: MEGA!
-        value: x300
+      - label: x300 target
+        value: "Progression names: MORE! x100, EXTRA! x200, MEGA! x300. Maintain a safety margin above exactly 300 products so the combo does not fall short during the final release."
+      - label: Practice milestones
+        value: Test runs at x100 and x200 before attempting x300. Build one reliable feed lane, keep product arrival continuous, and avoid gaps that reset the combo. Use a short visible recoverable lane to spot and recover small interruptions quickly.
       - label: Automation
-        value: Use tested panels, movers, containment, and recovery access before relying on automation; prioritize x300 before final-ending progression as a precaution, not an irreversible rule.
+        value: Use Automation and the Shift Scheduler to keep feed timing consistent, reduce manual gaps, and flag potential jams before they affect the lane. Automation helps sustain continuous arrival during an x300 attempt.
+      - label: Timing
+        value: Prioritize the x300 attempt before any final-ending progression as a precaution. Prevent jams before the final release, maintain continuous arrival without gaps, and rely on the short visible recoverable lane to correct small disruptions.
     coverAssetId: pitt-screenshot-combo
     related:
       - automation
@@ -517,11 +621,10 @@ pages:
       - type: steam
         title: Steam Community automation discussion
         url: https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/
-    changeSummary: Expanded for 300 Combo reliability, automation-assisted timing, Shift Scheduler use, and pre-ending completion planning.
-
+    changeSummary: Operational refresh for 300 Combo reliability, x100/x200 testing, safety margin, and jam prevention.
   - id: trade-terminal
-    title: "How to Use the Trade Terminal in Project P.I.T.T."
-    description: "Updated for 1.0.5: Learn how to use the Trade Terminal, its player-tested right-side vacuum switch, and the Pause Menu → Clear Items fallback."
+    title: How to Use the Trade Terminal in Project P.I.T.T.
+    description: Updated for 1.0.7 — Use the Project P.I.T.T. Trade Terminal to vacuum scene items; long-press the tool lever to wipe placed tools. Right-side switch vacuums; Pause Menu Clear Items is emergency fallback (no refund).
     category: automation
     slug: trade-terminal
     source: site-input/pages/trade-terminal.md
@@ -535,26 +638,29 @@ pages:
       - project-pitt-how-to-use-trade-terminal
       - project-pitt-clear-items
       - project-pitt-remove-items
-      - project-pitt-cash-registers-piling-up
-    quickAnswer: "Updated for 1.0.5 — the Trade Terminal clears/vacuums products, its player-tested right-side switch can vacuum them, and Pause Menu → Clear Items is the no-refund fallback when piles block access."
+      - project-pitt-wipe-placed-tools
+    quickAnswer: "Updated for 1.0.7: The Trade Terminal vacuums scene items (long-press the tool lever to wipe all placed tools); the player-tested right-side switch can vacuum items, and Pause Menu → Clear Items is an emergency no-refund fallback."
     eyebrow: Trade Terminal
     facts:
-      - label: Function
-        value: Clears/removes or vacuums products from the scene.
+      - label: Updated
+        value: Updated for 1.0.7 — long-pressing the tool lever will wipe all placed tools; Trade Terminal / Clear All now also handles Gambling Crates.
+      - label: Terminal action
+        value: Trade Terminal clears and vacuums products from the scene.
       - label: Right-side switch
-        value: "Player-tested report: the switch on the terminal's right can vacuum products (Steam discussion)."
-      - label: Pause Menu Clear Items
-        value: "Official 1.0.5 patch adds a 'Clear Items' button to remove items that may cause crashes or unplayable scenes."
-      - label: No refund
-        value: "Official 1.0.5 note: 'Clear Items' will not give back any money."
+        value: "Player-tested (Steam report): the right-side switch can vacuum products."
+      - label: Pause Menu fallback
+        value: "Official 1.0.5: Pause Menu → Clear Items removes stranded items as an emergency fallback; this does not refund resources."
     related:
       - automation
       - x300-combo
       - shift-scheduler
+      - updates
     relations:
       - pageId: automation
         type: related
       - pageId: x300-combo
+        type: related
+      - pageId: updates
         type: related
     assetType: article
     sources:
@@ -564,8 +670,7 @@ pages:
       - type: steam
         title: Steam Community discussion — Cash Register pileup and Trading Terminal
         url: https://steamcommunity.com/app/4026250/discussions/0/587309530805892814
-    changeSummary: Public automation guide for Terminal use, right-side interaction, object/value questions, cleanup mistakes, and the 1.0.5 fallback.
-
+    changeSummary: Updated for 1.0.7 wipe-all placed tools, Gambling Crate cleanup, and destructive cleanup guidance.
   - id: shift-scheduler
     title: "Project P.I.T.T. Shift Scheduler: how to use it, Duck Crank block"
     description: "Updated for 1.0.6: Use Project P.I.T.T. Shift Scheduler to schedule automatic or switchable tools; it will not act as a button for the Manual Duck Crank. Re-test old reports."
@@ -584,17 +689,17 @@ pages:
       - project-pitt-scheduler-remote
       - project-pitt-scheduler-timer
       - project-pitt-manual-duck-crank-scheduler
-    quickAnswer: "The Shift Scheduler controls supported automatic or switchable tools; it is not a button-press replacement for a Manual Duck Crank. Community testing shows Remote can work with the Scheduler, and official 1.0.6 notes only say: \"Fixed the shift scheduler inconsistencies.\" Re-test older reports."
+    quickAnswer: 'The Shift Scheduler controls supported automatic or switchable tools; it is not a button-press replacement for a Manual Duck Crank. Community testing shows Remote can work with the Scheduler, and official 1.0.6 notes only say: "Fixed the shift scheduler inconsistencies." Re-test older reports.'
     eyebrow: Shift Scheduler
     facts:
       - label: Tool
-        value: "Manual Duck Crank is unsupported for Scheduler use; Cannon is documented as linkable in current guides, while Fan and Magnet remain community examples to verify."
+        value: Manual Duck Crank is unsupported for Scheduler use; Cannon is documented as linkable in current guides, while Fan and Magnet remain community examples to verify.
       - label: Connections
-        value: "Remote has community-confirmed compatibility; other automatic or switchable tools require in-game verification."
+        value: Remote has community-confirmed compatibility; other automatic or switchable tools require in-game verification.
       - label: Timing
-        value: "Used for timed or batch-release setups such as gathering output before releasing it together; no undocumented timer values are stated."
+        value: Used for timed or batch-release setups such as gathering output before releasing it together; no undocumented timer values are stated.
       - label: Current version
-        value: "Updated for 1.0.6 — official note: \"Fixed the shift scheduler inconsistencies.\" The note does not specify the changed behavior."
+        value: 'Updated for 1.0.6 — official note: "Fixed the shift scheduler inconsistencies." The note does not specify the changed behavior.'
     related:
       - automation
       - trade-terminal
@@ -624,10 +729,9 @@ pages:
         title: Project P.I.T.T. All Items and Tools List — Cannon
         url: https://ninewiki.com/item/project-p-i-t-t-all-items-and-tools-list/
     changeSummary: New launch-window guide for Shift Scheduler connections, timed/batch behavior, current-version fixes, and x300 automation use.
-
   - id: troubleshooting
-    title: "How to Fix Project P.I.T.T. Crashes, Low FPS, Saves & Missing Tools"
-    description: "Grouped Project P.I.T.T. troubleshooting for crashes, low FPS, mouse control, saves, lost tools, lava drops, Clear Items, and ending-save issues."
+    title: How to Fix Project P.I.T.T. Crashes, Low FPS, Saves & Missing Tools
+    description: Troubleshooting Project P.I.T.T. for crashes, low FPS, save reliability and missing tools, noting 1.0.6 intended fixes, 1.0.7 official fixes and residual reports.
     category: automation
     slug: troubleshooting
     source: site-input/pages/troubleshooting.md
@@ -640,22 +744,23 @@ pages:
       - project-pitt-low-fps
       - project-pitt-broken-save
       - project-pitt-missing-tools
-    quickAnswer: "Start with current-version guidance and Pause Menu → Clear Items for bulk cleanup, then use the grouped steps for crashes, low FPS, mouse control, unreliable saves, and lost or stuck tools; persistent cases remain evidence-aware rather than universal fixes."
+    quickAnswer: Update to 1.0.7 (which follows a 1.0.6 attempt) to get the main-ending save fix plus piñata/cushion reliability and duck workbench animation fixes, though rare infinite-ending loop reports persist.
     eyebrow: Troubleshooting
     facts:
       - label: Crashes
-        value: Recent full-release versions fixed multiple issues, but some reports remain unresolved.
+        value: "Stability notes: 1.0.6 included intended stability work (mouse polling and other reliability tweaks) and 1.0.7 continues that effort; common crash contributors remain GPU/driver issues, mods, and corrupted sessions, and there are isolated, evidence-aware reports of an infinite-ending loop after the final sequence that are not universal."
       - label: Performance
-        value: Low FPS and high-polling-rate mouse control problems are reported in the current issue cluster.
+        value: "Low FPS guidance: 1.0.6 added mouse-polling and general stability tweaks that reduce stutter and 1.0.7 keeps those improvements; for best results update GPU drivers, close background apps, and lower render scale or shadow/detail settings."
       - label: Saves
-        value: Broken or unreliable saves and continue-after-ending behavior need cautious, version-aware handling.
+        value: "Save reliability: 1.0.6 added save reliability improvements and attempted a main-ending bricked-save fix; 1.0.7 officially fixes the main-ending bricked saves and preserves lava-respawn and other save stability work, though if you encounter corruption load an earlier autosave and report reproduction steps."
       - label: Tools
-        value: Lost, stuck, inaccessible, or lava-fallen tools belong in the grouped recovery guide.
+        value: "Missing tools: 1.0.6 targeted lost-tool recall and workbench behaviors; 1.0.7 adds piñata and cushion reliability improvements and an automatic duck workbench animation fix—if tools go missing verify inventory, disable mods/plugins, and capture steps to reproduce for reports."
     related:
       - automation
       - trade-terminal
       - panel-rack
-      - up-achievement-fuses
+      - updates
+      - secret-ending
     relations:
       - pageId: automation
         type: related
@@ -663,7 +768,9 @@ pages:
         type: related
       - pageId: panel-rack
         type: related
-      - pageId: up-achievement-fuses
+      - pageId: updates
+        type: related
+      - pageId: secret-ending
         type: related
     assetType: article
     sources:
@@ -673,11 +780,10 @@ pages:
       - type: steam
         title: Steam Community automation discussion
         url: https://steamcommunity.com/app/4026250/discussions/0/572666820169834610/
-    changeSummary: New grouped launch-window troubleshooting asset for crashes, performance, saves, mouse control, tools, cleanup, and ending continuation.
-
+    changeSummary: Updated for 1.0.7 bricked-save official fix, Piñata/Cushion reliability, and Updates hub link.
   - id: panel-rack
-    title: "Project P.I.T.T. Panel Rack — How to Unlock, Upgrade & Use It"
-    description: "Updated for 1.0.6: use the in-game unlock UI to check Panel Rack unlocks and upgrades; it now uses a dedicated key and won’t auto-dispense the next panel."
+    title: How to Use the Panel Rack in Project P.I.T.T.
+    description: "Updated for 1.0.7: bind the interact key on Panel Rack, use the auto dispense toggle, and understand how dispensing differs from 1.0.6 manual-only behavior."
     category: automation
     slug: panel-rack
     source: site-input/pages/panel-rack.md
@@ -689,23 +795,24 @@ pages:
       - project-pitt-panel-rack
       - project-pitt-how-to-get-panel-rack-upgrades
       - project-pitt-how-to-use-panel-rack
-      - project-pitt-panel-rack-tier-3
-    quickAnswer: "Check the current in-game unlock UI to unlock and upgrade the Panel Rack; Updated for 1.0.6 it now uses a dedicated Panel Rack key — after placing a panel it won’t auto-dispense, so press the Panel Rack key again for the next panel."
+      - project-pitt-panel-rack-breaks-game
+    quickAnswer: Updated for 1.0.7 — bind the interact key and use the auto dispense toggle; 1.0.6 required pressing the dedicated key for each panel with no auto-dispense, while 1.0.7 lets you turn automatic dispensing on or off.
     eyebrow: Panel Rack
     facts:
       - label: Unlock
-        value: Check the current in-game unlock UI for your save; exact unlock requirements are not reliably documented.
-      - label: Upgrades
-        value: View Panel Rack upgrades in the in-game unlock UI; there is no confirmed Tier 3 or universal upgrade formula available.
-      - label: "1.0.6 use"
-        value: In 1.0.6 the Panel Rack has its own dedicated keybind and no longer automatically dispenses the next panel after placement.
-      - label: Next panel
-        value: Press the dedicated Panel Rack key (current mapping) again to obtain the next panel; do not expect automatic continuous dispense.
+        value: Check the current in-game unlock UI for your save.
+      - label: 1.0.7 binding
+        value: Panel Rack can bind the interact key in 1.0.7.
+      - label: Auto dispense
+        value: New auto dispense toggle — turn automatic dispensing on or off in 1.0.7.
+      - label: vs 1.0.6
+        value: 1.0.6 required manual press for each panel; 1.0.7 adds optional auto dispense.
     related:
       - automation
       - shift-scheduler
       - trade-terminal
       - troubleshooting
+      - updates
       - x300-combo
     relations:
       - pageId: automation
@@ -715,6 +822,8 @@ pages:
       - pageId: trade-terminal
         type: related
       - pageId: troubleshooting
+        type: related
+      - pageId: updates
         type: related
       - pageId: x300-combo
         type: next-step
@@ -726,8 +835,7 @@ pages:
       - type: steam
         title: Steam Community developer FAQ and updates
         url: https://steamcommunity.com/app/4026250/
-    changeSummary: Updated for 1.0.6 dedicated keybind, no auto-dispense, and unlock/upgrade/use intent.
-
+    changeSummary: Updated for 1.0.7 interact binding, auto dispense toggle, and 1.0.6 vs 1.0.7 behavior comparison.
 routes:
   - id: hidden-progression
     eyebrow: Progression Route
@@ -746,6 +854,7 @@ routes:
       - 200kg-plate
       - percentage-pipe
       - anomaly
+      - anomaly-phase-4
       - secret-ending
       - elevator-code
       - achievements
@@ -766,7 +875,7 @@ routes:
       - shift-scheduler
       - trade-terminal
       - panel-rack
-      - anomaly
+      - anomaly-phase-4
       - x300-combo
   - id: completion
     eyebrow: Completion Route
@@ -781,8 +890,7 @@ routes:
       - secret-ending
       - x300-combo
       - troubleshooting
-      - panel-rack
-
+      - updates
 homepage:
   primaryCta:
     label: Start with Hidden Progression
@@ -790,6 +898,14 @@ homepage:
   secondaryCta:
     label: Browse all guides
     anchor: browse-guides
+  showRecentlyUpdated: true
+  maxRecent: 3
+  recentUpdates:
+    - pageId: updates
+      title: Update 1.0.7
+      date: 2026-08-30
+      changeSummary: Panel Rack · Pistons · Trade Terminal · Save Fixes
+      tag: Updates
   statusItems:
     - label: Released
       value: August 19, 2026
@@ -808,6 +924,8 @@ homepage:
       pageId: anomaly
     - label: What does END? mean?
       pageId: secret-ending
+    - label: What is my elevator keypad code?
+      pageId: secret-ending
     - label: How do panels work in Project P.I.T.T.?
       pageId: automation
     - label: How do I automate production?
@@ -822,6 +940,8 @@ homepage:
       pageId: panel-rack
     - label: How do I reach a x300 combo?
       pageId: x300-combo
+    - label: What changed in Update 1.0.7?
+      pageId: updates
   startHere:
     - pageId: up-achievement-fuses
       label: Find the 3 Fuses
@@ -836,7 +956,6 @@ homepage:
       label: Find the Secret Ending
     - pageId: automation
       label: Build reliable automation
-
   evidence:
     title: See the facility in action
     description: Official Steam screenshots show the visual context behind these answer-first guides.
@@ -850,7 +969,6 @@ homepage:
       - assetId: pitt-screenshot-automation
         pageId: automation
         caption: Factory context for panels, movers, and routing.
-
 assets:
   - id: pitt-hero
     source: site-input/assets/project-pitt/hero.jpg
@@ -901,12 +1019,10 @@ assets:
     sourceUrl: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4026250/462364b3a655824329290a4c1614a43ee80507c5/ss_462364b3a655824329290a4c1614a43ee80507c5.1920x1080.jpg?t=1787223275
     sourceType: store
     usageStatus: review-required
-
 social:
   defaultImage:
     asset: social/project-pitt.jpg
     alt: Project P.I.T.T. official key art for social previews
-
 trust:
   enabled: true
   about:
@@ -918,12 +1034,10 @@ trust:
   privacy:
     enabled: true
     source: site-input/trust/privacy.md
-
 analytics:
   enabled: true
   provider: vercel
   trackOutbound: false
-
 monetization:
   enabled: true
   ads:

@@ -1,24 +1,24 @@
 {
   "title": "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
-  "description": "How to reach Project P.I.T.T.'s Secret Ending (END?) and why the elevator uses a save-specific keypad code.",
+  "description": "Reach the END? secret ending and find your save-specific elevator keypad code; 2640 is not a universal fix.",
   "h1": "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
-  "quickAnswer": "END? is the Secret Ending; the route culminates at an elevator that requires a save-specific four-digit keypad code (2640 is not universal).",
+  "quickAnswer": "END? is the Secret Ending; the route ends at an elevator that requires a save-specific keypad code assembled from four discovered digits — 2640 is not universal.",
   "facts": [
     {
       "label": "END? meaning",
-      "value": "Newer achievement information identifies END? as the Secret Ending; treat END? as the game's secret ending rather than conflating it with END!."
+      "value": "END? is the Secret Ending, distinct from the main END! conclusion. It’s unlocked by the secret route and concludes at the elevator keypad rather than the standard ending path."
     },
     {
       "label": "Route",
-      "value": "camera / surveillance progression → upper exploration → Mystery Boxes → 3 Fuses → 200kg → Percentage Pipe → later minigame / production progression → UV-related clue progression → elevator access / keycard → save-specific four-digit keypad code → Secret Ending route."
+      "value": "The secret route gathers four digits in this discovery order: Duck → Cash Register → Piñata → Anomaly. Completing those steps brings you to the elevator for END?."
     },
     {
       "label": "Code",
-      "value": "The elevator requires a save-specific four-digit keypad code; 2640 is not a universal solution. Use the Keycard + UV Light method to reveal your save’s digits — see the Elevator Code guide for why 2640 fails and how to find your code. Entry order (if needed): Duck → Cash Register → Piñata → Anomaly."
+      "value": "The elevator keypad code is save-specific and constructed from the four digits you discovered in that save. Do not assume a universal code—2640 is not guaranteed."
     },
     {
       "label": "Next if the code fails",
-      "value": "If the keypad code fails, consult the Elevator Code guide rather than looking for a universal internet code. If you're stuck earlier, return to the last completed progression stage (for example Percentage Pipe, 200kg, or the fuses)."
+      "value": "If the code fails, confirm all four digits were found in this save and in the correct order, and that Anomaly Phase 4 is completed. For full 2640 troubleshooting see the Elevator Code guide; also consult the Troubleshooting and Percentage Pipe pages if needed."
     }
   ]
 }

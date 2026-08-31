@@ -21,6 +21,7 @@ related:
   - percentage-pipe
   - secret-ending
   - automation
+  - anomaly-phase-4
   - trade-terminal
   - troubleshooting
 relations:
@@ -32,6 +33,9 @@ relations:
     type: next-step
   -
     slug: automation
+    type: related
+  -
+    slug: anomaly-phase-4
     type: related
   -
     slug: trade-terminal

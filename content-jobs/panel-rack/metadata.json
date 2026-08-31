@@ -1,24 +1,24 @@
 {
-  "title": "Project P.I.T.T. Panel Rack — How to Unlock, Upgrade & Use It",
-  "description": "Updated for 1.0.6: use the in-game unlock UI to check Panel Rack unlocks and upgrades; it now uses a dedicated key and won’t auto-dispense the next panel.",
-  "h1": "Project P.I.T.T. Panel Rack — How to Unlock, Upgrade & Use It",
-  "quickAnswer": "Check the current in-game unlock UI to unlock and upgrade the Panel Rack; Updated for 1.0.6 it now uses a dedicated Panel Rack key — after placing a panel it won’t auto-dispense, so press the Panel Rack key again for the next panel.",
+  "title": "How to Use the Panel Rack in Project P.I.T.T.",
+  "description": "Updated for 1.0.7: bind the interact key on Panel Rack, use the auto dispense toggle, and understand how dispensing differs from 1.0.6 manual-only behavior.",
+  "h1": "How to Use the Panel Rack in Project P.I.T.T.",
+  "quickAnswer": "Updated for 1.0.7 — bind the interact key and use the auto dispense toggle; 1.0.6 required pressing the dedicated key for each panel with no auto-dispense, while 1.0.7 lets you turn automatic dispensing on or off.",
   "facts": [
     {
       "label": "Unlock",
-      "value": "Check the current in-game unlock UI for your save; exact unlock requirements are not reliably documented."
+      "value": "Check the current in-game unlock UI for your save."
     },
     {
-      "label": "Upgrades",
-      "value": "View Panel Rack upgrades in the in-game unlock UI; there is no confirmed Tier 3 or universal upgrade formula available."
+      "label": "1.0.7 binding",
+      "value": "Panel Rack can bind the interact key in 1.0.7."
     },
     {
-      "label": "1.0.6 use",
-      "value": "In 1.0.6 the Panel Rack has its own dedicated keybind and no longer automatically dispenses the next panel after placement."
+      "label": "Auto dispense",
+      "value": "New auto dispense toggle — turn automatic dispensing on or off in 1.0.7."
     },
     {
-      "label": "Next panel",
-      "value": "Press the dedicated Panel Rack key (current mapping) again to obtain the next panel; do not expect automatic continuous dispense."
+      "label": "vs 1.0.6",
+      "value": "1.0.6 required manual press for each panel; 1.0.7 adds optional auto dispense."
     }
   ]
 }

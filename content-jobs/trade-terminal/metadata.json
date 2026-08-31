@@ -1,24 +1,24 @@
 {
   "title": "How to Use the Trade Terminal in Project P.I.T.T.",
-  "description": "Updated for 1.0.5 — The Trade Terminal clears products; players report the right-side switch vacuums items. If access is blocked, use Pause → Clear Items (no refund).",
+  "description": "Updated for 1.0.7 — Use the Project P.I.T.T. Trade Terminal to vacuum scene items; long-press the tool lever to wipe placed tools. Right-side switch vacuums; Pause Menu Clear Items is emergency fallback (no refund).",
   "h1": "How to Use the Trade Terminal in Project P.I.T.T.",
-  "quickAnswer": "Updated for 1.0.5 — The Trade Terminal clears/vacuums products; a player-tested right-side switch can vacuum them, and if piles block access use Pause Menu → Clear Items (official, no refund).",
+  "quickAnswer": "Updated for 1.0.7: The Trade Terminal vacuums scene items (long-press the tool lever to wipe all placed tools); the player-tested right-side switch can vacuum items, and Pause Menu → Clear Items is an emergency no-refund fallback.",
   "facts": [
     {
-      "label": "Trade Terminal",
-      "value": "Used to clear/remove or vacuum products from the scene."
+      "label": "Updated",
+      "value": "Updated for 1.0.7 — long-pressing the tool lever will wipe all placed tools; Trade Terminal / Clear All now also handles Gambling Crates."
+    },
+    {
+      "label": "Terminal action",
+      "value": "Trade Terminal clears and vacuums products from the scene."
     },
     {
       "label": "Right-side switch",
-      "value": "Player-tested Steam report: the switch on the right can vacuum products."
+      "value": "Player-tested (Steam report): the right-side switch can vacuum products."
     },
     {
-      "label": "Clear Items (pause menu)",
-      "value": "Official 1.0.5 update: adds a Pause Menu → Clear Items button to remove annoying items that can cause crashes or unplayable scenes."
-    },
-    {
-      "label": "Clear Items refund",
-      "value": "Official 1.0.5 note: Clear Items will not give back any money."
+      "label": "Pause Menu fallback",
+      "value": "Official 1.0.5: Pause Menu → Clear Items removes stranded items as an emergency fallback; this does not refund resources."
     }
   ]
 }

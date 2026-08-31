@@ -72,6 +72,10 @@ export const siteConfig: GameConfig = {
 				href: "/secret-ending/",
 			},
 			{
+				label: "What is my elevator keypad code?",
+				href: "/secret-ending/",
+			},
+			{
 				label: "How do panels work in Project P.I.T.T.?",
 				href: "/automation/",
 			},
@@ -99,6 +103,10 @@ export const siteConfig: GameConfig = {
 				label: "How do I reach a x300 combo?",
 				href: "/x300-combo/",
 			},
+			{
+				label: "What changed in Update 1.0.7?",
+				href: "/updates/",
+			},
 		],
 		startHere: [
 			{
@@ -118,7 +126,7 @@ export const siteConfig: GameConfig = {
 			},
 			{
 				title: "Project P.I.T.T. Percentage Pipe Guide — Why It Stays at 0%",
-				description: "Why ordinary ducks leave the Project P.I.T.T. Percentage Pipe at 0%, what progression follows 200kg, and how the pipe connects to the Secret Ending route.",
+				description: "Why basic ducks leave the Percentage Pipe at 0% after 200kg, the 10 Anomalies route, and when to keep Piñatas intact for Phase 4.",
 				href: "/percentage-pipe/",
 				label: "Percentage Pipe stuck at 0%?",
 			},
@@ -130,13 +138,13 @@ export const siteConfig: GameConfig = {
 			},
 			{
 				title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
-				description: "How to reach Project P.I.T.T.'s Secret Ending (END?) and why the elevator uses a save-specific keypad code.",
+				description: "Reach the END? secret ending and find your save-specific elevator keypad code; 2640 is not a universal fix.",
 				href: "/secret-ending/",
 				label: "Find the Secret Ending",
 			},
 			{
 				title: "How to Automate Phase 4 in Project P.I.T.T.",
-				description: "Phase 4 automation hub for reliable lanes, panels, movers, Shift Scheduler timing, Trade Terminal cleanup, Panel Rack flow, and x300 preparation.",
+				description: "Phase 4 automation hub: three-input staging, 1.0.7 Pistons, Piñata protection, Shift Scheduler, Trade Terminal, Panel Rack, and Anomaly Phase 4 cross-links.",
 				href: "/automation/",
 				image: "gameplay/automation.jpg",
 				label: "Build reliable automation",
@@ -168,6 +176,15 @@ export const siteConfig: GameConfig = {
 		},
 		showRecentlyUpdated: true,
 		maxRecent: 3,
+		recentUpdates: [
+			{
+				title: "Update 1.0.7",
+				href: "/updates/",
+				date: "2026-08-30",
+				changeSummary: "Panel Rack · Pistons · Trade Terminal · Save Fixes",
+				tag: "Updates",
+			},
+		],
 	},
 	categories: [
 		{
@@ -190,6 +207,13 @@ export const siteConfig: GameConfig = {
 			description: "Panels, tools, routing, jams, and combo-ready factory habits.",
 			icon: "puzzle",
 			order: 3,
+		},
+		{
+			id: "updates",
+			label: "Updates",
+			description: "Patch notes and version changes explained for current runs.",
+			icon: "document",
+			order: 4,
 		},
 	],
 	pages: [
@@ -325,11 +349,11 @@ export const siteConfig: GameConfig = {
 					type: "related",
 				},
 				{
-					pageId: "secret-ending",
+					pageId: "anomaly-phase-4",
 					type: "next-step",
 				},
 				{
-					pageId: "anomaly",
+					pageId: "secret-ending",
 					type: "next-step",
 				},
 			],
@@ -358,7 +382,7 @@ export const siteConfig: GameConfig = {
 			slug: "secret-ending",
 			role: "core",
 			assetType: "article",
-			intents: ["project-pitt-secret-ending", "project-pitt-ending", "project-pitt-end-question"],
+			intents: ["project-pitt-secret-ending", "project-pitt-ending", "project-pitt-end-question", "project-pitt-keypad-code"],
 			relations: [
 				{
 					pageId: "elevator-code",
@@ -369,11 +393,11 @@ export const siteConfig: GameConfig = {
 					type: "next-step",
 				},
 				{
-					pageId: "up-achievement-fuses",
+					pageId: "anomaly-phase-4",
 					type: "related",
 				},
 				{
-					pageId: "200kg-plate",
+					pageId: "achievements",
 					type: "related",
 				},
 			],
@@ -449,6 +473,10 @@ export const siteConfig: GameConfig = {
 					type: "related",
 				},
 				{
+					pageId: "anomaly-phase-4",
+					type: "related",
+				},
+				{
 					pageId: "trade-terminal",
 					type: "related",
 				},
@@ -478,22 +506,112 @@ export const siteConfig: GameConfig = {
 			],
 		},
 		{
+			id: "anomaly-phase-4",
+			slug: "anomaly-phase-4",
+			role: "core",
+			assetType: "article",
+			intents: ["project-pitt-anomaly-phase-4", "project-pitt-how-to-make-anomaly", "project-pitt-anomaly-workbench-not-working", "project-pitt-anomaly-recipe", "project-pitt-phase-4-anomaly"],
+			relations: [
+				{
+					pageId: "automation",
+					type: "related",
+				},
+				{
+					pageId: "percentage-pipe",
+					type: "related",
+				},
+				{
+					pageId: "secret-ending",
+					type: "next-step",
+				},
+				{
+					pageId: "troubleshooting",
+					type: "related",
+				},
+			],
+			sources: [
+				{
+					type: "steam",
+					title: "Steam Community — Phase 4 Anomaly discussions",
+					url: "https://steamcommunity.com/app/4026250/",
+				},
+				{
+					type: "official",
+					title: "Project P.I.T.T. Steam store page",
+					url: "https://store.steampowered.com/app/4026250/Project_PITT/",
+				},
+			],
+			evidence: [
+			],
+		},
+		{
+			id: "updates",
+			slug: "updates",
+			role: "core",
+			assetType: "article",
+			intents: ["project-pitt-updates", "project-pitt-patch-notes", "project-pitt-update-1-0-7"],
+			relations: [
+				{
+					pageId: "panel-rack",
+					type: "related",
+				},
+				{
+					pageId: "trade-terminal",
+					type: "related",
+				},
+				{
+					pageId: "automation",
+					type: "related",
+				},
+				{
+					pageId: "troubleshooting",
+					type: "related",
+				},
+				{
+					pageId: "anomaly-phase-4",
+					type: "related",
+				},
+			],
+			sources: [
+				{
+					type: "steam",
+					title: "Steam Community developer updates",
+					url: "https://steamcommunity.com/app/4026250/",
+				},
+				{
+					type: "official",
+					title: "Project P.I.T.T. Steam store page",
+					url: "https://store.steampowered.com/app/4026250/Project_PITT/",
+				},
+			],
+			evidence: [
+			],
+		},
+		{
 			id: "automation",
 			slug: "automation",
 			role: "core",
 			assetType: "article",
-			intents: ["project-pitt-automation", "project-pitt-how-panels-work", "project-pitt-fans-magnets-pistons-launchers"],
+			intents: ["project-pitt-automation", "project-pitt-how-panels-work", "project-pitt-fans-magnets-pistons-launchers", "project-pitt-phase-4-automation"],
 			relations: [
+				{
+					pageId: "anomaly-phase-4",
+					type: "related",
+				},
 				{
 					pageId: "x300-combo",
 					type: "next-step",
 				},
 				{
-					pageId: "200kg-plate",
+					pageId: "shift-scheduler",
 					type: "related",
 				},
 				{
-					pageId: "achievements",
+					pageId: "trade-terminal",
+					type: "related",
+				},
+				{
+					pageId: "panel-rack",
 					type: "related",
 				},
 			],
@@ -558,7 +676,7 @@ export const siteConfig: GameConfig = {
 			slug: "trade-terminal",
 			role: "core",
 			assetType: "article",
-			intents: ["project-pitt-trade-terminal", "project-pitt-trading-terminal", "project-pitt-how-to-use-trade-terminal", "project-pitt-clear-items", "project-pitt-remove-items", "project-pitt-cash-registers-piling-up"],
+			intents: ["project-pitt-trade-terminal", "project-pitt-trading-terminal", "project-pitt-how-to-use-trade-terminal", "project-pitt-clear-items", "project-pitt-remove-items", "project-pitt-wipe-placed-tools"],
 			relations: [
 				{
 					pageId: "automation",
@@ -566,6 +684,10 @@ export const siteConfig: GameConfig = {
 				},
 				{
 					pageId: "x300-combo",
+					type: "related",
+				},
+				{
+					pageId: "updates",
 					type: "related",
 				},
 			],
@@ -653,7 +775,11 @@ export const siteConfig: GameConfig = {
 					type: "related",
 				},
 				{
-					pageId: "up-achievement-fuses",
+					pageId: "updates",
+					type: "related",
+				},
+				{
+					pageId: "secret-ending",
 					type: "related",
 				},
 			],
@@ -677,7 +803,7 @@ export const siteConfig: GameConfig = {
 			slug: "panel-rack",
 			role: "core",
 			assetType: "article",
-			intents: ["project-pitt-panel-rack", "project-pitt-how-to-get-panel-rack-upgrades", "project-pitt-how-to-use-panel-rack", "project-pitt-panel-rack-tier-3"],
+			intents: ["project-pitt-panel-rack", "project-pitt-how-to-get-panel-rack-upgrades", "project-pitt-how-to-use-panel-rack", "project-pitt-panel-rack-breaks-game"],
 			relations: [
 				{
 					pageId: "automation",
@@ -693,6 +819,10 @@ export const siteConfig: GameConfig = {
 				},
 				{
 					pageId: "troubleshooting",
+					type: "related",
+				},
+				{
+					pageId: "updates",
 					type: "related",
 				},
 				{
@@ -745,7 +875,7 @@ export const siteConfig: GameConfig = {
 					pageId: "percentage-pipe",
 					href: "/percentage-pipe/",
 					title: "Project P.I.T.T. Percentage Pipe Guide — Why It Stays at 0%",
-					description: "Why ordinary ducks leave the Project P.I.T.T. Percentage Pipe at 0%, what progression follows 200kg, and how the pipe connects to the Secret Ending route.",
+					description: "Why basic ducks leave the Percentage Pipe at 0% after 200kg, the 10 Anomalies route, and when to keep Piñatas intact for Phase 4.",
 					eyebrow: "Percentage Pipe",
 				},
 				{
@@ -756,10 +886,17 @@ export const siteConfig: GameConfig = {
 					eyebrow: "Phase 4 Production",
 				},
 				{
+					pageId: "anomaly-phase-4",
+					href: "/anomaly-phase-4/",
+					title: "How to Make Anomalies in Project P.I.T.T. — Phase 4 Recipe & Workbench Fixes",
+					description: "Phase 4 recipe, workbench fixes, and Piñata staging tips for making Anomalies in Project P.I.T.T.",
+					eyebrow: "Phase 4 Anomaly",
+				},
+				{
 					pageId: "secret-ending",
 					href: "/secret-ending/",
 					title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
-					description: "How to reach Project P.I.T.T.'s Secret Ending (END?) and why the elevator uses a save-specific keypad code.",
+					description: "Reach the END? secret ending and find your save-specific elevator keypad code; 2640 is not a universal fix.",
 					eyebrow: "Secret Ending",
 				},
 				{
@@ -805,7 +942,7 @@ export const siteConfig: GameConfig = {
 					pageId: "automation",
 					href: "/automation/",
 					title: "How to Automate Phase 4 in Project P.I.T.T.",
-					description: "Phase 4 automation hub for reliable lanes, panels, movers, Shift Scheduler timing, Trade Terminal cleanup, Panel Rack flow, and x300 preparation.",
+					description: "Phase 4 automation hub: three-input staging, 1.0.7 Pistons, Piñata protection, Shift Scheduler, Trade Terminal, Panel Rack, and Anomaly Phase 4 cross-links.",
 					eyebrow: "Factory Systems",
 					image: "gameplay/automation.jpg",
 				},
@@ -820,28 +957,28 @@ export const siteConfig: GameConfig = {
 					pageId: "trade-terminal",
 					href: "/trade-terminal/",
 					title: "How to Use the Trade Terminal in Project P.I.T.T.",
-					description: "Updated for 1.0.5: Learn how to use the Trade Terminal, its player-tested right-side vacuum switch, and the Pause Menu → Clear Items fallback.",
+					description: "Updated for 1.0.7 — Use the Project P.I.T.T. Trade Terminal to vacuum scene items; long-press the tool lever to wipe placed tools. Right-side switch vacuums; Pause Menu Clear Items is emergency fallback (no refund).",
 					eyebrow: "Trade Terminal",
 				},
 				{
 					pageId: "panel-rack",
 					href: "/panel-rack/",
-					title: "Project P.I.T.T. Panel Rack — How to Unlock, Upgrade & Use It",
-					description: "Updated for 1.0.6: use the in-game unlock UI to check Panel Rack unlocks and upgrades; it now uses a dedicated key and won’t auto-dispense the next panel.",
+					title: "How to Use the Panel Rack in Project P.I.T.T.",
+					description: "Updated for 1.0.7: bind the interact key on Panel Rack, use the auto dispense toggle, and understand how dispensing differs from 1.0.6 manual-only behavior.",
 					eyebrow: "Panel Rack",
 				},
 				{
-					pageId: "anomaly",
-					href: "/anomaly/",
-					title: "Project P.I.T.T. Anomaly: Recipe, Phase 4 Role, and the Percentage Pipe",
-					description: "Craft Anomalies in Phase 4 with 1 Duck, 1 Cash Register, and 1 Piñata, then use 10 Anomalies to fill the Percentage Pipe to 100%.",
-					eyebrow: "Phase 4 Production",
+					pageId: "anomaly-phase-4",
+					href: "/anomaly-phase-4/",
+					title: "How to Make Anomalies in Project P.I.T.T. — Phase 4 Recipe & Workbench Fixes",
+					description: "Phase 4 recipe, workbench fixes, and Piñata staging tips for making Anomalies in Project P.I.T.T.",
+					eyebrow: "Phase 4 Anomaly",
 				},
 				{
 					pageId: "x300-combo",
 					href: "/x300-combo/",
 					title: "How to Get a 300 Combo in Project P.I.T.T. — x300 Achievement Guide",
-					description: "How to get a 300 Combo in Project P.I.T.T. with a reliable lane, automation assistance, Shift Scheduler timing, and pre-ending completion advice.",
+					description: "Operational steps to earn the MEGA! x300 combo in Project P.I.T.T.: build one reliable feed lane with a short visible recoverable section, keep product arrival continuous, test MORE! x100 and EXTRA! x200 runs first, use Automation and the Shift Scheduler to maintain flow, and time the final attempt before any ending progression.",
 					eyebrow: "Combo Milestones",
 					image: "gameplay/combo.jpg",
 				},
@@ -897,21 +1034,21 @@ export const siteConfig: GameConfig = {
 					pageId: "percentage-pipe",
 					href: "/percentage-pipe/",
 					title: "Project P.I.T.T. Percentage Pipe Guide — Why It Stays at 0%",
-					description: "Why ordinary ducks leave the Project P.I.T.T. Percentage Pipe at 0%, what progression follows 200kg, and how the pipe connects to the Secret Ending route.",
+					description: "Why basic ducks leave the Percentage Pipe at 0% after 200kg, the 10 Anomalies route, and when to keep Piñatas intact for Phase 4.",
 					eyebrow: "Percentage Pipe",
 				},
 				{
 					pageId: "secret-ending",
 					href: "/secret-ending/",
 					title: "Project P.I.T.T. Secret Ending Guide — END?, Elevator Code & Route",
-					description: "How to reach Project P.I.T.T.'s Secret Ending (END?) and why the elevator uses a save-specific keypad code.",
+					description: "Reach the END? secret ending and find your save-specific elevator keypad code; 2640 is not a universal fix.",
 					eyebrow: "Secret Ending",
 				},
 				{
 					pageId: "x300-combo",
 					href: "/x300-combo/",
 					title: "How to Get a 300 Combo in Project P.I.T.T. — x300 Achievement Guide",
-					description: "How to get a 300 Combo in Project P.I.T.T. with a reliable lane, automation assistance, Shift Scheduler timing, and pre-ending completion advice.",
+					description: "Operational steps to earn the MEGA! x300 combo in Project P.I.T.T.: build one reliable feed lane with a short visible recoverable section, keep product arrival continuous, test MORE! x100 and EXTRA! x200 runs first, use Automation and the Shift Scheduler to maintain flow, and time the final attempt before any ending progression.",
 					eyebrow: "Combo Milestones",
 					image: "gameplay/combo.jpg",
 				},
@@ -919,15 +1056,15 @@ export const siteConfig: GameConfig = {
 					pageId: "troubleshooting",
 					href: "/troubleshooting/",
 					title: "How to Fix Project P.I.T.T. Crashes, Low FPS, Saves & Missing Tools",
-					description: "Grouped Project P.I.T.T. troubleshooting for crashes, low FPS, mouse control, saves, lost tools, lava drops, Clear Items, and ending-save issues.",
+					description: "Troubleshooting Project P.I.T.T. for crashes, low FPS, save reliability and missing tools, noting 1.0.6 intended fixes, 1.0.7 official fixes and residual reports.",
 					eyebrow: "Troubleshooting",
 				},
 				{
-					pageId: "panel-rack",
-					href: "/panel-rack/",
-					title: "Project P.I.T.T. Panel Rack — How to Unlock, Upgrade & Use It",
-					description: "Updated for 1.0.6: use the in-game unlock UI to check Panel Rack unlocks and upgrades; it now uses a dedicated key and won’t auto-dispense the next panel.",
-					eyebrow: "Panel Rack",
+					pageId: "updates",
+					href: "/updates/",
+					title: "Project P.I.T.T. Updates & Patch Notes — Latest Changes Explained",
+					description: "Project P.I.T.T. patch notes explained: latest 1.0.7 changes and which guides were updated.",
+					eyebrow: "Patch Notes",
 				},
 			],
 		},

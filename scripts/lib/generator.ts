@@ -280,6 +280,19 @@ function renderSiteGeneratedTs(config: GameConfig): string {
 			lines.push(`\t\tshowRecentlyUpdated: ${portal.showRecentlyUpdated},`);
 		}
 		if (portal.maxRecent !== undefined) lines.push(`\t\tmaxRecent: ${portal.maxRecent},`);
+		if (portal.recentUpdates?.length) {
+			lines.push('\t\trecentUpdates: [');
+			for (const item of portal.recentUpdates) {
+				lines.push('\t\t\t{');
+				lines.push(`\t\t\t\ttitle: ${tsString(item.title)},`);
+				lines.push(`\t\t\t\thref: ${tsString(item.href)},`);
+				lines.push(`\t\t\t\tdate: ${tsString(item.date)},`);
+				if (item.changeSummary) lines.push(`\t\t\t\tchangeSummary: ${tsString(item.changeSummary)},`);
+				if (item.tag) lines.push(`\t\t\t\ttag: ${tsString(item.tag)},`);
+				lines.push('\t\t\t},');
+			}
+			lines.push('\t\t],');
+		}
 		if (portal.showAbout !== undefined) lines.push(`\t\tshowAbout: ${portal.showAbout},`);
 		lines.push('\t},');
 	}
@@ -670,8 +683,18 @@ function buildGameConfig(spec: SiteSpec): GameConfig {
 						}),
 					}
 				: undefined,
-			showRecentlyUpdated: true,
-			maxRecent: 3,
+			showRecentlyUpdated: portal.showRecentlyUpdated ?? true,
+			maxRecent: portal.maxRecent ?? 3,
+			recentUpdates: portal.recentUpdates?.map((item) => {
+				const page = spec.pages.find((entry) => entry.id === item.pageId)!;
+				return {
+					title: item.title ?? page.title,
+					href: publicHrefForPage(spec.site.hubPath, page.slug),
+					date: item.date,
+					changeSummary: item.changeSummary,
+					tag: item.tag,
+				};
+			}),
 		},
 		trust: buildTrustConfig(spec),
 		analytics: buildAnalyticsConfig(spec),
