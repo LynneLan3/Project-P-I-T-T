@@ -118,7 +118,11 @@ const singleRoute = routes.length === 1 ? routes[0] : undefined;
 const singleRouteStartGuides = singleRoute?.pages ?? [];
 
 /* ── Popular Questions ── */
-const popularQuestions = game.portal?.popularQuestions ?? [];
+const popularQuestions = (game.portal?.popularQuestions ?? []).map((question) =>
+	question.label === 'What is my elevator keypad code?'
+		? { ...question, href: '/elevator-code/' }
+		: question,
+);
 
 /* ── Featured ── */
 const featured = findFeaturedGuide(guides);
@@ -155,11 +159,12 @@ const showAbout = game.portal?.showAbout !== false;
 			<Image
 				src={heroImage}
 				alt={game.heroAlt ?? game.name}
-				width={1920}
-				height={1080}
-				widths={[800, 1280, 1920]}
-				sizes="100vw"
+				width={616}
+				height={353}
+				widths={[400, 616]}
+				sizes="(max-width: 616px) 100vw, 616px"
 				loading="eager"
+				decoding="sync"
 				fetchpriority="high"
 				style={{ objectPosition: heroPosition }}
 			/>
