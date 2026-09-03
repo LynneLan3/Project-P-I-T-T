@@ -4,6 +4,7 @@ import { spawnSync } from 'node:child_process';
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 import YAML from 'yaml';
 import { generateAutoUpdateReceipt } from './lib/auto-update-receipt.mjs';
 import { runProductionPublish } from './publish-production.mjs';
@@ -19,4 +20,10 @@ function launchPageCount(receipt,productionUrl){const explicit=Number(receipt.co
 function enrichLaunchReceipt(rootDir,receiptPath){const receipt=JSON.parse(readFileSync(receiptPath,'utf8'));const launch=Array.isArray(receipt.interventions)&&receipt.interventions.some((item)=>asString(item?.action).toUpperCase()==='SITE_LAUNCH');if(!launch)return{receipt,enriched:false};receipt.common=receipt.common||{};const required=['steamAppId','decisionId','opportunityId'];const missing=required.filter((field)=>!asString(receipt.common[field]));if(missing.length)throw new Error(`SITE_LAUNCH receipt missing required attribution: ${missing.map((x)=>`common.${x}`).join(', ')}`);const spec=YAML.parse(readFileSync(path.join(rootDir,'site-spec.yaml'),'utf8'))||{};const siteId=asString(spec.site?.id);const productionUrl=asString(spec.deployment?.productionUrl||spec.site?.siteUrl);if(!siteId||!productionUrl)throw new Error('SITE_LAUNCH requires site.id and deployment.productionUrl in site-spec.yaml');if(asString(receipt.common.siteId)&&asString(receipt.common.siteId)!==siteId)throw new Error(`SITE_LAUNCH siteId conflict: receipt=${receipt.common.siteId} site-spec=${siteId}`);receipt.common.siteId=siteId;receipt.common.repositoryUrl=gitRepositoryUrl(rootDir);receipt.common.templateVersion=asString(spec.templateVersion);receipt.common.sitemapUrl=new URL('/sitemap-index.xml',productionUrl).href;receipt.common.launchPageCount=launchPageCount(receipt,productionUrl);return{receipt,enriched:true};}
 async function main(){const options=parseArgs(process.argv.slice(2));if(options.help){console.log('Usage: npm run publish:production -- [--receipt <path>] [--check] [--skip-build]');console.log('Without --receipt, ordinary updates auto-generate a receipt from site-spec.yaml and committed HEAD^..HEAD diff. SITE_LAUNCH still requires an explicit receipt.');return;}const rootDir=process.cwd();let tempDir='';try{let receipt;let source='EXPLICIT';let effectiveReceipt=options.receiptPath;if(options.receiptPath){const prepared=enrichLaunchReceipt(rootDir,options.receiptPath);receipt=prepared.receipt;if(prepared.enriched){tempDir=mkdtempSync(path.join(os.tmpdir(),'hotword-publish-receipt-'));effectiveReceipt=path.join(tempDir,'enriched-receipt.json');writeFileSync(effectiveReceipt,`${JSON.stringify(receipt,null,2)}\n`,'utf8');}}else{receipt=generateAutoUpdateReceipt(rootDir);source='AUTO_UPDATE';tempDir=mkdtempSync(path.join(os.tmpdir(),'hotword-publish-receipt-'));effectiveReceipt=path.join(tempDir,'auto-update-receipt.json');writeFileSync(effectiveReceipt,`${JSON.stringify(receipt,null,2)}\n`,'utf8');}const result=await runProductionPublish({rootDir,receiptPath:effectiveReceipt,checkOnly:options.checkOnly,skipBuild:options.skipBuild});if(source==='AUTO_UPDATE')console.log(`Receipt: AUTO_UPDATE ${receipt.common.batchId}`);process.exitCode=result.status==='PUBLISH_COMPLETE'||result.status==='CHECK_ONLY'?0:1;}finally{if(tempDir)rmSync(tempDir,{recursive:true,force:true});}}
 
-if(import.meta.url===`file://${process.argv[1]}`){main().catch((error)=>{console.error(`PUBLISH FAILED: ${error.message}`);process.exitCode=1;});}
+const isDirectRun = Boolean(process.argv[1]) && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href;
+if (isDirectRun) {
+	main().catch((error) => {
+		console.error(`PUBLISH FAILED: ${error.message}`);
+		process.exitCode = 1;
+	});
+}
