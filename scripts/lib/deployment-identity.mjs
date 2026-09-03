@@ -385,26 +385,77 @@ export function createVercelDeployEnv(deployment, baseEnv = process.env) {
 	};
 }
 
-export function spawnVercelDeploy(rootDir, deployment) {
+function extractDeploymentUrl(output, fallback = '') {
+	const text = String(output || '');
+	try {
+		const jsonMatch = text.match(/\{[\s\S]*"deployment"[\s\S]*\}/);
+		if (jsonMatch) {
+			const parsed = JSON.parse(jsonMatch[0]);
+			const url = asString(parsed?.deployment?.url || parsed?.url);
+			if (url) return url.replace(/["']+$/, '').replace(/^["']+/, '');
+		}
+	} catch {
+		// fall through to line scan
+	}
+	const lines = text.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
+	const preferred = lines.find((line) => /production|aliased|url/i.test(line) && /https?:\/\//i.test(line));
+	const match = String(preferred || text || '').match(/https?:\/\/[^\s)"']+/i);
+	return (match?.[0] || fallback).replace(/[.,]+$/, '').replace(/["']+$/, '').replace(/^["']+/, '');
+}
+
+/**
+ * Spawn Vercel's production deploy. The default preserves the low-level CLI's
+ * inherited output; capture mode is used by the standard publisher so the
+ * deployment URL can be written to the normalized receipt.
+ */
+export function spawnVercelDeploy(rootDir, deployment, options = {}) {
+	const capture = Boolean(options.capture);
 	return new Promise((resolve, reject) => {
+		const stdout = [];
+		const stderr = [];
 		const child = spawn(
 			'vercel',
 			['deploy', '--prod', '--yes', '--scope', PRIMARY_VERCEL_TEAM_SLUG],
 			{
 				cwd: rootDir,
 				env: createVercelDeployEnv(deployment),
-				stdio: 'inherit',
+				stdio: capture ? ['inherit', 'pipe', 'pipe'] : 'inherit',
 			},
 		);
+		if (capture) {
+			child.stdout.on('data', (chunk) => {
+				const text = String(chunk);
+				stdout.push(text);
+				process.stdout.write(text);
+			});
+			child.stderr.on('data', (chunk) => {
+				const text = String(chunk);
+				stderr.push(text);
+				process.stderr.write(text);
+			});
+		}
 		child.on('error', (error) => {
 			if (error && error.code === 'ENOENT') {
+				if (capture) {
+					resolve({ code: 1, output: '', error: 'DEPLOY BLOCKED\nReason: vercel CLI not found' });
+					return;
+				}
 				reject(new Error('DEPLOY BLOCKED\nReason: vercel CLI not found'));
 				return;
 			}
 			reject(error);
 		});
 		child.on('close', (code) => {
-			resolve(code ?? 1);
+			if (!capture) {
+				resolve(code ?? 1);
+				return;
+			}
+			const output = `${stdout.join('')}\n${stderr.join('')}`.trim();
+			resolve({
+				code: code ?? 1,
+				output,
+				deploymentUrl: extractDeploymentUrl(output, deployment.productionUrl),
+			});
 		});
 	});
 }
@@ -454,6 +505,7 @@ export async function runDeployCli(options) {
 
 	const deployFn = options.deployFn ?? spawnVercelDeploy;
 	const deployEnv = createVercelDeployEnv(result.deployment);
-	const code = await deployFn(rootDir, result.deployment, deployEnv);
+	const deployResult = await deployFn(rootDir, result.deployment, deployEnv);
+	const code = typeof deployResult === 'number' ? deployResult : deployResult?.code;
 	return { code: code ?? 1, result, deployed: true, relinked, deployCalls: [{ env: deployEnv }] };
 }
