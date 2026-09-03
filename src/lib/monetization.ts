@@ -25,6 +25,11 @@ export function isAdsEnabled(): boolean {
 	return isMonetizationEnabled() && game.monetization?.ads.enabled === true;
 }
 
+/** Ads load only on production builds (hostname checked client-side in Autotag). */
+export function isAdRuntimeEnabled(): boolean {
+	return isAdsEnabled() && import.meta.env.PROD;
+}
+
 /** When ads are off, AdSlot renders nothing (no empty box, no CLS). */
 export function adSlotDatasetFor(
 	adsEnabled: boolean,

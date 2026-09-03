@@ -10,6 +10,7 @@
  */
 import '../../styles/experience.css';
 import { game } from '../../config/game';
+import AdcashAutotag from '../AdcashAutotag.astro';
 import GameShellTopbar from './GameShellTopbar.astro';
 import GameShellFooter from './GameShellFooter.astro';
 
@@ -77,6 +78,7 @@ const resolvedAccentForeground = accentForeground ?? game.accentForeground ?? '#
 	{description && <meta name="description" content={description} />}
 	{canonical && <link rel="canonical" href={canonical} />}
 	<slot name="head" />
+	<AdcashAutotag />
 	<style is:global define:vars={{ gameAccent: resolvedAccentColor, gameAccentForeground: resolvedAccentForeground }}>
 		:root {
 			--game-accent: var(--gameAccent);

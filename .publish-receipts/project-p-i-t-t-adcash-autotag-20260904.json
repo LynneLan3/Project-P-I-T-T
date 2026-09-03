@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "hotword-publish-receipt-v1",
+  "common": {
+    "site": "Project P.I.T.T.",
+    "siteId": "project-p-i-t-t",
+    "game": "Project P.I.T.T.",
+    "releaseDate": "2026-08-19",
+    "lifecyclePhase": "growth",
+    "batchId": "project-p-i-t-t-adcash-autotag-20260904",
+    "opportunityId": "opp-project-p-i-t-t-adcash-autotag-001",
+    "attributionMode": "OBSERVATIONAL_ONLY",
+    "commitSha": "",
+    "deploymentUrl": "",
+    "productionUrl": "https://project-p-i-t-t.vercel.app",
+    "deployedAt": ""
+  },
+  "interventions": [
+    {
+      "action": "MONETIZATION_ENABLE",
+      "primaryUrl": "/",
+      "affectedUrls": [
+        "/",
+        "/guides/",
+        "/routes/",
+        "/200kg-plate/",
+        "/secret-ending/",
+        "/up-achievement-fuses/",
+        "/shift-scheduler/",
+        "/automation/"
+      ],
+      "triggerType": "operator_request",
+      "triggerSummary": "Enable Adcash Autotag site-wide as the second Auto revenue experiment (zone ds1eyc8hds).",
+      "reason": "Run Autotag Auto formats (Pop-under / Interstitial / In-Page Push / Video Slider) while keeping fixed Adsterra banner slots.",
+      "changeSummary": "Mount aclib.js + runAutoTag once via Head and GameShell; keep AdSlot banner; do not use Halloween Display zone 12101514 or Agefield zone."
+    }
+  ]
+}

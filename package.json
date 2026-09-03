@@ -19,7 +19,7 @@
     "site:generate": "tsx ./scripts/generate-site.ts",
     "article": "node ./scripts/generate-article.mjs",
     "assets:bootstrap": "tsx ./scripts/bootstrap-assets.ts",
-    "test:generator": "tsx --test tests/site-generator/generator.test.ts tests/link-graph/page-relations.test.ts tests/link-graph/routes.test.ts tests/trust/trust-pages.test.ts tests/analytics/outbound.test.ts tests/social/social-image.test.ts tests/monetization/affiliate-link.test.ts tests/monetization/ad-slot.test.ts tests/experience/routes-ui.test.ts tests/experience/guide-editorial.test.ts tests/experience/homepage.test.ts",
+    "test:generator": "tsx --test tests/site-generator/generator.test.ts tests/link-graph/page-relations.test.ts tests/link-graph/routes.test.ts tests/trust/trust-pages.test.ts tests/analytics/outbound.test.ts tests/social/social-image.test.ts tests/monetization/affiliate-link.test.ts tests/monetization/ad-slot.test.ts tests/monetization/adcash.test.ts tests/experience/routes-ui.test.ts tests/experience/guide-editorial.test.ts tests/experience/homepage.test.ts",
     "test:context": "tsx --test tests/repo-context/verify-context.test.ts",
     "test:validation": "tsx --test tests/validation/validate-modes.test.ts",
     "validate:template": "npm run check && npm run verify:template && npm run validate:site -- --mode=template && npm run build",
