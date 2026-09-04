@@ -11,8 +11,10 @@
 import '../../styles/experience.css';
 import { game } from '../../config/game';
 import AdcashAutotag from '../AdcashAutotag.astro';
+import AdSenseVerification from '../AdSenseVerification.astro';
 import GameShellTopbar from './GameShellTopbar.astro';
 import GameShellFooter from './GameShellFooter.astro';
+import FooterTrustLinks from '../FooterTrustLinks.astro';
 
 export interface NavItem {
 	label: string;
@@ -78,6 +80,7 @@ const resolvedAccentForeground = accentForeground ?? game.accentForeground ?? '#
 	{description && <meta name="description" content={description} />}
 	{canonical && <link rel="canonical" href={canonical} />}
 	<slot name="head" />
+	<AdSenseVerification />
 	<AdcashAutotag />
 	<style is:global define:vars={{ gameAccent: resolvedAccentColor, gameAccentForeground: resolvedAccentForeground }}>
 		:root {
@@ -119,6 +122,7 @@ const resolvedAccentForeground = accentForeground ?? game.accentForeground ?? '#
 		</main>
 
 		<GameShellFooter footerLinks={footerLinks} footerText={footerText} siteTitle={siteTitle} />
+		<FooterTrustLinks />
 	</div>
 </body>
 </html>

@@ -55,6 +55,7 @@ test('trust URLs respect root hubPath', () => {
 	assert.equal(pageHref(hub, TRUST_PAGE_SLUGS.about), '/about/');
 	assert.equal(pageHref(hub, TRUST_PAGE_SLUGS.editorialMethod), '/editorial-method/');
 	assert.equal(pageHref(hub, TRUST_PAGE_SLUGS.privacy), '/privacy/');
+	assert.equal(pageHref(hub, TRUST_PAGE_SLUGS.contact), '/contact/');
 	assert.equal(pageHref(hub, TRUST_PAGE_SLUGS.affiliateDisclosure), '/affiliate-disclosure/');
 	assert.equal(trustPageParamFromHub('/', 'about'), 'about');
 });
@@ -63,6 +64,7 @@ test('trust URLs respect single-segment hubPath', () => {
 	const hub = normalizeHubPath('/mortal-shell-ii/');
 	assert.equal(pageHref(hub, TRUST_PAGE_SLUGS.about), '/mortal-shell-ii/about/');
 	assert.equal(pageHref(hub, TRUST_PAGE_SLUGS.privacy), '/mortal-shell-ii/privacy/');
+	assert.equal(pageHref(hub, TRUST_PAGE_SLUGS.contact), '/mortal-shell-ii/contact/');
 	assert.equal(trustPageParamFromHub('/mortal-shell-ii/', 'privacy'), 'mortal-shell-ii/privacy');
 });
 

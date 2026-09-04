@@ -2,7 +2,7 @@ import { game } from '../config/game';
 import type { GameTrustPageConfig } from '../config/game-types';
 import { canonicalizePath, pageHref } from './paths';
 
-export const CORE_TRUST_PAGE_KINDS = ['about', 'editorialMethod', 'privacy'] as const;
+export const CORE_TRUST_PAGE_KINDS = ['about', 'editorialMethod', 'privacy', 'contact'] as const;
 export const TRUST_PAGE_KINDS = [...CORE_TRUST_PAGE_KINDS, 'affiliateDisclosure'] as const;
 export type CoreTrustPageKind = (typeof CORE_TRUST_PAGE_KINDS)[number];
 export type TrustPageKind = (typeof TRUST_PAGE_KINDS)[number];
@@ -11,6 +11,7 @@ export const TRUST_PAGE_SLUGS: Record<TrustPageKind, string> = {
 	about: 'about',
 	editorialMethod: 'editorial-method',
 	privacy: 'privacy',
+	contact: 'contact',
 	affiliateDisclosure: 'affiliate-disclosure',
 };
 
@@ -22,6 +23,7 @@ export function trustTitleForLocale(kind: TrustPageKind, locale: string | undefi
 		about: { en: 'About', 'zh-CN': '关于本站' },
 		editorialMethod: { en: 'Editorial Method', 'zh-CN': '内容方法' },
 		privacy: { en: 'Privacy', 'zh-CN': '隐私说明' },
+		contact: { en: 'Contact', 'zh-CN': '联系我们' },
 		affiliateDisclosure: { en: 'Affiliate Disclosure', 'zh-CN': '联盟披露' },
 	};
 	return titles[kind][resolved];
@@ -45,6 +47,10 @@ export function trustDescriptionForLocale(
 		privacy: {
 			en: `Privacy information for ${gameName} Guide & Wiki, including analytics and third-party links.`,
 			'zh-CN': `${gameName} 攻略 Wiki 的隐私信息，包括统计与第三方链接说明。`,
+		},
+		contact: {
+			en: `How to contact the operator of ${gameName} Guide & Wiki about the site, privacy, or advertising.`,
+			'zh-CN': `如何就 ${gameName} 攻略 Wiki 的站点、隐私或广告事宜联系运营者。`,
 		},
 		affiliateDisclosure: {
 			en: `Starter affiliate disclosure for ${gameName} Guide & Wiki. Replace before enabling real affiliate links.`,

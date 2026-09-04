@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "templateVersion": "2.0.0",
   "generatorVersion": "1.0.0",
-  "specHash": "3c431372ff034882b344781c35c5dbb61179e92270cc43f4214b67b2ab3920ca",
+  "specHash": "c3870f76bfb8aae19d506296082f339e10214364cb9b005f62566018587c8b28",
   "siteId": "project-p-i-t-t",
   "createdFromSpec": "site-spec.yaml",
   "managedFiles": [
@@ -53,7 +53,7 @@
     },
     {
       "path": "src/config/site.generated.ts",
-      "sha256": "973f04eae9e5d79fac4140b34094dd10dcd7491e8c8f73901c276ef00517c680",
+      "sha256": "1abbe7bcf3cf40793532478b9d886c9f5d601b5ba2753f18be452ec01ce43a06",
       "kind": "config"
     },
     {
@@ -142,13 +142,18 @@
       "kind": "trust"
     },
     {
+      "path": "src/content/trust/contact.md",
+      "sha256": "96c341f05c837d0a77751008d39252bec0563697c2a522d05614ef9b5abd9562",
+      "kind": "trust"
+    },
+    {
       "path": "src/content/trust/editorial-method.md",
       "sha256": "053fb52705905d8594af4850ffc0c792e56d6e8cc007a87785d3b69c58403e6a",
       "kind": "trust"
     },
     {
       "path": "src/content/trust/privacy.md",
-      "sha256": "6fb44e3c75406d063abd32dca3dd60239d58f133eaf558c868f8548262cbe2e6",
+      "sha256": "68d2f23a508d8997ac94ac4b6bce157bc664e385dbc96a99e5b74dd7aff70654",
       "kind": "trust"
     }
   ],

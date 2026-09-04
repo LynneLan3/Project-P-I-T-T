@@ -89,6 +89,7 @@ type UiDictionary = {
 	trustAbout: string;
 	trustEditorialMethod: string;
 	trustPrivacy: string;
+	trustContact: string;
 	trustAffiliateDisclosure: string;
 	status: Record<GuideStatusValue, string>;
 	releaseStatuses: Record<ReleaseStatus, string>;
@@ -189,6 +190,7 @@ const en: UiDictionary = {
 	trustAbout: 'About',
 	trustEditorialMethod: 'Editorial Method',
 	trustPrivacy: 'Privacy',
+	trustContact: 'Contact',
 	trustAffiliateDisclosure: 'Affiliate Disclosure',
 	status: {
 		'pre-release': 'Pre-release',
@@ -300,6 +302,7 @@ const zhCN: UiDictionary = {
 	trustAbout: '关于本站',
 	trustEditorialMethod: '内容方法',
 	trustPrivacy: '隐私说明',
+	trustContact: '联系我们',
 	trustAffiliateDisclosure: '联盟披露',
 	status: {
 		'pre-release': '预发布',

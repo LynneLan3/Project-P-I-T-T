@@ -70,6 +70,9 @@ trust:
   privacy:
     enabled: true
     source: site-input/trust/privacy.md
+  contact:
+    enabled: true
+    source: site-input/trust/contact.md
 `;
 
 function installTrustInputs(workspace: string) {

@@ -1034,6 +1034,9 @@ trust:
   privacy:
     enabled: true
     source: site-input/trust/privacy.md
+  contact:
+    enabled: true
+    source: site-input/trust/contact.md
 analytics:
   enabled: true
   provider: ga4

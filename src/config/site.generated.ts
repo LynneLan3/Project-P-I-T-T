@@ -1093,6 +1093,13 @@ export const siteConfig: GameConfig = {
 				title: "Privacy",
 				robots: "noindex,follow",
 			},
+			contact: {
+				enabled: true,
+				slug: "contact",
+				path: "/contact/",
+				title: "Contact",
+				robots: "index,follow",
+			},
 		},
 	},
 	analytics: {

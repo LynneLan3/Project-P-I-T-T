@@ -426,6 +426,7 @@ export interface SiteSpecTrust {
 	about?: SiteSpecTrustPage;
 	editorialMethod?: SiteSpecTrustPage;
 	privacy?: SiteSpecTrustPage;
+	contact?: SiteSpecTrustPage;
 }
 
 export const ALLOWED_ANALYTICS_PROVIDERS = ['ga4', 'vercel'] as const;
@@ -1356,7 +1357,8 @@ function parseTrust(raw: unknown, location: string): SiteSpecTrust | undefined {
 	const about = parseTrustPage(raw.about, 'about', `${location}.about`);
 	const editorialMethod = parseTrustPage(raw.editorialMethod, 'editorialMethod', `${location}.editorialMethod`);
 	const privacy = parseTrustPage(raw.privacy, 'privacy', `${location}.privacy`);
-	return { enabled, about, editorialMethod, privacy };
+	const contact = parseTrustPage(raw.contact, 'contact', `${location}.contact`);
+	return { enabled, about, editorialMethod, privacy, contact };
 }
 
 function parseMonetization(raw: unknown, location: string): SiteSpecMonetization | undefined {

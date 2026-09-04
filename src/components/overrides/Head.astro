@@ -1,6 +1,7 @@
 ---
 import Default from '@astrojs/starlight/components/Head.astro';
 import AdcashAutotag from '../AdcashAutotag.astro';
+import AdSenseVerification from '../AdSenseVerification.astro';
 import Analytics from '../Analytics.astro';
 import SocialMeta from '../SocialMeta.astro';
 import { isExperienceGuide } from '../../lib/experience-guide';
@@ -53,5 +54,6 @@ const isExperience =
 	)
 }
 <SocialMeta />
+<AdSenseVerification />
 <AdcashAutotag />
 <Analytics />
