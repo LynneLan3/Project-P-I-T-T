@@ -1097,8 +1097,9 @@ export const siteConfig: GameConfig = {
 	},
 	analytics: {
 		enabled: true,
-		provider: "vercel",
-		trackOutbound: false,
+		provider: "ga4",
+		measurementId: "G-D933X3JP30",
+		trackOutbound: true,
 	},
 	monetization: {
 		enabled: true,

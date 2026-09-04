@@ -1,7 +1,7 @@
 # Privacy
 
-Project P.I.T.T. Guide V1 does not require an account or collect gameplay saves. The site uses Vercel Web Analytics to understand aggregated page visits, referring pages, device types, and broad location information. Vercel describes this service as using anonymized data without cookies. The site does not intentionally send names, email addresses, gameplay saves, or other directly identifying information to analytics.
+Project P.I.T.T. Guide V1 does not require an account or collect gameplay saves. This site uses Google Analytics 4 to understand aggregate usage, such as page views, outbound link clicks, approximate location, device type, and referral source. The site uses this information to improve guide coverage and measure which sources, evidence links, and content links are useful.
 
-The site may contain ordinary links to Steam and other source pages; those third-party sites have their own policies.
+Google Analytics may set cookies or use similar browser storage when it loads on the production site. Analytics is configured to load only on the production hostname, not on localhost or preview deployments.
 
-Hosting providers and your browser may still process routine technical logs needed to deliver the site.
+The site may contain ordinary links to Steam and other source pages; those third-party sites have their own policies. The site does not sell visitor data. Hosting providers and your browser may still process routine technical logs, such as IP address and user agent, needed to deliver and secure the site.

@@ -38,10 +38,13 @@ const config =
 					function () {
 						window.dataLayer.push(arguments);
 					};
-				var script = document.createElement('script');
-				script.async = true;
-				script.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
-				document.head.appendChild(script);
+				if (!document.querySelector('script[data-gw-ga4-bootstrap]')) {
+					var script = document.createElement('script');
+					script.async = true;
+					script.dataset.gwGa4Bootstrap = 'true';
+					script.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+					document.head.appendChild(script);
+				}
 				window.gtag('js', new Date());
 				window.gtag('config', measurementId);
 			})();

@@ -1036,8 +1036,9 @@ trust:
     source: site-input/trust/privacy.md
 analytics:
   enabled: true
-  provider: vercel
-  trackOutbound: false
+  provider: ga4
+  measurementId: G-D933X3JP30
+  trackOutbound: true
 monetization:
   enabled: true
   ads:
