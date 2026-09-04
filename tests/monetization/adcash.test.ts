@@ -36,12 +36,15 @@ test('Adcash Autotag mounts once in shared Head and GameShell (not Display zone 
 	assert.doesNotMatch(autotag, /runBanner/i);
 });
 
-test('fixed Adsterra banner unit remains in AdSlot (no overlapping global Auto script present)', () => {
+test('fixed Adsterra banner config remains preserved (no overlapping global Auto script present)', () => {
 	const adSlot = readFileSync(path.join(ROOT, 'src/components/AdSlot.astro'), 'utf8');
+	const monetization = readFileSync(path.join(ROOT, 'src/lib/monetization.ts'), 'utf8');
+	assert.match(adSlot, /ADSTERRA_INVOKE_SRC/);
+	assert.match(adSlot, /ADSTERRA_CONTAINER_ID/);
 	assert.match(
-		adSlot,
-		/src="https:\/\/pl31055290\.profitableratecpmnetwork\.com\/dcd3a104a99f11ab577ca98dd180ec29\/invoke\.js"/,
+		monetization,
+		/https:\/\/pl31055290\.profitableratecpmnetwork\.com\/dcd3a104a99f11ab577ca98dd180ec29\/invoke\.js/,
 	);
-	assert.match(adSlot, /id="container-dcd3a104a99f11ab577ca98dd180ec29"/);
+	assert.match(monetization, /container-dcd3a104a99f11ab577ca98dd180ec29/);
 	assert.doesNotMatch(adSlot, /popunder|interstitial|aclib|runAutoTag/i);
 });

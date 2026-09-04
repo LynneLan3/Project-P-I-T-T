@@ -1,5 +1,10 @@
 ---
-import { adSlotDataset, type AdPlacement } from '../lib/monetization';
+import {
+	ADSTERRA_CONTAINER_ID,
+	ADSTERRA_INVOKE_SRC,
+	adSlotDataset,
+	type AdPlacement,
+} from '../lib/monetization';
 
 interface Props {
 	placement: AdPlacement;
@@ -14,8 +19,8 @@ const dataset = adSlotDataset(placement);
 		<script
 			async
 			data-cfasync="false"
-			src="https://pl31055290.profitableratecpmnetwork.com/dcd3a104a99f11ab577ca98dd180ec29/invoke.js"
+			src={ADSTERRA_INVOKE_SRC}
 		></script>
-		<div id="container-dcd3a104a99f11ab577ca98dd180ec29"></div>
+		<div id={ADSTERRA_CONTAINER_ID}></div>
 	</div>
 )}

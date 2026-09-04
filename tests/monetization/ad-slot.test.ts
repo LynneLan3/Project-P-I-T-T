@@ -3,7 +3,15 @@ import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import test from 'node:test';
-import { adSlotDatasetFor, type AdPlacement } from '../../src/lib/monetization';
+import {
+	ADSTERRA_CONTAINER_ID,
+	ADSTERRA_ENABLED,
+	ADSTERRA_INVOKE_SRC,
+	adSlotDataset,
+	adSlotDatasetFor,
+	isAdsterraEnabled,
+	type AdPlacement,
+} from '../../src/lib/monetization';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 
@@ -31,14 +39,30 @@ test('unknown placement produces no slot', () => {
 	assert.equal(adSlotDatasetFor(true, 'not-a-slot' as AdPlacement), null);
 });
 
-test('AdSlot contains the configured Adsterra unit', () => {
-	const adSlot = readFileSync(path.join(ROOT, 'src/components/AdSlot.astro'), 'utf8');
-	assert.match(adSlot, /data-cfasync="false"/);
-	assert.match(
-		adSlot,
-		/src="https:\/\/pl31055290\.profitableratecpmnetwork\.com\/dcd3a104a99f11ab577ca98dd180ec29\/invoke\.js"/,
+test('Adsterra soft-offline: switch off, config preserved, slots render nothing', () => {
+	assert.equal(ADSTERRA_ENABLED, false);
+	assert.equal(isAdsterraEnabled(), false);
+	assert.equal(adSlotDataset('guide-before-related'), null);
+	assert.equal(adSlotDataset('hub-after-start-here'), null);
+	assert.equal(
+		ADSTERRA_INVOKE_SRC,
+		'https://pl31055290.profitableratecpmnetwork.com/dcd3a104a99f11ab577ca98dd180ec29/invoke.js',
 	);
-	assert.match(adSlot, /id="container-dcd3a104a99f11ab577ca98dd180ec29"/);
+	assert.equal(ADSTERRA_CONTAINER_ID, 'container-dcd3a104a99f11ab577ca98dd180ec29');
+});
+
+test('AdSlot keeps Adsterra unit wiring behind the soft switch', () => {
+	const adSlot = readFileSync(path.join(ROOT, 'src/components/AdSlot.astro'), 'utf8');
+	const monetization = readFileSync(path.join(ROOT, 'src/lib/monetization.ts'), 'utf8');
+	assert.match(adSlot, /data-cfasync="false"/);
+	assert.match(adSlot, /ADSTERRA_INVOKE_SRC/);
+	assert.match(adSlot, /ADSTERRA_CONTAINER_ID/);
+	assert.match(
+		monetization,
+		/https:\/\/pl31055290\.profitableratecpmnetwork\.com\/dcd3a104a99f11ab577ca98dd180ec29\/invoke\.js/,
+	);
+	assert.match(monetization, /container-dcd3a104a99f11ab577ca98dd180ec29/);
+	assert.match(monetization, /ADSTERRA_ENABLED\s*=\s*false/);
 });
 
 test('default Guide slot is before related, never before Quick Answer', () => {
