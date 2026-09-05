@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "hotword-publish-receipt-v1",
+  "common": {
+    "site": "Project P.I.T.T.",
+    "siteId": "project-p-i-t-t",
+    "game": "Project P.I.T.T.",
+    "releaseDate": "2026-08-19",
+    "lifecyclePhase": "growth",
+    "batchId": "project-p-i-t-t-gsc-intent-1-0-8-20260905",
+    "attributionMode": "OBSERVATIONAL_ONLY",
+    "commitSha": "",
+    "deploymentUrl": "",
+    "productionUrl": "https://project-p-i-t-t.vercel.app",
+    "deployedAt": ""
+  },
+  "interventions": [
+    {
+      "action": "UPDATE_PAGE",
+      "primaryUrl": "/anomaly-phase-4/",
+      "affectedUrls": ["/", "/anomaly-phase-4/"],
+      "triggerType": "gsc_query",
+      "triggerQueries": [
+        "project pitt cauldron",
+        "project pitt anomaly",
+        "project pitt anomaly recipe",
+        "project pitt phase 4 cauldron",
+        "project pitt cauldron not working",
+        "how to make anomaly project pitt"
+      ],
+      "triggerSummary": "GSC query project pitt cauldron (9 impressions, 0 clicks, pos 7.3) was homepage-owned; Update 1.0.8 changed Cauldron recipe tiers.",
+      "reason": "Move Cauldron intent ownership to anomaly-phase-4 and refresh Title/Meta/Quick Answer plus 1.0.8 three-tier recipe facts.",
+      "changeSummary": "Shared Writer refresh: Cauldron three-tier recipes (lower/normal/enhanced), ejection community evidence, homepage Popular Question retarget to /anomaly-phase-4/."
+    },
+    {
+      "action": "UPDATE_PAGE",
+      "primaryUrl": "/updates/",
+      "affectedUrls": ["/", "/updates/"],
+      "triggerType": "operator_request",
+      "triggerQueries": ["project pitt update", "project pitt 1.0.8"],
+      "triggerSummary": "Official Steam Update 1.0.8 published Sep 4, 2026; site still showed Latest Update 1.0.7.",
+      "reason": "Advance Updates hub and homepage Recently Updated to 1.0.8 with player-impact summary and affected Anomaly Phase 4 guide.",
+      "changeSummary": "Latest Update set to 1.0.8 — Cauldron quality system, mining 3 ores, Spring Pads, pistons, keypad, safer loading."
+    },
+    {
+      "action": "UPDATE_PAGE",
+      "primaryUrl": "/shift-scheduler/",
+      "affectedUrls": ["/shift-scheduler/"],
+      "triggerType": "gsc_query",
+      "triggerQueries": [
+        "project pitt shift scheduler",
+        "shift scheduler project pitt"
+      ],
+      "triggerSummary": "Page avg position ~4 with ~2.7% CTR; primary Scheduler queries at 0% CTR.",
+      "reason": "CTR SERP-promise refresh for how-to / why-not-working without inventing 1.0.8 Scheduler rules.",
+      "changeSummary": "Title/Meta/Quick Answer rewritten for connect/test/Duck Crank; body reordered make-it-work-first; compatibility table retained."
+    },
+    {
+      "action": "UPDATE_PAGE",
+      "primaryUrl": "/200kg-plate/",
+      "affectedUrls": ["/200kg-plate/"],
+      "triggerType": "gsc_query",
+      "triggerQueries": [
+        "project pitt 200kg",
+        "project pitt weight",
+        "project pitt heaviest item"
+      ],
+      "triggerSummary": "Healthy CTR (~10.5%); content gap was missing community-tested weight table.",
+      "reason": "Content reinforcement only; Title metadata HOLD/NO_CHANGE.",
+      "changeSummary": "Added community-tested / observed item-weight table and arithmetic examples; live readout precedence preserved; Title NO_CHANGE."
+    }
+  ]
+}

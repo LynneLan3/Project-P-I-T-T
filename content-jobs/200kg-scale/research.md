@@ -1,53 +1,104 @@
-# APIMart content brief: Project P.I.T.T. 200kg Scale — PITT-GSC-INTENT-REFRESH-20260829
+# APIMart content brief: Project P.I.T.T. 200kg — community weight table refresh
 
-INTERVENTION SCOPE
-- Batch / InterventionID: PITT-GSC-INTENT-REFRESH-20260829
-- Existing URL only: /200kg-plate/
-- ActionType: CONTENT_REFRESH
-- This is the current winner: make only a light evidence-bounded reinforcement; do not rewrite the intent, split the URL, or make unsupported claims.
+TARGET URL
+/200kg-plate/
 
-TARGET QUERY: project pitt 200kg
-SECONDARY QUERIES: project pitt 200 kg; project pitt 200kg scale; project pitt 200kg puzzle; project pitt heavy achievement; what to do after 200kg project pitt
+## Intent Brief
 
-PLAYER PROBLEM
-Players reach the 0/200kg scale, are unsure whether it means 200 objects or 200 kilograms, and may not know what the successful weigh-in unlocks. Some then feed ordinary ducks into the next pipe and assume the game is broken.
+```json
+{
+  "primaryQuery": "project pitt 200kg",
+  "queryCluster": [
+    "project pitt 200kg",
+    "project pitt 200 kg",
+    "project pitt weight",
+    "project pitt heaviest item",
+    "project pitt heaviest items",
+    "project pitt sponge"
+  ],
+  "userJob": "Find heavy, stable objects fast enough to push the platform to at least 200kg, and learn which item weights already have community-tested readings.",
+  "intentOwnerStatus": "KEEP",
+  "serpPromise": "Explain how to reach >=200kg with stable mass, show community-tested item weights as observed values, and remind players that the live platform readout beats any fixed recipe.",
+  "secondaryIntents": [
+    { "query": "project pitt 200 kg", "action": "KEEP_SUPPORTING" },
+    { "query": "project pitt weight", "action": "KEEP_SUPPORTING" },
+    { "query": "project pitt heaviest item", "action": "KEEP_SUPPORTING" },
+    { "query": "project pitt heaviest items", "action": "KEEP_SUPPORTING" },
+    { "query": "project pitt sponge", "action": "KEEP_SUPPORTING" }
+  ]
+}
+```
 
-VERIFIED FACTS
-- The HEAVY? progression checkpoint requires 200 kilograms of mass on the weighing plate.
-- The fuse progression comes before this stage; completing the Fuse Box progression is an important prerequisite.
-- The goal is mass, not a count of 200 objects.
-- Heavy stable objects are more efficient than a tall loose pile of ducks.
-- Community-reported workable approaches include Gambling Crates, bumpers, remotes, and loaded containers. Present these as common solutions, not an official required-item list.
-- After the plate reaches 200kg, the player should continue into the Percentage Pipe progression.
+## Metadata Update
 
-COMMUNITY-CONFIRMED PRACTICAL DETAILS
-- A contained pile or several heavy objects can be easier to keep on the plate than many loose physics objects.
-- Players commonly ask what happens after the weigh-in because the pipe's percentage is a separate progression check.
+HOLD / NO_CHANGE unless there is a genuine mismatch with the Intent Brief.
 
-DO NOT CLAIM
-- Do not invent a fixed item count, exact object weights, exact room coordinates, or a mandatory loadout.
-- Do not say 200kg is the ending or the final goal.
-- Do not claim raw ducks are the correct Percentage Pipe input.
+Existing Title (healthy CTR — do NOT rewrite for SEO cosmetics):
+How to Reach 200kg in Project P.I.T.T. — Best Heavy Items & What to Do Next
 
-PROMINENT ANSWER REQUIRED
-Include a highly visible callout headed "Already reached 200kg?" explaining that 200kg is not the endpoint and linking to [the Percentage Pipe Guide]({{page:percentage-pipe}}).
+Existing page CTR is healthy (~10.5% at avg position ~4.7). Do not force a Title rewrite for a single 0-click query. NO_CHANGE is the expected metadata outcome.
 
-RELATED GUIDE BEFORE
-[the Fuse Box guide]({{page:up-achievement-fuses}})
+## Content Gap To Fill
 
-RELATED GUIDE AFTER
-[the Percentage Pipe Guide]({{page:percentage-pipe}})
+Current page lacks a concrete community-tested weight table and FAQ still says exact weights are unavailable. Add a clearly labeled community-tested / observed table.
 
-ARTICLE REQUIREMENTS
-Answer when the scale is encountered, how Fuse progression relates to it, how to use heavy objects safely, why ducks are inefficient, what to do after success, and the common counting/physics mistakes. Use evidence-aware wording for community solutions.
+## Community-Tested Weights (NOT official)
 
-LAUNCH-WINDOW EXPANSION
-- Preserve the existing 200kg / weight / heaviest-item intent cluster and slug. Do not create a separate heaviest-item page.
-- Add how to reach 200kg, the best practical categories of heavy objects, heaviest useful objects, weight versus stability, common setup failures, what happens at 200kg, and what to do after the checkpoint.
-- Treat Gambling Crates, bumpers, remotes, and loaded containers as community-reported workable approaches, not a mandatory loadout. Do not invent which object is objectively heaviest or any exact item weight.
-- Answer the FAQ questions “What is the heaviest item?”, “What should I use to reach 200kg?”, and “What do I do after reaching 200kg?” with the evidence boundary intact.
-- Prefer a real how-to title such as “How to Reach 200kg in Project P.I.T.T. — Best Heavy Items & What to Do Next”; APIMart must choose the final natural title.
+Cross-checked community sources (projectpitt.online item-weights / tools / panels guides; research date 2026-09-05):
 
-LIGHTWEIGHT REFRESH REQUIREMENTS
-- Add only concise, evidence-bounded guidance on item weights/mass, reliable 200kg combinations, a weight query, and the next step after completion.
-- Keep Gambling Crates, bumpers, remotes, and loaded containers as community-reported workable combinations; do not rank one as objectively heaviest or invent numeric weights.
+Confirmed / consistently reported on-platform readings:
+
+| Item | Observed weight | Evidence label |
+| --- | --- | --- |
+| Panel | 2 kg | community-tested / observed |
+| Basketball Hoop | 3 kg | community-tested / observed |
+| Piston | 5 kg | community-tested / observed |
+| Wheeled Cart | 6 kg | community-tested / observed |
+| Industrial Turbine / Fan Level 3 | 8 kg | community-tested / observed |
+
+Conflicting / state-dependent (report cautiously):
+
+| Item | Notes |
+| --- | --- |
+| Gambling Crate | Community reports vary by opened/unopened state and contents (~5 kg vs ~10 kg reports). Do not pick one official value. |
+| Bumper | ~5 kg community report; verify on platform |
+| Remote | ~1 kg; too light for practical bulk load |
+| Sponge | Exists as a tool for wiping markings; not a practical heavy load for 200kg. Do not invent a sponge weight. |
+
+## Must Include Facts
+
+- Goal is kilograms (>= 200kg), not object count
+- Fuse progression is a prerequisite
+- Live platform readout always outranks any fixed recipe or table
+- Arithmetic examples are examples only — not the only best route; exact 200 not required
+- After success → Percentage Pipe
+- Keep “Already reached 200kg?” callout linking Percentage Pipe
+- Label the table community-tested / observed — never official
+
+## Arithmetic Examples (examples only)
+
+- 25 × Industrial Turbine (8 kg) = 200 kg
+- 34 × Wheeled Cart (6 kg) = 204 kg
+- 40 × Piston (5 kg) = 200 kg
+- Mixed: 20 Turbines (160) + 7 Carts (42) = 202 kg
+
+State clearly: example math only; not unique best path; >=200kg is enough.
+
+## Forbidden Claims
+
+- Do not present community weights as official publisher data
+- Do not invent a single official heaviest item
+- Do not invent sponge weight just because sponge appears in secondary queries
+- Do not change slug /200kg-plate/
+
+## Internal Links
+
+- [the Fuse Box guide]({{page:up-achievement-fuses}})
+- [the Percentage Pipe Guide]({{page:percentage-pipe}})
+
+## Writing Rules
+
+- Body content: Shared Writer / APIMart must write the English article
+- Metadata: prefer NO_CHANGE for title/description/h1 unless genuine mismatch
+- If metadata writer is run, it may return the existing title unchanged
+- Update FAQ so it no longer claims “no reliable specific weights” — point to the community-tested table with the evidence boundary intact

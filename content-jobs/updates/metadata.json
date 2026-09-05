@@ -1,24 +1,24 @@
 {
   "title": "Project P.I.T.T. Updates & Patch Notes — Latest Changes Explained",
-  "description": "Project P.I.T.T. patch notes explained: latest 1.0.7 changes and which guides were updated.",
   "h1": "Project P.I.T.T. Updates & Patch Notes — Latest Changes Explained",
-  "quickAnswer": "Update 1.0.7 primarily reworks pistons so tools can attach and move with piston heads while also adding Panel Rack interact binding and an auto-dispense toggle to improve automation control.",
+  "description": "Update 1.0.8 (September 4, 2026) is the current release — this hub explains what changed for players and which guides need updates. Key player-impact changes include the Cauldron (Anomaly workbench) recipe quality tiers, safer/longer main loading, and several bug fixes; affected guides such as Anomaly Phase 4 are called out. Official Steam note: https://steamcommunity.com/games/4026250/announcements/detail/689767689898427431 (Steam hub: https://steamcommunity.com/app/4026250/).",
+  "quickAnswer": "1.0.8 Cauldron quality tiers and other player-impact fixes; Anomaly Phase 4 is the primary affected guide. Released Sep 4, 2026, 1.0.8 introduces Cauldron recipe quality rules (3 same = lesser Anomaly; 2 different among 3 = normal; all different = enhanced), reduces mining upgrade ore cost to 3, improves main loading stability, fixes Upgrade Terminal text, makes pistons movable/pickable, stabilizes Spring Pads, and repairs keypad interaction — update your Anomaly Phase 4 guide for Cauldron recipes and check automation/troubleshooting notes as needed.",
   "facts": [
     {
       "label": "Latest version",
-      "value": "Update 1.0.7 (August 30, 2026)"
+      "value": "Update 1.0.8 — September 4, 2026 (Steam release)"
     },
     {
-      "label": "Panel Rack",
-      "value": "Can bind the interact key and gains a new auto-dispense toggle"
+      "label": "Cauldron / Anomaly",
+      "value": "Cauldron recipe quality tiers: 3 identical products → lesser Anomaly; 2 different products (3 total) → normal Anomaly; one of each (all different) → enhanced Anomaly."
     },
     {
-      "label": "Pistons",
-      "value": "Tools can stick to piston heads and move with them; turning a piston off locks its current position and turning it back on resumes previous motion"
+      "label": "Other key fixes",
+      "value": "Safer, longer main loading to avoid crashes; mining upgrade cost reduced to 3 ores; Spring Pads reliability improved; Upgrade Terminal wide-text UI fix; movable/pickable pistons and attached-object fixes; keypad interaction fix."
     },
     {
-      "label": "Save fix",
-      "value": "Official fix for main-ending bricked saves applied in 1.0.7"
+      "label": "Affected guide",
+      "value": "Anomaly Phase 4 (/anomaly-phase-4/) — Cauldron recipe quality tiers."
     }
   ]
 }

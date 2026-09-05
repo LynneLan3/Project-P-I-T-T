@@ -1,24 +1,24 @@
 {
-  "title": "Project P.I.T.T. Shift Scheduler: how to use it, Duck Crank block",
-  "description": "Updated for 1.0.6: Use Project P.I.T.T. Shift Scheduler to schedule automatic or switchable tools; it will not act as a button for the Manual Duck Crank. Re-test old reports.",
-  "h1": "Project P.I.T.T. Shift Scheduler: how to use it, Duck Crank block",
-  "quickAnswer": "The Shift Scheduler controls supported automatic or switchable tools; it is not a button-press replacement for a Manual Duck Crank. Community testing shows Remote can work with the Scheduler, and it’s intended for devices you can turn on/off or that run automatically (fans, magnets are cited by players as examples to verify in-game). Official 1.0.6 notes only: \"Fixed the shift scheduler inconsistencies.\" Re-test any pre-1.0.6 setups against the current build rather than assuming older reports still apply.",
+  "title": "Project P.I.T.T. Shift Scheduler — what to connect and why it won’t respond",
+  "description": "What to connect: automatic/switchable tools (fans, magnets, cannon). Manual Duck Crank limitation: the crank does not respond to the Shift Scheduler. Fastest working test: place a Scheduler beside a Remote-controlled fan (or a Remote + fan) and verify the fan toggles. Note: Update 1.0.6 fixed shift scheduler inconsistencies (do not assume any 1.0.8 Scheduler change).",
+  "h1": "Project P.I.T.T. Shift Scheduler — what to connect and why it won’t respond",
+  "quickAnswer": "The Shift Scheduler connects to automatic/switchable tools (fans, magnets, cannon). It is not a button-press replacement — the Manual Duck Crank will not respond. Remote has community-confirmed compatibility with the Scheduler. Fastest working test: place the Scheduler next to a Remote-controlled fan (or a Remote + fan) and confirm the fan toggles to verify the setup.",
   "facts": [
     {
-      "label": "Tool",
-      "value": "Manual Duck Crank: unsupported for Scheduler use (community test). Cannon: documented as linkable in current guides. Fan and Magnet: community-cited examples; verify in-game before relying on them."
+      "label": "Connects to",
+      "value": "Automatic/switchable tools (fans, magnets, cannon) that accept remote/signal activation."
     },
     {
-      "label": "Connections",
-      "value": "Scheduler is for automatic or switchable tools you can enable/disable, not manual button machines. Remote has community-confirmed compatibility; other tools require testing and should not be assumed universal."
+      "label": "Manual Duck Crank",
+      "value": "Unsupported — the Manual Duck Crank does not respond to the Shift Scheduler; it is not a replacement for manual activation."
     },
     {
-      "label": "Timing",
-      "value": "Do not rely on invented timer values here. The Scheduler is commonly used to split output, gather product, then release together for larger combo bonuses or timed/batch release setups; re-test older timing reports after 1.0.6."
+      "label": "Remote",
+      "value": "Community-confirmed compatible — players report Remotes work when paired with the Shift Scheduler."
     },
     {
-      "label": "Current version",
-      "value": "Updated for 1.0.6 — Official Steam Update wording: \"Fixed the shift scheduler inconsistencies.\" Re-test any pre-1.0.6 reports; the note does not detail what was changed."
+      "label": "Update 1.0.6",
+      "value": "Official note: Update 1.0.6 fixed shift scheduler inconsistencies; this is the only confirmed Scheduler update referenced here."
     }
   ]
 }

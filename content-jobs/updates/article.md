@@ -1,80 +1,74 @@
 ## Quick Answer
-1.0.7 (Aug 30, 2026) adds quality-of-life and reliability fixes: the Panel Rack can now be bound to the interact key and includes an auto‑dispense toggle; pistons were reworked so tools can stick to and move with the piston head and toggling a piston off locks its current position; the Trade Terminal gains a long‑press wipe for all placed tools and Clear All now removes Gambling Crates; several reliability fixes (piñata/cushion, a duck workbench animation, and main-ending bricked saves) and small UI hints/ground markings were added. Official Steam notes: https://steamcommunity.com/app/4026250/
+Latest update: 1.0.8 — released September 4, 2026. The patch’s primary gameplay impacts are the new Cauldron (Anomaly workbench) recipe quality system (important for Anomaly Phase 4 strategies), a reduced ore cost for Mining upgrades (3 ores per upgrade instead of 5), and several reliability/UI fixes that affect automation and stability (pistons pickable/movable again, safer/longer main loading to avoid crashes, spring pads more consistent, Upgrade Terminal text and keypad interaction fixes). Guides you should check first: [Anomaly Phase 4]({{page:anomaly-phase-4}}) (Cauldron recipe tiers), plus Automation and Troubleshooting for piston and stability implications. Official 1.0.8 note: https://steamcommunity.com/games/4026250/announcements/detail/689767689898427431
 
-## Latest Update: 1.0.7
-Release date: August 30, 2026 (official Steam Community patch notes)
+## Latest Update: 1.0.8
+Release date: September 4, 2026 (official Steam Community patch note)
+Official update page: https://steamcommunity.com/games/4026250/announcements/detail/689767689898427431
 
-Quick Answer for 1.0.7 gameplay changes:
-- Panel Rack: bind to interact key + new auto‑dispense toggle.
-- Pistons: tools can stick to the piston head and move with it; turning a piston off locks position; turning it back on resumes prior motion.
-- Trade Terminal: long‑press the tool lever to wipe all placed tools; Clear All now handles Gambling Crates.
-- Ground markings for future machines; torch light unlock now shows control hint.
-- Reliability fixes: piñata/cushion, automatic duck workbench animation, and an official fix for main-ending bricked saves.
+## What Changed in 1.0.8
+- Cauldron (Anomaly workbench) recipe quality system:
+  - 3 identical products → lesser / lower-quality Anomaly
+  - 2 different products (3 total) → normal-quality Anomaly
+  - one of each product → enhanced-quality Anomaly
+- Mining upgrade cost reduced: now requires 3 ores per upgrade (previously required all 5).
+- Main loading ramped to be safer/longer to reduce whole-machine crashes during load.
+- Spring Pads made more reliable with more consistent outcomes.
+- Pistons: are movable again; objects stuck to the piston head follow the head and are pickable again.
+- Upgrade Terminal: wide-text UI fix.
+- Keypad interaction fix.
+- Miscellaneous UI and stability fixes.
 
-Official source: https://steamcommunity.com/app/4026250/
-
-## What Changed in 1.0.7
-- Panel Rack
-  - You can assign the interact key to the Panel Rack, letting you open/use it with your chosen input instead of relying solely on context click.
-  - An auto‑dispense toggle lets you switch automatic dispensing on or off per rack.
-- Pistons
-  - Tools placed on piston heads will now remain attached and move with the piston.
-  - Switching a piston off will lock it at its current location; turning it back on resumes its previous motion state.
-- Trade Terminal
-  - Long‑pressing the tool lever clears/wipes all tools placed from that terminal.
-  - The global Clear All function now properly removes Gambling Crates as well as standard placed items.
-- UI / World
-  - Ground markings were added to indicate spots for future machines (helpful for planning builds).
-  - Torch light unlock now displays a control hint so you can see which button to use.
-- Reliability / Bugs
-  - Piñata and Cushion behaviors received reliability fixes.
-  - Automatic duck workbench animation issue fixed.
-  - Official fix for main-ending bricked saves (this update explicitly fixes the problem that 1.0.6 attempted to address).
+(These items summarize the official 1.0.8 Steam announcement.)
 
 ## What This Changes in Your Current Run
-- Panel Rack bind + auto‑dispense: You can integrate Panel Racks into controller/keybind workflows immediately. If you relied on manual interaction, you can now toggle auto‑dispense off to prevent accidental outputs.
-- Pistons: Moving pistons can now carry tools and other items that are attached to the head—this affects routing and moving-tool setups. Use the piston toggle to pause and lock a tool in place, then resume movement later without losing timing/state.
-- Trade Terminal cleanup: Use the long‑press wipe to quickly clear placed tools during a run or before selling/repurposing a station. Clear All now removing Gambling Crates means less leftover clutter when you need a full reset.
-- Save reliability: The explicit fix for main-ending bricked saves reduces the risk of being unable to continue after finishing the main ending; if you were stuck or worried about that edge case, runs should be safer going forward.
-- Minor UX and reliability fixes (torch hint, ground markings, piñata/cushion, duck animation) improve clarity and reduce small annoyance-based soft failures; these are low-impact but helpful for smoother runs.
+1. Cauldron / Anomaly runs
+   - Decide Cauldron inputs intentionally: mixing all three different recipe products now yields the highest-quality Anomaly, while identical stacks reduce quality. This directly affects expected Anomaly behavior and rewards — update your Phase 4 plans accordingly.
+2. Mining progression
+   - You need fewer ores to purchase Mining upgrades (3 instead of 5). If you were stockpiling for a future upgrade, you can accelerate upgrades sooner in this run.
+3. Automation and moving-tool setups
+   - Pistons again carry attached objects and are pickable; test any piston-driven delivery or timing builds (see Automation guide) because previously broken behavior may now be restored or work differently than in 1.0.6/1.0.7-era notes.
+4. Stability and save confidence
+   - The extended, safer main loading reduces crash risk during load screens; still keep regular saves and consult Troubleshooting if you encounter a persistent crash.
+5. Smaller QoL/UI fixes
+   - Upgrade Terminal text and keypad fixes remove some annoyances — update any UI-guided workflows that depended on those screens.
 
-If you encounter a remaining save or stability issue, consult the [Troubleshooting]({{page:troubleshooting}}) guide for current recovery steps and temporary workarounds.
+If you rely on any automation or Anomaly-based strategies, test them in a short run before committing to a long-term base plan.
 
-## Guides Affected by 1.0.7
-- [Panel Rack]({{page:panel-rack}}) — Updated to document the new interact bind and auto‑dispense toggle, and recommended usage patterns for controller/keybind setups.
-- [Trade Terminal]({{page:trade-terminal}}) — Updated to show the long‑press wipe and explain Clear All handling of Gambling Crates.
-- [Automation]({{page:automation}}) — Updated to reflect piston behavior changes and how attached tools move with piston heads; recommended piston toggle uses for locking positions.
-- [Troubleshooting]({{page:troubleshooting}}) — Updated with notes about the main-ending bricked-save fix and where to look if you still run into corrupted or bricked end sequences.
-- [Anomaly Phase 4]({{page:anomaly-phase-4}}) — Mention added about new ground markings being placed for future machines relevant to Phase 4 planning.
+## Guides Affected by 1.0.8
+- [Anomaly Phase 4]({{page:anomaly-phase-4}}) — REQUIRED update. The Cauldron recipe now has explicit quality tiers; the guide’s recipe recommendations, expected Anomaly outcomes, and recommended inputs should be reviewed and updated.
+- [Automation]({{page:automation}}) — Recommended update. Piston behavior (objects following piston head, pickable again) and spring-pad reliability changes can alter timing and design recommendations.
+- [Troubleshooting]({{page:troubleshooting}}) — Recommended update. Note the safer/longer main loading change and advise players what to try if they still see crashes or loading hangs.
+
+(Other existing guides such as Panel Rack and Trade Terminal were not identified as changed in 1.0.8 by the official note; keep earlier 1.0.7 updates in those guides unless future notes say otherwise.)
 
 ## Update History
+### Update 1.0.8 — September 4, 2026
+Player-impact summary: Cauldron recipe quality tiers (affects Anomaly outcomes), mining upgrade now requires 3 ores per upgrade, piston pickable/movable behavior restored (objects stuck to the head follow), spring pads more reliable, safer/longer main loading to reduce crashes, Upgrade Terminal wide-text UI fix, and keypad interaction fix. Official note: https://steamcommunity.com/games/4026250/announcements/detail/689767689898427431
+
 ### Update 1.0.7 — August 30, 2026
-Player-impact summary: QoL and reliability focus. Panel Rack can be bound and given an auto‑dispense toggle; pistons now carry attached tools and can be locked/resumed; Trade Terminal gains a long‑press wipe and Clear All now removes Gambling Crates; small UI hints and ground markings added; multiple reliability fixes including one specifically addressing main-ending bricked saves.
+Player-impact summary: QoL and reliability focus. Panel Rack can be bound to the interact key and gained an auto‑dispense toggle; pistons were reworked to carry attached tools and to lock/resume when toggled; Trade Terminal long‑press wipe and Clear All handling of Gambling Crates; reliability fixes for piñata/cushion and duck workbench animation; main-ending bricked-save fix and small UI/ground-marking additions.
 
 ### Update 1.0.6 — August 26, 2026
-Player-impact summary: Stability and input fixes. Addressed shift scheduler inconsistencies and saving reliability; Panel Rack gained a dedicated keybind (but no auto‑dispense toggle at that time); unplaced fuses return on save; continued work on post‑ending saves; mouse polling improvements for FPS; lost tool recall and lava tool respawn fixes.
+Player-impact summary: Stability and input fixes. Shift scheduler inconsistencies fixed; Panel Rack dedicated keybind (no auto‑dispense toggle at that time); save reliability improvements; mouse polling / FPS fixes; lost tool recall and lava respawn fixes.
 
 ### Update 1.0.5
-Player-impact summary: Emergency cleanup and stuck-item fixes. Added a Pause Menu → Clear Items option for emergency cleanup (no refund) and reduced occurrences of key items remaining permanently stuck in walls.
+Player-impact summary: Emergency cleanup and stuck-item fixes. Added Pause Menu → Clear Items (no refund) and reduced occurrences of items stuck permanently in walls; Panel Rack introduced.
 
 ### Phase 3 Hotfix
-Player-impact summary: Early hotfix addressing launch‑window stability issues and other immediate launch problems. Short, targeted fixes to improve playability immediately after release.
+Player-impact summary: Immediate launch-window stability fixes and the Phase 3 event removal. Short, targeted hotfixes to improve playability after launch.
 
 ## FAQ
-Q: Can I rebind the Panel Rack interact to any key or button?
-A: Yes — 1.0.7 lets the Panel Rack be bound to your interact key. See the [Panel Rack]({{page:panel-rack}}) guide for recommended setups.
+Q: How exactly does Cauldron recipe quality work in 1.0.8?
+A: The Cauldron now evaluates the three input products: three of the same product produce a lesser-quality Anomaly; two different products (three inputs total) produce normal quality; and using one of each of the three distinct products produces an enhanced-quality Anomaly. See [Anomaly Phase 4]({{page:anomaly-phase-4}}) for guide updates and recommended inputs.
 
-Q: If I turn a piston off, will it lose its motion state?
-A: No — turning a piston off locks it at its current position; turning it back on resumes previous motion as of 1.0.7.
+Q: Do I still need five ores for Mining upgrades?
+A: No — 1.0.8 reduces the Mining upgrade cost to 3 ores per upgrade.
 
-Q: How do I clear all placed tools at a Trade Terminal?
-A: Long‑press the tool lever at the Trade Terminal to wipe all placed tools. Full details are in the [Trade Terminal]({{page:trade-terminal}}) guide.
+Q: My piston builds were broken earlier — will automation behave properly now?
+A: Pistons are reported as movable again and objects stuck to the head now follow and are pickable. Update your Automation setups and test pistons in a short run; if you see inconsistent behavior, consult the [Automation]({{page:automation}}) and [Troubleshooting]({{page:troubleshooting}}) guides.
 
-Q: Are my runs safe from the main-ending save bricking bug now?
-A: 1.0.7 explicitly fixes the main-ending bricked saves issue. If you still experience problems, consult [Troubleshooting]({{page:troubleshooting}}) and attach logs or report via the official Steam page linked below.
-
-Q: Where can I read the official patch notes?
-A: Official updates and full notes are on the Steam Community: https://steamcommunity.com/app/4026250/
+Q: Where can I read the official 1.0.8 patch note?
+A: Official 1.0.8 announcement on Steam: https://steamcommunity.com/games/4026250/announcements/detail/689767689898427431. The game’s Steam hub is: https://steamcommunity.com/app/4026250/
 
 ## Related Guides
 - [Panel Rack]({{page:panel-rack}})
@@ -82,5 +76,3 @@ A: Official updates and full notes are on the Steam Community: https://steamcomm
 - [Automation]({{page:automation}})
 - [Troubleshooting]({{page:troubleshooting}})
 - [Anomaly Phase 4]({{page:anomaly-phase-4}})
-
-Official source: https://steamcommunity.com/app/4026250/

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "templateVersion": "2.0.0",
   "generatorVersion": "1.0.0",
-  "specHash": "c3870f76bfb8aae19d506296082f339e10214364cb9b005f62566018587c8b28",
+  "specHash": "dc4a5cac1c1ea8ca6b6bec690a6f04990f5ebd67d62e8219a93bfad090c266a8",
   "siteId": "project-p-i-t-t",
   "createdFromSpec": "site-spec.yaml",
   "managedFiles": [
@@ -53,7 +53,7 @@
     },
     {
       "path": "src/config/site.generated.ts",
-      "sha256": "1abbe7bcf3cf40793532478b9d886c9f5d601b5ba2753f18be452ec01ce43a06",
+      "sha256": "98b04b4cc4056df4111126adb6acee9b2ee7e59f3c94e3bf4837504542f3154f",
       "kind": "config"
     },
     {
@@ -73,7 +73,7 @@
     },
     {
       "path": "src/content/docs/automation/shift-scheduler.md",
-      "sha256": "95ab5d5c505d87db6b06d83fb05da37c5ff4a6ea8877e9462c08f01481477bb8",
+      "sha256": "d5de7dc3acb2f0b2af4dcd4a2b2147c4e2b66a64aa4f4a6532dbb5c985a2229e",
       "kind": "page"
     },
     {
@@ -98,12 +98,12 @@
     },
     {
       "path": "src/content/docs/progression-secrets/200kg-plate.md",
-      "sha256": "ce37e94b4155cf01b0a0f9276fe452d6ac15a5d18500097e291061b2342ccb78",
+      "sha256": "c7b3a033d0c1dbfe909522a7395cb277e161825ded7147546a93818120d3edd8",
       "kind": "page"
     },
     {
       "path": "src/content/docs/progression-secrets/anomaly-phase-4.md",
-      "sha256": "6c80652642e4bbad75a9b456ed57e775ba5ce7840f8c911dcabed4b936ed7b24",
+      "sha256": "5c87edc014ef27de9038a2b6447bbf8065af89a2e99739d91bce842b226d62f6",
       "kind": "page"
     },
     {
@@ -133,7 +133,7 @@
     },
     {
       "path": "src/content/docs/updates/updates.md",
-      "sha256": "853303b357f12cedc2c2f98fe9ae010cd89f33f57bbfd52578fb8600ecc82731",
+      "sha256": "5e1568b56930c335686ea02764d5bb853d41aac408153dc00763c2c090e24cda",
       "kind": "page"
     },
     {

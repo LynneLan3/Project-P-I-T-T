@@ -1,49 +1,81 @@
-# APIMart content brief: Project P.I.T.T. Shift Scheduler blocker page
+# APIMart content brief: Project P.I.T.T. Shift Scheduler — GSC CTR refresh
 
-## PRIMARY INTENT
+TARGET URL
+/shift-scheduler/
 
-Answer the live blocker questions: how to use the Shift Scheduler, why it does
-not help on the Manual Duck Crank, what tools can be connected, whether Remote
-works with it, and why players use it for timed or batch release setups.
+## Intent Brief
 
-## REQUIRED PAGE SHAPE
+```json
+{
+  "primaryQuery": "project pitt shift scheduler",
+  "queryCluster": [
+    "project pitt shift scheduler",
+    "shift scheduler project pitt",
+    "project pitt how to use shift scheduler",
+    "project pitt shift scheduler not working",
+    "project pitt scheduler remote",
+    "project pitt manual duck crank scheduler"
+  ],
+  "userJob": "Quickly learn how to use the Shift Scheduler, why a setup has no response, which tools are compatible, and how Remote + Scheduler should be paired.",
+  "intentOwnerStatus": "KEEP",
+  "serpPromise": "Tell players what the Scheduler should connect to, what it cannot drive, and the fastest working test — not a vague evidence lecture.",
+  "secondaryIntents": [
+    { "query": "shift scheduler project pitt", "action": "KEEP_SUPPORTING" },
+    { "query": "project pitt how to use shift scheduler", "action": "KEEP_SUPPORTING" },
+    { "query": "project pitt shift scheduler not working", "action": "KEEP_SUPPORTING" },
+    { "query": "project pitt scheduler remote", "action": "KEEP_SUPPORTING" },
+    { "query": "project pitt manual duck crank scheduler", "action": "KEEP_SUPPORTING" }
+  ]
+}
+```
 
-Keep the article short and answer-first. Use these sections in this order:
+## Metadata Update
 
-1. Quick Answer
-2. How to Use the Shift Scheduler
-3. Why It Does Not Work on the Manual Duck Crank
-4. What Tools Work With the Shift Scheduler?
-5. Shift Scheduler + Remote
-6. What Is It Actually Useful For?
-7. 1.0.6 Update Note
-8. FAQ
+REQUIRED
 
-The template supplies the H1. Include `Updated for 1.0.6` visibly in the
-article or metadata-facing copy. Do not add a generic tools database or a
-long automation encyclopedia.
+Reason: Page avg position ~4 with ~2.7% CTR. SERP Promise must answer how to use / why not working more clearly in Title, Meta, H1, and Quick Answer.
 
-## VERIFIED EVIDENCE
+Existing Title:
+Project P.I.T.T. Shift Scheduler: how to use it, Duck Crank block
 
-- Steam discussion: a player reports placing the Scheduler beside the Manual
-  Duck Crank and getting no response; replies distinguish machines from tools
-  and explain that it is for things that work automatically and can be turned
-  on or off, with fans or magnets offered as examples.
-- The same Steam discussion later reports that Remote works with Scheduler.
-- The same discussion gives a practical use: split off part of a machine's
-  output, gather product, then release it together for a larger combo bonus.
-- Official Steam Community Update 1.0.6 (26 August 2026) says exactly:
-  `Fixed the shift scheduler inconsistencies.` This is the complete official
-  claim for the Scheduler fix in this article.
-- Two independent current guide pages document Cannon as manually activatable
-  or Shift Scheduler-linked: Project P.I.T.T. Tools & Upgrades at
-  https://projectpitt.online/guides/tools-and-upgrades/ and Project P.I.T.T.
-  All Items and Tools List at
-  https://ninewiki.com/item/project-p-i-t-t-all-items-and-tools-list/.
+Title direction:
+Keep answer-first how-to / troubleshooting promise. Emphasize how to use + why it is not working + what connects. Include Project P.I.T.T. and Shift Scheduler. Do not invent 1.0.8 Scheduler changes.
 
-## COMPATIBILITY BOUNDARY
+## GSC Context
 
-Use a compact evidence table only if it stays cautious:
+- Page impressions: 37; clicks: 1; CTR: 2.7%; avg position: 3.97
+- Query `project pitt shift scheduler`: 9 impressions, 0% CTR, pos 4.6
+- Query `shift scheduler project pitt`: 6 impressions, 0% CTR, pos 4.5
+Ranking is fine; click promise is weak.
+
+## Body Rewrite Priority
+
+Optimize Title / Meta / H1 / Quick Answer first.
+Do NOT rewrite away correct compatibility evidence.
+Keep the compatibility table, but reorder the article from “evidence classification first” to “make it work first → then compatibility”.
+
+Recommended task chain:
+
+1. What the Scheduler should connect to
+2. One simplest working test
+3. Why Manual Duck Crank does nothing
+4. How Remote + Scheduler pairs
+5. Fans / Magnets / Cannon evidence status
+6. Practical uses: batch release / combo control
+7. 1.0.6 compatibility note
+
+## Verified Evidence (unchanged)
+
+- Steam discussion: Scheduler beside Manual Duck Crank → no response; replies say it is for automatic/switchable tools (fans/magnets cited as examples to verify).
+- Same discussion: Remote works with Scheduler (community-confirmed).
+- Practical use from same discussion: split machine output, gather product, release together for larger combo bonus.
+- Official Steam Update 1.0.6 (26 Aug 2026): exactly `Fixed the shift scheduler inconsistencies.`
+- No new official Scheduler rule in Update 1.0.8 — do not invent one.
+- Cannon: documented as manually activatable or Shift Scheduler-linked by:
+  - https://projectpitt.online/guides/tools-and-upgrades/
+  - https://ninewiki.com/item/project-p-i-t-t-all-items-and-tools-list/
+
+## Compatibility Table (keep cautious labels)
 
 | Tool | Status | Evidence |
 | --- | --- | --- |
@@ -53,47 +85,35 @@ Use a compact evidence table only if it stays cautious:
 | Fan | Community evidence; verify in-game | Steam discussion example |
 | Magnet | Community evidence; verify in-game | Steam discussion example |
 
-Do not turn Fan or Magnet into official or universal compatibility claims.
-Do not promise any other tool. If the writer omits a row because evidence is
-not strong enough, that is acceptable.
+## Must Say / Must Not Say
 
-## MUST SAY / MUST NOT SAY
+- Quick Answer must say Scheduler is not a button-press replacement for Manual Duck Crank
+- Say Remote can work with Scheduler based on community testing
+- Say 1.0.6 fixed Scheduler inconsistencies without inventing what was fixed
+- Do not invent timer values, intervals, keybinds, unlock tiers, wiring diagrams
+- Do not claim Scheduler guarantees x300 combo
+- Mention Updated for 1.0.6; do not claim a 1.0.8 Scheduler change
 
-- The Quick Answer must directly say that the Scheduler is not a button-press
-  replacement for a manual machine such as Manual Duck Crank; it is for
-  supported automatic or switchable tools.
-- Say Remote can work with Scheduler based on current community testing.
-- Say 1.0.6 fixed Scheduler inconsistencies, without explaining whether the
-  fix concerned timers, Remote, a particular device, or another mechanism.
-- Explain that old pre-1.0.6 reports should be re-tested against the current
-  version, without claiming the current build guarantees a setup.
-- Do not invent timer values, intervals, durations, production multipliers,
-  button labels, keybinds, unlock tiers, wiring diagrams, or a universal
-  recipe.
-- Do not claim that Scheduler guarantees an x300 combo. It can support tested
-  controlled lanes and batch release setups; link to x300 only as a natural
-  next step.
-
-## INTERNAL LINKS
-
-Use these exact guide-template links where natural:
+## Internal Links
 
 - `[Automation]({{page:automation}})`
 - `[Trade Terminal]({{page:trade-terminal}})`
 - `[Panel Rack]({{page:panel-rack}})`
 - `[x300 Combo]({{page:x300-combo}})`
 
-Automation should link back to this page. Do not modify 200kg, Fuses, Trade
-Terminal body, or Winner/Cooldown pages for this task.
+## Article Structure
 
-## SEARCH INTENTS
+## Quick Answer
+## What the Shift Scheduler Should Connect To
+## Fastest Working Test
+## Why Manual Duck Crank Does Nothing
+## Shift Scheduler + Remote
+## What Tools Work With the Shift Scheduler?
+## What Is It Actually Useful For?
+## 1.0.6 Update Note
+## FAQ
+## Related Guides
 
-project pitt shift scheduler; project pitt how to use shift scheduler; project
-pitt shift scheduler not working; project pitt scheduler remote; project pitt
-scheduler timer; project pitt manual duck crank scheduler.
+## Writing Rules
 
-## WRITING RULE
-
-All final English title, meta description, H1, Quick Answer, body, and FAQ
-wording must be produced by APIMart. Preserve the evidence labels and omit
-unsupported parameters rather than guessing.
+All final English title, meta, H1, Quick Answer, body, and FAQ must be produced by APIMart / Shared Writer.

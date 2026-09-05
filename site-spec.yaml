@@ -54,7 +54,7 @@ categories:
     imageAssetId: null
   - id: updates
     label: Updates
-    description: Patch notes and version changes explained for current runs.
+    description: "Update 1.0.8 (September 4, 2026) is the current release — this hub explains what changed for players and which guides need updates. Key player-impact changes include the Cauldron (Anomaly workbench) recipe quality tiers, safer/longer main loading, and several bug fixes; affected guides such as Anomaly Phase 4 are called out. Official Steam note: https://steamcommunity.com/games/4026250/announcements/detail/689767689898427431 (Steam hub: https://steamcommunity.com/app/4026250/)."
     icon: document
     order: 4
     imageAssetId: null
@@ -211,7 +211,7 @@ pages:
       - type: official
         title: Project P.I.T.T. Steam store page
         url: https://store.steampowered.com/app/4026250/Project_PITT/
-    changeSummary: Updated for the launch-window 200kg query with direct next-step capture into Percentage Pipe.
+    changeSummary: "Added community-tested item-weight table; Title metadata NO_CHANGE."
   - id: percentage-pipe
     title: Project P.I.T.T. Percentage Pipe Guide — Why It Stays at 0%
     description: Why basic ducks leave the Percentage Pipe at 0% after 200kg, the 10 Anomalies route, and when to keep Piñatas intact for Phase 4.
@@ -418,8 +418,8 @@ pages:
         url: https://store.steampowered.com/app/4026250/Project_PITT/
     changeSummary: New answer-first Phase 4 Anomaly guide for recipe, workbench, synchronized inputs, cautious automation, and the 10-Anomaly Percentage Pipe handoff.
   - id: anomaly-phase-4
-    title: How to Make Anomalies in Project P.I.T.T. — Phase 4 Recipe & Workbench Fixes
-    description: Phase 4 recipe, workbench fixes, and Piñata staging tips for making Anomalies in Project P.I.T.T.
+    title: "Project P.I.T.T. Cauldron — 1.0.8 Anomaly Recipe Tiers & Use"
+    description: "Cauldron tiers after Update 1.0.8: which combos make lower/normal/enhanced Anomalies, plus troubleshooting for the Cauldron not working and ejected inputs."
     category: progression-secrets
     slug: anomaly-phase-4
     source: site-input/pages/anomaly-phase-4.md
@@ -428,22 +428,25 @@ pages:
     sidebarOrder: 7
     role: core
     intents:
+      - project-pitt-cauldron
+      - project-pitt-phase-4-cauldron
+      - project-pitt-cauldron-not-working
       - project-pitt-anomaly-phase-4
       - project-pitt-how-to-make-anomaly
       - project-pitt-anomaly-workbench-not-working
       - project-pitt-anomaly-recipe
       - project-pitt-phase-4-anomaly
-    quickAnswer: "Recipe: Duck + Cash Register + Piñata at the Anomaly workbench. Complete one successful manual Anomaly before scaling automation."
-    eyebrow: Phase 4 Anomaly
+    quickAnswer: "After Update 1.0.8: 3 identical products → lower-quality Anomaly; 3 products using only 2 distinct product types (2 different/3 total) → normal-quality Anomaly; one Duck + one Cash Register + one Piñata → enhanced-quality Anomaly. Run one complete manual Cauldron cycle and confirm a successful craft before automating."
+    eyebrow: Cauldron / Phase 4
     facts:
-      - label: Recipe
-        value: "Observed recipe: Duck + Cash Register + Piñata at the Anomaly workbench."
-      - label: Phase 4
-        value: Anomaly belongs to Phase 4.
-      - label: Workbench issue
-        value: All three inputs must truly enter the corresponding workbench process — not merely arrive nearby; misalignment or multiple inputs can make the workbench appear not to work and automation can amplify jams.
-      - label: Piñata
-        value: Piñata is fragile during transport and can break before reaching the workbench; stage and secure it to avoid breakage.
+      - label: "Cauldron (Anomaly workbench) — Updated 1.0.8"
+        value: "The Cauldron is the Anomaly workbench (official 1.0.8 naming). Update 1.0.8 formalizes crafting from three inputs and adds explicit three-tier quality outcomes."
+      - label: "Recipe tiers (1.0.8 rules)"
+        value: "After 1.0.8 there are three quality tiers: 3 of the same product → lower-quality Anomaly; 3 products composed of only 2 distinct product types → normal-quality Anomaly; one-of-each (see enhanced example) → enhanced-quality Anomaly."
+      - label: "Enhanced combo example"
+        value: "The mapped enhanced-quality example from 1.0.8 is one Duck + one Cash Register + one Piñata. This specific one-of-each set yields enhanced quality; it is an example, not a claim that it is the only possible enhanced set."
+      - label: "Troubleshooting & ejection (manual first)"
+        value: "Always complete one successful manual Cauldron cycle before automating. Inputs must physically enter the Cauldron—items sitting nearby may not register. Piñata items remain fragile in transit and can break. Automation amplifies staging or timing failures. Community reports (not official patch rules) note per-ingredient stock limits can cause items to eject or pop out."
     related:
       - automation
       - percentage-pipe
@@ -461,15 +464,18 @@ pages:
     assetType: article
     sources:
       - type: steam
+        title: Steam Community — Update 1.0.8 (Cauldron recipe quality)
+        url: https://steamcommunity.com/games/4026250/announcements/detail/689767689898427431
+      - type: steam
         title: Steam Community — Phase 4 Anomaly discussions
         url: https://steamcommunity.com/app/4026250/
       - type: official
         title: Project P.I.T.T. Steam store page
         url: https://store.steampowered.com/app/4026250/Project_PITT/
-    changeSummary: New Phase 4 Anomaly recipe and workbench troubleshooting page, complementing Automation.
+    changeSummary: "Updated for 1.0.8 Cauldron three-tier Anomaly recipe; owns project pitt cauldron intent."
   - id: updates
-    title: Project P.I.T.T. Updates & Patch Notes — Latest Changes Explained
-    description: "Project P.I.T.T. patch notes explained: latest 1.0.7 changes and which guides were updated."
+    title: "Project P.I.T.T. Updates & Patch Notes — Latest Changes Explained"
+    description: "Update 1.0.8 (September 4, 2026) is the current release — this hub explains what changed for players and which guides need updates. Key player-impact changes include the Cauldron (Anomaly workbench) recipe quality tiers, safer/longer main loading, and several bug fixes; affected guides such as Anomaly Phase 4 are called out. Official Steam note: https://steamcommunity.com/games/4026250/announcements/detail/689767689898427431 (Steam hub: https://steamcommunity.com/app/4026250/)."
     category: updates
     slug: updates
     source: site-input/pages/updates.md
@@ -478,20 +484,21 @@ pages:
     sidebarOrder: 1
     role: core
     intents:
+      - project-pitt-update-1-0-8
       - project-pitt-updates
       - project-pitt-patch-notes
       - project-pitt-update-1-0-7
-    quickAnswer: Update 1.0.7 primarily reworks pistons so tools can attach and move with piston heads while also adding Panel Rack interact binding and an auto-dispense toggle to improve automation control.
+    quickAnswer: "1.0.8 Cauldron quality tiers and other player-impact fixes; Anomaly Phase 4 is the primary affected guide. Released Sep 4, 2026, 1.0.8 introduces Cauldron recipe quality rules (3 same = lesser Anomaly; 2 different among 3 = normal; all different = enhanced), reduces mining upgrade ore cost to 3, improves main loading stability, fixes Upgrade Terminal text, makes pistons movable/pickable, stabilizes Spring Pads, and repairs keypad interaction — update your Anomaly Phase 4 guide for Cauldron recipes and check automation/troubleshooting notes as needed."
     eyebrow: Patch Notes
     facts:
-      - label: Latest version
-        value: Update 1.0.7 (August 30, 2026)
-      - label: Panel Rack
-        value: Can bind the interact key and gains a new auto-dispense toggle
-      - label: Pistons
-        value: Tools can stick to piston heads and move with them; turning a piston off locks its current position and turning it back on resumes previous motion
-      - label: Save fix
-        value: Official fix for main-ending bricked saves applied in 1.0.7
+      - label: "Latest version"
+        value: "Update 1.0.8 — September 4, 2026 (Steam release)"
+      - label: "Cauldron / Anomaly"
+        value: "Cauldron recipe quality tiers: 3 identical products → lesser Anomaly; 2 different products (3 total) → normal Anomaly; one of each (all different) → enhanced Anomaly."
+      - label: "Other key fixes"
+        value: "Safer, longer main loading to avoid crashes; mining upgrade cost reduced to 3 ores; Spring Pads reliability improved; Upgrade Terminal wide-text UI fix; movable/pickable pistons and attached-object fixes; keypad interaction fix."
+      - label: "Affected guide"
+        value: "Anomaly Phase 4 (/anomaly-phase-4/) — Cauldron recipe quality tiers."
     related:
       - panel-rack
       - trade-terminal
@@ -512,12 +519,15 @@ pages:
     assetType: article
     sources:
       - type: steam
+        title: Steam Community — Update 1.0.8
+        url: https://steamcommunity.com/games/4026250/announcements/detail/689767689898427431
+      - type: steam
         title: Steam Community developer updates
         url: https://steamcommunity.com/app/4026250/
       - type: official
         title: Project P.I.T.T. Steam store page
         url: https://store.steampowered.com/app/4026250/Project_PITT/
-    changeSummary: New permanent Updates hub with 1.0.7 summary and version history.
+    changeSummary: "Latest Update advanced to 1.0.8 with Cauldron quality tiers and affected Anomaly Phase 4 guide."
   - id: automation
     title: How to Automate Phase 4 in Project P.I.T.T.
     description: "Phase 4 automation hub: three-input staging, 1.0.7 Pistons, Piñata protection, Shift Scheduler, Trade Terminal, Panel Rack, and Anomaly Phase 4 cross-links."
@@ -672,8 +682,8 @@ pages:
         url: https://steamcommunity.com/app/4026250/discussions/0/587309530805892814
     changeSummary: Updated for 1.0.7 wipe-all placed tools, Gambling Crate cleanup, and destructive cleanup guidance.
   - id: shift-scheduler
-    title: "Project P.I.T.T. Shift Scheduler: how to use it, Duck Crank block"
-    description: "Updated for 1.0.6: Use Project P.I.T.T. Shift Scheduler to schedule automatic or switchable tools; it will not act as a button for the Manual Duck Crank. Re-test old reports."
+    title: "Project P.I.T.T. Shift Scheduler — what to connect and why it won’t respond"
+    description: "What to connect: automatic/switchable tools (fans, magnets, cannon). Manual Duck Crank limitation: the crank does not respond to the Shift Scheduler. Fastest working test: place a Scheduler beside a Remote-controlled fan (or a Remote + fan) and verify the fan toggles. Note: Update 1.0.6 fixed shift scheduler inconsistencies (do not assume any 1.0.8 Scheduler change)."
     category: automation
     slug: shift-scheduler
     source: site-input/pages/shift-scheduler.md
@@ -689,17 +699,17 @@ pages:
       - project-pitt-scheduler-remote
       - project-pitt-scheduler-timer
       - project-pitt-manual-duck-crank-scheduler
-    quickAnswer: 'The Shift Scheduler controls supported automatic or switchable tools; it is not a button-press replacement for a Manual Duck Crank. Community testing shows Remote can work with the Scheduler, and official 1.0.6 notes only say: "Fixed the shift scheduler inconsistencies." Re-test older reports.'
+    quickAnswer: "The Shift Scheduler connects to automatic/switchable tools (fans, magnets, cannon). It is not a button-press replacement — the Manual Duck Crank will not respond. Remote has community-confirmed compatibility with the Scheduler. Fastest working test: place the Scheduler next to a Remote-controlled fan (or a Remote + fan) and confirm the fan toggles to verify the setup."
     eyebrow: Shift Scheduler
     facts:
-      - label: Tool
-        value: Manual Duck Crank is unsupported for Scheduler use; Cannon is documented as linkable in current guides, while Fan and Magnet remain community examples to verify.
-      - label: Connections
-        value: Remote has community-confirmed compatibility; other automatic or switchable tools require in-game verification.
-      - label: Timing
-        value: Used for timed or batch-release setups such as gathering output before releasing it together; no undocumented timer values are stated.
-      - label: Current version
-        value: 'Updated for 1.0.6 — official note: "Fixed the shift scheduler inconsistencies." The note does not specify the changed behavior.'
+      - label: "Connects to"
+        value: "Automatic/switchable tools (fans, magnets, cannon) that accept remote/signal activation."
+      - label: "Manual Duck Crank"
+        value: "Unsupported — the Manual Duck Crank does not respond to the Shift Scheduler; it is not a replacement for manual activation."
+      - label: "Remote"
+        value: "Community-confirmed compatible — players report Remotes work when paired with the Shift Scheduler."
+      - label: "Update 1.0.6"
+        value: "Official note: Update 1.0.6 fixed shift scheduler inconsistencies; this is the only confirmed Scheduler update referenced here."
     related:
       - automation
       - trade-terminal
@@ -728,7 +738,7 @@ pages:
       - type: other
         title: Project P.I.T.T. All Items and Tools List — Cannon
         url: https://ninewiki.com/item/project-p-i-t-t-all-items-and-tools-list/
-    changeSummary: New launch-window guide for Shift Scheduler connections, timed/batch behavior, current-version fixes, and x300 automation use.
+    changeSummary: "CTR refresh: how-to / why-not-working SERP promise with make-it-work-first body order."
   - id: troubleshooting
     title: How to Fix Project P.I.T.T. Crashes, Low FPS, Saves & Missing Tools
     description: Troubleshooting Project P.I.T.T. for crashes, low FPS, save reliability and missing tools, noting 1.0.6 intended fixes, 1.0.7 official fixes and residual reports.
@@ -902,9 +912,9 @@ homepage:
   maxRecent: 3
   recentUpdates:
     - pageId: updates
-      title: Update 1.0.7
-      date: 2026-08-30
-      changeSummary: Panel Rack · Pistons · Trade Terminal · Save Fixes
+      title: Update 1.0.8
+      date: 2026-09-04
+      changeSummary: Cauldron tiers · Mining 3 ores · Spring Pads · Pistons
       tag: Updates
   statusItems:
     - label: Released
@@ -920,8 +930,8 @@ homepage:
       pageId: 200kg-plate
     - label: Why is the Percentage Pipe stuck at 0%?
       pageId: percentage-pipe
-    - label: How do I make Anomalies?
-      pageId: anomaly
+    - label: How do I use the Cauldron / make Anomalies?
+      pageId: anomaly-phase-4
     - label: What does END? mean?
       pageId: secret-ending
     - label: What is my elevator keypad code?
@@ -940,7 +950,7 @@ homepage:
       pageId: panel-rack
     - label: How do I reach a x300 combo?
       pageId: x300-combo
-    - label: What changed in Update 1.0.7?
+    - label: What changed in Update 1.0.8?
       pageId: updates
   startHere:
     - pageId: up-achievement-fuses

@@ -64,8 +64,8 @@ export const siteConfig: GameConfig = {
 				href: "/percentage-pipe/",
 			},
 			{
-				label: "How do I make Anomalies?",
-				href: "/anomaly/",
+				label: "How do I use the Cauldron / make Anomalies?",
+				href: "/anomaly-phase-4/",
 			},
 			{
 				label: "What does END? mean?",
@@ -104,7 +104,7 @@ export const siteConfig: GameConfig = {
 				href: "/x300-combo/",
 			},
 			{
-				label: "What changed in Update 1.0.7?",
+				label: "What changed in Update 1.0.8?",
 				href: "/updates/",
 			},
 		],
@@ -178,10 +178,10 @@ export const siteConfig: GameConfig = {
 		maxRecent: 3,
 		recentUpdates: [
 			{
-				title: "Update 1.0.7",
+				title: "Update 1.0.8",
 				href: "/updates/",
-				date: "2026-08-30",
-				changeSummary: "Panel Rack · Pistons · Trade Terminal · Save Fixes",
+				date: "2026-09-04",
+				changeSummary: "Cauldron tiers · Mining 3 ores · Spring Pads · Pistons",
 				tag: "Updates",
 			},
 		],
@@ -211,7 +211,7 @@ export const siteConfig: GameConfig = {
 		{
 			id: "updates",
 			label: "Updates",
-			description: "Patch notes and version changes explained for current runs.",
+			description: "Update 1.0.8 (September 4, 2026) is the current release — this hub explains what changed for players and which guides need updates. Key player-impact changes include the Cauldron (Anomaly workbench) recipe quality tiers, safer/longer main loading, and several bug fixes; affected guides such as Anomaly Phase 4 are called out. Official Steam note: https://steamcommunity.com/games/4026250/announcements/detail/689767689898427431 (Steam hub: https://steamcommunity.com/app/4026250/).",
 			icon: "document",
 			order: 4,
 		},
@@ -510,7 +510,7 @@ export const siteConfig: GameConfig = {
 			slug: "anomaly-phase-4",
 			role: "core",
 			assetType: "article",
-			intents: ["project-pitt-anomaly-phase-4", "project-pitt-how-to-make-anomaly", "project-pitt-anomaly-workbench-not-working", "project-pitt-anomaly-recipe", "project-pitt-phase-4-anomaly"],
+			intents: ["project-pitt-cauldron", "project-pitt-phase-4-cauldron", "project-pitt-cauldron-not-working", "project-pitt-anomaly-phase-4", "project-pitt-how-to-make-anomaly", "project-pitt-anomaly-workbench-not-working", "project-pitt-anomaly-recipe", "project-pitt-phase-4-anomaly"],
 			relations: [
 				{
 					pageId: "automation",
@@ -532,6 +532,11 @@ export const siteConfig: GameConfig = {
 			sources: [
 				{
 					type: "steam",
+					title: "Steam Community — Update 1.0.8 (Cauldron recipe quality)",
+					url: "https://steamcommunity.com/games/4026250/announcements/detail/689767689898427431",
+				},
+				{
+					type: "steam",
 					title: "Steam Community — Phase 4 Anomaly discussions",
 					url: "https://steamcommunity.com/app/4026250/",
 				},
@@ -549,7 +554,7 @@ export const siteConfig: GameConfig = {
 			slug: "updates",
 			role: "core",
 			assetType: "article",
-			intents: ["project-pitt-updates", "project-pitt-patch-notes", "project-pitt-update-1-0-7"],
+			intents: ["project-pitt-update-1-0-8", "project-pitt-updates", "project-pitt-patch-notes", "project-pitt-update-1-0-7"],
 			relations: [
 				{
 					pageId: "panel-rack",
@@ -573,6 +578,11 @@ export const siteConfig: GameConfig = {
 				},
 			],
 			sources: [
+				{
+					type: "steam",
+					title: "Steam Community — Update 1.0.8",
+					url: "https://steamcommunity.com/games/4026250/announcements/detail/689767689898427431",
+				},
 				{
 					type: "steam",
 					title: "Steam Community developer updates",
@@ -888,9 +898,9 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "anomaly-phase-4",
 					href: "/anomaly-phase-4/",
-					title: "How to Make Anomalies in Project P.I.T.T. — Phase 4 Recipe & Workbench Fixes",
-					description: "Phase 4 recipe, workbench fixes, and Piñata staging tips for making Anomalies in Project P.I.T.T.",
-					eyebrow: "Phase 4 Anomaly",
+					title: "Project P.I.T.T. Cauldron — 1.0.8 Anomaly Recipe Tiers & Use",
+					description: "Cauldron tiers after Update 1.0.8: which combos make lower/normal/enhanced Anomalies, plus troubleshooting for the Cauldron not working and ejected inputs.",
+					eyebrow: "Cauldron / Phase 4",
 				},
 				{
 					pageId: "secret-ending",
@@ -949,8 +959,8 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "shift-scheduler",
 					href: "/shift-scheduler/",
-					title: "Project P.I.T.T. Shift Scheduler: how to use it, Duck Crank block",
-					description: "Updated for 1.0.6: Use Project P.I.T.T. Shift Scheduler to schedule automatic or switchable tools; it will not act as a button for the Manual Duck Crank. Re-test old reports.",
+					title: "Project P.I.T.T. Shift Scheduler — what to connect and why it won’t respond",
+					description: "What to connect: automatic/switchable tools (fans, magnets, cannon). Manual Duck Crank limitation: the crank does not respond to the Shift Scheduler. Fastest working test: place a Scheduler beside a Remote-controlled fan (or a Remote + fan) and verify the fan toggles. Note: Update 1.0.6 fixed shift scheduler inconsistencies (do not assume any 1.0.8 Scheduler change).",
 					eyebrow: "Shift Scheduler",
 				},
 				{
@@ -970,9 +980,9 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "anomaly-phase-4",
 					href: "/anomaly-phase-4/",
-					title: "How to Make Anomalies in Project P.I.T.T. — Phase 4 Recipe & Workbench Fixes",
-					description: "Phase 4 recipe, workbench fixes, and Piñata staging tips for making Anomalies in Project P.I.T.T.",
-					eyebrow: "Phase 4 Anomaly",
+					title: "Project P.I.T.T. Cauldron — 1.0.8 Anomaly Recipe Tiers & Use",
+					description: "Cauldron tiers after Update 1.0.8: which combos make lower/normal/enhanced Anomalies, plus troubleshooting for the Cauldron not working and ejected inputs.",
+					eyebrow: "Cauldron / Phase 4",
 				},
 				{
 					pageId: "x300-combo",
@@ -1063,7 +1073,7 @@ export const siteConfig: GameConfig = {
 					pageId: "updates",
 					href: "/updates/",
 					title: "Project P.I.T.T. Updates & Patch Notes — Latest Changes Explained",
-					description: "Project P.I.T.T. patch notes explained: latest 1.0.7 changes and which guides were updated.",
+					description: "Update 1.0.8 (September 4, 2026) is the current release — this hub explains what changed for players and which guides need updates. Key player-impact changes include the Cauldron (Anomaly workbench) recipe quality tiers, safer/longer main loading, and several bug fixes; affected guides such as Anomaly Phase 4 are called out. Official Steam note: https://steamcommunity.com/games/4026250/announcements/detail/689767689898427431 (Steam hub: https://steamcommunity.com/app/4026250/).",
 					eyebrow: "Patch Notes",
 				},
 			],
