@@ -36,8 +36,9 @@ test('Adcash Autotag mounts once in shared Head and GameShell (not Display zone 
 	assert.doesNotMatch(autotag, /runBanner/i);
 });
 
-test('fixed Adsterra banner config remains preserved (no overlapping global Auto script present)', () => {
+test('fixed Adsterra Native Banner config remains preserved; Social Bar is separate from Adcash Autotag', () => {
 	const adSlot = readFileSync(path.join(ROOT, 'src/components/AdSlot.astro'), 'utf8');
+	const adScript = readFileSync(path.join(ROOT, 'src/components/AdScript.astro'), 'utf8');
 	const monetization = readFileSync(path.join(ROOT, 'src/lib/monetization.ts'), 'utf8');
 	assert.match(adSlot, /ADSTERRA_INVOKE_SRC/);
 	assert.match(adSlot, /ADSTERRA_CONTAINER_ID/);
@@ -46,5 +47,11 @@ test('fixed Adsterra banner config remains preserved (no overlapping global Auto
 		/https:\/\/pl31055290\.profitableratecpmnetwork\.com\/dcd3a104a99f11ab577ca98dd180ec29\/invoke\.js/,
 	);
 	assert.match(monetization, /container-dcd3a104a99f11ab577ca98dd180ec29/);
+	assert.match(
+		monetization,
+		/https:\/\/pl31231216\.profitableratecpmnetwork\.com\/43\/d2\/c8\/43d2c861a84252e5b8334b896f240154\.js/,
+	);
+	assert.match(adScript, /ADSTERRA_SOCIAL_BAR_SRC/);
 	assert.doesNotMatch(adSlot, /popunder|interstitial|aclib|runAutoTag/i);
+	assert.doesNotMatch(adScript, /aclib|runAutoTag|acscdn/i);
 });

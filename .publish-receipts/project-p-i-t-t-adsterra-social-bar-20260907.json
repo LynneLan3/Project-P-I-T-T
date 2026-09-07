@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "hotword-publish-receipt-v1",
+  "common": {
+    "site": "Project P.I.T.T.",
+    "siteId": "project-p-i-t-t",
+    "game": "Project P.I.T.T.",
+    "releaseDate": "2026-08-19",
+    "lifecyclePhase": "growth",
+    "batchId": "project-p-i-t-t-adsterra-social-bar-20260907",
+    "opportunityId": "opp-project-p-i-t-t-adsterra-social-bar-001",
+    "attributionMode": "OBSERVATIONAL_ONLY",
+    "commitSha": "",
+    "deploymentUrl": "",
+    "productionUrl": "https://project-p-i-t-t.vercel.app",
+    "deployedAt": ""
+  },
+  "interventions": [
+    {
+      "action": "MONETIZATION_ENABLE",
+      "primaryUrl": "/",
+      "affectedUrls": [
+        "/",
+        "/guides/",
+        "/routes/",
+        "/200kg-plate/",
+        "/secret-ending/",
+        "/up-achievement-fuses/",
+        "/shift-scheduler/",
+        "/automation/"
+      ],
+      "triggerType": "operator_request",
+      "triggerSummary": "Enable Adsterra / Profitablerate Social Bar Zone pl31231216 site-wide.",
+      "reason": "Operator supplied Social Bar script; restore Adsterra revenue path without reactivating Native Banner slots.",
+      "changeSummary": "ADSTERRA_SOCIAL_BAR_ENABLED=true; AdScript loads pl31231216 Social Bar on production host via Head and GameShell; Native Banner ADSTERRA_ENABLED=false preserved; Adcash Autotag unchanged."
+    }
+  ]
+}

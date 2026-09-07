@@ -1,0 +1,35 @@
+---
+/**
+ * Site-wide Adsterra / Profitablerate Social Bar.
+ * Production-only. Hostname check skips the script on non-production hosts.
+ * Independent of Native Banner AdSlot (which remains soft-offline).
+ */
+import {
+	ADSTERRA_SOCIAL_BAR_SRC,
+	isAdsterraSocialBarRuntimeEnabled,
+} from '../lib/monetization';
+import { game } from '../config/game';
+
+const enabled = isAdsterraSocialBarRuntimeEnabled();
+const siteHost = enabled ? new URL(game.siteUrl).hostname : '';
+const scriptSrc = ADSTERRA_SOCIAL_BAR_SRC;
+---
+
+{
+	enabled && (
+		<script is:inline define:vars={{ scriptSrc, siteHost }}>
+			(function () {
+				try {
+					if (location.hostname !== siteHost) return;
+				} catch (error) {
+					return;
+				}
+				var script = document.createElement('script');
+				script.async = true;
+				script.setAttribute('data-cfasync', 'false');
+				script.src = scriptSrc;
+				document.head.appendChild(script);
+			})();
+		</script>
+	)
+}
