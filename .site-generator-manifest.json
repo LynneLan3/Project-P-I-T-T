@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "templateVersion": "2.0.0",
   "generatorVersion": "1.0.0",
-  "specHash": "dc4a5cac1c1ea8ca6b6bec690a6f04990f5ebd67d62e8219a93bfad090c266a8",
+  "specHash": "2b96f6df82e044c585b1457cba1e0e953cdbe5cf66f0df927d39220e4ac28b3a",
   "siteId": "project-p-i-t-t",
   "createdFromSpec": "site-spec.yaml",
   "managedFiles": [
@@ -53,17 +53,27 @@
     },
     {
       "path": "src/config/site.generated.ts",
-      "sha256": "98b04b4cc4056df4111126adb6acee9b2ee7e59f3c94e3bf4837504542f3154f",
+      "sha256": "bfe4b9d196b53532ca74a9a6d23cdc32ee5f0e51e3be5114991375f3d9322154",
       "kind": "config"
     },
     {
       "path": "src/content/docs/achievements/achievements.md",
-      "sha256": "46fca50f452e4ce6b99061235f01d9481c2daa1929c1e31c0ceadc10decab79e",
+      "sha256": "b08532daee5c44ec4188ab16fe1e0f430c1edb315fdab3125da1f66e705d3a96",
+      "kind": "page"
+    },
+    {
+      "path": "src/content/docs/achievements/fast-achievement.md",
+      "sha256": "680edd63d9b1c8c6ebf88553c5915f3578bc5fda1521693a025cc6f4448e798e",
+      "kind": "page"
+    },
+    {
+      "path": "src/content/docs/achievements/rich-achievement.md",
+      "sha256": "3cda833bdf262e8dfb95efde609845c3c684ab9b29eba46afab555d45c871e4c",
       "kind": "page"
     },
     {
       "path": "src/content/docs/automation/automation.md",
-      "sha256": "1a11fccacaf7276d7b20d5f25263dfbcae34725079acce913ab11a8771ce2ecf",
+      "sha256": "21a07a9fc4293f6b70efd27c5e4e89d21da8ea3ee5de335848ff3c982cff5760",
       "kind": "page"
     },
     {
@@ -83,7 +93,7 @@
     },
     {
       "path": "src/content/docs/automation/troubleshooting.md",
-      "sha256": "2ed4de790d8249b66b2e4ef60782edb546e2fb9312c01b91a5c06843575f58be",
+      "sha256": "ce2dfa523a3130191d5fd9bbc4369d74c90cf95907d4288636c72e87b03dd7a9",
       "kind": "page"
     },
     {
@@ -108,7 +118,7 @@
     },
     {
       "path": "src/content/docs/progression-secrets/anomaly.md",
-      "sha256": "1ebdcba4d7cb3242399283c862cd18c1ea721a81871b91f80dfd64559396cc33",
+      "sha256": "b5bec9c586ce9eae5b7a2a3870205b66af9932d6b94b2f561c809994a6edc241",
       "kind": "page"
     },
     {

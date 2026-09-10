@@ -1,0 +1,24 @@
+{
+  "title": "Project P.I.T.T. FAST! Achievement — 400/min Peak Production Rate",
+  "description": "FAST! tracks a 400 products/min Peak Production Rate, not Maw deposits; includes a tested 400/min setup and tips to break the high-300s.",
+  "h1": "Project P.I.T.T. FAST! Achievement — 400/min Peak Production Rate",
+  "quickAnswer": "FAST! official Steam condition is 400 products/min; current player-tested evidence indicates the tracked stat is PEAK PRODUCTION RATE, so you must be producing 400 products/min — not depositing 400/min into the Maw; track Peak Production Rate on a Productivity Display when available.",
+  "facts": [
+    {
+      "label": "Official target",
+      "value": "FAST! — 400 products / min (Steam Global Achievements)"
+    },
+    {
+      "label": "Tracked stat",
+      "value": "PEAK PRODUCTION RATE (player-tested evidence)"
+    },
+    {
+      "label": "Tested route",
+      "value": "One tested route uses all three max-speed automatic machines + manual Duck production + the x2 crafting-speed buff; a Proxy Intern on the manual Cash Register can add headroom."
+    },
+    {
+      "label": "Common miss",
+      "value": "Confusing Maw deposit throughput with Peak Production Rate — depositing to the Maw can help lag/performance but is not the unlock condition."
+    }
+  ]
+}

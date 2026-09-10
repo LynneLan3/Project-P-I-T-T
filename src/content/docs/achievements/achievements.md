@@ -1,6 +1,6 @@
 ---
 title: "Project P.I.T.T. Achievements Guide: Complete 23-Achievement Checklist"
-description: "One practical guide to preserve the 23-achievement checklist and help plan completion around progression and the endings. This guide preserves the exact checklist: QWACK!, KACHING!, MORE!, MESS!, EXTRA!, LAG!, FIESTA!, GAMBLING!, STUFFED!, WEIRD!, MEGA!, RICH!, CONSUMERISM!, FAST!, BAD?, UP?, INVISIBLE?, HEAVY?, OPEN?, LOOP?, SECRET?, END?, END!. END? = Secret Ending. END! = Main Ending. It clarifies Consumerism (unlocking and buying everything), notes FAST! represents throughput of 400 products per minute, and treats Speed Radar only as a known FAQ/blocker with an unconfirmed unlock trigger. It recommends a precautionary before-ending plan: finish the 300 combo, reach 1 trillion, and purchase-every-item work before triggering the ending when practical."
+description: "Preserve the 23-achievement checklist and plan completion around x300, 1T TOTAL REVENUE GENERATED for RICH!, and purchase-every-item work before endings. FAST! is 400 products/min Peak Production Rate, not Maw delivery throughput."
 category: achievements
 slug: achievements
 status: confirmed
@@ -13,12 +13,20 @@ intents:
   - project-pitt-achievements
   - steam-achievements
   - 100-percent-completion
-quickAnswer: "Answer-first: If you’re aiming for completion, finish the 300 combo, reach 1 trillion, and complete purchase-every-item work before final ending progression when practical. END? = Secret Ending; END! = Main Ending. Consumerism means unlocking and buying everything. FAST! tracks ~400 products/min throughput; Speed Radar is a known FAQ/blocker with no confirmed trigger. If you enter an ending/infinite-ending loop while missing x300, 1 trillion, or purchase-every-item, use Troubleshooting/Automation to recover progress where possible."
+quickAnswer: "Answer-first: Finish the 300 combo, reach 1T TOTAL REVENUE GENERATED for RICH!, and complete purchase-every-item work before final ending progression when practical. END? = Secret Ending; END! = Main Ending. FAST! is 400 products/min Peak Production Rate, not Maw deposits. Speed Radar remains an unconfirmed FAQ/blocker."
 related:
+  - fast-achievement
+  - rich-achievement
   - up-achievement-fuses
   - 200kg-plate
   - x300-combo
 relations:
+  -
+    slug: fast-achievement
+    type: related
+  -
+    slug: rich-achievement
+    type: related
   -
     slug: up-achievement-fuses
     type: next-step
@@ -42,18 +50,18 @@ sources:
     title: Exophase achievement index
     url: https://www.exophase.com/game/project-p-i-t-t-steam/achievements/
 cover: ../../../assets/gameplay/achievements.jpg
-changeSummary: "Expanded for Consumerism, Speed Radar/FAST!, x300, and achievements to finish before the ending."
+changeSummary: "Corrected FAST Peak Production Rate wording, clarified RICH TOTAL REVENUE GENERATED, and linked new FAST/RICH pages."
 eyebrow: Completion
 facts:
   -
     label: Total achievements
     value: 23 achievements
   -
-    label: Public descriptions
-    value: 14 public descriptions
+    label: "FAST!"
+    value: "Official 400 products/min; player-tested evidence points to PEAK PRODUCTION RATE, not Maw deposits"
   -
-    label: Hidden descriptions
-    value: 9 hidden descriptions
+    label: "RICH!"
+    value: "Official $1,000,000,000,000; player-tested evidence maps to TOTAL REVENUE GENERATED"
   -
     label: Before-ending plan
     value: "Finish 300 combo, reach 1 trillion, and purchase-every-item work before final ending progression when practical"
@@ -93,18 +101,20 @@ Direct Answer
   - END!
 - Plain statement: END? = Secret Ending. END! = Main Ending.
 - Consumerism means unlocking and buying everything.
-- FAST! represents speed/throughput at 400 products per minute (the game text). The Speed Radar unlock trigger is not confirmed; treat it as a current community-known blocker/FAQ rather than a strict requirement.
+- FAST! public Steam condition is `400 products / min`. Current player-tested evidence indicates the tracked stat is `PEAK PRODUCTION RATE` (producing products), not Maw deposit throughput. See [FAST! Achievement](/fast-achievement/).
+- RICH! public Steam condition is reach `$1,000,000,000,000`. Current player-tested evidence maps that to `TOTAL REVENUE GENERATED`, not merely current wallet balance. See [RICH! Achievement](/rich-achievement/).
+- The Speed Radar unlock trigger is not confirmed; treat it as a current community-known blocker/FAQ rather than a strict requirement.
 
 Quick Steps
 1. Check your achievement list and note which of the big progression goals remain: x300 combo, RICH!/1 trillion, and purchase-every-item (Consumerism).
-2. Complete remaining build/automation work to reach x300 combo and 400 products/min (for FAST!) before final ending progression when practical.
+2. Complete remaining build/automation work to reach x300 combo and the FAST! `400 products / min` Peak Production Rate target before final ending progression when practical.
 3. Buy and unlock everything you can to progress toward CONSUMERISM! before ending triggers.
 4. Trigger the ending only after you’re satisfied those goals are done, or have a reliable save/test if you want to risk it.
 5. If anything fails after an ending, consult Troubleshooting and the Secret Ending guide links below.
 
 Prerequisites or What You Need
 - Knowledge of which achievements remain (use the in-game checklist).
-- Enough production/automation progress to reach x300 combo and, separately, 1 trillion currency for RICH!.
+- Enough production/automation progress to reach x300 combo and, separately, 1 trillion total revenue for RICH!.
 - Access to all unlockable items to work toward CONSUMERISM!.
 - Awareness: some players report entering an ending or an infinite-ending loop while still missing the three big targets listed above; plan accordingly.
 
@@ -118,18 +128,26 @@ Consumerism
 - Direct answer: CONSUMERISM! = unlock and buy everything.
 - Explanation: Players should interpret this as “own every purchasable/unlockable item” in your run. Current community wording confirms it’s about purchasing/owning all items rather than a different hidden mechanic.
 
-Speed Radar / FAST!
-- Direct answer: FAST! is tied to throughput (game text shows 400 products/minute).
-- Explanation: FAST! represents a speed/throughput milestone (400 products/minute per the achievement text). The Speed Radar (an in-game indicator many players expect to see) has an unclear unlock trigger in community findings — it’s reported by many players as a blocker when it doesn’t appear, but that trigger has not been confirmed by official sources. Treat Speed Radar visibility as an unreliable indicator; aim for the throughput number itself and use automation checks instead.
+FAST!
+- Direct answer: Steam lists `400 products / min`; current player-tested evidence points to `PEAK PRODUCTION RATE`, not Maw delivery throughput.
+- Explanation: Aim to make products at that rate. Track Peak Production Rate on a Productivity Display when available. Do not treat successful Maw deposits per minute as the unlock condition. Dedicated steps live on [FAST! Achievement](/fast-achievement/). Speed Radar visibility remains an unreliable community FAQ/blocker with no confirmed unlock trigger.
 
 x300 (the combo)
 - Direct answer: x300 is the 300-combo milestone.
 - Explanation: Community-confirmed importance: several completion problems stem from players triggering the ending before a 300 combo is reached. Make the 300 combo a checklist item before final ending steps when practical. If you miss it, consult the x300 Combo guide linked below.
 
 RICH! (1 trillion)
-- Direct answer: RICH! is the high-currency milestone (1 trillion).
-- Explanation: RICH! is a major progression target that some players still lack after ending loops. Current community findings report cases where the main or secret ending occurs while RICH! remains incomplete; it’s safest to reach RICH! prior to final ending progression.
+- Direct answer: RICH! requires reaching `$1,000,000,000,000`, mapped by player-tested evidence to `TOTAL REVENUE GENERATED`.
+- Explanation: RICH! is a major progression target that some players still lack after ending loops. Treat it as cumulative revenue generated, not a claim that current wallet balance alone must equal 1T. Dedicated method notes live on [RICH! Achievement](/rich-achievement/). It is safest to reach RICH! prior to final ending progression when practical.
 
 Purchase-every-item timing
 - Direct answer: Buy everything before ending when practical.
-- Explanation: Community reports show purchase-every-item (CONSUMERISM!) may remain incomplete after an ending in some runs. Because the exact interaction between ending triggers and remaining
+- Explanation: Community reports show purchase-every-item (CONSUMERISM!) may remain incomplete after an ending in some runs. Because the exact interaction between ending triggers and remaining purchase progress is not fully mapped, finish buy/unlock work before final ending progression when practical.
+
+Related Guides
+- [FAST! Achievement](/fast-achievement/)
+- [RICH! Achievement](/rich-achievement/)
+- [x300 Combo](/x300-combo/)
+- [Secret Ending](/secret-ending/)
+- [Troubleshooting](/troubleshooting/)
+- [Automation](/automation/)

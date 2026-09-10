@@ -1,5 +1,5 @@
 Direct Answer
-> Set up a short visible recoverable lane, stage the three Phase‑4 inputs (Duck / Cash Register / Piñata) on separate lanes, balance supply across those lanes, protect Piñatas during transport, then merge late into the factory hub chain: Automation → [Shift Scheduler]({{page:shift-scheduler}}) → [Trade Terminal]({{page:trade-terminal}}) → [Panel Rack]({{page:panel-rack}}) → [x300 Combo]({{page:x300-combo}}). For recipe/workbench fixes see [Anomaly Phase 4]({{page:anomaly-phase-4}}). Current 1.0.7 piston behavior (tools stick, movement follows, off locks position, on resumes) applies inside this setup.
+> Set up a short visible recoverable lane, stage the three Phase‑4 inputs (Duck / Cash Register / Piñata) on separate lanes, balance supply across those lanes, protect Piñatas during transport, then merge late into the factory hub chain: Automation → [Shift Scheduler]({{page:shift-scheduler}}) → [Trade Terminal]({{page:trade-terminal}}) → [Panel Rack]({{page:panel-rack}}) → [x300 Combo]({{page:x300-combo}}). For recipe/workbench fixes see [Anomaly Phase 4]({{page:anomaly-phase-4}}). Current 1.0.8 piston behavior: pistons can be moved, objects stuck to the head follow it and are pickable again; the earlier 1.0.7 off-lock / resume behavior still applies.
 
 Quick Steps
 1. Build a short visible recoverable lane up-front so you can catch overflow and observe failing inputs.
@@ -11,7 +11,7 @@ Quick Steps
 7. If you need recipe/workbench changes, consult [Anomaly Phase 4]({{page:anomaly-phase-4}}).
 
 Prerequisites or What You Need
-- Basic automation components: movers, splitters/routing, pistons (1.0.7 behavior applies), and local buffers.
+- Basic automation components: movers, splitters/routing, pistons (current 1.0.8 piston behavior applies), and local buffers.
 - Factory hub components in this chain: [Shift Scheduler]({{page:shift-scheduler}}), [Trade Terminal]({{page:trade-terminal}}), [Panel Rack]({{page:panel-rack}}), [x300 Combo]({{page:x300-combo}}).
 - A short, visible recoverable lane (front-end buffer) to observe flow and catch failed output.
 - Access to the [Anomaly Phase 4]({{page:anomaly-phase-4}}) page for current recipe/workbench troubleshooting.
@@ -24,18 +24,16 @@ Full Explanation
 - Protect fragile Piñatas: Community-confirmed practice is to keep Piñatas on a dedicated, gentle lane and avoid aggressive merges or high‑speed collision zones. Separate the Piñata lane until just before the final combine to reduce breakage.
 - Separate lanes before final merge: Keep each input lane distinct through most of the transport path to simplify diagnosis and balancing. Merge late and only after buffers smooth out short bursts.
 - Diagnose overflowing / failed input: Use the visible recoverable lane and isolate each feed (stop or slow it) to confirm which input is overflowing or stalled. Visual lane fill levels and stopping one input at a time are the standard community troubleshooting steps. For recipe/workbench fixes and confirmed recipe details, consult [Anomaly Phase 4]({{page:anomaly-phase-4}}).
-- Pistons (1.0.7) — verified behavior to include:
-  - Tools can stick to piston heads.
-  - Attached tools follow piston movement.
-  - Turning a piston off locks its current piston position.
-  - Turning it back on resumes the prior motion.
-  Treat sticky tools and piston locking as part of your transport and timing considerations; do not rely on pistons to reset or re-home unless you intentionally toggle them.
-- Other confirmed facts to preserve: panels snap into place, tools can be sticky, and movers should be assigned one job each to avoid contention. Integrate these behaviors into your lane design and mover assignments.
+- Pistons (current 1.0.8, with 1.0.7 history) — verified behavior to include:
+  - From Update 1.0.7: tools can stick to piston heads; attached tools follow piston movement; turning a piston off locks its current position; turning it back on resumes the prior motion.
+  - From Update 1.0.8: pistons can now be moved; objects stuck to the piston head follow it when the piston is relocated; attached objects are pickable again.
+  Treat sticky tools, movable pistons, and on/off locking as part of your transport and timing considerations; do not invent speed, range, load, attachment-count, or reliability numbers beyond these official behaviors.
 
 Common Mistakes
 - Merging inputs too early and creating collisions that damage Piñatas or cause downstream jams.
 - Skipping the short visible recoverable lane and losing the fastest diagnostic feedback.
 - Treating pistons as stateless movers — on/off changes lock/restore position and can leave tools stuck where you don’t expect.
+- Forgetting that 1.0.8 made pistons movable and attached objects pickable again when rearranging a layout.
 - Assigning multiple jobs to one mover type or relying on panels to compensate for poor routing — panels snap but won’t fix upstream imbalance.
 - Forgetting to consult [Anomaly Phase 4]({{page:anomaly-phase-4}}) for recipe/workbench inconsistencies before redesigning automation.
 
@@ -55,10 +53,13 @@ Related Guides
 
 FAQ
 Q: Will a tool attached to a piston stay attached during movement?
-A: Yes. Current full-release behavior (1.0.7) confirms tools can stick to piston heads and will follow piston movement.
+A: Yes. Official 1.0.7 behavior confirms tools can stick to piston heads and follow piston movement. Update 1.0.8 adds that objects stuck to the head also follow when the piston itself is moved, and attached objects are pickable again.
+
+Q: Can I move a piston after placing it?
+A: Yes in the current 1.0.8 build — pistons can now be moved. Objects stuck to the piston head follow that relocation.
 
 Q: If I turn a piston off, will it return to a home position?
-A: No. Turning a piston off locks it in its current position; turning it back on resumes the previous motion sequence.
+A: No. Turning a piston off locks it in its current position (1.0.7 behavior that still applies); turning it back on resumes the previous motion sequence.
 
 Q: How do I stop Piñatas from breaking in transport?
 A: Community findings recommend a dedicated gentle lane for Piñatas, avoiding aggressive merges and late-stage collisions. Keep the Piñata lane separate until the final merge and test with small batches to tune handling.

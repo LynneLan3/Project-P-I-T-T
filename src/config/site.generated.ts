@@ -131,8 +131,8 @@ export const siteConfig: GameConfig = {
 				label: "Percentage Pipe stuck at 0%?",
 			},
 			{
-				title: "Project P.I.T.T. Anomaly: Recipe, Phase 4 Role, and the Percentage Pipe",
-				description: "Craft Anomalies in Phase 4 with 1 Duck, 1 Cash Register, and 1 Piñata, then use 10 Anomalies to fill the Percentage Pipe to 100%.",
+				title: "Project P.I.T.T. Anomaly: Phase 4 Role, Quality Tiers, and the Percentage Pipe",
+				description: "Anomaly is the Phase 4 late-stage product. After 1.0.8, Cauldron crafting has lower/normal/enhanced quality tiers; feed Anomalies into the Percentage Pipe (10 × 10% = 100%). Full Cauldron recipe detail lives on Anomaly Phase 4.",
 				href: "/anomaly/",
 				label: "Make Anomalies in Phase 4",
 			},
@@ -144,7 +144,7 @@ export const siteConfig: GameConfig = {
 			},
 			{
 				title: "How to Automate Phase 4 in Project P.I.T.T.",
-				description: "Phase 4 automation hub: three-input staging, 1.0.7 Pistons, Piñata protection, Shift Scheduler, Trade Terminal, Panel Rack, and Anomaly Phase 4 cross-links.",
+				description: "Phase 4 automation hub: three-input staging, current 1.0.8 movable pistons with attached-object follow/pickable behavior, Piñata protection, Shift Scheduler, Trade Terminal, Panel Rack, and Anomaly Phase 4 cross-links.",
 				href: "/automation/",
 				image: "gameplay/automation.jpg",
 				label: "Build reliable automation",
@@ -225,6 +225,14 @@ export const siteConfig: GameConfig = {
 			intents: ["project-pitt-achievements", "steam-achievements", "100-percent-completion"],
 			relations: [
 				{
+					pageId: "fast-achievement",
+					type: "related",
+				},
+				{
+					pageId: "rich-achievement",
+					type: "related",
+				},
+				{
 					pageId: "up-achievement-fuses",
 					type: "next-step",
 				},
@@ -252,6 +260,98 @@ export const siteConfig: GameConfig = {
 					type: "other",
 					title: "Exophase achievement index",
 					url: "https://www.exophase.com/game/project-p-i-t-t-steam/achievements/",
+				},
+			],
+			evidence: [
+			],
+		},
+		{
+			id: "fast-achievement",
+			slug: "fast-achievement",
+			role: "core",
+			assetType: "article",
+			intents: ["project-pitt-fast-achievement", "project-pitt-400-products-per-minute", "project-pitt-peak-production-rate", "project-pitt-fast-not-unlocking"],
+			relations: [
+				{
+					pageId: "achievements",
+					type: "related",
+				},
+				{
+					pageId: "automation",
+					type: "related",
+				},
+				{
+					pageId: "rich-achievement",
+					type: "related",
+				},
+				{
+					pageId: "troubleshooting",
+					type: "related",
+				},
+			],
+			sources: [
+				{
+					type: "steam",
+					title: "Steam Global Achievements — FAST!",
+					url: "https://steamcommunity.com/stats/4026250/achievements/",
+				},
+				{
+					type: "steam",
+					title: "Steam Community guide — FAST! Peak Production Rate",
+					url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3789664612",
+				},
+				{
+					type: "steam",
+					title: "Steam Community 100% Achievement and Strategy Guide",
+					url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3789930610",
+				},
+			],
+			evidence: [
+			],
+		},
+		{
+			id: "rich-achievement",
+			slug: "rich-achievement",
+			role: "core",
+			assetType: "article",
+			intents: ["project-pitt-rich-achievement", "project-pitt-1-trillion", "project-pitt-total-revenue-generated", "project-pitt-anomaly-gambling-crates-money"],
+			relations: [
+				{
+					pageId: "achievements",
+					type: "related",
+				},
+				{
+					pageId: "x300-combo",
+					type: "related",
+				},
+				{
+					pageId: "anomaly",
+					type: "related",
+				},
+				{
+					pageId: "fast-achievement",
+					type: "related",
+				},
+				{
+					pageId: "secret-ending",
+					type: "related",
+				},
+			],
+			sources: [
+				{
+					type: "steam",
+					title: "Steam Global Achievements — RICH!",
+					url: "https://steamcommunity.com/stats/4026250/achievements/",
+				},
+				{
+					type: "steam",
+					title: "Steam Community 100% Achievement and Strategy Guide",
+					url: "https://steamcommunity.com/sharedfiles/filedetails/?id=3789930610",
+				},
+				{
+					type: "steam",
+					title: "Steam Community discussions",
+					url: "https://steamcommunity.com/app/4026250/discussions/",
 				},
 			],
 			evidence: [
@@ -891,8 +991,8 @@ export const siteConfig: GameConfig = {
 				{
 					pageId: "anomaly",
 					href: "/anomaly/",
-					title: "Project P.I.T.T. Anomaly: Recipe, Phase 4 Role, and the Percentage Pipe",
-					description: "Craft Anomalies in Phase 4 with 1 Duck, 1 Cash Register, and 1 Piñata, then use 10 Anomalies to fill the Percentage Pipe to 100%.",
+					title: "Project P.I.T.T. Anomaly: Phase 4 Role, Quality Tiers, and the Percentage Pipe",
+					description: "Anomaly is the Phase 4 late-stage product. After 1.0.8, Cauldron crafting has lower/normal/enhanced quality tiers; feed Anomalies into the Percentage Pipe (10 × 10% = 100%). Full Cauldron recipe detail lives on Anomaly Phase 4.",
 					eyebrow: "Phase 4 Production",
 				},
 				{
@@ -920,7 +1020,7 @@ export const siteConfig: GameConfig = {
 					pageId: "achievements",
 					href: "/achievements/",
 					title: "Project P.I.T.T. Achievements Guide: Complete 23-Achievement Checklist",
-					description: "One practical guide to preserve the 23-achievement checklist and help plan completion around progression and the endings. This guide preserves the exact checklist: QWACK!, KACHING!, MORE!, MESS!, EXTRA!, LAG!, FIESTA!, GAMBLING!, STUFFED!, WEIRD!, MEGA!, RICH!, CONSUMERISM!, FAST!, BAD?, UP?, INVISIBLE?, HEAVY?, OPEN?, LOOP?, SECRET?, END?, END!. END? = Secret Ending. END! = Main Ending. It clarifies Consumerism (unlocking and buying everything), notes FAST! represents throughput of 400 products per minute, and treats Speed Radar only as a known FAQ/blocker with an unconfirmed unlock trigger. It recommends a precautionary before-ending plan: finish the 300 combo, reach 1 trillion, and purchase-every-item work before triggering the ending when practical.",
+					description: "Preserve the 23-achievement checklist and plan completion around x300, 1T TOTAL REVENUE GENERATED for RICH!, and purchase-every-item work before endings. FAST! is 400 products/min Peak Production Rate, not Maw delivery throughput.",
 					eyebrow: "Completion",
 					image: "gameplay/achievements.jpg",
 				},
@@ -952,7 +1052,7 @@ export const siteConfig: GameConfig = {
 					pageId: "automation",
 					href: "/automation/",
 					title: "How to Automate Phase 4 in Project P.I.T.T.",
-					description: "Phase 4 automation hub: three-input staging, 1.0.7 Pistons, Piñata protection, Shift Scheduler, Trade Terminal, Panel Rack, and Anomaly Phase 4 cross-links.",
+					description: "Phase 4 automation hub: three-input staging, current 1.0.8 movable pistons with attached-object follow/pickable behavior, Piñata protection, Shift Scheduler, Trade Terminal, Panel Rack, and Anomaly Phase 4 cross-links.",
 					eyebrow: "Factory Systems",
 					image: "gameplay/automation.jpg",
 				},
@@ -1020,7 +1120,7 @@ export const siteConfig: GameConfig = {
 					pageId: "achievements",
 					href: "/achievements/",
 					title: "Project P.I.T.T. Achievements Guide: Complete 23-Achievement Checklist",
-					description: "One practical guide to preserve the 23-achievement checklist and help plan completion around progression and the endings. This guide preserves the exact checklist: QWACK!, KACHING!, MORE!, MESS!, EXTRA!, LAG!, FIESTA!, GAMBLING!, STUFFED!, WEIRD!, MEGA!, RICH!, CONSUMERISM!, FAST!, BAD?, UP?, INVISIBLE?, HEAVY?, OPEN?, LOOP?, SECRET?, END?, END!. END? = Secret Ending. END! = Main Ending. It clarifies Consumerism (unlocking and buying everything), notes FAST! represents throughput of 400 products per minute, and treats Speed Radar only as a known FAQ/blocker with an unconfirmed unlock trigger. It recommends a precautionary before-ending plan: finish the 300 combo, reach 1 trillion, and purchase-every-item work before triggering the ending when practical.",
+					description: "Preserve the 23-achievement checklist and plan completion around x300, 1T TOTAL REVENUE GENERATED for RICH!, and purchase-every-item work before endings. FAST! is 400 products/min Peak Production Rate, not Maw delivery throughput.",
 					eyebrow: "Completion",
 					image: "gameplay/achievements.jpg",
 				},
@@ -1066,7 +1166,7 @@ export const siteConfig: GameConfig = {
 					pageId: "troubleshooting",
 					href: "/troubleshooting/",
 					title: "How to Fix Project P.I.T.T. Crashes, Low FPS, Saves & Missing Tools",
-					description: "Troubleshooting Project P.I.T.T. for crashes, low FPS, save reliability and missing tools, noting 1.0.6 intended fixes, 1.0.7 official fixes and residual reports.",
+					description: "Update to 1.0.8 first. Official notes expect longer first/main loading that is intended to be safer; keep 1.0.7 ending-save history; do not claim all crashes or black screens are fixed.",
 					eyebrow: "Troubleshooting",
 				},
 				{
