@@ -111,9 +111,143 @@ function invokeLedger(normalizedReceiptPath) {
   const output = `${result.stdout || ''}\n${result.stderr || ''}`.trim();
   return { ok: (result.status ?? 1) === 0, code: result.status ?? 1, output };
 }
-function parseLedgerSummary(output) {
+function asUrlList(value) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((item) => {
+      if (typeof item === 'string') return asString(item);
+      if (isRecord(item)) return asString(item.url);
+      return '';
+    })
+    .filter(Boolean);
+}
+function normalizeIndexingSync(raw) {
+  if (!isRecord(raw)) return null;
+  return {
+    ok: raw.ok === true,
+    dryRun: raw.dryRun === true,
+    sitemapStatus: isRecord(raw.sitemapStatus) ? raw.sitemapStatus : null,
+    deployedAt: asString(raw.deployedAt),
+    inspectedUrls: asUrlList(raw.inspectedUrls),
+    currentUrls: asUrlList(raw.currentUrls),
+    manualRequestUrls: asUrlList(raw.manualRequestUrls),
+    needsFixUrls: Array.isArray(raw.needsFixUrls)
+      ? raw.needsFixUrls
+        .map((item) => {
+          if (typeof item === 'string') return { url: asString(item) };
+          if (!isRecord(item) || !asString(item.url)) return null;
+          return {
+            url: asString(item.url),
+            verdict: asString(item.verdict),
+            coverageState: asString(item.coverageState),
+            robotsTxtState: asString(item.robotsTxtState),
+            indexingState: asString(item.indexingState),
+            pageFetchState: asString(item.pageFetchState),
+            googleCanonical: asString(item.googleCanonical),
+            userCanonical: asString(item.userCanonical),
+            lastCrawlTime: asString(item.lastCrawlTime),
+          };
+        })
+        .filter(Boolean)
+      : [],
+    inspectionErrors: Array.isArray(raw.inspectionErrors)
+      ? raw.inspectionErrors
+        .map((item) => {
+          if (!isRecord(item) || !asString(item.url)) return null;
+          return {
+            url: asString(item.url),
+            error: asString(item.error) || 'URL Inspection failed',
+          };
+        })
+        .filter(Boolean)
+      : [],
+  };
+}
+/**
+ * Parse indexingSync from gsc_hotword_monitor record-publish-receipt stdout.
+ * Protocol: PASS summary line, then optional JSON line `{ "indexingSync": { ... } }`.
+ */
+export function extractIndexingSyncFromLedgerOutput(output) {
   const text = String(output || '');
-  return { interventionIds: text.match(/interventions=([^\s]+)/i)?.[1]?.split(',').filter(Boolean) ?? [], baselineDataDate: text.match(/baseline=([^\s]+)/i)?.[1] || '' };
+  for (const line of text.split(/\r?\n/)) {
+    const trimmed = line.trim();
+    if (!trimmed.startsWith('{') || !trimmed.includes('"indexingSync"')) continue;
+    try {
+      const parsed = JSON.parse(trimmed);
+      const sync = normalizeIndexingSync(parsed?.indexingSync);
+      if (sync) return sync;
+    } catch {
+      // Ignore non-JSON lines; keep scanning for the protocol JSON payload.
+    }
+  }
+  return null;
+}
+export function sitemapStatusLabel(indexingSync) {
+  if (!indexingSync) return '';
+  if (indexingSync.sitemapStatus?.ok === true) return 'PASS';
+  if (indexingSync.dryRun || indexingSync.sitemapStatus?.dryRun === true) return 'DRY_RUN';
+  return 'FAIL';
+}
+export function inspectionStatusLabel(indexingSync) {
+  if (!indexingSync) return '';
+  const inspected = indexingSync.inspectedUrls.length;
+  const errors = indexingSync.inspectionErrors.length;
+  if (inspected === 0) return indexingSync.ok ? 'PASS' : 'FAIL';
+  if (errors === 0) return 'PASS';
+  if (errors < inspected) return 'PARTIAL';
+  return 'FAIL';
+}
+export function parseLedgerSummary(output) {
+  const text = String(output || '');
+  return {
+    interventionIds: text.match(/interventions=([^\s]+)/i)?.[1]?.split(',').filter(Boolean) ?? [],
+    baselineDataDate: text.match(/baseline=([^\s]+)/i)?.[1] || '',
+    indexingSync: extractIndexingSyncFromLedgerOutput(text),
+  };
+}
+function formatNeedsFixLine(item) {
+  const bits = [];
+  if (item.coverageState) bits.push(`coverage=${item.coverageState}`);
+  if (item.verdict) bits.push(`verdict=${item.verdict}`);
+  if (item.indexingState) bits.push(`indexing=${item.indexingState}`);
+  const detail = bits.length ? ` (${bits.join(', ')})` : '';
+  return `- ${item.url}${detail} [technical blocker; Request Indexing will not fix this]`;
+}
+function formatGscFollowUp(result) {
+  const sync = result.indexingSync;
+  if (!sync) return [];
+
+  const lines = [
+    'GSC Indexing Follow-up:',
+    `Sitemap: ${sitemapStatusLabel(sync)}`,
+    `Inspection: ${inspectionStatusLabel(sync)}`,
+    `Current: ${sync.currentUrls.length}`,
+    '',
+  ];
+
+  if (sync.manualRequestUrls.length === 0) {
+    lines.push('GSC Manual Request Indexing: NONE', '');
+  } else {
+    lines.push('GSC Manual Request Indexing:');
+    for (const url of sync.manualRequestUrls) lines.push(`- ${url}`);
+    lines.push('');
+  }
+
+  if (sync.needsFixUrls.length > 0) {
+    lines.push('GSC Needs Fix:');
+    for (const item of sync.needsFixUrls) lines.push(formatNeedsFixLine(item));
+    lines.push('');
+  }
+
+  if (sync.inspectionErrors.length > 0) {
+    lines.push('GSC Inspection Errors:');
+    for (const item of sync.inspectionErrors) {
+      lines.push(`- ${item.url}: ${item.error}`);
+    }
+    lines.push('');
+  }
+
+  return lines;
 }
 function identityForPublish(rootDir) {
   const identity = checkDeploymentIdentity({ rootDir });
@@ -135,10 +269,53 @@ function normalizeForPublish(receipt, context, head, deploymentUrl, deployedAt) 
   return normalized;
 }
 function baseResult(receipt, context, head) {
-  return { site: asString(receipt?.common?.site) || context?.identity?.siteName || '', commit: head || asString(receipt?.common?.commitSha), productionUrl: context?.productionUrl || asString(receipt?.common?.productionUrl), production: 'FAIL', verification: 'FAIL', indexNow: 'FAIL', indexNowUrls: 0, ledger: 'FAIL', batchId: asString(receipt?.common?.batchId), interventionIds: [], baselineDataDate: '', attributionMode: asString(receipt?.common?.attributionMode) || (asString(receipt?.common?.decisionId) ? 'FORMAL_DECISION_LINKED' : 'OBSERVATIONAL_ONLY'), status: 'PUBLISH_FAILED' };
+  return {
+    site: asString(receipt?.common?.site) || context?.identity?.siteName || '',
+    commit: head || asString(receipt?.common?.commitSha),
+    productionUrl: context?.productionUrl || asString(receipt?.common?.productionUrl),
+    production: 'FAIL',
+    verification: 'FAIL',
+    indexNow: 'FAIL',
+    indexNowUrls: 0,
+    ledger: 'FAIL',
+    batchId: asString(receipt?.common?.batchId),
+    interventionIds: [],
+    baselineDataDate: '',
+    indexingSync: null,
+    attributionMode: asString(receipt?.common?.attributionMode) || (asString(receipt?.common?.decisionId) ? 'FORMAL_DECISION_LINKED' : 'OBSERVATIONAL_ONLY'),
+    status: 'PUBLISH_FAILED',
+  };
 }
 export function formatPublishResult(result) {
-  return ['HOTWORD PRODUCTION PUBLISH','',`Site: ${result.site}`,`Commit: ${result.commit}`,'','Production:',result.production,'URL:',result.productionUrl,'','Verification:',result.verification,'',`IndexNow: ${result.indexNow}`,`URLs: ${result.indexNowUrls}`,'','Ledger writeback:',result.ledger,'',`BatchID: ${result.batchId}`,`InterventionIDs: ${result.interventionIds.join(',')}`,`BaselineDataDate: ${result.baselineDataDate}`,`AttributionMode: ${result.attributionMode}`,'',...(result.status === 'PRODUCTION_LIVE_LEDGER_INCOMPLETE' ? ['PRODUCTION LIVE','LEDGER INCOMPLETE',''] : []),`RESULT: ${result.status}`].join('\n');
+  return [
+    'HOTWORD PRODUCTION PUBLISH',
+    '',
+    `Site: ${result.site}`,
+    `Commit: ${result.commit}`,
+    '',
+    'Production:',
+    result.production,
+    'URL:',
+    result.productionUrl,
+    '',
+    'Verification:',
+    result.verification,
+    '',
+    `IndexNow: ${result.indexNow}`,
+    `URLs: ${result.indexNowUrls}`,
+    '',
+    'Ledger writeback:',
+    result.ledger,
+    '',
+    `BatchID: ${result.batchId}`,
+    `InterventionIDs: ${result.interventionIds.join(',')}`,
+    `BaselineDataDate: ${result.baselineDataDate}`,
+    `AttributionMode: ${result.attributionMode}`,
+    '',
+    ...formatGscFollowUp(result),
+    ...(result.status === 'PRODUCTION_LIVE_LEDGER_INCOMPLETE' ? ['PRODUCTION LIVE', 'LEDGER INCOMPLETE', ''] : []),
+    `RESULT: ${result.status}`,
+  ].join('\n');
 }
 export async function runProductionPublish(options = {}) {
   const rootDir = options.rootDir ?? ROOT; let receipt; let context = null; let head = '';

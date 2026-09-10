@@ -29,6 +29,7 @@
     "deploy:production": "node scripts/deploy-production.mjs",
     "publish:production": "node scripts/publish-production-entry.mjs",
     "test:deployment": "tsx --test tests/deployment/deploy-identity.test.ts",
+    "test:publishing": "tsx --test tests/publishing/publish-production.test.ts",
     "indexnow": "tsx ./scripts/indexnow-submit.ts"
   },
   "dependencies": {
